@@ -1,0 +1,57 @@
+-h Host
+-p Puerto			Opcional
+-i ID unico			Opcional
+-q QoS				Opcional
+-t Tema a publicar/suscribir	
+-m Mensaje a publicar
+-u Usuario			Opcional
+-P Contraseña			Opcional
+
+Lista de IDs en el broker
+
+Hugo-sub1
+Hugo-sub2
+Hugo-pub1
+Hugo-pub2
+
+Mensaje mosquitto: string
+
+Envio de temperatura: 23
+¿Cómo sé que ese valor es de temperatura?
+
+Con el string: "23°C"
+Con el tema: codigoIoT/SIC/temp "23"
+Con el objeto JSON
+
+Java Scriot Object Notation
+
+{
+	"Usuario":"Hugo",
+	"temperatura":23,
+	"humedad":80,
+	"valorArbitrario":1.23
+}
+
+{"Usuario":"Hugo", "temperatura":23, "humedad":80, "valorArbitrario":1.23}
+
+"{\"Usuario\":\"Hugo\", \"temperatura\":23, \"humedad\":80, \"valorArbitrario\":1.23}"
+
+"usuario, Hugo, Temperatura, 23, humedad, 80, valorArbitrario, 1.23"
+
+Usuario,Temperatura,Humedad,ValorArbitrario
+"Hugo,23,80,1.23"
+
+msg
+{
+	"msg_id":56465w5w5asafewaf,
+	"payload:"contenido del mensaje",
+	"topic":
+}
+
+msg.payload
+
+
+
+
+
+
