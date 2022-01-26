@@ -1,0 +1,37 @@
+Ejercicios en clase
+
+1. Des activar un flow
+
+2. Exportar el Flow 1 en un archivo de texto con extension .json y respaldarlo en su repositorio
+
+3. Importar un flow en NodeRed
+
+4. Exportar el flow 2 en un repositorio
+
+msg
+{
+	"_msgid":315cef82f28f272b,
+	"payload": "fecha",
+	"topic": "comentario"
+}	
+
+Como crear un nuevo repositorio
+
+https://edu.codigoiot.com/course/view.php?id=813
+
+1. Dirigirse a github.com e iniciar sesion
+
+2. Hacer clic en el boton crear repositorio
+
+3. Completar la informacion solicitada
+	-Poner nombre
+	-Poner descripcion
+	-Agregar README.md
+	
+4. Clonar el repositorio en la VM
+
+5. Colocar los archivos a respaldar en la carpeta local del repositorio
+
+6. Hacer commit (Registar los cambios y asociarlos a un comentario)
+
+7. Hacer push (Cargar en repositorio remoto)
