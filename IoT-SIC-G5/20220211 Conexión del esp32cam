@@ -1,0 +1,36 @@
+Continuacion de la unidad 3.
+3.2.6 Configuración de IDE
+
+1. Asegurarse de que la IDE de arduino ha sido correctamente configurada
+	-Asegurarnos de que en la interfaz se encuentran los menus correspondientes
+		-Archivo>Ejemplos>ESP32
+		-Herramientas>Tarjetas>ESP32
+		-Que funcione
+		
+2. Armar el circuito
+	https://edu.codigoiot.com/mod/page/view.php?id=1757&forceview=1
+	
+ESP32CAM	FTDI
+5V--------------VCC
+GND(junto)------GND
+UOT-------------Rx
+UOR-------------Tx
+
+IO0----v
+GND----<
+
+Cable programador
+
+https://www.hwlibre.com/wp-content/uploads/2020/12/esp32-cam-ftdi.jpg.webp
+
+3. Seleccionar la tarjeta programadora
+	-AI THINKER ESP32CAM
+	-Tools>Board>AI THINKER ESP32CAM
+
+4. Seleccionar el ejemplo
+	-Camera Web Server
+	-File>Examples>ESP32>Camera>Camera Web Server
+	
+
+Notas: Cambio de SoftMac https://randomnerdtutorials.com/get-change-esp32-esp8266-mac-address-arduino/
+
