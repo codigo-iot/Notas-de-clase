@@ -1,0 +1,28 @@
+Hacer disponible mi red desde internet (Mi dashboard)
+
+1. Obtener la IP de mi maquina virtual en mi red local
+	-ifconfig 192.168.15.33
+	Solo funciona si tiene configurado su VM con conexion puente
+	
+	-Obtengo mi ip publica
+	https://www.whatismyip.com/es/
+	187.177.79.182
+	
+	-Investigo la pagina de configuracion de mi router
+	192.168.0.1
+	-Buscar el modelo del router
+	-Nombre de usuario y contraseña predeterminada del modem
+	-Cómo entrar a las configuraciones de mi modem
+	-Buscar Port Forwarding/Redireccionamiento de puertos
+		-Configuracion
+		-Avanzado
+		-Aplicaciones
+		-Seguridad
+		-Wifi
+		
+	-Agregar nueva regla
+	-Rango 1880
+	-Protocolo TCP
+	
+	http://187.177.79.182:1880/ui
+	

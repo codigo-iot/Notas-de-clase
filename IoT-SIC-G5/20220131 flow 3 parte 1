@@ -1,0 +1,31 @@
+Flow 3
+
+Consiste en hacer un flow que grafique la informacion de varios usuarios.
+
+1. Crear un nuevo flow
+
+2. Recibir información por mqtt
+
+3. Obtener la IP del broker publico
+	nslookup broker.hivemq.com
+	35.157.158.119
+	codigoIoT/SIC/G5/temp
+	
+4. Convertir a JSON
+
+	-Comprobar enviando un mensaje
+	mosquitto_pub -h 35.157.158.119 -p 1883 -i hugo_pub_SIC-154 -q 2 -t codigoIoT/SIC/G5/temp -m "{\"id\":\"Hugo Vargas\", \"temp\":23}"
+	
+	-Necesito que llege lo siguiente:
+	{"id":"Hugo Vargas", "temp":23}
+
+5. Separar las variables
+	-Nodo funcion
+	
+	msg.payload = msg.payload.id;
+	return msg;
+	
+	msg.payload = msg.payload.temp;
+	return msg;
+	
+6. Graficarlas en un darshboard

@@ -1,0 +1,33 @@
+Acceder al Modem
+
+1. Encontrar la direccion de la página de configuración de su modem
+	-192.168.0.1
+	-192.168.0.254	
+2. Credenciales de acceso
+	-admin admin
+	-admin password
+	-root pasword	
+	-TELMEX [contraseña red]
+3. Buscar port forwarding
+	-Configuraciones
+	-Puertos
+	-Firewall
+	-Seguridad
+	-Avanzado
+	-Aplicaciones
+	-Servicios
+	-Redireccionamiento de puertos
+4. Configurar un puerto
+	-Puerto local 1880
+	-Puerto remoto/externo 1880
+	-Protocolo TCP
+	-Rango
+	-IP de la VM (IP local)
+		-ifconfig
+		-ip addr
+	-La VM debe estar como Puente
+5. Encontrar la IP Publica
+	-https://www.cual-es-mi-ip.net/
+6. Iniciar NodeRed
+
+	http://187.177.79.182:1880/ui
