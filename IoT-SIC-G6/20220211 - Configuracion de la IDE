@@ -1,0 +1,35 @@
+Cargar el código de ejemplo al ESP32CAM
+
+1. Asegurarnos de haber instalado y configurado correctamente la IDE de Arduino
+
+https://edu.codigoiot.com/mod/page/view.php?id=1755
+
+-Comprorobar las fuentes del gestor de tarjetas
+	-File>Prefrences
+
+-Tener disponible las tarjeta ESP32
+	-Tools>Boards>ESP32 Arduino>AI Thinker ESP32-CAM
+
+-Tener acceso al ejemplo de Camera Web Server
+	-File>Examples>ESP32>Camera>Camera Web Server
+	
+-Seleccionar la cámara
+	-Comentar la siguiente linea
+	#define CAMERA_MODEL_WROVER_KIT
+	-Descomentar la siguiente linea
+	#define CAMERA_MODEL_AI_THINKER // Has PSRAM
+	
+	-Colocar nombre de red y contraseña
+	
+-Armar el ciruito
+
+ESP32CAM		FTID
+5V----------------------VCC
+GND(junto a 5V)---------GND
+UOT---------------------RX
+UOR---------------------TX
+
+GPIO0----->
+GND------<
+
+https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
