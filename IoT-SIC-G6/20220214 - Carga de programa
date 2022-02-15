@@ -1,0 +1,38 @@
+Cargar el código de ejemplo al ESP32CAM
+
+	-IDE correctamente configurada
+	-Abierto y adaptado el programa de ejemplo
+	-Armar circuito
+	
+1. Conectar el FTDI por usb
+
+2. Hacer el tunelado USB
+	En la maquina virtual
+	-Dispositivos>USB>FTDI
+	-Comprobar que esté seleccionado en la VM
+	
+3. Seleccionar el puerto USB en la IDE de Arduino
+	-Tools>Port>/dev/ttyUSB0
+	
+4. Abrir monitor serial
+	-Ctrl+Shit+M
+	-Colocarlo 115200 baud
+	
+5. Colocar al ESP32CAM en modo programador
+	-Conectar GPIO0 con GND
+	-Presionar el boton de reset
+	
+	rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+
+6. Cargar el programa
+	-Ctrl+U
+	-Al terminar de cargar el programa esperamos ver:
+	Hard resetting via RTS pin...
+	
+7. Comprobar funcionamiento en monitor serial
+	-Quitar el cable programador
+	-Presionar el boton reset
+	-Espero ver la IP (http://192.168.15.18)
+	
+
