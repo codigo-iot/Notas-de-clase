@@ -1,0 +1,6 @@
+Ejecutar el flow3
+
+mosquitto_pub -h 35.157.158.119 -p 1883 -i hugo-SIC-5716 -q 2 -t sic/flow/temp -m "{\"id\":\"Hugo\", \"temp\":23, \"humedad\":80, \"valorArbitrario\":1.23}"
+
+
+1. Crear un repositorio para el Flow 3
