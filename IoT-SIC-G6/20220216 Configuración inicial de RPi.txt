@@ -1,0 +1,37 @@
+Carga del sistema operativo de la Raspberry Pi
+(No es necesario hacerlo en la maquina virtual)
+
+Fuente
+https://edu.codigoiot.com/mod/page/view.php?id=1561&forceview=1
+
+1. Descargar el Pi Imager
+	-Descargar la version para su sistema operativo de preferncia
+	-Arbrir/instalar
+2. Seleccionar Raspberry Pi OS
+	-Choose OS
+	-Seleccionar Raspberru Pi OS 32-Bit
+3. Seleccionar tarjeta micro SD
+	-Choose Storage
+	-Colocar la MicroSD en el adaptador
+	-Conectar el adaptador al PC/Mac
+	-Realizar el proceso de tunelado (Solo para quienes lo hagan en la maquina virtual)
+	-Seleccionar Micro SD
+3.5 Opcional Ctrl + Shift + X  Activar SSH, cambio de contraseña y WiFi
+4. Cargar
+	-Write
+Dudas de las clases anteriores mientras el grupo realiza esta parte
+
+5. Crear archivo ssh unidad boot- touch [nombre del archivo]
+6. Crear archivo supplicant en unidad boot
+https://edu.codigoiot.com/mod/page/view.php?id=1660
+Nombre: wpa_supplicant.conf
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1 
+network={
+ssid="your_network_name"
+psk="your_wifi_password"
+key_mgmt=WPA-PSK
+} 
+NO ENERGIZAR RASBPERRY PI
+Faltan Instrucciones
