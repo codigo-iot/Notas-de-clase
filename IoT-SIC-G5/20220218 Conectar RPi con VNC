@@ -1,0 +1,48 @@
+Notas de clase
+
+Para hacer valida la garantía:
+
+Enviar un correo a hvargas@factor.mx
+
+Nombre completo
+Unidad profesional
+Observaciones
+	-Lista de cosas que esta mal
+Imagen probatoria (.jpg ,png) del componente
+
+Video probatorio 
+	-No adjuntar
+	-como enlaca de youtube
+	-como video no listado
+	-Vide horizontal
+	-Mostrar el proce completo
+	-Video estable/firme
+	
+-Cargar Raspberry Pi OS a la Micro SD
+-Crear el archivo SSH
+-Crear el archivo supplican
+-Conectar Micro SD a RPi
+-Energizar la Raspberry Pi
+-Comprobar que la Raspberry Pi esté conectada a WiFi (WNetWatcher)
+
+Conectarse por SSH con la Raspberry Pi
+	-ssh pi@192.168.15.20
+	-raspberry
+	
+Configurar VNC
+	-sudo raspi-config
+	-3 Interface Options
+	-VNC (Activar con enter)
+	
+Configurar resolucion del vnc
+	-2 Display options
+	-D5 VNC Resolution
+	-1280x720
+	
+Finish - Reboot
+
+Instalar RealVNC
+https://www.realvnc.com/en/connect/download/viewer/
+	-192.168.15.20
+	-pi
+	-raspberry
