@@ -1,0 +1,39 @@
+Conectar a la Raspberry Pi a Internet
+	-Cargar el sistema operativo a la microSD
+	-Configurar el SSH
+	-Configurar el WiFi
+	-Colocar la MicroSD en la RPi
+	-Energizar
+	
+Ver el escritorio de la Raspberry Pi por VNC
+
+1. Comprobar que la RPi se haya conectado a Internet
+	-WNetWatchet https://www.nirsoft.net/utils/wireless_network_watcher.html
+	-NetTools
+	-Listado de dispositivos Wireless del modem
+	-Monitor del Antivirus
+	
+2. Obtener la IP de la Raspberry Pi
+
+3. Establecer conexion SSH
+	-ssh pi@192.168.15.20 (predeterminado
+	-raspberry (predeterminado)
+	-Si han cambiado nombre de usuario y contraseña, colocar dichos datos)
+
+4. Activar VNC
+	-sudo raspi-config
+	-3 Interface Options
+	-3 Activar VNC
+
+5. Configurar la resolucion de VNC
+	-2 Display Options
+	-5 VNC Resolution
+	-1280x720
+	
+6. Instalar Real VNC
+	-https://www.realvnc.com/en/connect/download/viewer/
+	-En la barra de direcciones poner la IP de la raspberry pi
+	-Colocar nombre de usuario y contraseña
+	-Predeterminadas:
+		-pi
+		-raspberry
