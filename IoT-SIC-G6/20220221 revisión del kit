@@ -1,0 +1,20 @@
+Concluir revision del kit
+
+1.- Revision visual de compones
+	-Comprobar listado de los componentes por segunda vez
+	-Abrir todos los compones
+	-Asociar todas piezas de un solo sensor
+		-Guardandolos de nuevo en la misma bolsa
+		-Tomando una fotografía
+	-Inspección visual
+		-Soldadura
+			-Brillante (cromada)
+			-Tipo conico
+			-Concava
+		-Pasta terminca
+			-Transparente
+2.- Ejercios de prueba
+	-MLX90614 // Sensor de temperatur Infrarroja
+	-MAX30100 // Sensor de oxigenacion
+
+
