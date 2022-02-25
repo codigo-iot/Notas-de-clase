@@ -1,0 +1,19 @@
+Querido grupo, buenos días
+En un momento comenzamos.
+
+He reportado el servidor de edu.codigoiot.com
+En cuanto sea posible les paso el código de la asistencia. En caso de que no funcione, no se contará dicha asistencia.
+
+Para la clase del día de hoy tendré que pedirles su apoyo. Ando afónico. Necesitaré de su participación para realizar algunas de las explicaciones.
+
+Una disculpa por las inconveniencias
+
+Por favor inicien su maquina virtual, continuaremos con la explicación de las secciones del programa básico
+
+El siguiente programa que veremos es el de conexión del ESP32CAM a WiFi
+
+El led rojo lo usamos como indicador de conexión a WiFi, para encenderlo enviamos un LOW
+
+Lo que se hace en el IF es medir el avance del tiempo para evitar usar un "delay"
+
+El delay evita que podamos detectar otros eventos, por ejemplo, presionar un boton
