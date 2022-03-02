@@ -1,0 +1,37 @@
+Continuacion del programa ESP32CAM MQTT Basic
+
+1. Cargar programa al esp32cam
+
+2. Broker funcionando
+	-Comprobrar que este arrancado
+		netstar -an
+		Esperamos ver localhost 1883
+	-Abrir puertos de entrada y salida
+		En maquina virtual
+		sudo ufw allow 1883
+		
+		En sistema operativo anfitrion
+		-Windows Firewall
+		-Antivirus
+		-Mac Foro/grupo 2
+	
+	-Configurar mosquitto para conexiones 		externas
+		-Editar mosquitto.conf
+		/snap/mosquitto/687
+		
+		listener 1883 0.0.0.0
+	
+	-Comprobar status como servicio
+		sudo service mosquitto status
+		sudo service mosquitto stop
+		sudo service mosquitto status
+		
+		sudo systemctl status snap.mosquitto.mosquitto.service
+		sudo systemctl stop snap.mosquitto.mosquitto.service
+		sudo systemctl status snap.mosquitto.mosquitto.service
+		
+		sudo chmod 777 /snap/mosquitto/687/mosquitto.conf
+		
+
+3. Flow de comprobación
+ 

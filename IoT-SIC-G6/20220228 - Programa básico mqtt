@@ -1,0 +1,21 @@
+Clase pasada:
+
+Cargar el programa ESP32CAM-WiFi-Basic
+
+https://github.com/codigo-iot/ESP32CAM-WiFi-Basic/blob/main/ESP32CAM-WiFi-Basic/ESP32CAM-WiFi-Basic.ino
+
+1. Cargar el programa ESP32CAM MQTT Basic
+
+https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
+	
+	-Colocar nombre de red y contraseña
+	-Instalar biblioteca PubSubClient
+	 Sketch>Include Library>Library Manager
+	-Actualizar IP del Broker (Local)
+	 La red debe estar en modo puente
+	-Modificar el tema codigoIoT/SIC/mqtt
+	
+2. Importar el flow
+
+	-Configurar el acceso al broker local
+	-Configurar el dashboard
