@@ -1,0 +1,54 @@
+Configurar mosquitto
+
+Para poder recibir conexiones externas, debe configurarse el archivo mosquitto.conf
+
+Instalaciones por apt-get (sudo apt-get install mosquitto)
+
+-Comprobar el funcionamiento del servicio
+sudo systemctl status mosquitto
+sudo service mosquitto status
+
+-Detener servicio mosquitto
+sudo systemctl stop mosquitto
+sudo service mosquitto stop
+
+-Dirigirse al directorio de instalacion de mosquitto /etc/mosquitto/conf.d/mosquitto.conf
+-Modificar el archivo mosquitto.conf
+
+-Arrancar servicio
+sudo systemctl start mosquitto
+sudo service mosquitto start
+
+Instalaciones por snap (sudo snap mosquitto)
+
+-Comprobar el funcionamiento del servicio
+sudo systemctl status snap.mosquitto.mosquitto.service
+
+-Detener servicio mosquitto
+sudo systemctl stop snap.mosquitto.mosquitto.service
+
+-Crear el archivo mosquitto.conf en /var/snap/mosquitto/common
+
+-Arrancar mosquitto
+sudo systemctl start snap.mosquitto.mosquitto.service
+Notas
+
+-Consultar los ultimos 1000 comandos realizados
+	history
+	
+listener 1883 192.168.0.30-40
+listener 1883 192.168.0.30-192.168.0.40
+
+listener 1883 0.0.0.0
+listener 1884 0.0.0.0
+listener 1885 0.0.0.0	
+
+23	allow_anonymous true
+24	allow_zero_length_clientid true
+232	listener 1883 0.0.0.0
+
+Nota
+aqui esta el archivo, solo que no esta en el orden que muestras, es decir hay que buscar las lineas
+/usr/share/doc/mosquitto/examples/mosquitto.conf
+lineas 40 215 y 512
+
