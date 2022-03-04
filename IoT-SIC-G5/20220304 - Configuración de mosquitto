@@ -52,3 +52,20 @@ aqui esta el archivo, solo que no esta en el orden que muestras, es decir hay qu
 /usr/share/doc/mosquitto/examples/mosquitto.conf
 lineas 40 215 y 512
 
+A quienes les funcione sudo systemctl status snap.mosquitto.mosquitto.service
+seguiran los pasos para snap
+Crear el archivo mosquitto.conf en /var/snap/mosquitto/common
+sudo systemctl restart snap.mosquitto.mosquitto.service
+
+A quienes les funcione, cuaquiera de los siguientes, seguiran los pasos para APT
+
+sudo systemctl status mosquitto
+sudo service mosquitto status
+Obtener el archivo mosquitto.conf en /usr/share/doc/mosquitto/examples/
+Crear el archivo mosquitto.conf en /etc/mosquitto/conf.d/
+sudo systemctl restart mosquitto
+sudo service restart status
+
+Correr el flow
+Arrancar el ESP32CAM
+
