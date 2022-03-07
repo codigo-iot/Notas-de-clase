@@ -1,0 +1,50 @@
+Prueba de los sensores Max30100 y MLX90614
+
+1. Clonar el repositorio correspondiente
+
+-MLX90614 https://github.com/codigo-iot/MLX-90614-TallerIoT
+
+-Agregar biblioteca Adafruit MLX90614 Library
+
+-Cargar el programa en la ruta 
+MLX-90614-TallerIoT/ESP32CAM/MLX90614-ESP32CAM-MQTT-I2C/MLX90614-ESP32CAM-MQTT-I2C.ino
+
+-Max30100 https://github.com/codigo-iot/Max30100-MQTT-ESP32CAM
+
+-Agregar biblioteca SparkFun MAX3010x Pulse and Proximity Sensor Library
+
+-Cargar el programa en la ruta Max30100-MQTT-ESP32CAM/ESP32CAM/ESP32CAM-MAX30100/ESP32CAM-MAX30100.ino 
+
+-Modificar nombre de red, contraseña, ip del broker local o publico y tema en le que se va a publicar
+
+2. Realizar el circuito correspondiente
+	-La tabla de conexiones viene descrita en el encabezado de cada programa.
+	
+3. Abrir el monitor serial. Deberán verse las lecturas del sensor
+
+4. El flow es opcional
+Para quienes tienen dañado o faltante el ESP32CAM o el FTDI, el procedimiento se realizará con Raspberry Pi
+
+1. Activar I2C
+	-sudo raspi-config
+	-3 Interface options
+	-5 Activar I2C
+	-Reiniciar
+
+2. Comprobar el funcionamiento de Python
+	-python --version
+	
+3. Instalar bibliotecas
+	-pip install pyMLX90614
+	https://pypi.org/project/PyMLX90614/
+	
+4. Clonar repositorio:
+https://github.com/Taher1322/Raspberry_Pi_YT_Tutorial/blob/main/I2C%20Interfacing%20-%20MLX90614/i2cread.py
+
+5. Entrar al directorio y ejecutar el programa
+	-python i2cread.py
+	
+Para el MAX30100, seguir el siguiente tutorial
+https://github.com/vrano714/max30102-tutorial-raspberrypi
+Nota:
+No estoy hablando, solo les escribo las instrucciones
