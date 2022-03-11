@@ -1,0 +1,22 @@
+Comprobacion del material de sensores.
+
+-Comprobar el funcionamiento de los sensores MLX90614 y MAX301000
+
+Para quienes tengan disponible el ESP32CAM y el FTDI funcionando, se proporcionaron las instrucciones el día lunes 7 de marzo de 2022
+
+Probrar primero un programa y después el otro
+
+Para quienes no tengan dispinibles el el ESP32CAM y el FTDI funcionando, se proporcionaron las instrucciones para realizar el procedimiento con Raspberry Pi
+
+https://github.com/hugoescalpelo/Notas-de-clase/blob/main/IoT-SIC-G6/20220307%20-%20Prueba%20del%20sensor%20mlx90614%20y%20max30100
+
+Actividades
+
+1. Probrar los sensores ya sea para ESP32CAM o Raspberry Pi segun las instrucciones de la clase pasada.
+
+-Quienes hayan logrado hacer funcionar ambso sensores, poner reaccion de Paloma Verde
+-Quienes no puedan atender la clase, reaccion de Tacita de Café
+
+-Quienes tengan dudas de esta y las clases anteriores, levantar la mano
+
+Proximo Tema: Proyecto Capstone.
