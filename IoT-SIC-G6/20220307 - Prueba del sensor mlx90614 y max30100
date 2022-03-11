@@ -25,6 +25,9 @@ MLX-90614-TallerIoT/ESP32CAM/MLX90614-ESP32CAM-MQTT-I2C/MLX90614-ESP32CAM-MQTT-I
 4. El flow es opcional
 Para quienes tienen dañado o faltante el ESP32CAM o el FTDI, el procedimiento se realizará con Raspberry Pi
 
+0. Actualizar Raspberry Pi
+	-sudo apt-get update
+	-sudo apt-get upgrade
 1. Activar I2C
 	-sudo raspi-config
 	-3 Interface options
