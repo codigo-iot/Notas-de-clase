@@ -32,7 +32,7 @@ Para quienes vayan a realizar el procedimiento con la Raspberry Pi
 	-Finish
 	-Reiniciar sudo reboot
 
-3. Comprobar python y pip
+3. Comprobar python y pip. Verificar que esten instalados. Para ello, nos debe arrojar alguna version.
 	-python --version
 	-pip --version
 	
