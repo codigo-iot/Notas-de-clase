@@ -40,14 +40,18 @@ Para quienes vayan a realizar el procedimiento con la Raspberry Pi
 	-pip install pyMLX90614
 	https://pypi.org/project/PyMLX90614/
 	
-6. Correr el codigo de python
-	-Dirigirse a ese directorio
-	-sudo python i2cread.py
-
 5. Clonar repositorio:
 https://github.com/Taher1322/Raspberry_Pi_YT_Tutorial/blob/main/I2C%20Interfacing%20-%20MLX90614/i2cread.py
+	
+6. Conexion del circuito
 
-6. Correr el codigo de python
+Sensor MLX90614		T-Clobber (Adaptador RPi)
+5V----------------------5VO
+GND---------------------GND
+SDA---------------------SDA1
+SCL---------------------SCL1
+
+7. Correr el codigo de python
 	-Dirigirse a ese directorio
 	-sudo python i2cread.py
 	

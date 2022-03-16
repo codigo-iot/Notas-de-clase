@@ -1,0 +1,18 @@
+En esta clase continuaremos con las pruebas del sensor MAX30100 y el MLX90614
+
+Nota: Algunos modelos de max30100 requieren de resistencias de PullUp. Durante esta clase se mostrará el procedimiento.
+
+-Poner reaccion de Paloma verde quienes ya hayan logrado hacer funcionar ambos sensores
+
+-Poner reaccion de tacita de café quienes no puedan atender la clase el día de hoy
+
+-Poner reaccion de mano arriba quienes tengan dudas o no les funcione alguno de los sensores.
+
+Solo conectar un sensor a la vez. Probrar primero un sensor, después el otro.
+
+Quienes no tengan disponible el FTDI o el ESP32CAM, realizar el procedimiento con la Rasbperry Pi. Las instrucciones se encuentran en las notas de las clases anteriores.
+
+https://github.com/hugoescalpelo/Notas-de-clase
+
+El procedimiento de garantías sucedera 3 días después de que el 80% de los alumnos del grupo 5 y 6 hayan realizado el procedimiento de revision y lo hayan indicado con reacciones de palomita verde
+
