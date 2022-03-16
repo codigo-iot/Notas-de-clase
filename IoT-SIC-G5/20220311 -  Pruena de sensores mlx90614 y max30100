@@ -36,9 +36,8 @@ Para quienes vayan a realizar el procedimiento con la Raspberry Pi
 	-python --version
 	-pip --version
 	
-4. Comprobar el funcionamiento del sensor mlx90614
+4. Instalar la biblioteca del sensor mlx90614. La documentación de dicha biblioteca se encuentra en el enlace https://pypi.org/project/PyMLX90614/ Para instalar la biblioteca se requiere unicamente el siguiente comando
 	-pip install pyMLX90614
-	https://pypi.org/project/PyMLX90614/
 	
 5. Clonar repositorio:
 https://github.com/Taher1322/Raspberry_Pi_YT_Tutorial/blob/main/I2C%20Interfacing%20-%20MLX90614/i2cread.py
