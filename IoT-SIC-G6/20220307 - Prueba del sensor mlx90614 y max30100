@@ -23,28 +23,47 @@ MLX-90614-TallerIoT/ESP32CAM/MLX90614-ESP32CAM-MQTT-I2C/MLX90614-ESP32CAM-MQTT-I
 3. Abrir el monitor serial. Deberán verse las lecturas del sensor
 
 4. El flow es opcional
+
 Para quienes tienen dañado o faltante el ESP32CAM o el FTDI, el procedimiento se realizará con Raspberry Pi
 
-0. Actualizar Raspberry Pi
-	-sudo apt-get update
-	-sudo apt-get upgrade
-1. Activar I2C
+1. Actualizar Raspberry Pi
+	- sudo apt-get update
+	- sudo apt-get upgrade
+
+2. Activar el I2C
 	-sudo raspi-config
-	-3 Interface options
+	-3 Interfaces
 	-5 Activar I2C
-	-Reiniciar
+	-Finish
+	-Reiniciar sudo reboot
 
-2. Comprobar el funcionamiento de Python
+3. Comprobar python y pip. Verificar que esten instalados. Para ello, nos debe arrojar alguna version.
 	-python --version
+	-pip --version
 	
-3. Instalar bibliotecas
+4. Instalar la biblioteca del sensor mlx90614. La documentación de dicha biblioteca se encuentra en el enlace https://pypi.org/project/PyMLX90614/ Para instalar la biblioteca se requiere unicamente el siguiente comando
 	-pip install pyMLX90614
-	https://pypi.org/project/PyMLX90614/
 	
-4. Clonar repositorio:
-https://github.com/Taher1322/Raspberry_Pi_YT_Tutorial/blob/main/I2C%20Interfacing%20-%20MLX90614/i2cread.py
+5. Conexion del circuito
 
-5. Entrar al directorio y ejecutar el programa
+Sensor MLX90614		T-Clobber (Adaptador RPi)
+5V----------------------5VO
+GND---------------------GND
+SDA---------------------SDA1
+SCL---------------------SCL1
+
+6. Crear un archivo llamado i2cread.py que contega el siguiente código
+
+from smbus2 import SMBus
+from mlx90614 import MLX90614
+
+bus = SMBus(1)
+sensor = MLX90614(bus, address=0x5A)
+print sensor.get_amb_temp()
+print sensor.get_obj_temp()
+bus.close()
+
+7. Correr el codigo de python
 	-python i2cread.py
 	
 Para el MAX30100, seguir el siguiente tutorial
