@@ -9,6 +9,7 @@ Continuacion del programa ESP32CAM MQTT Basic
 	-Abrir puertos de entrada y salida
 		En maquina virtual
 		sudo ufw allow 1883
+		sudo enable
 		
 		En sistema operativo anfitrion
 		-Windows Firewall
