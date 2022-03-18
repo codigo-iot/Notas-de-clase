@@ -61,8 +61,26 @@ bus.close()
 7. Correr el codigo de python
 	-python i2cread.py
 	
-8. Para el MAX30100, seguir el siguiente tutorial
-https://github.com/vrano714/max30102-tutorial-raspberrypi
+8. Para el MAX30100:
+
+-Clonar el siguiente repositorio https://github.com/vrano714/max30102-tutorial-raspberrypi
+
+-Crear un archivo llamado testmax30100.py
+
+-Cargarle el siguiente código:
+
+import max30102
+import hrcalc
+
+m = max30102.MAX30102()
+
+# 100 samples are read and used for HR/SpO2 calculation in a single loop
+while True:
+    red, ir = m.read_sequential()
+    print(hrcalc.calc_hr_and_spo2(ir, red))
+    
+-Ejecutar el programa creado con el siguiente comando
+	-python testmax30100.py
 
 Nota: opcional, realizar el procedimiento de raspberry pi con Java
 
