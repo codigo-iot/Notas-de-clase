@@ -4,12 +4,13 @@ Continuacion del programa ESP32CAM MQTT Basic
 
 2. Broker funcionando
 	-Comprobrar que este arrancado
-		netstar -an
+		netstat -an
 		Esperamos ver localhost 1883
 	-Abrir puertos de entrada y salida
 		En maquina virtual
 		sudo ufw allow 1883
-		sudo enable
+		sudo ufw enable
+		Reiniciar
 		
 		En sistema operativo anfitrion
 		-Windows Firewall
