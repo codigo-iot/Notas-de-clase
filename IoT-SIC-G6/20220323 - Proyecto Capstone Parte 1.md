@@ -38,3 +38,8 @@ Actividades
 -Entregar el enlace del repositorio del representante de equipo
 -El repositorio deberá contener el documento llamado plan de accion, actualizado
 
+Libre Office
+Kingsoft Office
+Only Office
+WPS office
+
