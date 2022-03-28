@@ -1,0 +1,44 @@
+Recapitular: Quedan pendientes los registros de los equipos capstone. Favor de enviar por el chat Nombres de integrantes, Nombre de proyecto y enlace a repositorio durante la clase.
+
+Clase de Hoy:Configuración del entorno de desarrollo para C
+
+Lecciones necesarias:
+-Visual Studio Code en Ubuntu. Vista en unidad 2.
+https://edu.codigoiot.com/course/view.php?id=858
+
+-GitHub. Visto en unidad 2
+https://edu.codigoiot.com/course/view.php?id=813
+
+-Configura Visual Studio Code para trabajar con C C++ en Ubuntu 20.04
+https://edu.codigoiot.com/course/view.php?id=854
+
+Contexto.
+
+-Esta es la parte donde comenzamos con programación
+-A lo largo de las sigientes semanas revisaremos los fundamentos de programacion
+-El codigo estará orientado a su aplicación en el marco de este curso
+-Incluye ejercicios de programacion
+-Incluye manejo de sensores en la RPi
+-Incluye todo lo relacionado con el ESP32CAM (Arduino)
+
+Profresores que quieran aportar o detallar algun tema, se les invita a participar.
+
+Proxima clase: Introducción a la programación.
+
+Clase de hoy. Actividades
+
+
+-Configurar Visual Studio Code para trabajar con C
+	Requisitos previos
+	-Tener instalado Visual Studio Code
+	-Tener instalado Git
+	
+1. Abrir Visual Studio Code para comprobar que está instalado
+2. Abrir GitHubDesktop o ejecutar git --version
+3. Comprobar que esté instalado gcc con el comado gcc --version
+4. Instalar el plugin de "C/C++" en VSC desde el gestor de extensiones
+
+	
+Notas:
+
+-Visual Studio Code también tiene una versión Web	
