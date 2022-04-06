@@ -33,3 +33,13 @@ Salida
 	Hello World
 	
 La mayoria de los conocimientos en el diplomado son símbolico
+
+Estructura de una instrucción:
+
+int i = 0;
+
+CONSTANTE_VALOR		Upper case
+variableValor		Cammel case
+indice_valor		Snake case
+
+
