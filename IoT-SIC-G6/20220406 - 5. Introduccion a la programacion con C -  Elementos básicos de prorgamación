@@ -7,3 +7,37 @@ Preambulo: La semana pasada configuramos Visual Studio Code para trabajar con C
 
 Clase pasada : 1. Introducción a la programación 
 https://edu.codigoiot.com/mod/lesson/view.php?id=1788
+
+Notas de clase
+
+Podemos enteder un programa o una funcion como si fuera una ecuación
+
+printf ("HelloWord\n");
+
+Entrada de información: "Hello World\n"
+	-Hello World
+	-\n
+
+Funcion (lo que hacen las instrucciones) (Caja negra):
+	-Mostrar en pantalla un mensaje
+
+Salida de información:
+	-Hello World
+
+Un programa en C tiene como proposito ejecutar la funcion main
+
+Sintaxis: Reglas para escribir cada instruccion
+
+int dato = 5;
+int Dato = 5;
+
+Arduino Reference: https://www.arduino.cc/reference/en/
+
+Addressable
+
+Nombrado de variables/constantes
+
+CONSTANTE_DATO		Upper Case
+variablesDato		Cammel case
+indice_dato		Sneake Case
+
