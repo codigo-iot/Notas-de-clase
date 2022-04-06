@@ -1,0 +1,35 @@
+Programación en C
+
+Introduccion a la programación
+https://edu.codigoiot.com/course/view.php?id=834
+
+Preambulo: La semana pasada configuramos Visual Studio Code para trabajar con C
+
+Clase pasada : 1. Introducción a la programación 
+https://edu.codigoiot.com/mod/lesson/view.php?id=1788
+
+Notas: 
+
+C es un lenguaje Compilado
+Los lenguajes compilados tienden a ser rapidos|
+
+El software esta pensado para el hardware y vice versa
+Integración vertica
+
+Podemos ver la programacion, las instrucciones, las funciones y otras herramientas como funciones matemáticas
+
+Entrada -> Caja negra -> salida
+
+printf ("Hello World\n");
+
+Entrada "Hello World\n"
+	-Hello World
+	-\n
+	
+Caja negra (funcion): printf ();
+	-Poner algo en pantalla con formato
+	
+Salida
+	Hello World
+	
+La mayoria de los conocimientos en el diplomado son símbolico
