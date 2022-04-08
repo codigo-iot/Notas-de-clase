@@ -1,0 +1,44 @@
+Preambulo: Introduccion a la programacion con C
+
+Introduccion a la programación
+https://edu.codigoiot.com/course/view.php?id=834
+
+Tema de hoy: 4. Operadores
+https://edu.codigoiot.com/mod/lesson/view.php?id=1792
+
+Se realizarán algunos ejercicios básicos de programacion en el microcontrolador.
+
+Nota: el ESP32 no requiere conexion a Internet para funcionar como micro controlador normal
+
+Buena practica
+
+Empezar por crear un repositorio para cada proyecto / ejemplo
+
+-Dirigirse a GitHub.com
+-Iniciar sesion
+-Hacer clic en el boton "Crear repositorio" y despues en "Nuevo repositorio"
+-Poner un nombre al repositorio
+-Poner una descripción
+-Configurar como publico
+-Actiar la casilla Agregar un archivo README
+-Hacer clic en Crear Repositorio
+
+Esto creara el repositorio únicamente en github.com
+
+Clonar el repositorio en la maquina virtual para tenerlo local. Esto permitira tener el directorio supervisado, es decir, podre hacer commit, push y pull, entre otros
+
+-Terminal con git
+-Github Desktop
+-SourceControl en VSC
+-Plugin de github en VSC
+
+Para clonar un repositorio:
+
+-Dirigirse al sitio del repositorio
+-Obtengo el enlace del repositorio
+-Abrir Github Desktop
+-Hacer clic en el boton "Repositorios"
+-Hacer clic en agregar y despues en clonar repositorio
+-Configurar el directorio (dejar predeterminadas)
+-Hacer clic en clonar
+
