@@ -42,3 +42,9 @@ Para clonar un repositorio:
 -Configurar el directorio (dejar predeterminadas)
 -Hacer clic en clonar
 
+A continuación, los archivos deberán ser guardados en la carpeta del repositorio. Para sincronizar los cambios:
+
+-Seleccionar repositorio
+-Hacer Commit
+-Hacer Push
+
