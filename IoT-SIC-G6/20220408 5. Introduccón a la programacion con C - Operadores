@@ -1,0 +1,20 @@
+Preambulo: Introduccion a la programacion con C
+
+Introduccion a la programación
+https://edu.codigoiot.com/course/view.php?id=834
+
+Tema de hoy: 4. Operadores
+https://edu.codigoiot.com/mod/lesson/view.php?id=1792
+
+En esta clase haremos un ejercicio para comprobar el funcionamiento del operador módulo en el ESP32CAM.
+
+Crear un repositorio
+
+-Dirigirse a github.com
+-Iniciar sesion
+-Hacer clic en el boton crear nuevo repositorio
+-Dar nombre descriptivo al repositorio
+-Agregar descripción
+-Configurar como publico
+-Seleccionar la casilla Agregar archivo Readme
+-Hacer clic en el boton Crear repositorio
