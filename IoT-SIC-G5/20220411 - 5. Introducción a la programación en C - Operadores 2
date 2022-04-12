@@ -1,0 +1,30 @@
+Preambulo: Introduccion a la programacion con C
+
+Introduccion a la programación
+https://edu.codigoiot.com/course/view.php?id=834
+
+Tema de hoy: 4. Operadores
+https://edu.codigoiot.com/mod/lesson/view.php?id=1792
+
+Ejejmplo del operador modulo
+var = 4;
+
+res = var % 3;
+
+res = 1;
+
+Contador de anillo
+0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3
+
+Instrucciones
+-Dirigirse a GitHub.com
+-Buscar a Codigo-iot
+-encontrar el repositorio llamado  Estructura_Basica
+-Copiar en el código la estructura básica
+-Modificar el encabezado
+
+
+
+dato = dato + 1;
+
+dat++;

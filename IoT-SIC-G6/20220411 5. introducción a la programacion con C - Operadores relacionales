@@ -1,0 +1,37 @@
+Preambulo: Introduccion a la programacion con C
+
+Introduccion a la programación
+https://edu.codigoiot.com/course/view.php?id=834
+
+AND TACOS
+A	B	C
+Hambre 	Dinero 	Tacos
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+
+Hambre 	Dinero	Buenos	Tacos
+0	0	0	0
+0	0	1	0
+0	1	0	0
+0	1	1	0
+1	0	0	0
+1	0	1	0
+1	1	0	0
+1	1	1	1
+
+AND &&
+
+OR ||
+
+A	B	C
+Hambre 	Dinero 	Tacos
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+
+>, >=, <, >=, !=, ==
+
+
