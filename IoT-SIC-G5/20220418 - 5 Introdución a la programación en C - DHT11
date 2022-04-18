@@ -1,0 +1,25 @@
+Introduccion a la programación
+https://edu.codigoiot.com/course/view.php?id=834
+
+Recapitular Realizar ejemplo del sensor DHT11
+
+-Instalar biblioteca DHT11 de Adafruit
+-Abrir el ejemplo Test
+-Modificar el pin de conexion del sensor al pin 14
+-Seleccionar el sesonr DHTT
+
+DHT11		ESP32CAM
+S --------------14
++ --------------5V / Vin
+- --------------GND
+
+Clase de hoy
+
+Lectura de botones encendido de leds
+
+Push button Pin 4
+LED Pin 2
+
+Notas:
+
+Para usar digitalWrite, es pin al que se le aplica un voltaje debe estar configurado como output
