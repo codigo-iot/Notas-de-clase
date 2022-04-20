@@ -1,0 +1,34 @@
+Características
+
+Sensor de temperatura y humedad
+Boton1: Manual. Activa la refrigeración al ser presionado
+Boton2: Alta demanda
+Boton3: Sobre carga de funcionamiento
+
+Led1: Refrigeracion manual
+Led2: Refrigeración automática
+
+Que se encienda la refrigeracion manual cada que se presione el boton de manual
+
+La refrigeracion manual tiene prioridad a la refrigeracion automática.
+
+Si la termperatura es alta (mayor a 28, por ejemplo), se activa la refrigeracion automática
+
+Si tengo alta demanda o sobre carga, se activa la refrigeración automática
+
+Si tengo alta demanda o sobrecarga de funcionamiento y ademas temperatura alta, se activan ambas refrigeraciones
+
+Botones 14, 15, 13
+Leds 4, 2
+DHT11 12
+
+Material extra
+
+From Antonio del Angel Moreno Carbajal to Everyone 05:30 PM
+https://drive.google.com/file/d/1GH4IxLPuhgaUQU68CMiYtm6ULG3bXxAY/view?usp=drivesdk
+
+||  &&
+
+> < != == >= <=
+
+https://github.com/codigo-iot/Estructura_Basica/blob/main/Estructura_Basica/Estructura_Basica.ino
