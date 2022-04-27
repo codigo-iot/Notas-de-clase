@@ -1,0 +1,46 @@
+Operadores de bits
+
+Ejemplo de puertos en un micro controlador
+
+0--1
+1--1
+2--1
+3--1
+
+4--1
+5--1
+6--1
+7--1
+
+0x07
+0000 0111
+
+0xff
+1111 1111
+
+a = 0000 0011
+a<<1;
+0000 0110
+
+delay (1000);
+digitalWrite (LED1, HIGH);
+digitalWrite (LED2, HIGH);
+delay (1000);
+digitalWrite (LED1, LOW);
+digitalWrite (LED2, HIGH);
+digitalWrite (LED3, HIGH);
+
+int a[32] = dht.readTemperature();
+
+0000 0000 0000 0000 0000 0000 0000 1100
+
+Material extra
+
+https://weblab.deusto.es/website/boole_deusto.html
+
+http://www.cburch.com/logisim/
+
+http://tma.main.jp/logic/index_en.html
+
+
+

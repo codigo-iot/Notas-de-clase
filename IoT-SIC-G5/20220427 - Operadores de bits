@@ -1,0 +1,24 @@
+Operadores de bits
+
+Ejemplo de puerto completo
+
+0--1
+1--1
+2--0
+3--0
+4--0
+5--0
+6--0
+7--0
+
+0x01
+0xff -- 1111 1111
+0x03 -- 0000 0011
+
+void loop {
+
+	lecturaSensor();
+	lecturaBotones();
+	logica();
+	
+}
