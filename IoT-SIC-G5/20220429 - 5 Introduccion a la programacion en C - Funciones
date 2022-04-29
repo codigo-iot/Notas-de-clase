@@ -1,0 +1,11 @@
+Programacion en C: Funciones
+
+Ejercicio: expresar el programa de refrigeracion de servidores en terminos de funciones
+
+void loop () {
+	
+	lecturaDHT ();
+	lecturaBotones ();
+	logica ();
+	
+}
