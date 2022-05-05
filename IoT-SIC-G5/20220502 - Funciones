@@ -1,0 +1,35 @@
+Secuencias no bloqueantes
+
+Hacer parpadear leds
+
+a=1 segundo
+b=2 segundos
+c=3.574 segundos
+
+
+a+,b+, c+
+delay (1seg)
+a-
+delay (1seg)
+a+,b-
+delay (1seg)
+a-
+delay (1seg)
+a+,b+, c-
+delay (1seg)
+
+Estructuras de control
+
+if = 10n
+100n
+
+switch = 70n
+75n
+
+
+while (condicion) {
+
+
+}
+
+for (

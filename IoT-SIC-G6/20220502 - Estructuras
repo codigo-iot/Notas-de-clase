@@ -1,0 +1,18 @@
+Estructuras
+
+Definir estructuras
+
+struct temperatura{ 
+	int temp, hum;
+}
+
+int main(){
+	const int dato1 = 20;
+	struct temperatura emp2 = {30, 45};
+	int a = emp2.hum;
+	
+superCollider
+Fluxus
+Hydra
+
+OSC

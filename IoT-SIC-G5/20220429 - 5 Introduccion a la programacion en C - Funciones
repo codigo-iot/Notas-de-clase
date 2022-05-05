@@ -9,3 +9,12 @@ void loop () {
 	logica ();
 	
 }
+
+Ejercicio:
+
+Expresar en terminos no bloqueantes
+
+-Que la lectura de los botones sea de manera continua
+-Colocar la lectura del DHT11 en una estructura de control que nos permita leerlo unicamente cada 2 segundos
+
+https://github.com/codigo-iot/ESP32CAM_MQTT-Basic/blob/main/ESP32CAM_MQTT-Basic/ESP32CAM_MQTT-Basic.ino
