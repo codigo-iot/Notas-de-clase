@@ -1,0 +1,10 @@
+Introduccion a Java
+
+Comprobar la instalacion del JDK y el JRE (Version OpenJDK 11)
+https://edu.codigoiot.com/mod/lesson/view.php?id=1840&pageid=2396
+
+Configurar Visual Studio Code
+	-Instalar plugins
+		-Extension Pack for Java
+		-Maven for Java
+https://edu.codigoiot.com/mod/lesson/view.php?id=1840&pageid=2370
