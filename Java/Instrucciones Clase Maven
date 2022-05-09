@@ -1,0 +1,55 @@
+1- Comprobar los requisitos del sistema
+	java -version
+	openjdk version "11.0.12" 2021-07-20
+	OpenJDK Runtime Environment Temurin-11.0.12+7 (build 11.0.12+7)
+	OpenJDK 64-Bit Server VM Temurin-11.0.12+7 (build 11.0.12+7, mixed mode)
+	
+	echo $JAVA_HOME
+	/usr/lib/jvm/jdk-11.0.12+7
+
+	echo $PATH
+	/usr/lib/jvm/jdk-11.0.12+7:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+2- Actualizar sistema
+	sudo apt update
+	sudo apt full-upgrade
+	
+3- Instalar Maven
+	sudo apt install maven
+4- Comprobar que se instalo correctamente
+
+	mvn -v
+	
+Apache Maven 3.8.2 (ea98e05a04480131370aa0c110b8c54cf726c06f)
+Maven home: /opt/apache-maven-3.8.2
+Java version: 11.0.12, vendor: Eclipse Foundation, runtime: /usr/lib/jvm/jdk-11.0.12+7
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.11.0-38-generic", arch: "amd64", family: "unix"
+
+	echo $PATH
+	/opt/apache-maven-3.8.2/bin:/usr/lib/jvm/jdk-11.0.12+7:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+	
+5- Descargar y descomprimir el arquetipo pi4j para maven mkdir https://github.com/Pi4J/pi4j-maven-archetype
+
+6- Entrar al directorio de descargas y abrir una nueva terminal
+	mkdir my-folder
+	
+7- Copiar el arquetipo descomprimido a la carpeta my-folder
+8- Entrar a la carpeta my-Folder y entrar a la carpeta del arquetipo
+9- Abrir una terminal en ese directorio e instalar el arquetipo
+	mvn install
+
+10- Crear repositorio nuevo en github.com
+11- Clonar repositorio recientemente creado con Github Desktop
+12- Crear carpeta del proyecto "ejemplo1-maven"
+
+13 - Abrir una terminal en dicha carpeta y crear un nuevo proyecto bajo el arquetipo pi4j
+	mvn archetype:generate -DarchetypeCatalog=local
+	
+	    Choose archetype: select the raspimaven-archetype from the list proposed
+    Define value for property ‘groupId’: choose the Maven groupId for your project. (If don’t know what is a groupId, don’t worry, just type “com.example” for now)
+    Define value for property ‘artifactId’: choose a name for the program executable your project will produce
+    Define value for property ‘version’: 1.0-SNAPSHOT: type Enter to accept the default value shown, or type the initial program version, something like 1.0.0
+    Define value for property ‘package’: com.example: type Enter to accept the default value shown
+	
+	

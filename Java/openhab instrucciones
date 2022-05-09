@@ -1,0 +1,9 @@
+Instalación de Open Hab y Grafana
+
+Requisitos
+-Programa en ESP32CAM que lea el sensor DHT11 y envie sus datos por MQTT.
+-Base de datos en MySQL para almacenar el registro del sensor.
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1942&pageid=2456
+
+https://ubuntu.com/blog/ubuntu-21-10-has-landed

@@ -1,0 +1,36 @@
+Arreglando instalación de Java
+
+Comprobar instalación de Java
+	java -version
+	
+En caso de existir instalaciones, comprobar contenido en directorio
+	ls /usr/lib/jvm	
+Este directorio es el que indica las instalaciones de java
+	
+Comprobar que sólo haya las instalaciones necesarias. 
+
+-Deberán borrarse manualmente los documentos que se hayan copiado manualmente
+-Las instalaciones por paquetes deberan desinstalarse por terminal.
+
+Buscar instalaciones
+	sudo dpkg --list | grep -j jdk	
+Se listaran todas las instancias, para desinstalar una debe indicarse el nombre completo, por ejemplo
+	sudo apt-get remove --purge openjdk-11-jre-headless:amd64
+	sudo apt-get remove --purge openjdk-16-jre-headless:amd64
+	sudo apt autoremove
+	sudo apt-get clean
+	
+Para poder usar un JDK en VisualStudio Code, debe incluir compilador (javac)
+
+Para comprobar que los paquetes en /usr/lib/jvm sean correctamente detectados, comprobar alternativas
+	sudo update-alternatives --config java
+	sudo update-alternatives --config javac
+	
+En caso de no presentarse ninguna opción en terminal, deberán ser instaladas manualmente tanto la opción de java como la de javac
+	sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.2/bin/java 1
+	sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-16.0.2/bin/java 2
+
+En Visual Studio Code, con el Java Extension Pack, entrar al comando Java: Configure Java Runtime con la combinación Ctrl+Shift+P
+
+Ahora serán disponibles en Visual Studio Code los distintos JDK instalados (Unicamente si incluyen javac). Seleccionar uno en Configure Java Runtime en la pestaña de Java Tooling Runtime
+
