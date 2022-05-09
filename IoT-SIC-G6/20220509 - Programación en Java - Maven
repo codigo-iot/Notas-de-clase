@@ -8,3 +8,28 @@ Configurar Visual Studio Code
 		-Extension Pack for Java
 		-Maven for Java
 https://edu.codigoiot.com/mod/lesson/view.php?id=1840&pageid=2370
+
+Para Instalar JDK y JRE en Raspberry Pi, se usan los mismos comandos que en la maquina virtual
+	
+	sudo apt update
+	sudo apt install default-jre
+	sudo apt install default-jdk
+	
+El objetivo es paser el codigo a la RPI con Git
+	git --version
+	
+Clonar nuestro repositorio de Java-HelloWorld
+
+Ejecutar el ejemplo
+	java App.java
+
+Notas
+
+Para que funcione Java y Javac necesitamos tener definidas las siguientes variables de entorno
+
+$JAVA_HOME
+$JAVA_JDK
+
+Adicionalmente agregar dichas variables al PATH
+
+echo $JAVA_HOME
