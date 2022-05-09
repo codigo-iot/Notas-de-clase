@@ -1,0 +1,1001 @@
+529  ./configure
+  530  sudo ./configure
+  531  make
+  532  sudo make install
+  533  tar xvf OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz
+  534  cd ..
+  535  tar xvf OpenJDK11U-jdk_x64_linux_hotspot_11.0.12_7.tar.gz
+  536  java -version
+  537  sudo apt install openjdk-16-jre-headless  # version 16.0.1+9-1~20.04
+  538  java -version
+  539  echo $JAVA_HOME
+  540  echo $PATH
+  541  java -version
+  542  update-alternatives
+  543  update-alternatives --condig java
+  544  update-alternatives --config java
+  545  sudo update-alternatives --config java
+  546  export 
+  547  export JAVA_HOME=/home/hugo/Downloads/jdk-11.0.12+7
+  548  java -version
+  549  sudo update-alternatives --config java
+  550  java -version
+  551  sudo apt install default-jre
+  552  sudo update-alternatives --config java
+  553  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-11.0.12+7/bin/java 4
+  554  sudo update-alternatives --config java
+  555  sudo update-alternatives --config javac
+  556  sudo update-alternatives --config java
+  557  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-11.0.12+7/bin/java 1612
+  558  sudo update-alternatives --config java
+  559  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-11-openjdk-amd64/bin/java 1613
+  560  sudo update-alternatives --config java
+  561  sudo update-alternatives --config javac
+  562  sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-11-openjdk-amd64/bin/javac 1614
+  563  echo $JAVA_HOME
+  564  sudo nautilus
+  565  java -version
+  566  sudo update-alternatives --config java
+  567  java -version
+  568  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.2+7/bin/java 1614
+  569  sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-16.0.2+7/bin/javac 1614
+  570  sudo update-alternatives --config java
+  571  java -v
+  572  java -version
+  573  echo $JAVA_HOME
+  574  echo $JDK_HOME
+  575  java -version
+  576  history
+  577  mvn -v
+  578  sudo apt install maven
+  579  nslookup broker.hivemq.com
+  580  java helloworld.java
+  581  java -version
+  582  sudo apt install maven
+  583  mvn -v
+  584  sudo apt install maven
+  585  mvn -b
+  586  mvn -v
+  587  echp $JAVA_HOME
+  588  echo $JAVA_HOME
+  589  echo $PATH
+  590  JAVA
+  591  export PATH=/usr/bin/java:$PATH
+  592  java
+  593  echo $JAVA_HOME
+  594  java 
+  595  java -version
+  596  sudo nautilus
+  597  export PATH=/opt/apache-maven-3.8.2/bin:$PATH
+  598  mvn -v
+  599  mvn install
+  600  curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+  601  sudo apt-get install -y nodejs
+  602  apt-get install -y build-essential
+  603  sudo apt-get install -y build-essential
+  604  npm init
+  605  npm install express
+  606  clear
+  607  nslookup broker.hivemq.com
+  608  ipconfig
+  609  ifcongi
+  610  ifconfig
+  611  mvn install
+  612  java
+  613  java -version
+  614  whereis java
+  615  export JAVA_HOME=/usr/bin/java
+  616  mvn install
+  617  export JAVA_HOME=/usr/lib/jvm/jdk-16.0.2+7
+  618  mvn install
+  619  export JAVA_HOME=/usr/lib/jvm/jdk-16.0.2+7/bin
+  620  mvn install
+  621  export JAVA_HOME=/usr/lib/jvm/jdk-16.0.2+7
+  622  mvn install
+  623  clear
+  624  node main.js
+  625  node main2.js
+  626  node main.js
+  627  cd project1
+  628  node main2.js
+  629  node buffer3.js
+  630  cd ..
+  631  cd project2
+  632  npm init
+  633  npm i express express-handlebars express-session mysql express-mysql-session morgan bcryptjs passport passport-local timeago.js connect-flash express-validator
+  634  node procesos.js
+  635  cd..
+  636  cd ..
+  637  cd proyecto3
+  638  npm init
+  639  node archivos.js
+  640  node sincrono.js
+  641  npm i express express-handlebars express-session mysql express-mysql-session morgan bcryptjs passport passport-local timeago.js connect-flash express-validator
+  642  java -version
+  643  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.2+7/bin/java 1614
+  644  sudo update-alternatives --config java
+  645  java -version
+  646  maven -version
+  647  mvn -version
+  648  echo $JAVA_HOME
+  649  ECHO $PATH
+  650  echo $PATH
+  651  sudo nano .bashrc
+  652  cd /usr/lib/java
+  653  cd /usr/lib/
+  654  java .version
+  655  java -version
+  656  sudo nano .bashrc
+  657  cd ..
+  658  cd ~
+  659  ls
+  660  sudo nano .bashrc
+  661  echo JAVA_HOME
+  662  echo $JAVA_HOME
+  663  cd helloworld
+  664  java helloworld.java
+  665  echo $JAVA_HOME
+  666  java -version
+  667  sudo update-alternatives --config java
+  668  echo $JAVA_HOME
+  669  java -version
+  670  sudo nano .bashrc
+  671  echo $PATH
+  672  sudo nano .bashrc
+  673  echo $PATH
+  674  mvn -v
+  675  java -version
+  676  sudo nano .bashrc
+  677  java -version
+  678  mvn -v
+  679  echo $JAVA_HOME
+  680  mvn install
+  681  mvn install
+  682  mvn archetype:generate -DarchetypeCatalog=local
+  683  java -version
+  684  java helloworld.java
+  685  history
+  686  java ~/Home/Documents/Git/programacionJava/helloworld/helloworld.java
+  687  cd helloworld
+  688  ls
+  689  java helloworld.java
+  690  mvn install
+  691  echo $PATH
+  692  sudo nautilus
+  693  echo $PATH
+  694  sudo nano .bashrc
+  695  nvn -v
+  696  mvn -v
+  697  sudo nano .bashrc
+  698  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-ejemplo1/ejemplo1/exmp1/pom.xml"
+  699  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-ejemplo1/ejemplo1/exmp1/pom.xml"
+  700  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-ejemplo1/ejemplo1/exmp1/pom.xml"
+  701  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  702  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  703  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  704  mvn test -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  705  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  706  mvn clean -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  707  mvn validate -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  708  mvn clean -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  709  mvn validate -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  710  mvn clean -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  711  mvn validate -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  712  mvn compile -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  713  mvn clean -f "/home/hugo/Documents/Git/programacionJava/Test/test-artifact/pom.xml"
+  714  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  715  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  716  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  717  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  718  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  719  mvn test -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  720  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  721  mvn verify -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  722  mvn install -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  723  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  724  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  725  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  726  mvn test -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  727  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  728  mvn clean -f "/home/hugo/Documents/Git/programacionJava/TestArtifact/test-artifact/pom.xml"
+  729  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  730  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  731  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  732  mvn clean -f "/home/hugo/Documents/Git/programacionJava/TestArtifact/test-artifact/pom.xml"
+  733  ls
+  734  mkdir mvn package -f "/home/hugo/Documents/Git/programacionJava/TestArtifact/test-artifact/pom.xml"
+  735  mvn package -f "/home/hugo/Documents/Git/programacionJava/TestArtifact/test-artifact/pom.xml"
+  736  ls
+  737  mkdir testNew
+  738  cd testNew
+  739  mvn archetype:generate -D
+  740  mvn clean -f "/home/hugo/Documents/Git/programacionJava/testNew/testNew/pom.xml"
+  741  cd ..
+  742  cd ~/Documents/Git/programacionJava/
+  743  ls
+  744  mkdir newMaven
+  745  cd newMaven
+  746  mvn archetype:generate -DarchetypeCatalog=local
+  747  mvn clean package
+  748  ls
+  749  cd newApp
+  750  mvn clean package
+  751  mvn install
+  752  clear
+  753  mvn archetype:generate -DarchetypeCatalog=local
+  754  java -version
+  755  java  -version
+  756  mvn -v
+  757  clear
+  758  ssh pi@192.168.15.22
+  759  mvn clean -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  760  clear
+  761  mvn clean -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  762  ls 
+  763  cd raspiMaven-G1
+  764  mvn clean package
+  765  ls
+  766  cd MainArtifactID
+  767  ls
+  768  mvn clean package
+  769  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  770  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  771  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  772  mvn test -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  773  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  774  mvn clean -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  775  mvn validate -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  776  mvn compile -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  777  mvn test -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  778  mvn package -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  779  clear
+  780  mvn clean -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  781  mvn validate -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  782  mvn compile -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  783  mvn test -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  784  mvn package -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  785  mvn verify -f "/home/hugo/Documents/Git/programacionJava/raspiMaven-G1/MainArtifactID/pom.xml"
+  786  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  787  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  788  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  789  mvn test -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  790  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  791  mvn clean package
+  792  netstat -an
+  793  node-red
+  794  ns lookup broker.hivemq.com
+  795  nslookup broker.hivemq.com
+  796  mvn clean -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  797  mvn validate -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  798  mvn compile -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  799  mvn test -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  800  mvn package -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  801  mvn verify -f "/home/hugo/Documents/Git/programacionJava/pi4j-example-minimal-main/pom.xml"
+  802  ssh pi@192.168.15.22
+  803  nslookup broker.hivemq.com
+  804  ifconfig
+  805  node-red
+  806  sudo apt-get install gnome-tweaks 
+  807  java -version
+  808  node-red
+  809  netstat -an
+  810  ifconfig
+  811  sudo uwf port 1883
+  812  sudo ufw -p 1883 allow
+  813  sudo ufw -port 1883 allow
+  814  sudo ufw allow 1883
+  815  ping localhost 1883
+  816  mosquitto
+  817  nslookup broker.hivemq.com
+  818  mosquitto_pub -h 3.122.36.163 -i hugo-client-1145 -m "150"
+  819  mosquitto_pub -h 3.122.36.163 -i hugo-client-1145 -m "150" -t codigoiot/dis/hv
+  820  mosquitto_pub -h 3.122.36.163 -i hugo-client-1145 -m "25" -t codigoiot/dis/hv
+  821  mosquitto_pub -h 3.122.36.163 -i hugo-client-1145 -m "error" -t codigoiot/dis/hv
+  822  mosquitto_pub -h 3.122.36.163 -i hugo-client-1145 -m "25" -t codigoiot/dis/hv
+  823  ifconfig
+  824  ls
+  825  cd Documents/Git
+  826  ls
+  827  mkdir
+  828  mkdir test
+  829  ls
+  830  cd test
+  831  git clone https://github.com/codigo-iot/Java-y-MySQL_Conexion_Base_De_Datos.git
+  832  ls
+  833  cd Java-y-MySQL_Conexion_Base_De_Datos
+  834  ls
+  835  git pull
+  836  sudo -i
+  837  sudo apt update
+  838  sudo apt install mysql-server
+  839  mysql --version
+  840  sudo mysql
+  841  neststat -an
+  842  netstat -an
+  843  mvn -v
+  844  sudo mysql
+  845  whereis mysql
+  846  sudo mysql
+  847  netstat -an
+  848  mvn clean -f "/home/hugo/Documents/Git/programacionJava/MySQL/java-mysql/pom.xml"
+  849  mvn validate -f "/home/hugo/Documents/Git/programacionJava/MySQL/java-mysql/pom.xml"
+  850  mvn compile -f "/home/hugo/Documents/Git/programacionJava/MySQL/java-mysql/pom.xml"
+  851  mvn test -f "/home/hugo/Documents/Git/programacionJava/MySQL/java-mysql/pom.xml"
+  852  mvn package -f "/home/hugo/Documents/Git/programacionJava/MySQL/java-mysql/pom.xml"
+  853  java -version
+  854  echo $PATH
+  855  echo $JAVA_HOME
+  856  Files
+  857  nautilus
+  858  sudo nautilus
+  859  sudo cp -R /home/hugo/Downloads/jdk8u302-SIC /usr/lib/jvm/jdk8u302-SIC
+  860  sudo mkdir /usr/lib/jvm3
+  861  sudo rm /usr/lib/jvm3
+  862  sudo rm -R /usr/lib/jvm3
+  863  sudo rm -R /usr/lib/jvm2
+  864  java --version
+  865  clear
+  866  java --version
+  867  sudo update-alternatives --config java
+  868  java --version
+  869  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk8u302-b08/bin/java 1615
+  870  sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk8u302-b08/bin/javac 1615
+  871  sudo update-alternatives --config java
+  872  java --version
+  873  sudo update-alternatives --install /usr/bin/java javac /usr/lib/jvm/jdk8u302-b08/bin/javac 1615
+  874  sudo update-alternatives --config java
+  875  java-version
+  876  java --version
+  877  history
+  878  sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk8u302-b08/bin/java 1615
+  879  sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk8u302-b08/bin/javac 1615
+  880  sudo update-alternatives --config java
+  881  java --version
+  882  echo $JAVA_HOME
+  883  sudo update-alternatives --config java
+  884  java --version
+  885  sudo update-alternatives --config java
+  886  node -version
+  887  node --version
+  888  mkdir hello
+  889  node app.js
+  890  cd hello
+  891  code .
+  892  nslookup broker.hivemq.com
+  893  ifconfig
+  894  netstat -an
+  895  mosquitto_sub -h localhost -i hugo-2684 -t esp32/data
+  896  mosquitto_sub -h 18.194.65.151 -i hugo-2684 -t yaelrmz/hc-s04/data
+  897  sudo ufw -p 1883 allow
+  898  sudo ufw allow 1883
+  899  neclear
+  900  clear
+  901  netstat-an
+  902  netstat- an
+  903  netstat- anclear
+  904  clear
+  905  netstat -an
+  906  mosquitto
+  907  ifconfig
+  908  node app.js
+  909  java --version
+  910  sudo update-alternatives --config java
+  911  clear
+  912  java --version
+  913  history
+  914  ssh pi@192.168.15.22
+  915  netstat -an
+  916  node-red
+  917  ifconfig
+  918  node app.js
+  919  node-red -v
+  920  npm
+  921  npm -version
+  922  echo $JAVA_HOME
+  923  sudo nano .bashrc
+  924  java -version
+  925  sudo apt install openjdk-11
+  926  sudo apt install java-11-openjdk-armhf
+  927  history
+  928  nautilus
+  929  echo $JAVA_HOME
+  930  sudo nano ~/.bashrc
+  931  java -version
+  932  echo $JAVA_HOME
+  933  echo $PATH
+  934  sudo apt update
+  935  apt list --upgradable
+  936  sudp apt full-upgrade
+  937  sudo apt full-upgrade
+  938  clear
+  939  mvn -v
+  940  echo $PATH
+  941  sudo apt install maven
+  942  echo $JAVA_HOME
+  943  mvn install
+  944  cd my-folder
+  945  mvn archetype:generate -DarchetypeCatalog=local
+  946  mvn install
+  947  mvn archetype:generate -DarchetypeCatalog=local
+  948  node-red
+  949  history
+  950  node-red
+  951  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  952  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  953  mvn package -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  954  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  955  mvn package -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  956  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  957  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  958  mvn package -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  959  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  960  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app-artifactID/pom.xml"
+  961  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  962  clear
+  963  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  964  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  965  mvn package -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  966  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  967  mvn test -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  968  mvn package -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  969  mvn verify -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  970  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  971  mvn validate -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  972  mvn compile -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  973  mvn test -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  974  mvn package -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  975  mvn verify -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  976  history
+  977  mvn archetype:generate -DarchetypeCatalog=local
+  978  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  979  mvn validate -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  980  mvn clean -f "/home/hugo/Documents/Git/java-g3/ejercicio1-maven/app/pom.xml"
+  981  mvn clean -f "/home/hugo/Documents/JavaG3/app/pom.xml"
+  982  mvn validate -f "/home/hugo/Documents/JavaG3/app/pom.xml"
+  983  mvn compile -f "/home/hugo/Documents/JavaG3/app/pom.xml"
+  984  mvn test -f "/home/hugo/Documents/JavaG3/app/pom.xml"
+  985  mvn package -f "/home/hugo/Documents/JavaG3/app/pom.xml"
+  986  mvn clean -f "/home/hugo/Documents/JavaG3/app/pom.xml"
+  987  mvn archetype:generate -DarchetypeCatalog=local
+  988  mvn clean package
+  989  mvn -v
+  990  echo $PATH
+  991  echo $JAVA_HOME
+  992  sudo update-alternatives --config java
+  993  sudo nano .bashrc
+  994  node-red
+  995  npm install mongodb
+  996  cd mongo
+  997  npm install mongodb
+  998  cd ..
+  999  mkdir module
+ 1000  cd module
+ 1001  npm init
+ 1002  node-red
+ 1003  mysql --version
+ 1004  sudo mysql
+ 1005  history
+ 1006  sudo nano ./bashrc
+ 1007  sudo nano .bashrc
+ 1008  ls
+ 1009  node index.js
+ 1010  node-re
+ 1011  node-red
+ 1012  node inde.js
+ 1013  node index.js
+ 1014  cliear
+ 1015  clear
+ 1016  npm init
+ 1017  npm install express
+ 1018  npm install express
+ 1019  node index.js
+ 1020  ls
+ 1021  cd HelloWorld
+ 1022  node main.js
+ 1023  cd ..
+ 1024  cd JSON
+ 1025  node main.js
+ 1026  node cambiar.js
+ 1027  node multi.js
+ 1028  node multi2.js
+ 1029  npm init
+ 1030  npm install -g npm
+ 1031  sudo npm install -g npm
+ 1032  npm addduser
+ 1033  npm adduser
+ 1034  npm publish
+ 1035  sudo npm publish
+ 1036  sudo npm adduser
+ 1037  sudo npm publish
+ 1038  npm adduser
+ 1039  npm publish
+ 1040  node index.js
+ 1041  npm init
+ 1042  npm install express
+ 1043  npm init
+ 1044  npm adduser
+ 1045  npm publish
+ 1046  npm init
+ 1047  npm install express
+ 1048  ls
+ 1049  cd express
+ 1050  ls
+ 1051  node index.js
+ 1052  cd ..
+ 1053  ls
+ 1054  cd peticionesyrespuestas
+ 1055  node main.js
+ 1056  node index.js
+ 1057  npm install express
+ 1058  node index.js
+ 1059  npm install express
+ 1060  node index.js
+ 1061  npm install fs
+ 1062  node index.js
+ 1063  node-red
+ 1064  node -version
+ 1065  node -v
+ 1066  clear
+ 1067  node -v
+ 1068  clear
+ 1069  java -version
+ 1070  echo $PATH
+ 1071  wget -qO - 'https://openhab.jfrog.io/artifactory/api/gpg/key/public' | sudo apt-key add -
+ 1072  sudo apt-get install apt-transport-https
+ 1073  echo 'deb https://openhab.jfrog.io/artifactory/openhab-linuxpkg stable main' | sudo tee /etc/apt/sources.list.d/openhab.list
+ 1074  sudo apt-get update
+ 1075  sudo apt-ger install openhab
+ 1076  sudo apt-get install openhab
+ 1077  sudo /bom/systemctl start openhab.service
+ 1078  sudo /bin/systemctl start openhab.service
+ 1079  clear
+ 1080  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/dht/temp -m 23
+ 1081  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 23
+ 1082  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 20
+ 1083  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 19
+ 1084  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 20
+ 1085  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 21
+ 1086  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 22
+ 1087  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 23
+ 1088  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 24
+ 1089  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 25
+ 1090  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 26
+ 1091  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 27
+ 1092  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 28
+ 1093  mosquitto_pub -h localhost -p 1883 -i hugo-3548 -t codigoIoT/ESP32/DHT/temp -m 26
+ 1094  mosquitto_sub -h localhost -p 1883 -i hugo_5553 -t codigoIoT/ESP32/DHT/led
+ 1095  mosquitto_sub -h localhost -p 1883 -i hugo-4757 -t codigoIoT/ESP32/dht/temp
+ 1096  0mosquitto_sub -h localhost -p 1883 -i hugo-4757 -t codigoIoT/ESP32/DHT/temp
+ 1097  mosquitto_sub -h localhost -p 1883 -i hugo-4757 -t codigoIoT/ESP32/DHT/temp
+ 1098  ls
+ 1099  netstat -an
+ 1100  mysql
+ 1101  sudo mysql
+ 1102  sudo /bin/systemctl start openhab.service
+ 1103  node index.js
+ 1104  node main.js
+ 1105  npm install mongodb
+ 1106  npm init
+ 1107  touch index.js
+ 1108  node -v
+ 1109  npm install -g mongodb
+ 1110  whereis node
+ 1111  npm fund
+ 1112  cd ..
+ 1113  npm fund
+ 1114  npm uninstall mongodb
+ 1115  cd nodeJSG3
+ 1116  npm list
+ 1117  cd ..
+ 1118  npm list
+ 1119  cd nodeJSG3
+ 1120  cd Nuevo Proyecto
+ 1121  cd "Nuevo Proyecto"
+ 1122  npm list
+ 1123  npm -g list
+ 1124  npm uninstall mongodb
+ 1125  npm list
+ 1126  ifconfig
+ 1127  node-red
+ 1128  history
+ 1129  sudo /bin/systemctl start openhab.service
+ 1130  netstat -an
+ 1131  sudo apt-get install -y adduser libfontconfig1
+ 1132  wget https://dl.grafana.com/enterprise/release/grafana-enterprise_8.2.3_amd64.deb
+ 1133  sudo dpkg -i grafana-enterprise_8.2.3_amd64.deb
+ 1134  sudo /bin/systemctl start grafana-server
+ 1135  sudo mysql
+ 1136  sudo run ./arduino
+ 1137  sudo ./arduino
+ 1138  sudo /bin/systemctl start grafana-server
+ 1139  sudo /bin/systemctl start openhab.service
+ 1140  node-red
+ 1141  npm install npm-test-hugoe-2
+ 1142  npm init
+ 1143  touch index.js
+ 1144  npm adduser
+ 1145  npm publish
+ 1146  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/temp -m 36.1
+ 1147  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/bpm -m 72
+ 1148  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/BPM -m 72
+ 1149  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/SPO2 -m 96
+ 1150  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/temp -m 36.5
+ 1151  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/BPM -m 86
+ 1152  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/SPO2 -m 98
+ 1153  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/temp -m 37.9
+ 1154  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/SPO2 -m 88
+ 1155  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/SPO2 -m 112
+ 1156  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/SPO2 -m 88
+ 1157  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/BPM -m 112
+ 1158  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/temp -m 36.5
+ 1159  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/SPO2 -m 98
+ 1160  mosquitto_pub -h localhost -i hugo-1548 -t codigoIoT/nodejs/BPM -m 88
+ 1161  sudo nano .bashrc
+ 1162  sudo ./arduino
+ 1163  history
+ 1164  sudo ./arduino
+ 1165  sudo mysql
+ 1166  sudo usermod -a -G dialout $USER
+ 1167  wget https://bootstrap.pypa.io/get-pip.py
+ 1168  sudo apt-get install python3-distutils
+ 1169  sudo apt-get install python3-apt
+ 1170  sudo python3 get-pip.py
+ 1171  sudo pip3 install pyserial
+ 1172  mkdir -p ~/Arduino/hardware/espressif
+ 1173  cd ~/Arduino/hardware/espressif
+ 1174  git clone https://github.com/espressif/arduino-esp32.git esp32
+ 1175  cd esp32
+ 1176  git submodule update --init --recursive
+ 1177  cd tools
+ 1178  python3 get.py
+ 1179  sudo ln -s /usr/bin/python3 /usr/bin/Python
+ 1180  sudo ln -s /usr/bin/python3 /usr/bin/python
+ 1181  sudo filemanager
+ 1182  sudo nautilus
+ 1183  sudo arduino
+ 1184  sudo usermod -a -G dialout $USER
+ 1185  sudo chmod 666 /dev/ttyUSB0
+ 1186  node-red
+ 1187  sudo mysql
+ 1188  sudo snap install vlc
+ 1189  python --version
+ 1190  node-red
+ 1191  npm install express
+ 1192  node index.js
+ 1193  ls
+ 1194  cd API_REST
+ 1195  node index.js
+ 1196  sudo mysql
+ 1197  node-red
+ 1198  apt-get install git
+ 1199  git -version
+ 1200  git -v
+ 1201  git --v
+ 1202  git --version
+ 1203  clear
+ 1204  git --version
+ 1205  git status
+ 1206  cd Downloads
+ 1207  ls
+ 1208  history
+ 1209  sudo /bin/systemctl start openhab.service
+ 1210  python --version
+ 1211  pip install deepface
+ 1212  pip -version
+ 1213  pip --version
+ 1214  pip install deepface
+ 1215  mosquitto_sub -h loclahost -i hugo-8845 -t codigoIoT/esp32/dht
+ 1216  mosquitto_sub -h localahost -i hugo-8845 -t codigoIoT/esp32/dht
+ 1217  mosquitto_sub -h localhost -i hugo-8845 -t codigoIoT/esp32/dht
+ 1218  sudo mysql
+ 1219  ip addr
+ 1220  node-red
+ 1221  hisoty
+ 1222  history
+ 1223  sudo /bin/systemctl start grafana-server
+ 1224  sudo apt-get install     ca-certificates     curl     gnupg \
+ 1225  sudo apt-get update
+ 1226  sudo apt-get install \ 
+ 1227  ca-certificates \ 
+ 1228  curl \ 
+ 1229  gnupg \ 
+ 1230  sudo apt-get install ca-certificates curl gnupg lsb-release
+ 1231  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
+ 1232  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 1233  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ 1234    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1235  sudo apt-get update
+ 1236  sudo apt-get install docker-ce docker-ce-cli containerd.io 
+ 1237  sudo docker versión
+ 1238  sudo docker version
+ 1239  sudo systemctl status docker
+ 1240  docker run -d   --name homeassistant   --privileged   --restart=unless-stopped   -e TZ=MY_TIME_ZONE   -v /PATH_TO_YOUR_CONFIG:/config   --network=host   ghcr.io/home-assistant/home-assistant:stable
+ 1241  mkdir ~/homeAssistant
+ 1242  docker run -d --name homeassistant --privileged --restart=unless-stopped -e TZ=America/Mexico -v /home/hugo/homeAssistant:/config --network=host ghcr.io/home-assistant/home-assistant:stable
+ 1243  sudo docker run -d --name homeassistant --privileged --restart=unless-stopped -e TZ=America/Mexico -v /home/hugo/homeAssistant:/config --network=host ghcr.io/home-assistant/home-assistant:stable
+ 1244  history
+ 1245  ls
+ 1246  python detect.py
+ 1247  ls
+ 1248  cd facedetection
+ 1249  ls
+ 1250  python detect.py
+ 1251  sudo python detect.py
+ 1252  python3 detect.py
+ 1253  sudo python3 detect.py
+ 1254  deepface -version
+ 1255  deepface --version
+ 1256  pip install deepface
+ 1257  sudo update
+ 1258  sudo apt update
+ 1259  sudo apt upgrade
+ 1260  python setup.py
+ 1261  ls
+ 1262  sudo python setup.py
+ 1263  python3 setup.py
+ 1264  python setup.py --help-commands
+ 1265  python setup.py easy_install
+ 1266  sudo python setup.py easy_install
+ 1267  python Ensemble-Face-Recognition.py
+ 1268  python3 Ensemble-Face-Recognition.py
+ 1269  python face-recognition-how.py
+ 1270  python setup.py
+ 1271  python setup.py --help-commands
+ 1272  python setup.py build
+ 1273  python setup.py install
+ 1274  sudo python setup.py install
+ 1275  python setup.py --help-commands
+ 1276  ls
+ 1277  python Ensemble-Face-Recognition.py
+ 1278  sudo python Ensemble-Face-Recognition.py
+ 1279  sudo update
+ 1280  sudo apt update
+ 1281  sudo apt upgrade
+ 1282  python face-recognition-how-py
+ 1283  python face-recognition-how.py
+ 1284  pip install matplotlib
+ 1285  python face-recognition-how.py
+ 1286  cd ..
+ 1287  ls
+ 1288  cd emotion
+ 1289  ls
+ 1290  python emotion_detection.py
+ 1291  cd ..
+ 1292  ls
+ 1293  cd facedetection
+ 1294  ls
+ 1295  python detect.py
+ 1296  node-red
+ 1297  ls
+ 1298  cd facedetection-script
+ 1299  ls
+ 1300  python checkface.py -i "/home/hugo/pics/pic1.jpg" -j "/home/hugo/my_db"
+ 1301  python checkface.py -i "/home/hugo/pics/1640074692761.jpg" -j "/home/hugo/my_db"
+ 1302  python /home/hugo/Documents/SIC/pytest/facedetection-script/checkface.py -i "/home/hugo/pics/1640074692761.jpg" -j "/home/hugo/my_db"
+ 1303  ls
+ 1304  cd facedetection-script
+ 1305  ls
+ 1306  python checkface.py -i "/home/hugo/pics/1640075300776.jpg" -j "/home/hugo/my_db"
+ 1307  ip addr
+ 1308  pip install paho-mqtt
+ 1309  sudo pip install paho-mqtt
+ 1310  python checkface.py -i "/home/hugo/pics/1640075300776.jpg" -j "/home/hugo/my_db"
+ 1311  node-red
+ 1312  hugo
+ 1313  history
+ 1314  cd ~/homeAssitant
+ 1315  cd ~/homeAssistant
+ 1316  clear
+ 1317  ls
+ 1318  sudo gedit configuration.yaml
+ 1319  sudo nano configuration.yaml
+ 1320  mosquitto_pub -h localhost -i hugo-45487 -t codigoIoT/ESP32/DHT/temp -m 22.1
+ 1321  history
+ 1322  mosquitto_pub -h localhost -i hugo-45487 -t codigoIoT/ESP32/DHT/temp -m 23
+ 1323  textedit
+ 1324  gedit
+ 1325  node-red
+ 1326  node-red-start
+ 1327  history
+ 1328  ls
+ 1329  cd ..
+ 1330  cd
+ 1331  cd ~/Documents/SIC/pytest/emotion/
+ 1332  python emotion_detection.py
+ 1333  node-red
+ 1334  python emotion_detection.py
+ 1335  ls
+ 1336  cd facedetection-script
+ 1337  ls
+ 1338  python checkface.py -i /home/hugo/pics/pic1.jpg -j /home/hugoe/my_db/
+ 1339  python checkface.py -i /home/hugo/pics/pic1.jpg -j /home/hugoe/my_db
+ 1340  python checkface.py -i /home/hugo/pics/pic1.jpg -j /home/hugo/my_db
+ 1341  python checkfaceMQTT.py -i /home/hugo/pics/pic1.jpg -j /home/hugo/my_db
+ 1342  python checkfaceMQTTy.py -i /home/hugo/pics/pic1.jpg -j /home/hugo/my_db
+ 1343  python checkfaceMQTTy.py -i /home/hugo/pics/1640085173518.jpg -j /home/hugo/my_db
+ 1344  python checkfaceMQTTy.py -i /home/hugo/pics/1640085342224.jpg -j /home/hugo/my_db
+ 1345  node-red
+ 1346  mosquitto_sub -h locahost -i hugo-4587 -t codigoIoT/py
+ 1347  mosquitto_sub -h localhost -i hugo-4587 -t codigoIoT/py
+ 1348  ls
+ 1349  cd python
+ 1350  ls
+ 1351  cd facedetection
+ 1352  ls
+ 1353  python facecheck.py
+ 1354  ls
+ 1355  cd object_counting
+ 1356  ls
+ 1357  pyhton app.py
+ 1358  python app.py
+ 1359  ls
+ 1360  python app.py
+ 1361  node-red
+ 1362  pip install VideoStream
+ 1363  pip install imutils
+ 1364  pip instal imagezmq
+ 1365  pip install imagezmq
+ 1366  pip install greenlet
+ 1367  pip install thread
+ 1368  sudo pip install thread
+ 1369  pip install get_ident
+ 1370  pip install flask
+ 1371  pip install pillow
+ 1372  pip install numpy
+ 1373  pip install opencv-python
+ 1374  pip install keras
+ 1375  pip install tensorflow-gpu
+ 1376  mosquitto_pub -h 192.168.15.101 -i hugo-8845 -t hugo/se/main -h "hola"
+ 1377  mosquitto_pub -h 192.168.15.101 -i hugo-8845 -t hugo/se/main -m "hola"
+ 1378  ip addr
+ 1379  mosquitto_pub -h localhost -i hugo-8845 -t hugo/se/main -m "hola"
+ 1380  mosquitto_pub -h 192.168.15.101 -p 1883 -i hugo-8845 -t hugo/se/main -m "hola" -u publicuser -P pirateria
+ 1381  mosquitto_pub -h localhost -i hugo-8845 -t hugo/se/main -m "hola"
+ 1382  mosquitto_pub -h 192.168.15.101 -p 1883 -i hugo-8845 -t hugo/se/main -m "hola" -u publicuser -P pirateria
+ 1383  mosquitto_pub -h 192.168.15.101 -p 1883 -i hugo-8845 -t hugo/se/main -m "hola"
+ 1384  mosquitto_pub -h 192.168.15.101 -p 1883 -i hugo-8845 -t hugo/se/main -m "hola" -u publicuser -P pirateria
+ 1385  mosquitto_sub -h 192.168.15.101 -i hugo-99845 -t hugo/se/main
+ 1386  mosquitto_sub -h localhost -i hugo-99845 -t hugo/se/main
+ 1387  mosquitto_sub -h 192.168.15.101 -p - 1886 -i hugo-99845 -t hugo/se/main -u publicuser -P pirateria
+ 1388  mosquitto_sub -h 192.168.15.101 -p - 1883 -i hugo-99845 -t hugo/se/main -u publicuser -P pirateria
+ 1389  mosquitto_sub -h 192.168.15.101 -p 1883 -i hugo-99845 -t hugo/se/main -u publicuser -P pirateria
+ 1390  mosquitto_sub -h 192.168.15.101 -p 1883 -i hugo-99845 -t hugo/se/main
+ 1391  mosquitto_sub -h 192.168.15.101 -p 1883 -i hugo-99845 -t hugo/se/main -u publicuser -P pirateria
+ 1392  history
+ 1393  sudo docker run -d --name homeassistant --privileged --restart=unless-stopped -e TZ=America/Mexico -v /home/hugo/homeAssistant:/config --network=host ghcr.io/home-assistant/home-assistant:stable
+ 1394  mosquitto_sub -h localhost -i hugo-48554 -t codigoIoT/homeAssistant/test
+ 1395  ls
+ 1396  cd expressProyecto
+ 1397  ls
+ 1398  node index.js
+ 1399  node-red
+ 1400  ls
+ 1401  cd emotion
+ 1402  ls
+ 1403  python emotion_detection.py
+ 1404  python --version
+ 1405  ls
+ 1406  cd Documents
+ 1407  ls
+ 1408  cd SIC
+ 1409  ls
+ 1410  cd pytest
+ 1411  ls
+ 1412  cd emotion
+ 1413  ls
+ 1414  python emotion_detection.py
+ 1415  ls
+ 1416  cd emotion
+ 1417  ls
+ 1418  python emotion_detection.py
+ 1419  cd
+ 1420  cd Documents/SIC/pytest/facedetection
+ 1421  ls
+ 1422  python detect.py
+ 1423  node-red
+ 1424  cd ..
+ 1425  cd facedection-scripf
+ 1426  cd facedetection-scripf
+ 1427  cd facedetection-script
+ 1428  python checkfaceMQTT.py -i /home/hugo/Pictures/capture.jpg -j /home/hugo/my_db
+ 1429  python checkfaceMQTTy.py -i /home/hugo/Pictures/capture.jpg -j /home/hugo/my_db
+ 1430  python checkfaceMQTTy.py -h
+ 1431  python checkfaceMQTTy.py -i /home/hugo/Pictures/capture.jpg -j /home/hugo/my_db
+ 1432  mosquitto_sub -h localhost -i hugo-4886 -t codigoIoT/py
+ 1433  cd code
+ 1434  python check.py
+ 1435  cd ..
+ 1436  python check.py
+ 1437  python objectcheck.py
+ 1438  python status.py
+ 1439  python objectcheck.py
+ 1440  python status.py
+ 1441  node-red
+ 1442  ifconfig
+ 1443  mosquitto_sub -h localhost -p 1883 -i hugo-subber -t codigoIoT/SIC/sintomas
+ 1444  sudo mysql
+ 1445  mosquitto_sub -localhost -p 1883 -q 2 -t codigoIoT/SIC/sintomas -i hugo-aasuedc
+ 1446  mosquitto_sub -h localhost -p 1883 -q 2 -t codigoIoT/SIC/sintomas -i hugo-aasuedc
+ 1447  node-red
+ 1448  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "hola"
+ 1449  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{"id": "Hugo Vargas", "temp": "23", "hum": "80"}"
+ 1450  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"23\", \"hum\": \"80\"}"
+ 1451  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"24\", \"hum\": \"80\"}"
+ 1452  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"23\", \"hum\": \"80\"}"
+ 1453  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"18\", \"hum\": \"80\"}"
+ 1454  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"12\", \"hum\": \"80\"}"
+ 1455  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"8\", \"hum\": \"80\"}"
+ 1456  mosquitto_pub -h localhost -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"3\", \"hum\": \"80\"}"
+ 1457  mosquitto_pub -h broker.hivemq.com -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"3\", \"hum\": \"80\"}"
+ 1458  mosquitto_pub -h broker.hivemq.com -p 1883 -i Hugo-4887 -q 2 -t sic/flow3/temp -m "{\"id\": \"Hugo Vargas\", \"temp\": \"36\", \"hum\": \"80\"}"
+ 1459  mosquitto_sub -h localhost -i Hugo-sub -t sic/flow3/temp
+ 1460  mosquitto_sub -h localhost -p 1883 -q 2 -t codigoIoT/SIC/sintomas -i hugossdawaas
+ 1461  mysql
+ 1462  sudo mysql
+ 1463  node-red
+ 1464  nslookup broker.hivemq.com
+ 1465  mosquitto_pub -h 35.157.158.119 -p 1883 -i hugo-SIC-5716 -q 2 -t sic/flow/temp -m "{\"id\":\"Hugo\", \"temp\":23, \"humedad\":80, \"valorArbitrario\":1.23}"
+ 1466  sudo /bin/systemctl start Grafana-server
+ 1467  sudo /bin/systemctl start grafana-server
+ 1468  sudo /bin/systemctl stop grafana-server
+ 1469  sudo /bin/systemctl start grafana-server
+ 1470  sudo /bin/systemctl stop grafana-server
+ 1471  sudo /bin/systemctl start grafana-server
+ 1472  sudo mysql
+ 1473  sudo nano grafana.ini
+ 1474  node-red
+ 1475  sudo nano grafana.ini
+ 1476  sudo /bin/systemctl stop grafana-server
+ 1477  sudo nano grafana.ini
+ 1478  sudo /bin/systemctl start grafana-server
+ 1479  sudo /bin/systemctl stop grafana-server
+ 1480  sudo nano grafana.ini
+ 1481  sudo /bin/systemctl restart grafana-server
+ 1482  sudo nano grafana.ini
+ 1483  sudo /bin/systemctl stop grafana-server
+ 1484  sudo /bin/systemctl status grafana-server
+ 1485  sudo /bin/systemctl start grafana-server
+ 1486  sudo nano grafana.ini
+ 1487  sudo /bin/systemctl restart grafana-server
+ 1488  grafana-cli plugins install grafana-image-renderer
+ 1489  sudo grafana-cli plugins install grafana-image-renderer
+ 1490  sudo /bin/systemctl restart grafana-server
+ 1491  sudo /bin/systemctl stop grafana-server
+ 1492  sudo /bin/systemctl start grafana-server
+ 1493  sudo nano grafana.ini
+ 1494  sudo /bin/systemctl start grafana-server
+ 1495  sudo /bin/systemctl restart grafana-server
+ 1496  sudo mysql
+ 1497  node-red
+ 1498  whereis arduino
+ 1499  ifconfig
+ 1500  node-red
+ 1501  mosquitto_sub -h localhost -i hugo-4856 -t esp32/data
+ 1502  sudo mysql
+ 1503  killall github
+ 1504  killall git
+ 1505  git clone https://github.com/codigo-iot/MLX-90614-TallerIoT.git
+ 1506  git status
+ 1507  git add
+ 1508  git add .
+ 1509  git status
+ 1510  git commit -m "Codigo agregado"
+ 1511  git push
+ 1512  git add .
+ 1513  git commit -m "Documento de arquitecturas agregado"
+ 1514  git push
+ 1515  nslookup broker.hivemq.com
+ 1516  node-red
+ 1517  ifconfig
+ 1518  mosquitto_sub -h localhost -p 1883 -i hugo-4421 -t codigoIoT/SIC/RPi
+ 1519  history
+ 1520  node-red
+ 1521  mosquitto_sub -h localhost -t codigoIoT/co2
+ 1522  mosquitto_sub -h localhost -t codigoIoT/+
+ 1523  mosquitto_sub -h localhost -t codigoIoT/temperatura
+ 1524  sudo mysql
+ 1525  node-red
+ 1526  npm list -g
+ 1527  ssh pi@192.168.15.20
+ 1528  history
+
