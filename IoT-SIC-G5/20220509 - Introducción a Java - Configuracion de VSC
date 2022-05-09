@@ -1,0 +1,29 @@
+Introduccion a Java: Configuracion de entorno
+
+Se usará la version 11 del OpenJDK
+-Instalar JRE	
+	sudo apt install default-jre
+	java -version
+-Instalar JDK
+	sudo apt install default-jdk
+	javac -vesion
+
+Instalar Pluguins de Visual Studio Code
+-Extension Pack for Java
+-Maven for Java
+
+Es necesario actualziar la interfaz de VisualStudio Code después de instalar los plugins. Puede hacerse volviendo a abrir VSC
+
+Crear un nuevo repositorio para el proyecto básico de Java con Maven.
+
+Clonar a la maquina virtual
+
+Crear el proyecto básico de Java con Maven
+https://edu.codigoiot.com/mod/lesson/view.php?id=1840&pageid=2370
+
+Abrir directorio de trabajo
+
+Configurar Maven
+	Ctrl + P
+	>maven: Create Maven Project
+	https://edu.codigoiot.com/mod/lesson/view.php?id=1840&pageid=2370
