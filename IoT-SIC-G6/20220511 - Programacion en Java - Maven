@@ -1,4 +1,21 @@
+Ciclo de vida de proyecto Maven
 
+Instalar Maven
+	-sudo apt update
+	-sudo apt full-upgrade
+	
+	-sudo apt install maven
+	-mvn -version
+	
+	-Reiniciar VSC
+	
+Ejecutar el ciclo de vida
+
+clean, validate, compile, test, test-compile, package, verify
+
+Ejecutar el archivo Jar
+
+	java -cp proyecto_java-1.0.jar com.sic.App
 
 Notas
 
