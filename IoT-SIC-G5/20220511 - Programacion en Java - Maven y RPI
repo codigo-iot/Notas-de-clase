@@ -1,0 +1,21 @@
+Pasar el proyecto a Raspberry Pi
+
+Se parte de que el programa de ejemplo ya corrió en Maquina Virtual
+
+-Hacer commit y push en el repositorio
+-En RPI comprobar que tenemos instalado Java
+	java -version
+	javac -version
+	
+	sudo apt install default-jre
+	sudo apt install default-jdk
+	
+-Asegurarse de tener instalado Git
+	git --version
+	
+-Dirigirse al directorio para clonar repositorio
+	git clone [direccion del repo]
+	https://github.com/hugoescalpelo/java1-g5.git
+	
+-Abrir el directorio de App.java y ejecutar el programa
+	java App.java
