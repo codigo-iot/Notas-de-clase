@@ -19,3 +19,16 @@ Se parte de que el programa de ejemplo ya corrió en Maquina Virtual
 	
 -Abrir el directorio de App.java y ejecutar el programa
 	java App.java
+
+Ciclo de vida de un proyecto Maven
+
+-Actualizar sistema
+	sudo apt update
+	sudo apt full-upgrade
+	
+-Instalar Maven
+	sudo apt install maven
+
+Nota
+
+En algunas ocasiones, es necesario correr primero javac App.java
