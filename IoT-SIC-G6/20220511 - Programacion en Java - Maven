@@ -15,3 +15,5 @@ codigoIoT/ejemplos/#
 dato,dato2,dato3,dato4...
 
 TCP, udp, OSC, serial
+
+https://github.com/codigo-iot/reconocimiento-facial/blob/main/python/facedetection/facecheckMQTT.py
