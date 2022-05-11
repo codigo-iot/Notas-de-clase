@@ -15,7 +15,7 @@ clean, validate, compile, test, test-compile, package, verify
 
 Ejecutar el archivo Jar
 
-	java -cp proyecto_java-1.0.jar com.sic.App
+	javac -cp proyecto_java-1.0.jar com.sic.App
 
 Notas
 
