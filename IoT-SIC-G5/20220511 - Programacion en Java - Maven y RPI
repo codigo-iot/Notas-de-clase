@@ -28,6 +28,12 @@ Ciclo de vida de un proyecto Maven
 	
 -Instalar Maven
 	sudo apt install maven
+	(volver a abrir VSC)
+
+-Clean, validate, compile, test, test-compile, package, validate
+
+Para ejecutar el Jar desde terminal
+java -cp helloworld-1.0.jar com.sic.App
 
 Nota
 
