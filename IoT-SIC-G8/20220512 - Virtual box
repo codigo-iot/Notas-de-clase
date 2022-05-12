@@ -1,0 +1,69 @@
+Virtual Box y Ubuntu
+
+Descargar Virtual Box (104MB)
+https://www.virtualbox.org/
+
+Descargar Ubuntu 20.04 Desktop (3.1GB)
+https://releases.ubuntu.com/20.04/
+ubuntu-20.04.4-desktop-amd64.iso
+
+Instalar Virtual Box
+	-Aceptar contrato de licencia
+	-Aceptar instalacion de drivers
+	-Confiar en este desarrollador
+	
+Reaccion de palomita verde quienes ya hayan terminado instalar Virtual Box
+
+Configuraciones de la maquina virtual
+
+Comprobar:
+	-Virtualizacion Activada
+	
+Recursos de maquina virtual
+
+Configuraciones minimas 
+-2 nucleos
+-4GB de RAM
+-48GB de HDD
+
+Configuraciones ideas
+-4 nucleos
+-8GB de RAM
+-48GB de HDD
+
+Recursos mas básicos
+-1 nucleo
+-1GB de RAM
+-20GB de HDD
+
+Crear una maquina virtual
+-Clic en Nueva maquina virtual
+-Nombrar Maquina virtual
+	Ubuntu20.04LTS
+-Seleccionar ubicacion de la VM
+-Asignar RAM
+-Crear disco duro virtual ahora
+-Tipo VDI
+-Asignar espacio en disco dinamico
+-Seleccionar tamaño de disco (48GB)
+-Crear maquina virtual
+
+Antes de iniciar la VM se configura
+-Seleccionar VM y hacer clic en configurar
+-En la seccion general, en la pestaña avanzado, activar las opciones bidireccionales
+-En la seccion sistema, en la pestaña procesador, asignar nucleos
+-En la seccion pantalla, en la pestaña pantalla, seleccionar 128MB, controlador gráfico VMSVGA, aceleracion 3D desactivada
+-En la seccion Red en la pestaña adaptador, Adaptador Puente, seleccionar interfaz de red
+-Guardar
+
+
+Instalar Ubuntu 20.04
+-Arrancar VM
+-Insertar disco
+-Seguir instrucciones
+-Reiniciar
+
+Instalar Guest Additions
+https://edu.codigoiot.com/mod/page/view.php?id=1641
+
+
