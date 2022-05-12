@@ -12,4 +12,46 @@ Instalar Virtual Box
 	-Aceptar instalacion de drivers
 	-Confiar en este desarrollador
 	
-Reaccion de palomita verde quienes ya hayan terminado de descargar Virtual Box
+Reaccion de palomita verde quienes ya hayan terminado descargar Ubuntu 20.04LTS
+
+Configuraciones de la maquina virtual
+
+Comprobar:
+	-Virtualizacion Activada
+	
+Recursos de maquina virtual
+
+Configuraciones minimas 
+-2 nucleos
+-4GB de RAM
+-48GB de HDD
+
+Configuraciones ideas
+-4 nucleos
+-8GB de RAM
+-48GB de HDD
+
+Recursos mas básicos
+-1 nucleo
+-1GB de RAM
+-20GB de HDD
+
+Crear una maquina virtual
+-Clic en Nueva maquina virtual
+-Nombrar Maquina virtual
+	Ubuntu20.04LTS
+-Seleccionar ubicacion de la VM
+-Asignar RAM
+-Crear disco duro virtual ahora
+-Tipo VDI
+-Asignar espacio en disco dinamico
+-Seleccionar tamaño de disco (48GB)
+-Crear maquina virtual
+
+Antes de iniciar la VM se configura
+-Seleccionar VM y hacer clic en configurar
+-En la seccion general, en la pestaña avanzado, activar las opciones bidireccionales
+-En la seccion sistema, en la pestaña procesador, asignar nucleos
+-En la seccion pantalla, en la pestaña pantalla, seleccionar 128MB, controlador gráfico VMSVGA, aceleracion 3D desactivada
+-En la seccion Red en la pestaña adaptador, Adaptador Puente, seleccionar interfaz de red
+-Guardar
