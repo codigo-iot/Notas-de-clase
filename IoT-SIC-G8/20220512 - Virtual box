@@ -23,10 +23,10 @@ Recursos de maquina virtual
 
 Configuraciones minimas 
 -2 nucleos
--4GB de RAM
+-4GB de RAM*
 -48GB de HDD
 
-Configuraciones ideas
+Configuraciones ideales
 -4 nucleos
 -8GB de RAM
 -48GB de HDD
@@ -61,6 +61,10 @@ Instalar Ubuntu 20.04
 -Arrancar VM
 -Insertar disco
 -Seguir instrucciones
+	-Contraseña corta
+	-No activar la casilla de descargar actualizaciones mientras se instala
+	-Borrar todo el disco e instalar
+	-Si no aparece el boton siguiente, mover la ventana
 -Reiniciar
 
 Instalar Guest Additions
