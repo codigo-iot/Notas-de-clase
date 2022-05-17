@@ -1,0 +1,14 @@
+Java y MySQL
+
+Consejo no usar root
+-Para salir del usuario root:
+	exit
+	
+MySQL server se maneja por usuarios, cuenta ademas con la siguiente informacion:
+	-Usuario
+	-Contraseña
+	-IP localhost 127.0.0.1
+	-Puerto 3306
+	
+Consultar los usuarios
+	mysql> select * from mysql.user;
