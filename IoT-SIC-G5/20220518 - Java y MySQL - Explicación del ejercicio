@@ -1,0 +1,19 @@
+Java y MySQLs
+
+Usuario Root: No se recomienda utilizar. Pasalir usar el comado
+	exit
+	
+Cada instruccion de MySQL se termina con ;
+
+Crear un usuario
+
+CREATE USER 'hugohugo'@'localhost' IDENTIFIED BY 'hugohugo'; 
+
+Notas
+
+Mostrar todas las bases de datos
+	show databases;
+	
+Mostrar lista de usuarios
+	SELECT user FROM mysql.user;
+	SELECT user, hosts FROM mysql.user;
