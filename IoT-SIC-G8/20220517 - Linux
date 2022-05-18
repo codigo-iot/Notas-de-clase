@@ -1,0 +1,47 @@
+	Quienes no sea capaces de instalar gcc, se recomienda actualizar el sistema
+
+	sudo apt update
+	sudo apt install gcc perl make
+
+Comandos de actualización
+
+sudo apt update
+sudo apt upgrade
+
+Software libre
+
+-No consiste en regalar tu trabajo
+-Consiste en generar un beneficio a la cominudad
+
+
+https://distrowatch.com/?language=ES
+https://zeptobars.com/en/
+https://www.facebook.com/groups/codigoiot
+
+Se trabaja desde el directorio Home, representado por ~
+
+~/Documents
+/home/user/Documents
+
+C:\Users\hugoe\Documentos\
+
+Consejo
+
+Anclar los programas frecuentes a la barra de favoritos
+No abrir mas de una terminal
+
+Ejecutar comandos
+
+-history
+-clear
+-ls
+-cd
+
+Estructura de comandos
+
+[Permisos] [Programa/comando] [opciones/banderas] [parámetros]
+
+-ls -l -a
+
+Programa nano
+nano .bashrc
