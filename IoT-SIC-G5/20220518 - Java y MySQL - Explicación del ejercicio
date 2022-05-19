@@ -1,13 +1,22 @@
 Java y MySQLs
 
+Caracteristicas de MySQL server
+	-Trabaja en una IP 127.0.0.1 localhost
+	-Puerto predeterminado 3306
+	-usuarios
+	-contraseñas
+	
 Usuario Root: No se recomienda utilizar. Pasalir usar el comado
 	exit
 	
 Cada instruccion de MySQL se termina con ;
 
 Crear un usuario
+	CREATE USER 'hugohugo'@'localhost' IDENTIFIED BY 'hugohugo'; 
 
-CREATE USER 'hugohugo'@'localhost' IDENTIFIED BY 'hugohugo'; 
+Seleccionar una base de datos
+	use datos;
+	
 
 Notas
 
@@ -16,4 +25,26 @@ Mostrar todas las bases de datos
 	
 Mostrar lista de usuarios
 	SELECT user FROM mysql.user;
-	SELECT user, hosts FROM mysql.user;
+	SELECT user, host FROM mysql.user;
+	SELECT user,host, Grant_priv FROM mysql.user;
+	
+Mostrar las tablas de la base de datos seleccionada
+	show tables;
+	
+Mostrar todo el contenido de una tabla
+	SELECT * FROM alumnos;
+	SELECT id, nombre FROM alumnos;
+
+Instrucciones del ejecricio
+
+1. Crear repositorio
+2. Crear proyecto maven
+3. Descargar conector de Java
+4. Crear carpeta libs y colocar el conector (descomprimir)
+
+
+Material extra
+
+https://alvinalexander.com/blog/post/mysql/show-users-i-ve-created-in-mysql-database/
+
+https://www.hostinger.com/tutorials/mysql-show-users/

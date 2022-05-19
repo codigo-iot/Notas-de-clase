@@ -1,0 +1,38 @@
+Java y MySQL
+
+Consejo no usar root
+-Para salir del usuario root:
+	exit
+	
+MySQL server se maneja por usuarios, cuenta ademas con la siguiente informacion:
+	-Usuario
+	-Contraseña
+	-IP localhost 127.0.0.1
+	-Puerto 3306
+	
+Consultar los usuarios
+	mysql> select * from mysql.user;
+	
+	mysql> select user, host from mysql.user;
+	
+Crear base de datos
+	CREATE DATABASE datos;
+	
+
+	
+Notas
+
+Comandos extra
+
+Consutar las bases de datos
+	show databases;
+	
+Consultar tablas de bases de datos
+	show tables;
+	
+Consultar columnas de una tabla
+	describe nobre_tabla;
+	
+Consultar contenido de base de datos
+	SELECT * FROM alumnos;
+
