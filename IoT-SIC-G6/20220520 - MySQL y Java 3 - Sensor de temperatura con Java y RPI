@@ -1,0 +1,15 @@
+Poner reaccion de paloma verde quienes hayan logrado terminar los 3 ejercicios de Java y MySQL
+
+Realizar repaso de la ejecucion del resto de ejemplos de java y MySQL
+
+Sensor de temperatura, Java y RPI
+
+https://edu.codigoiot.com/mod/page/view.php?id=2027
+
+Activar I2C
+	-sudo raspi-config
+	-Opcion 3
+	-I5 I2C
+	-Si
+	-Finish
+	-sudo reboot
