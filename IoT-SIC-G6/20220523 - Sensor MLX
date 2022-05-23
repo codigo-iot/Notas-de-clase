@@ -1,0 +1,35 @@
+Sensor MLX90614 con RPI
+
+Activar I2C
+	-sudo raspi-config
+	-Seleccionar Interfaces
+	-Activtar I2C
+	-Guardar Cambios
+	-sudo reboot
+	
+Crear programa
+	-cd /opt/pi4j/examples
+	-sudo nano sensores.java
+	-pegar el codigo
+	-Guardar ctrl + o
+	-Salir ctrl + x
+	
+Compilar
+
+	javac -classpath .:classes:/opt/pi4j/lib/'*' -d . sensor.java
+
+Ejecutar programa
+	sudo java -classpath .:classes:/opt/pi4j/lib/'*' sensor
+
+Deteccion de I2C en RPi	
+	sudo i2cdetect -y 1
+	
+Envio de comandos en I2C y RPi
+	i2cget -y 1 <puppet> <register>
+
+Notas
+
+MLX90614 Datasheet	
+https://www.sparkfun.com/datasheets/Sensors/Temperature/MLX90614_rev001.pdf
+
+En la seccion 7.5.3 se indican las formulas para convertir el dato en °C
