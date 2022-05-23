@@ -1,0 +1,21 @@
+Sensor de temperatura infrarrojo con RPI
+
+https://edu.codigoiot.com/course/view.php?id=861#section-1
+
+-Activar I2C
+	-sudo raspi-config
+	-sudo reboot
+	
+-Instalar Pi4j
+https://pi4j.com
+	-curl -sSL https://pi4j.com/install | sudo bash
+	-sudo pi4j --wiringpi
+
+
+Notas
+
+ESP32 - Micro controlador
+RPI - SoC (Single board Computer)
+
+Cómo conectar la RPI a una nueva red
+	-https://edu.codigoiot.com/mod/page/view.php?id=1662
