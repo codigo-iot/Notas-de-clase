@@ -2,8 +2,41 @@ Instalacion de OpenHab
 
 https://edu.codigoiot.com/course/view.php?id=840
 
+La instalacion comienza desde 1.3 https://edu.codigoiot.com/mod/lesson/view.php?id=1942&pageid=2457
 
+Preparar el entorno para instalar OpenHab
+	wget -qO - 'https://openhab.jfrog.io/artifactory/api/gpg/key/public' | sudo apt-key add -
+
+	sudo apt-get install apt-transport-https
+	
+	echo 'deb https://openhab.jfrog.io/artifactory/openhab-linuxpkg stable main' | sudo tee /etc/apt/sources.list.d/openhab.list
+
+	sudo apt-get update
+	
+Instalar OpenHab
+	sudo apt-get install openhab
+	
+Entrar a localhost:8080
+
+Documentacion
+https://www.openhab.org/docs/
+
+Crear modelo
+-Dirgirse a Settings>Model
+-Hacer clic en agregar locacion
+
+	Name: depa
+	Label: Departamento
+	Type: Location
+	Category: Departamento
+	Semantic Class: Apartment
+	
+	
 Notas
+
+Descripcion de conceptos principales en OpenHab
+https://edu.codigoiot.com/mod/lesson/view.php?id=1944&pageid=2462
+
 
 Conclusion del sensor de temperatura MLX90614 con Java y RPi
 
