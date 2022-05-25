@@ -1,0 +1,82 @@
+Instalar OpenHab
+
+https://edu.codigoiot.com/course/view.php?id=840#section-1
+
+Instalar OpenHab
+
+Preparar el entorno
+	-wget -qO - 'https://openhab.jfrog.io/artifactory/api/gpg/key/public' | sudo apt-key add -
+	
+	-sudo apt-get install apt-transport-https
+	
+	-echo 'deb https://openhab.jfrog.io/artifactory/openhab-linuxpkg stable main' | sudo tee /etc/apt/sources.list.d/openhab.list
+	
+	-sudo apt-get update
+	
+Instalar Openhab
+	-sudo apt-get install openhab
+	
+Ejecutar OpenHab
+	-sudo /bin/systemctl start openhab.service
+	-Abrir localhost:8080
+
+Ejemplo 1 de OpenHab
+
+1. Agregar locacion
+	Name: depag6
+	Label: Departamento G6
+	Type: Location
+	Category: Departamento
+	Semantic Class: Apartment
+2. Agregar Binding para obtener informacion de Internet
+	-Seleccionar seccion Things
+	-Agregar un binding  haciendo clic en el boton +
+	-Dirigirse a la pestaña de busqueda
+	-Buscar e instalar el MQTT Binding
+3. Agregar un Broker MQTT
+	-Seleccionar seccion Things
+	-Hacer clic en el boton +
+	-Seleccionar un binding de tipo mqtt
+	-Seleccionar la opcion MQTT Broker
+	Unique ID: BrokerSIC
+	Label: MQTT Broker
+	Location Departamento G6
+	
+	-Activar opciones avanzadas
+	
+	Broker Hostmane/IP: localhost
+	Broker Port: 1883
+	Client ID: hugoSIC85426
+	
+	-Desactivar contraseña y username
+	-Hacer clic en create Thing
+4. Agregar un thing
+	-Seleccionar seccion Things
+	-Hacer clic en el boton +
+	-Seleccionar un binding de tipo mqtt
+	-Seleccionar la opción Generic MQTT Thing
+	
+	Unique ID: tempg6
+	Label: Temperatura DHT11 G6
+	Location: Escritorio
+	Parent Bridge: MQTT Broker
+	
+	-Crear Thing
+	
+	
+	
+Notas
+
+Para desactivar un servicio que se arranca automáticamente al inicio del sistema
+	sudo systemctl disable <servicio>.service
+	
+	
+Texto recomendado
+An object oriented defense of poetry - Timothy Morton
+
+Documentación de OpenHab
+https://www.openhab.org/docs/
+
+Descripcion de conceptos principales en OpenHab
+https://edu.codigoiot.com/mod/lesson/view.php?id=1944&pageid=2462	
+	
