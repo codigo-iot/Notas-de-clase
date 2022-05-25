@@ -1,0 +1,26 @@
+Instalacion de OpenHab
+
+https://edu.codigoiot.com/course/view.php?id=840
+
+
+Notas
+
+Conclusion del sensor de temperatura MLX90614 con Java y RPi
+
+-Datasheet del MLX90614 https://www.sparkfun.com/datasheets/Sensors/Temperature/MLX90614_rev001.pdf
+
+-Descripcion de los registros en seccion 7.3.4 del datasheet
+
+- Expresa lo registros de forma diferente 0x06 -- 006h
+
+-Metodos para el uC
+https://github.com/adafruit/Adafruit-MLX90614-Library/blob/master/Adafruit_MLX90614.cpp
+
+-Consultar dispositovos I2C desde RPi con Wiringi y Pi4j
+	-sudo i2cdetect -y -1
+
+-Enviar comando/consultar registro
+	-i2cget -y 1 [direccion] [registro[
+	i2cget -y 1 0x5A 0x06
+	
+	
