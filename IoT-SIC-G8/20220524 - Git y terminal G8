@@ -1,0 +1,66 @@
+Git con terminal
+
+Instalar git
+	apt-get install git
+
+Comprobar que se ha instalado git
+	git --version
+
+https://git-scm.com/
+
+https://www.youtube.com/watch?v=V0ajJ-gepQY
+
+Ejercicio 1 de Git
+
+1. Crear carpeta Ejemplo en Documentos
+2. Iniciar repositorio en la carpeta ejemplo
+	-git init [nombre]
+3. Crear un archivo nuevo en el interior del repositorio y agregarle un texto
+	-touch texto.txt
+4. Consultar le estado del repositorio
+	-git status
+5. Agregar todos los archivos de la carpeta supervisada al repositorio
+	-git add .
+6. Consultar le estado del repositorio
+	-git status
+7. Crear primer commit
+	-git commit -m "Primer commit"
+	-git config --global user.email "you@example.com"
+	-git config --global user.name "Your Name"
+	-git commit -m "Primer commit"
+8. Consultar le estado del repositorio
+	-git status
+	
+Modificar archivo y crear segundo commit
+1. Modificar el archivo texto.txt
+2. Consultar le estado del repositorio
+	-git status
+3. Agregar cambios
+	-git add .
+4. Consultar le estado del repositorio
+	-git status
+5. Realizar segundo commit
+	-git commit -m "Segundo commit"
+6. Consultar le estado del repositorio
+	-git status
+	
+	
+Grupo de memes de IoT en Telegram
+https://t.me/+2D3w2dq1m8I0NWU5
+
+Crear cuenta en https://github.com/
+	
+Crear repositorio desde GitHub
+1. Crear repositorio y seleccionar la opcion nuevo repositorio
+2. Proporcionar nombre al repositorio
+3. Escribir descripción
+4. Configurar el repositorio como publico
+5. Activar la casilla de seleccion del archivo README.md
+6. Crear repositorio
+
+Clonar un repositorio de github
+1. Dirigirme al directorio donde quiero clonar este repositorio
+2. Clonar el repositorio	
+	-git clone [url]
+	
+Poner reaccion de paloma verde quienes hayan completado el ejercicio
