@@ -65,6 +65,22 @@ Crear canal de informacion para el Thing Humedad DHT11 G6
 	
 	-Crear Canal
 	
+Corregir la configuracion del Location
+	-Hacer clic en model
+	-Seccionar la locacion
+	-Seleccionar el item
+	-Hacer clic en editar
+	-Cambiar el Type de Location a Group
+	
+Crear una sub locacion en el interior de departamento
+	
+	Name: escritoriog6
+	Label: Escritorio G6
+	Type: Group
+	Category: Oficina
+	Semantic Class: Location
+	
+	
 	
 Documentación de OpenHab
 https://www.openhab.org/docs/
