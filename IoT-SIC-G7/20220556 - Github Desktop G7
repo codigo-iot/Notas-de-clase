@@ -1,0 +1,68 @@
+Crear repositorio en GitHub	
+
+1. Hacer clic en el boton crear repositorio  y despues en la opcion nuevo repositorio
+
+2.Colocar nombre al repsitorio
+
+3. Colocar una descripción
+
+4.Seleccionar el repositorio como publico
+
+5. Activar la casilla de el archivo README.md
+
+6. Crear repositorio
+
+7. Clonar el repositorio
+	-git clone [url]
+	
+8. Modificar el archivo README.md
+
+9. Actualizar el repositorio
+	-git status
+	-git add .
+	-git status
+	-git commit -m "Primer commit en github"
+	-git status
+	-git push
+	-Abrir Github.com
+	-Dirigirse a las configuraciones de perfil y luego a las opciones de desarrollador
+	-Seleccionar Personal Access Tokens
+	-Hacer clic Generar nuevo token
+	-Nombrar el uso del token
+	-Seleccionar la vigencia del Token
+	-Configurar el alcance de uso del Token
+		-repo
+		-user
+	-Hacer clic en Generar Token
+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
+	-git push
+	-Colocar nombre de usuario
+	-Colocar token en lugar de contraseña
+	-Consultar el cambio en el repositorio en github.com
+	
+Instalar Github Desktop para Linux	
+	-sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
+	-sudo apt-get install gdebi-core
+	-sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
+
+Clonar Repositorio con Github Desktop
+
+	-Abrir Github Desktop
+	-Hacer clic en el boton Iniciar sesion con Github.com
+	-Hacer clic en el boton clonar repositorio
+	
+Primer commit con Github Desktop
+	-Abrir con Visual Studio Code el archivo README.md del repositorio clonado con Github Desktop
+	-Editar el archivo
+	-Hacer commit con Github Desktop
+	-Hacer Push to Origin con Github Desktop
+	
+
+
+
+Notas
+
+Editor de MarkDown
+https://stackedit.io/app#
+
+Asergurarse de que todos los repositorios del diplomado se guarden en el directorio ~/Documents/GitHub/

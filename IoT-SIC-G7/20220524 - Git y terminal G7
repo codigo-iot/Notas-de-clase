@@ -1,0 +1,69 @@
+Git 
+
+Control de versiones
+
+Instalacion de Git
+	-sudo apt-get install git
+	
+Ejercicio de Git local
+
+1. Crear la carpeta Ejemplo en el directorio Documentos
+2. Iniciar un repositorio
+	-git init [nobre]
+3. Crear un archivo de texto en el directorio del repositorio creado
+	-touch texto.txt
+4. Comprobar el estado del directorio
+	-git status
+5. Supervisar todos los archivos en el interior del repositorio
+	-git add .
+6. Comprobar el estado del directorio
+	-git status
+7. Hace un commit
+	-git commit -m "Descripcion"
+	Registrar un usuario
+	-git config --global user.email "you@example.com"
+	-git config --global user.name "Your Name"
+8. Una vez registrado, hacer commit
+	-git commit -m "primer commit"
+9. Comprobar el estado del directorio
+	-git status
+	
+Segundo Commit
+1. Modificar archivo
+2. Comprobar el estado del directorio
+	-git status
+3. Supervisar todos los archivos en el interior del repositorio
+	-git add .
+4. Comprobar el estado del directorio
+	-git status
+5. Hace un commit
+	-git commit -m "Descripcion"
+6. Comprobar el estado del directorio
+	-git status
+	
+Crear repositorio en GitHub	
+
+1. Hacer clic en el boton crear repositorio  y despues en la opcion nuevo repositorio
+
+2.Colocar nombre al repsitorio
+
+3. Colocar una descripción
+
+4.Seleccionar el repositorio como publico
+
+5. Activar la casilla de el archivo README.md
+
+6. Crear repositorio
+
+7. Clonar el repositorio
+	-git clone [url]
+	
+8. Modificar el archivo README.md
+
+9. Actualizar el repositorio
+	-git status
+	-git add .
+	-git status
+	-git commit -m "Primer commit en github"
+	-git status
+	-git push

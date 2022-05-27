@@ -1,0 +1,66 @@
+Comandos de linux
+
+[permisos][programa/comando][banderas/opciones][parámetros]
+
+nano .bashrc
+
+sudo = super user do
+
+Nunca hacer nada como usuario administrador
+	sudo -i
+	exit
+	
+-Editar longitud de comandos guardados en el archivo .bashrc
+
+Moverse entre directorios
+
+cd
+
+Crear directoriso
+	mkdir [nombre del directorio]
+	
+Eliminar un directorio
+	rmdir [nombre del directorio]
+	
+Crear archivo nuevo vacío
+	touch [nombre del archivo]
+	
+Eliminar archivo
+	rm [nombre del archivo]
+Consultar el contenido de un archivo
+	cat [nombre del archivo]
+	
+Echo nos ayuda solicitar información
+	echo $PATH
+	
+Buscar ubicacion de programas
+	whereis nano
+	
+Como saber en qué directorio estoy
+	pwd
+	
+	/usr/bin/X11/X11
+
+https://edu.codigoiot.com/pluginfile.php/15258/mod_resource/content/1/3.%20Linux%20-%20C%20Programming.pdf
+
+https://edu.codigoiot.com/course/view.php?id=822
+
+https://edu.codigoiot.com/course/view.php?id=813
+
+Instalar Visual Studio Code con la tienda de aplicaciones de Ubuntu
+
+https://vscode.dev/
+
+https://code.visualstudio.com/docs
+
+https://git-scm.com/
+
+Instalar git
+	apt-get install git
+
+Comprobar que se ha instalado git
+	git --version
+
+https://git-scm.com/docs
+
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
