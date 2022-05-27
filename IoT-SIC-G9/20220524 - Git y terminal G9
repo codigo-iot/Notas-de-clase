@@ -1,0 +1,67 @@
+Comandos de git
+
+Segundo commit
+1. Modificar el archivo de texto
+2. Consultar el estado del proyecto
+	-git status
+3. Registrar cambios
+	-git add .
+4. Consultar el estado del proyecto
+	-git status
+5. Hacer segundo commit
+	-git commit -m "Segundo Commit"
+6. Consultar el estado del proyecto
+	-git status
+
+Crear cuenta de GitHub y seguir al perfil de Código IoT
+	
+https://github.com/codigo-iot
+
+merge
+
+Crear un repositorio desde Github.com
+
+1. Hacer clic en el boton Agregar repositorio y seleccionar la opcion Nuevo Repositorio
+2. Nombrar el repositorio
+3. Agregar descripción
+4. Seleccionar proyecto publico
+5. Seleccionar la casilla de agregar el archivo README.md
+6. Hacer clic en el boton Crear repositorio
+
+https://es.wikipedia.org/wiki/WTFPL
+
+Clonar un repositorio
+1. Dirigirse a la carpeta donde se guardará el repositorio
+2. Clonar repositorio
+	-git clone [url]
+3. Comprobar en el explorador de archivos
+
+Realizar un commit desde terminal hacia Github
+
+1. Modificar el contenido de algun archivo del repositorio clonado de GitHub
+2. Dirigirse al directorio del repositorio
+3. Comprobar el estado del proyecto
+	-git status
+4. Agregar los cambios
+	-git add .
+5. Comprobar el estado del proyecto
+	-git status
+6. Realizar commit
+	-git commit -m "Primer commit de git a github"
+7. Enviar cambios a github (repositorio remoto)
+	-git push
+8. Obtener token de autenficación
+	-Hacer clic en perfil
+	-Hacer clic en settings
+	-Seleccionar Developer Settings
+	-Seleccionar Personal Access Tokens
+	-Seleccionar Generar nuevo token
+	-Seleccionar vigencia (7dias)
+	-Seleccionar tipos de acceso
+		-repo
+		-users
+	-Generar token
+	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
+
+9. Enviar cambios a github
+

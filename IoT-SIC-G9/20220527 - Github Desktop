@@ -1,0 +1,29 @@
+Github Desktop
+
+Visitar el siguiente enlace
+https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
+
+	-sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
+	-sudo apt-get install gdebi-core
+	-sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
+
+Clonar Repositorio con Github Desktop
+	-Abrir Github Desktop
+	-Iniciar sesion (hacer clic en el boton Iniciar sesion en Github.com)
+	-Hacer clic en boton Clonar repositorio
+	
+Realizar commit con Github Desktop
+1. Dirigirse al directorio del repositoriclonado
+2. Editar el archivo README.md. Guardar cambios
+3. Abrir Github Desktop
+4. Hacer commit
+5. Hacer push
+
+	
+
+Notas
+
+https://desktop.github.com/
+
+
+

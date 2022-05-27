@@ -1,0 +1,79 @@
+Comandos de linux
+
+[permisos][comando/programa][banderas/opciones][parametros]
+
+root
+
+sudo - Super User Do
+
+Editor de texto
+	nano .bashrc
+	
+Consultar el contenido
+	cat
+	
+Cambiar directorios
+	cd
+	cd ..
+
+Crear nuevo directorio
+	mkdir [nombre]
+	
+Crear archivo nuevo en blanco
+	touch [nombre]
+
+Eliminar directorios
+	rmdir [directorio]
+	
+Consultar el directorio actual
+	pwd
+	
+https://edu.codigoiot.com/pluginfile.php/15258/mod_resource/content/1/3.%20Linux%20-%20C%20Programming.pdf
+
+Instalar Visual Studio Code
+
+https://edu.codigoiot.com/course/view.php?id=822
+
+
+Git
+
+https://git-scm.com/
+
+sudo apt-get install git
+git --version
+
+Primer ejemplo
+
+1. Crear un directorio
+2. Inicializar un repositorio
+	-git init [nombre]
+3. Entrar al directorio del proyecto
+4. Consultar el estado del proyecto
+	-git status
+5. Agregar un archivo
+6. Consultar el estado del proyecto
+7. Agregar archivos
+	-git add .
+8. Consultar el estado del proyecto
+9. Primer intento de commit
+	-git commit -m "primer commit"
+10. Dar de alta la cuenta
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
+11. Una vez registrado, hacer commit
+	-git commit -m "primer commit"
+12. Consultar el estado del proyecto
+
+http://gregorgonzalez.com.ve/blog/wp-content/uploads/git-cheat-sheet-Rebellabs-1536x1086.png
+
+~/Documents
+/home/hugo/Documents
+~
+
+Notas de clase
+
+Material Extra
+
+https://jupyter.org/
+
+
