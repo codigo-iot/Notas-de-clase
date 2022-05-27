@@ -19,7 +19,16 @@ Realizar commit con Github Desktop
 4. Hacer commit
 5. Hacer push
 
-	
+Uso de source control desde Visual Studio Code
+1. Abrir Visual Studio Code
+2. Abrir el directorio del repositorio
+3. Editar README.md
+4. Hacer clic en source control
+5. Hacer clic en el boton Stage All Changes (boton + en la seccion Changes)
+6. Escribir descripcion del commit
+7. Hacer clic en el boton commit
+8. Hacer clic en el boton Sync Changes
+9. Permitir iniciar sesion
 
 Notas
 
