@@ -1,0 +1,61 @@
+Crear repositorio desde GitHub
+1. Crear repositorio y seleccionar la opcion nuevo repositorio
+2. Proporcionar nombre al repositorio
+3. Escribir descripción
+4. Configurar el repositorio como publico
+5. Activar la casilla de seleccion del archivo README.md
+6. Crear repositorio
+
+Clonar un repositorio de github
+1. Dirigirme al directorio donde quiero clonar este repositorio
+2. Clonar el repositorio	
+	-git clone [url]
+	
+Hacer un commit con git en terminal y respaldar en github.com
+1. Modificar el archivo README.md
+2. Abrir una terminal en la ruta del repositorio
+3. Consultar el estado del proyecto
+	-git status
+4. Registrar cambios
+	-git add .
+5. Consultar el estado del proyecto
+	-git status
+6. Realizar commit
+	-git commit -m "Commit desde git a github.com"
+7. Respaldar en repositorio remoto
+	-git push
+8. Generar token
+	-Entrar a github.com
+	-Entar a las configuraciones de la cuenta
+	-Seleccionar la opcion Developer Settings y despues la opcion Personal Access Tokens
+	-Hacer clic en Generar nuevo Token
+	-Colocar descripcion del token
+	-Configurar duracion
+	-Definir el alcance del token
+		-repo
+		-user
+	- Generar el token
+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
+9. Respaldar el repsitorio remoto
+	-git push
+	
+Instalar Github desktop en Ubuntu 20.04LTS
+
+	-sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
+	-sudo apt-get install gdebi-core
+	-sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb
+	
+Clonar un repositorio con Github Desktop
+	-Inicar sesion en github Desktop
+	-Hacer clic en el boton clonar repositorio
+	
+Actualizar repositorio con github desktop
+1. Modificar el archivo readme.md del repositorio clonado con github desktop
+2. Hacer commit
+3. Hacer clic en el boton push
+	
+		
+	
+https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
+	
+
