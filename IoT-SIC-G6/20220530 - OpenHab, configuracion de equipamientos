@@ -1,0 +1,139 @@
+Configuracion de equipamientos
+
+Ejecutar OpenHab
+	-sudo /bin/systemctl start openhab.service
+	-Abrir localhost:8080
+
+Ejemplo 1 de OpenHab
+
+1. Agregar locacion
+	Name: depag6
+	Label: Departamento G6
+	Type: Group
+	Category: Departamento
+	Semantic Class: Apartment
+2. Agregar Binding para obtener informacion de Internet
+	-Seleccionar seccion Things
+	-Agregar un binding  haciendo clic en el boton +
+	-Dirigirse a la pestaña de busqueda
+	-Buscar e instalar el MQTT Binding
+3. Agregar un Broker MQTT
+	-Seleccionar seccion Things
+	-Hacer clic en el boton +
+	-Seleccionar un binding de tipo mqtt
+	-Seleccionar la opcion MQTT Broker
+	Unique ID: BorkerSIC
+	Label: MQTT Broker
+	Location Departamento G6
+	
+	-Activar opciones avanzadas
+	
+	Broker Hostmane/IP: localhost
+	Broker Port: 1883
+	Client ID: hugoSIC85426
+	
+	-Desactivar contraseña y username
+	-Hacer clic en create Thing
+4. Agregar un thing
+	-Seleccionar seccion Things
+	-Hacer clic en el boton +
+	-Seleccionar un binding de tipo mqtt
+	-Seleccionar la opción Generic MQTT Thing
+	
+	Unique ID: tempg6
+	Label: Temperatura DHT11 G6
+	Location: Escritorio
+	Parent Bridge: MQTT Broker G6
+	
+	-Crear Thing
+	
+Crear canal de informacion para el Thing Temperatura DHT11 G6
+	-Hacer clic en la seccion settings
+	-Hacer clic sobre el thing a editar
+	-Selecconar pestaña Channels
+	-Hacer clic en Add Channel
+	
+	Channel Identifier: tempcanalg6
+	Label: Canal Temperatura G6
+	Channel Type: Number Value
+	
+	-Activar la casilla de seleccion de Show advanced
+	
+	MQTT State Topic: codigoIoT/G6/temp
+	QoS: At most once (0)
+	Absolute minimum: 0
+	Absolut Maximum: 55
+	Unit of measurement: °C
+	
+	-Crear Canal
+	
+Agregar un thing para sensor de humedad
+	-Seleccionar seccion Things
+	-Hacer clic en el boton +
+	-Seleccionar un binding de tipo mqtt
+	-Seleccionar la opción Generic MQTT Thing
+	
+	Unique ID: humg6
+	Label: Humedad DHT11 G6
+	Location: Escritorio
+	Parent Bridge: MQTT Broker G6
+	
+	-Crear Thing
+	
+	
+Crear canal de informacion para el Thing Humedad DHT11 G6
+	-Hacer clic en la seccion settings
+	-Hacer clic sobre el thing a editar
+	-Selecconar pestaña Channels
+	-Hacer clic en Add Channel
+	
+	Channel Identifier: humcanalg6
+	Label: Canal Humedad G6
+	Channel Type: Number Value
+	
+	-Activar la casilla de seleccion de Show advanced
+	
+	MQTT State Topic: codigoIoT/G6/hum
+	QoS: At most once (0)
+	Absolute minimum: 0
+	Absolut Maximum: 100
+	Unit of measurement: %
+	
+	-Crear Canal
+	
+Corregir la configuracion del Location
+	-Hacer clic en model
+	-Seccionar la locacion
+	-Seleccionar el item
+	-Hacer clic en editar
+	-Cambiar el Type de Location a Group
+	
+Crear una sub locacion en el interior de departamento
+	
+	Name: escritoriog6
+	Label: Escritorio G6
+	Type: Group
+	Category: Oficina
+	Semantic Class: Location
+	
+Configuracion de equipamientos
+	-Hacer clic en modelo y comprobar que la sub locacion tiene el tipo definido como Grupo
+	-Hacer clic en agregar equipamiento desde thing
+	-Seleccionar thing
+	
+	Name: TemeraturaDHT11G6
+	Label: TemeraturaDHT11G6
+	Category: temperature
+	Semantic Class: Sensor
+
+	-Activar la casilla de seleccion correspondiente al canal de informacion a utilizar
+	
+	Name: TemperaturaDHT11G6_CanalTemperaturaG6
+	Label: Canal Temperatura G6
+	Type : Number
+	Category: temperature
+	Semantic Class: Measurement
+	Semantic Property: Temperature
+	
+	-Hacer clic en el boton Add to model.
+	
