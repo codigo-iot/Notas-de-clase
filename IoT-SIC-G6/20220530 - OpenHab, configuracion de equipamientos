@@ -137,3 +137,5 @@ Configuracion de equipamientos
 	
 	-Hacer clic en el boton Add to model.
 	
+	
+Una vez realizada esta configuracion, se debera enviar la informacion de cada sensor a el tema señalado en el canal de información.
