@@ -10,3 +10,5 @@ Crear un programa para el ESP32CAM que envie los valores de temperatura y humeda
 	https://github.com/codigo-iot/ESP32_Temp/blob/main/DHT.ino
 	
 	https://github.com/codigo-iot/ESP32CAM_MQTT-Basic/blob/main/ESP32CAM_MQTT-Basic/ESP32CAM_MQTT-Basic.ino
+	
+Poner la reaccion de paloma verde cuando estén mandando la lectura del sensor dht11 a OpenHab por mqtt
