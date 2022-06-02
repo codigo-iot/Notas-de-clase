@@ -1,0 +1,86 @@
+Ejercicio con OpenHab
+
+Instalar Openhab
+Hacer una locacion
+Agregar un Binding de tipo MQTT
+Crear Thing de tipo Bridge MQTT
+Crear Thing Generico de tipo MQTT
+
+Abrir localhost:8080
+
+En caso de que no arranque OpenHab, iniciar manualmente
+	-sudo /bin/systemctl start openhab.service
+	
+Crear canal de informacion para el Thing Temperatura DHT11 G6
+	-Hacer clic en la seccion settings
+	-Hacer clic sobre el thing a editar
+	-Selecconar pestaña Channels
+	-Hacer clic en Add Channel
+	
+	Channel Identifier: tempcanalg6
+	Label: Canal Temperatura G6
+	Channel Type: Number Value
+	
+	-Activar la casilla de seleccion de Show advanced
+	
+	MQTT State Topic: codigoIoT/G6/temp
+	QoS: At most once (0)
+	Absolute minimum: 0
+	Absolut Maximum: 55
+	Unit of measurement: °C
+	
+	-Crear Canal
+	
+Agregar un thing para sensor de humedad
+	-Seleccionar seccion Things
+	-Hacer clic en el boton +
+	-Seleccionar un binding de tipo mqtt
+	-Seleccionar la opción Generic MQTT Thing
+	
+	Unique ID: humg6
+	Label: Humedad DHT11 G6
+	Location: Escritorio
+	Parent Bridge: MQTT Broker G6
+	
+	-Crear Thing
+	
+	
+Crear canal de informacion para el Thing Humedad DHT11 G6
+	-Hacer clic en la seccion settings
+	-Hacer clic sobre el thing a editar
+	-Selecconar pestaña Channels
+	-Hacer clic en Add Channel
+	
+	Channel Identifier: humcanalg6
+	Label: Canal Humedad G6
+	Channel Type: Number Value
+	
+	-Activar la casilla de seleccion de Show advanced
+	
+	MQTT State Topic: codigoIoT/G6/hum
+	QoS: At most once (0)
+	Absolute minimum: 0
+	Absolut Maximum: 100
+	Unit of measurement: %
+	
+	-Crear Canal
+	
+Corregir la configuracion del Location
+	-Hacer clic en model
+	-Seccionar la locacion
+	-Seleccionar el item
+	-Hacer clic en editar
+	-Cambiar el Type de Location a Group
+	
+Crear una sub locacion en el interior de departamento
+	
+	Name: escritoriog6
+	Label: Escritorio G6
+	Type: Group
+	Category: Oficina
+	Semantic Class: Location
+	
+	
+	
+Documentación de OpenHab
+https://www.openhab.org/docs/

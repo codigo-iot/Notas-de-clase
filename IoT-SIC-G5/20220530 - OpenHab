@@ -1,0 +1,154 @@
+1. Arracancar OpenHab
+	-sudo /bin/systemctl start openhab.service
+2. Entrar a localhost:8080
+3. Iniciar sesion local en OpenHab
+
+Crear modelo
+-Dirgirse a Settings>Model
+-Hacer clic en agregar locacion
+
+	Name: depa
+	Label: Departamento G5
+	Type: Location
+	Category: Departamento
+	Semantic Class: Apartment
+	
+Instalar binding MQTT
+	-Hacer clic en la seccion Things
+	-Hacer clic en el boton agregar (+)
+	-Hacer clic en Install Binding
+	-Hacer clic en la seccion de busqueda y buscar MQTT
+	-Seleccionar MQTT Binding
+	
+Crear un broker
+	-Hacer clic en la seccion Things
+	-Hacer clic en el boton agregar (+)
+	-Hacer clic en MQTT Binding para agregar un nuevo thing basado en MQTT
+	-Seleccionar MQTT Broker
+	
+	Unique ID: brokerg5
+	Label: MQTT Broker G5
+	Location: Departamento G5
+	
+	-Activar la casilla de configuraciones avanzadas
+	
+	Broker Hostname/IP: localhost
+	Broker Port: 1883
+	Clinent ID: hugoSIC84652
+	
+	-Dejar en blanco Username y Password
+	-Crear Thing
+	
+Crear un Thing para representar el sensor de temperatura
+	-Hacer clic en la seccion Things
+	-Hacer clic en el boton agregar (+)
+	-Hacer clic en MQTT Binding
+	-Hacer clic en Generic MQTT Thing
+	
+	Unique ID: tempg5
+	Label: DHT11 Temperatura G5
+	Location: Escritorio G5
+	
+	-Seleccionar Bridge
+	-Crear Thing
+	
+Crear Canal de informacion
+	-Hacer clic en la seccion Things
+	-Hacer clic en el thing recientemente creado
+	-Seleccionar pestaña Channels
+	-Hacer clic en Add Channel
+	
+	Channel Identifier: tempchang5
+	Label: Temperatura Canal G5
+	Channel Type: Number Value
+	
+	-Activar casilla de configuraciones avanzadas
+	
+	MQTT State Topic: codigoIoT/SIC/G5/temp
+	QoS: Almost Once (0)
+	Absolute Minimum: 0
+	Absolute Maximum: 55
+	Unit of Measurement: °C
+	
+	-Crear Canal
+	
+Crear un Thing para representar el sensor de humedad
+	-Hacer clic en la seccion Things
+	-Hacer clic en el boton agregar (+)
+	-Hacer clic en MQTT Binding
+	-Hacer clic en Generic MQTT Thing
+	
+	Unique ID: humg5
+	Label: DHT11 Humedad G5
+	Location: Escritorio G5
+	
+	-Seleccionar Bridge
+	-Crear Thing
+	
+Crear Canal de informacion
+	-Hacer clic en la seccion Things
+	-Hacer clic en el thing recientemente creado
+	-Seleccionar pestaña Channels
+	-Hacer clic en Add Channel
+	
+	Channel Identifier: humchang5
+	Label: Humedad Canal G5
+	Channel Type: Number Value
+	
+	-Activar casilla de configuraciones avanzadas
+	
+	MQTT State Topic: codigoIoT/SIC/G5/hum
+	QoS: Almost Once (0)
+	Absolute Minimum: 0
+	Absolute Maximum: 100
+	Unit of Measurement: %
+	
+	-Crear Canal
+	
+Corregir la configuracon de Type para la locacion ya creada
+	-Hacer clic en la seccion model
+	-Seleccionar la locacion a editar
+	-Hacer clic en el boton de descripcon de locacion
+	-Hacer clic en editar
+	-Guardar cambios
+	
+Crear una sub locacion en el interior de departamento
+	
+	Name: escritoriog5
+	Label: Escritorio G5
+	Type: Group
+	Category: Oficina
+	Semantic Class: Location
+	
+Crear nuevo equipamiento en la locacion correspondiene para describir el sensor.
+	-Seleccionar la locacion deseada
+	-Hacer clic en Add Equipment from Thing
+	
+	Thing: DHT11 Temperatura G5
+	Category: temperature
+	Semantic Class: Sensor
+	
+	-Seleccionar la casilla de verificacion del canal sociado al thing seleccinado
+	
+	Type: Number
+	Category: temperature
+	Semantic Class: Point
+	Semantic Property: Temperature
+	
+	-Hacer clic en Agregar al Modelo
+	
+	
+	
+	
+Notas
+
+https://t.me/+2D3w2dq1m8I0NWU5
+
+Documentacion
+https://www.openhab.org/docs/
+
+Para comprobar el funcionamiento de Mosquitto de forma local:
+	-netstat -an
+	
+	
+

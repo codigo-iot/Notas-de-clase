@@ -1,0 +1,10 @@
+
+Material fuente
+
+https://github.com/codigo-iot/ESP32CAM_MQTT-Basic/blob/main/ESP32CAM_MQTT-Basic/ESP32CAM_MQTT-Basic.ino
+
+https://github.com/codigo-iot/ESP32_Temp/blob/main/DHT.ino
+
+Cambiar contranseña WiFi
+Poner la IP del broker
+	ifconfig

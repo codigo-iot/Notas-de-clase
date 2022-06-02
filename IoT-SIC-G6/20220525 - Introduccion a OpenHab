@@ -25,7 +25,7 @@ Ejemplo 1 de OpenHab
 1. Agregar locacion
 	Name: depag6
 	Label: Departamento G6
-	Type: Location
+	Type: Group
 	Category: Departamento
 	Semantic Class: Apartment
 2. Agregar Binding para obtener informacion de Internet
@@ -38,7 +38,7 @@ Ejemplo 1 de OpenHab
 	-Hacer clic en el boton +
 	-Seleccionar un binding de tipo mqtt
 	-Seleccionar la opcion MQTT Broker
-	Unique ID: BrokerSIC
+	Unique ID: BorkerSIC
 	Label: MQTT Broker
 	Location Departamento G6
 	
@@ -59,7 +59,7 @@ Ejemplo 1 de OpenHab
 	Unique ID: tempg6
 	Label: Temperatura DHT11 G6
 	Location: Escritorio
-	Parent Bridge: MQTT Broker
+	Parent Bridge: MQTT Broker G6
 	
 	-Crear Thing
 	
