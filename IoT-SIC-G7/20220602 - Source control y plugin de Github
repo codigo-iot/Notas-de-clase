@@ -15,3 +15,15 @@ Ejercicio con source control
 5. Escribir comentario de commit
 6. Hacer clic en el boton commit
 7. Hacer push haciendo clic en el boton commit
+
+Ejercicio con el plugin de GitHub
+
+1. Modificar el archivo README.md
+2. Hacer clic en el plugin de GitHub
+3. Iniciar sesion
+	-Allow
+	-System Handler
+	-Open
+4. Crear Pull Request
+5. Agregar Descripción
+6. Aceptar commit y poner descripcion al commit
