@@ -1,0 +1,41 @@
+
+
+Instalacion de nodeJS
+
+Fuente: https://github.com/nodesource/distributions/blob/master/README.md
+
+Instrucciones, ejectuar los comandos de la seccion correspondiente a Node.js LTS (v16.x)
+
+# Using Ubuntu
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+Si es necesario, instala curl
+	sudo apt install curl
+	
+Comprobar la instalacion con el comando
+	-node --version
+	
+Instalar el gestor de paquetes de NodeJS
+	apt-get install -y build-essential
+	
+Instalar NodeRed
+	https://nodered.org/
+	https://nodered.org/docs/getting-started/local
+	
+Comprobar la version de nodeRed
+	node-red --version
+	
+Crear flow 1
+	-Unir nodo inject con nodo Debug
+	-Hacer clic en el boton deploy
+	-Crear reposito en github
+	-Clonarlo a la computadiora
+	-Exportar el flow en el directorio del repositorio
+	-Abrir el directorio con Visual Studio Code
+	-Instalar en VSC el plugin de github
+	
+	
+	
+	
+	

@@ -1,0 +1,17 @@
+Para el ejercicio de hoy debeb contar con lo siguiente
+
+1. NodeRed
+2. Flow1
+3. Repositorio en github.com del flow1
+4. El repositorio del flow1 clonado
+5. Respaldar el archivo del flow 1 en repositorio del flow1
+
+Ejercicio con source control
+
+1. Abrir el directorio del repositorio en VSC
+2. Modificar el archivo Readme.md
+3. Hacer clic en source control
+4. Registrar todos los cambios
+5. Escribir comentario de commit
+6. Hacer clic en el boton commit
+7. Hacer push haciendo clic en el boton commit
