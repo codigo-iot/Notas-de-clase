@@ -1,0 +1,50 @@
+Crear reglas en OpenHab
+
+Crear un Thing para representar un LED
+	Unique ID: ledg5
+	Label: LED G5
+	Location: Oficina
+	Bridge: MQTT Broker G5
+	
+	Channel Identifier: ledchang5
+	Label: Canal LED G5
+	Channel Type: On/Off Switch
+	
+	Activar opciones avanzadas
+	MQTT Command Topic: codigoIoT/SIC/G5/led
+	QoS: At most Once (0)
+	Is Command: Activado
+	
+Agregar Equipamiento al mismo nivel que el sensor
+	Thing: LED G5
+	Name: LEDG5
+	Label: LED G5
+	Category: Aire Acondicionado
+	Semantic Class: Fan.
+	
+	Seleccionar Canal LED G5
+	Name: LEDG5_CanalLEDG5
+	Label: Canal LED G5
+	Type: Switch
+	Category
+	Semantic CLass: Point
+	Semantic Property: Power
+	
+Creacion de reglas
+1. Hacer clic en la seccion Rules
+2. Hacer clic en el boton (+)
+	Unique ID: overheatg5
+	Name: Exeso de temperatura G5
+	Description: Activar el LED G5 cuando la temperatura sobrepase un umbral
+	
+3. Seleccionar Add Trigger en la seccion When
+4. Seleccionar un evento de Item
+5. Seleccionar el canal del sensor de temperatura
+6. Seleccionar la opcion Was Updated
+7. Dejar en blanco el campo To State
+8. Aceptar
+9. Agregar una accion en la seccion Then
+10. Seleccionar Run Script y seleccionar la opcion Blockly
+	
+	
+	
