@@ -64,7 +64,7 @@ Crear Canal de informacion
 	
 	-Activar casilla de configuraciones avanzadas
 	
-	MQTT State Topic: codigoIoT/SIC/G5/temp
+	MQTT State Topic: 
 	QoS: Almost Once (0)
 	Absolute Minimum: 0
 	Absolute Maximum: 55
