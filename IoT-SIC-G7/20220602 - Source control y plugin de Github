@@ -27,3 +27,13 @@ Ejercicio con el plugin de GitHub
 4. Crear Pull Request
 5. Agregar Descripción
 6. Aceptar commit y poner descripcion al commit
+
+Flow 2
+1. Importar el flow 1
+2. Seleccionar Importar una Copia
+3. Modificar el nombre del flow importado haciendo doble clic en la pestaña
+
+Instalar los nodos
+	node-red-dashboard
+
+
