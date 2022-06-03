@@ -1,0 +1,36 @@
+Instalar NodeJS
+	https://nodejs.org/es/
+	https://github.com/nodesource/distributions/blob/master/README.md
+	
+INstalar NodeJS
+	
+	curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+	
+	sudo apt-get install -y nodejs
+	
+Comprobar instalacion de NodeJS
+	-node --version
+	
+Instalar NodeRed
+	sudo npm install -g --unsafe-perm node-red
+	
+Para comprobar el funcionamiento de NodeRed, hay que ejecutarlo
+	-node-red
+	
+Dirigirse a cualquier navegador a la direccion
+	localhost:1880
+	
+Hacer un commit con El plugin de Github para VSC
+
+1. Crear el flow1
+2. Exportar el flow como flow.json
+	-Hacer clic en el menu opciones de NodeRed
+	-Hacer clic en exportar
+	-Seleccionar Current FLow, JSON y Formatted.
+	-Hacer clic en descargar
+3. Crear un repositorio en Github.com
+4. Clonar el repositorio en su computadora
+5. Abrir el directorio del repositorio clonado con visual studo code
+6. Mover el archivo flow.json al directorio del repositorio
+7. Instalar el plugin de github para VSC 
+	

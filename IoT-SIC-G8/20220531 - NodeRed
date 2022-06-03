@@ -1,0 +1,47 @@
+
+Instalar NodeJS 16 LST
+https://github.com/nodesource/distributions/blob/master/README.md
+	
+	-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+	-sudo apt-get install -y nodejs
+	
+Para comprobar la instalacion de nodeSJ
+	-node --version
+	
+Instalar Build Tools
+	-sudo apt-get install -y build-essential
+	
+Instalar NodeRed
+https://nodered.org/
+
+https://nodered.org/docs/getting-started/local
+
+	-sudo npm install -g --unsafe-perm node-red
+	
+Ejecutar NodeRed
+	-node-red
+
+Ejercicio	
+1. Crear flow
+	Arrastrar el nodo inject
+	Arrastrar el no Debug
+	Conectar ambos nodos
+2. Hacer clic en el boton Desploy
+3. Hacer clic en el boton inject
+4. Exportar el flow
+	Clic en menu opciones
+	Clic en exportar
+	Hacer clic en current flow
+	Seleccionar la opcion JSON
+	Hacer clic en Download
+5. Crear un repositorio en github.com
+6. Clonar ese repositorio
+7. Colocar en ese repositorio el archivo descargado
+8. Abrir el directorio del repositorio con Visual Studio Code
+
+
+	
+	
+NodeRed
+
+	sudo apt upate
