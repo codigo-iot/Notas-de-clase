@@ -1,0 +1,50 @@
+Dirigirse a cualquier navegador a la direccion
+	localhost:1880
+	
+Hacer un commit con El plugin de Github para VSC
+
+1. Crear el flow1
+2. Exportar el flow como flow.json
+	-Hacer clic en el menu opciones de NodeRed
+	-Hacer clic en exportar
+	-Seleccionar Current FLow, JSON y Formatted.
+	-Hacer clic en descargar
+3. Crear un repositorio en Github.com
+4. Clonar el repositorio en su computadora
+5. Abrir el directorio del repositorio clonado con visual studo code
+6. Mover el archivo flow.json al directorio del repositorio
+7. Instalar el plugin de github para VSC 
+
+Ejercicio con source control
+1. Abrir el repositorio de el flow 1
+2. Modificar el archivo README.md
+3. Hacer clic en el boton guardar todos los cambios
+4. Crear un mensaje de commit
+5. Hacer clic en el boton commit
+6. Hacer push con el boton Sync Changes
+7. Consultar los cambios en github.com
+
+Ejercicio con Pull Request
+1. Abrir el repositorio de el flow 1
+2. Modificar el archivo README.md
+3. Hacer clic en el boton de plugin pull request
+4. Hacer clic en el boton de Crear Pull Request
+5. Hacer clic en crear
+6. Poner descripcion del commit
+7. Iniciar sesion
+
+Flow 2 con NodeRed
+1. Iniciar NodeRed
+	node-red
+2. Importar flows.json
+3. Seleccionar importar una copia
+4. Cambiar el nombre al nuevo flow
+
+https://edu.codigoiot.com/mod/page/view.php?id=1080
+
+Instalar Nodos:
+1. Hacer clic en opciones
+2. Seleccionar Manage Palet
+3. Seleccionar pestaña Instalar
+4. Instalar nodos node-red-dashboard
+

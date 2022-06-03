@@ -1,0 +1,38 @@
+
+Clase pasada
+
+1. Instalar NodeJS
+2. Instalar NodeRed
+3. Hicimos el Flow1
+4. Hicimos el repositorio para el Flow 1
+5. Clonar el repositorio del Flow 1
+6. Exportar en repositorio el Flow1
+7. Abrir el directorio del repositorio en VSC
+
+INstalar plugin de Github Pull Request
+
+Para iniciar NodeRed
+	-node-red
+	
+Ejercicio de Source Control
+
+1. Abrir Repositorio
+2. Modificar el archivo README.md
+3. Registrar cambios en Source Control
+4. Colocar un mensaje de commit
+5. Hacer clic en el boton commit de Source Control
+6. Hacer push haciendo clic en el boton Sync Changes
+7. Aceptar que se hará un Push / Iniciar sesion / Vincular cuentas 
+
+Ejercicio con el plugin de GitHub
+
+1. Abrir Repositorio
+2. Modificar el archivo README.md
+3. Hacer clic en el plugin de Github e iniciar sesion
+4. Hacer clic en el boton Create Pull Request
+5. Hacer clic en Create y despues en Yes
+
+Flow 2
+1. Importar Flows.json
+2. Seleccionar hacer copia de flows
+3. Cambiar el nombre al flow recientemente importado por flow 2
