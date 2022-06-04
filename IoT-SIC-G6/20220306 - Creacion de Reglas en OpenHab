@@ -15,9 +15,11 @@ Crear un LED en OpenHab
 	QoS: At most once (0)
 	Is Command: Activar
 	
+Agregar el Thing como equipamiento
+	
 Crear una regla
 
-1. Hacer clic en rulel
+1. Hacer clic en rule
 2. Hacer clic en el boton +
 	Unique ID: overheatg6
 	Name: Exeso de temperatura G6
