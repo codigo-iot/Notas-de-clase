@@ -1,0 +1,20 @@
+Abrir node Red 
+	-node-red
+	
+Instalar nodos dashboard
+	-Hacer clic en el boton hamburguesa
+	-Seleccionar manage pallet
+	-Seleccionar la pestaña install
+	-Buscar los nodos node-red-dashboard
+	-Hacer clic en el boton instalar
+	
+Notas:
+
+En caso de que no se puedan instalar los nodos dashboard:
+1. Cerrar nodeRed con el comando 
+	-Ctrl + C
+2. Actualizar el sistema
+	-sudo apt update
+	-sudo apt upgrade
+3.Instalar los build Essentials
+	-apt-get install -y build-essential
