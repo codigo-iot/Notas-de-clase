@@ -1,0 +1,18 @@
+Sistema de 4 sensores
+
+sensor1: int	2seg
+sensor2: bool	15seg
+Sensor3: Float	1seg
+sensor4: char	8.7seg
+
+127,0,70.7,b
+
+null,null,70.7,null
+null,null,70.7,null
+null,null,70.7,null
+null,null,70.7,null
+null,null,70.7,null
+127,null,null,null
+null,null,70.7,null
+null,null,70.7,null
+null,null,70.7,null

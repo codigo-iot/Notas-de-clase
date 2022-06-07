@@ -1,0 +1,33 @@
+Crear un LED en OpenHab
+
+	Unique ID: ledg6
+	Label: LED G6
+	Location: Oficina
+	Bridge: MQTT Borker G6
+	
+	Channel Identifier: canalg6led
+	Label: Canal LED G6
+	Channel Type: On/Off Switch
+	
+	Activar configuraciones avanzadas
+	
+	MQT Command Topic: codigoIoT/G6/led
+	QoS: At most once (0)
+	Is Command: Activar
+	
+Agregar el Thing como equipamiento
+	
+Crear una regla
+
+1. Hacer clic en rule
+2. Hacer clic en el boton +
+	Unique ID: overheatg6
+	Name: Exeso de temperatura G6
+	Description: Esta regla se activa cuando se detecta un exceso de temperatura
+3. Agregar un trigger en la seccion When
+	-Seleccionar un evento de Item
+	-Seleccionar el Canal de temperatura
+	-Seleccionar la opcion Was Updated
+4. Agregar una accion en la seccion Then
+	-Seleccionar Run Script
+	-Seleccionar Blocky

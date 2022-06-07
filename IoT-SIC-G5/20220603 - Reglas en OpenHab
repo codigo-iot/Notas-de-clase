@@ -26,7 +26,7 @@ Agregar Equipamiento al mismo nivel que el sensor
 	Name: LEDG5_CanalLEDG5
 	Label: Canal LED G5
 	Type: Switch
-	Category
+	Category: Temperature
 	Semantic CLass: Point
 	Semantic Property: Power
 	
