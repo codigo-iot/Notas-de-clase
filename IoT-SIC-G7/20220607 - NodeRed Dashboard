@@ -1,5 +1,5 @@
 Abrir node Red 
-	-node-red
+	-sudo node-red
 	
 Instalar nodos dashboard
 	-Hacer clic en el boton hamburguesa
@@ -18,3 +18,44 @@ En caso de que no se puedan instalar los nodos dashboard:
 	-sudo apt upgrade
 3.Instalar los build Essentials
 	-apt-get install -y build-essential
+	
+Generar un Dashboard con la Fecha
+1. Arrastrar el nodo text al flow
+
+En NodeJS estan los JSON
+
+Java Script Object Notation
+
+{ variable:valor, variable:valor, variable:valor}
+
+Ejemplo de JSON
+
+{
+	"temperatura":27,
+	"humedad":65,
+	"led":0
+}
+
+Cada nodo envia un JSON llamado msg, el cual tiene siempre la siguiente estructura:
+
+{	"payload":valor,
+	"_msgid":id
+}
+
+Flow3
+1. Crear repositorio en github.com
+2. Clonar el repostioro recientemente creado
+3. Crear el flow 3
+	-Hacer clic en el boton agregar flow en nodeRed
+4. Crear el flow
+5. Configurar el dashboard en la seccion layout
+6. Configurar los nodos dashboard
+
+Instalar mosquitto
+	-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+	-sudo apt-get update
+	-sudo apt install mosquitto
+	
+	https://mosquitto.org/download/
+	
+	https://edu.codigoiot.com/course/view.php?id=851
