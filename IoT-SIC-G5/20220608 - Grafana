@@ -1,0 +1,37 @@
+Grafana
+
+https://edu.codigoiot.com/course/view.php?id=842
+
+Instala Grafana
+	sudo apt-get install -y adduser libfontconfig1
+	
+	wget https://dl.grafana.com/enterprise/release/grafana-enterprise_8.2.3_amd64.deb 
+	
+	sudo dpkg -i grafana-enterprise_8.2.3_amd64.deb
+
+Para arrancar grafana
+
+Dejarlo configurado de forma automática
+	sudo /bin/systemctl daemon-reload
+	sudo /bin/systemctl enable grafana-server
+	
+Arrancarlo manualmente cada vez
+	sudo /bin/systemctl start grafana-server
+	
+Iniciar sesion como administrador
+	admin
+	admin
+	
+Configurar una fuente de informacion
+1. hacer clic en configuracion
+2. Hacer clic en origen de datos
+3. Hacer clic en el boton Add data source
+4. Seleccionar MySQL y proporcionar credenciales
+
+Crear un Panel
+
+Instalar los nodos
+	node-red-node-mysql
+	
+	https://github.com/hugoescalpelo/DHT11-ESP32CAM-MQTT-Grafana
+
