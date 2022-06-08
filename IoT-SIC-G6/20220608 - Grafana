@@ -10,3 +10,36 @@ https://edu.codigoiot.com/mod/lesson/view.php?id=1955&pageid=2493
 	
 Ejecutar grafana
 	-sudo /bin/systemctl start grafana-server
+	
+Entrar a grafana desde
+	localhost:3000
+	
+Inicar sesion
+	admin
+	admin
+	
+Configurar Origen de datos de mySQL
+	Host: localhost:3306
+	Database: datos
+	User
+	Password
+	
+https://github.com/hugoescalpelo/DHT11-ESP32CAM-MQTT-Grafana
+
+1. Instalar grafana
+2. Crear un nuevo origen de datos (en grafana)
+3. Cargar el codigo al ESP32CAM
+4. Crear la base de datos dht2 (notas.txt)
+5. En NodeRed instalar los nodos mysql
+ node-red-node-mysql
+6. Importar el flow del repositorio
+7. Adaptar los temas mqtt
+8. Crear un nuevo dashboard en grafana
+
+
+
+
+
+
+
+
