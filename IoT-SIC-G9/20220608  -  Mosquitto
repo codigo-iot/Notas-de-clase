@@ -1,0 +1,58 @@
+Explicacion del modelo de NodeRed
+
+La salida de informacion de los nodos es un JSON (Java Script Object Notation)
+
+{
+	"sensor1":valor1,
+	"sensor2":valor2,
+	"sensor3":valar3
+}
+
+Cada nodo envia siempre un objeto msg
+{
+	"_msgid": valor,
+	"payload": valor2
+}
+
+msg.payload = valor2
+
+Instalacion de Mosquitto
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1766
+
+	-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+
+	-sudo apt-get update
+	
+	-sudo apt-get install mosquitto
+	
+Comprobar instalacion de mosquitto
+
+	mosquitto --version
+	
+	netstat -an
+	
+	
+Temas MQTT
+
+miCasa/plantaBaja
+
+codigoIoT/G9/flow4/temp
+
+Para suscribrir
+	mosquitto_sub -h localhost -p 1883 -q 0 -t codigoIoT/G9/ejemplo
+
+
+Para publicar
+	mosquitto_pub -h localhost -p 1883 -q 0 -t codigoIoT/G9/ejemplo -m "Hola mosquitto. Saludos al grupo 9"
+
+
+
+
+
+	
+	
+	
+	
+	
+	

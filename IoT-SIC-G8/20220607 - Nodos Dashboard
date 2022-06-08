@@ -1,0 +1,28 @@
+Arrancar NodeRed
+	node-red
+	
+Instalar Nodos Dashboard
+	-Clic en opciones
+	-Seleccionar Manage Palette
+	-Clic en la pestaña instalar
+	-Buscar los nodos node-red-dashboard
+	
+Crear un layout
+	
+Todos los nodos envian la informacion con un JSON (Java Script Object Notation)
+
+{
+	"sensor1": valor,
+	"sensor2": valor,
+	"sensor3": valor
+}
+
+msg
+
+{
+	"_msgid": valor,
+	"payload" : valor
+	
+}
+
+https://edu.codigoiot.com/course/view.php?id=851#section-1
