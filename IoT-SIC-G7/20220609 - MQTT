@@ -1,0 +1,8 @@
+Instalar mosquitto
+	-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+	-sudo apt-get update
+	-sudo apt install mosquitto
+	
+	https://mosquitto.org/download/
+	
+	https://edu.codigoiot.com/course/view.php?id=851
