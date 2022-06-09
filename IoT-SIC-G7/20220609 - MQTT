@@ -1,4 +1,6 @@
-Instalar mosquitto
+https://edu.codigoiot.com/course/view.php?id=851#section-1
+
+1. Instalar mosquitto
 	-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
 	-sudo apt-get update
 	-sudo apt install mosquitto
@@ -6,3 +8,66 @@ Instalar mosquitto
 	https://mosquitto.org/download/
 	
 	https://edu.codigoiot.com/course/view.php?id=851
+	
+2. Comprobar que mosquitto funciona
+	-netstat -an
+	(si no esta instalado, seguir las instrucciones sugeridas por la terminal para instalarlo)
+	-Esperamos ver un servicio escuchando en el puerto 1883
+	
+3. Generar una suscripcion a Mosquitto
+clear
+	-mosquitto_sub -h localhost -p 1883 -q 0 -t codigoIoT/G7/ejemplo
+	-Si sale un error indicando que no existe mosquitto client, instalar con el comando sugerido
+
+4. Publicar un mensasje con Mosquitto
+	-mosquitto_pub -h localhost -p 1883 -q 0 -t codigoIoT/G7/ejemplo -m "Hola mosquitto. Este es un mensaje para el grupo7"
+	
+Ejercicio de broker publico
+1. Conocer la IP del broker
+	-nslookup broker.hivemq.com
+	35.157.61.99
+2. Hacer un suscriptor
+	mosquitto_sub -h 35.157.61.99 -p 1883 -q 0 -i hugo-85476 -t codigoIoT/g7/mosquitto/msg
+3. Hacer un publicador
+	-mosquitto_pub -h localhost -p 1883 -q 0 -i hugo-482176 -t codigoIoT/g7/mosquitto/msg -m "Hola grupo 7"
+
+miCasa/plantaBaja/sala/temperatura
+miCasa/plantaBaja/sala/humedad
+miCasa/plantaBaja/sala/ruido
+miCasa/plantaBaja/sala/uv
+miCasa/plantaAlta/cuarto1/temperatura
+miCasa/plantaAlta/cuarto1/humedad
+miCasa/plantaAlta/cuarto1/ruido
+miCasa/plantaAlta/cuarto1/uv
+miCasa/plantaAlta/cuarto2/temperatura
+miCasa/plantaAlta/cuarto2/humedad
+miCasa/plantaAlta/cuarto2/ruido
+miCasa/plantaAlta/cuarto2/uv
+miCasa/plantaAlta/cuarto2
+
+miCasa/plantaAlta/+/temperatura
+	
+/miCasa/plantaAlta/cuarto2/uv
+miCasa/plantaAlta/cuarto2/uv
+
+miCasa/plantaAlta/cuarto2/#
+	
+#	
+
+Flow 4: Grafica colectiva
+
+{
+	"id":"Hugo",
+	"temp":25.5
+}
+
+{"id":"Hugo","temp":25.5}
+
+mosquitto_pub -h 35.157.61.99 -p 1883 -q 0 -i hugo-482176 -t codigoIoT/g7/mosquitto/msg -m '{"id":"Hugo","temp":25.5}'
+
+mosquitto_pub -h 35.157.61.99 -p 1883 -q 0 -i hugo-482176 -t codigoIoT/g7/mosquitto/msg -m "{\"id\":\"Hugo\",\"temp\":25.5}"
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;
+
