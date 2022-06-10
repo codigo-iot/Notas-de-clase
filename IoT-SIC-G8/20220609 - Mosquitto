@@ -1,0 +1,80 @@
+Instalar Mosquitto
+
+https://mosquitto.org/download/
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1766
+
+	-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+	
+	-sudo apt-get update
+	
+	-sudo apt install mosquitto
+	
+Comprobar la instalacion de mosquitto
+
+	-netstat -an
+	-En caso de no tener instalado netstat, aparecerá un mensaje de error indicando que no se cuenta con la net-tools. En ese caso, instalarlas con la instruccion sugeria
+	
+Disco duro de estado solid 250
+Ram 16gb
+Procesador Intel de Octava generacion o mas reciente
+Procesador AMD de septima generacion o mas reciente
+(de 2018 para aca)
+
+Ejercicio con Mosquitto
+
+1. Crear un suscriptor con mosquitto
+	mosquitto_sub -h localhost -p 1883 -i hugo-4853 -q 0 -t codigoIoT/G8/ejemplo
+	
+2. Crear un publicaddor con mosquitto
+	mosquitto_pub -h localhost -p 1883 -i hugo-7154 -q 0 -t codigoIoT/G8/ejemplo -m "Hola mosquitto. Saludos al grupo 8"
+	
+Ejercicio con el broker publico
+
+1. Encontrar la IP del broker
+	nslookup broker.hivemq.com
+	35.157.61.99
+	codigoIoT/G8/mosquitto/msg
+	
+2. Crear un suscriptor
+3. Crear un publicador
+
+miCasa/plantaBaja/sala/temperatura
+miCasa/plantaBaja/sala/humedad
+miCasa/plantaBaja/sala/ruido
+miCasa/plantaBaja/sala/UV
+miCasa/plantaBaja/sala/infrarojo
+miCasa/plantaBaja/sala/accel
+miCasa/plantaBaja/sala
+miCasa/plantaBaja/cocina/temperatura
+miCasa/plantaBaja/cocina/humedad
+miCasa/plantaBaja/cocina/ruido
+miCasa/plantaBaja/cocina/UV
+miCasa/plantaBaja/cocina/infrarojo
+miCasa/plantaBaja/cocina/accel
+miCasa/plantaBaja/+/temperatura
+miCasa/plantaBaja/sala/#
+
+/miCasa
+miCasa
+mi Casa/plantaBaja
+
+Flow 4
+#
+
+{
+	"id":"Hugo",
+	"temp":25.5
+}
+
+{"id":"Hugo","temp":25.5}
+
+mosquitto_pub -h 35.157.61.99 -p 1883 -i hugo-10374 -q 0 -t codigoIoT/G8/mosquitto/msg -m '{"id":"Hugo","temp":25.5}'
+
+mosquitto_pub -h 35.157.61.99 -p 1883 -i hugo-10374 -q 0 -t codigoIoT/G8/mosquitto/msg -m "{\"id\":\"Hugo\",\"temp\":25.5}"
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;
+
+
