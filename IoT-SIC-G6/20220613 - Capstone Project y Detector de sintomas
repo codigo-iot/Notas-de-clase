@@ -1,0 +1,36 @@
+Capstone Project
+
+Verificar lo siguiente
+-Que los 3 integrantes del equipo tengan acceso como profesor
+
+-Que haya acceso publico a su curso
+
+-Que el nombre del curso sea correcto
+
+-Que el curso cuente con una descripción y una imagen (min 300x300px max 1500x1500px, que sea Licencia abierta)
+
+Debe contar con las siguientes secciones
+
+Sección General
+	-Foro
+	-Video Descripción. Entre 2 y 3 min
+		-URL. Nombre, descripcion, enlace de youtube, en ventana emergente
+	-Opcional: Video, hojas de datos, Kardex, Plan de Accion, Documento de contenido (PDF), galerias
+	 
+Seccion Contenidos
+	-Lecciones
+	-Páginas
+	
+Fin de curso
+27 de junio de 2022
+
+Fecha de evaluacion
+18 al 22 de julio de 2022
+
+Detector de sintomas covid
+
+Instalar la biblioteca:
+SparkFun MAX3010x Pulse and Proximity Sensor Library - SparkFun Electronics
+
+Codigo IoT
+Av Universidad 521 1er piso
