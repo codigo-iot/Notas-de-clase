@@ -1,0 +1,36 @@
+Capstone Project
+
+Cada equipo deberá comprobar lo siguiente
+
+-Que todos los integrantes del equipo estén inscritos como profesores
+
+-Que esté configurado el acceso publico para el resto de los usuarios de la plataforma
+
+-Que el nombre y la descripción de su curso esté correctamente escrito
+
+-Cargar una miniatura para la portada del curso 300x300 a 1500x1500. De preferencia que sea licencia CC
+
+Edicion de contenidos
+
+Agregar secciones, lecciones, paginas, enlaces o recursos necesarios
+
+Deberan contar con la seccion general
+
+-Agregar descripcion a la seccion general
+
+Sección general
+	-Foro
+	-Enlace a video descripcion en youtube (recurso URL). 
+		-Nombre: Descripción en video
+		-URL: (youtube)
+		-Apariencia: Ventana emergente
+	-Opcional: Karadex, pdf, plan de accion
+
+Sección Contenidos
+Hacer clic en añadir tópico
+	-Lecciones
+		-Botones de navegación
+	-Paginas
+	
+Fecha de finalización del diplomado: 27 de junio
+Fecha de evaluación (en linea o presencial): 18 al 22 de julio
