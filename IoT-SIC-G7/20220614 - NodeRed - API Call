@@ -24,7 +24,7 @@ https://home.openweathermap.org/api_keys
 API Call
 
 Forma general
-https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric
 
 Forma personal
 https://api.openweathermap.org/data/2.5/weather?lat=19.432723&lon=-99.133653&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric 
@@ -68,4 +68,10 @@ Enviador
 msg.payload = '{"id":"Hugo","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+'}';
 return msg;
 
+Consultar su IP
+ifconfig
+
+Entrar desde un dispositivo externo conectado a la misma red local
+
+192.168.15.27:1880/ui
 
