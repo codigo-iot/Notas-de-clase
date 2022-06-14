@@ -1,0 +1,20 @@
+Flow 4
+
+Compartir informacion entre todos
+
+Poner la reaccion de paloma verde quiene hayan logrado reportar al broker publico y realizar el flow 4
+
+Consultar cada vez la ip del broker publico
+	-nslookup broker.hivemq.com
+	-18.156.8.172
+	
+Tema MQTT acordado
+	-codigoIoT/G8/mosquitto/msg
+	
+'{"id":"Sofia","temp":22}'
+'{id:Sofia,temp:22}'
+
+"{\"id\":\"Sofia\",\"temp\":22}"
+
+Repositorio de flow 4
+https://github.com/hugoescalpelo/flow4-G8
