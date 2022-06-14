@@ -1,0 +1,54 @@
+Arrancar NodeRed
+	- node-red
+	
+Broker publico
+	- nslookup broker.hivemq.com
+	- 18.157.172.72
+	
+Suscriptor
+	- mosquitto_sub -h 18.157.172.72 -p 1883 -i hugo-754856 -q 0 -t codigoIoT/g9/mosquitto/msg
+
+Publicador
+	- mosquitto_pub -h 18.157.172.72 -p 1883 -i hugo-68942 -q 0 -t codigoIoT/g9/mosquitto/msg -m "Hola grupo 9"
+	
+miCasa/plantaBaja/sala/temperatura
+miCasa/plantaBaja/sala/humedad
+miCasa/plantaBaja/sala/ruido
+miCasa/plantaBaja/sala/uv
+miCasa/plantaBaja/sala/ir
+miCasa/plantaBaja/oficina/temperatura
+miCasa/plantaBaja/oficina/humedad
+miCasa/plantaBaja/oficina/ruido
+miCasa/plantaBaja/oficina/uv
+miCasa/plantaBaja/oficina/ir
+miCasa/plantaBaja/cocina/tempratura
+miCasa/plantaBaja/cocina/humedad
+miCasa/plantaBaja/cocina/ruido
+miCasa/plantaBaja/cocina/uv
+miCasa/plantaBaja/cocina/ir
+
+miCasa/plantaBaja/+/temperatura
+miCasa/plantaBaja/#
+
+miCasa/plantaAlta
+
+#
+
+
+/miCasa/plantaBaja
+miCasa/plantaBaja
+
+{
+	"id":"Hugo",
+	"temp":24.5
+}
+
+mosquitto_pub -h 18.157.172.72 -p 1883 -i hugo-68942 -t codigoIoT/g9/mosquitto/msg -m '{"id":"Hugo","temp":24.5}'
+
+mosquitto_pub -h 18.157.172.72 -p 1883 -i hugo-68942 -t codigoIoT/g9/mosquitto/msg -m "{\"id\":\"Hugo\",\"temp\":24.5}"
+
+Elaborar el flow4
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;

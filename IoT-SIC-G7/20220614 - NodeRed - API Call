@@ -1,0 +1,71 @@
+Obtener la IP de HiveMQ
+	-nslookup broker.hivemq.com
+	18.156.8.172
+	
+Flow 5
+
+-Obtener informacion del clima de una fuente real, por API
+
+-Informacion en común
+	-Temperatura
+	-Humedad
+	
+-Informacion Personal
+	-Temperatura
+	-Humedad
+	-CO2
+	-UV
+	
+Dirigirse a OpenWeatherMap.org y obtener una cuenta gratuita
+
+Crear una API Key
+https://home.openweathermap.org/api_keys
+
+API Call
+
+Forma general
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+Forma personal
+https://api.openweathermap.org/data/2.5/weather?lat=19.432723&lon=-99.133653&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric 
+
+19.432723, -99.133653
+5d3a190f4b08b81f686e0ccfd14e10bd
+&units=metric 
+
+Para informacion personal
+
+Nodo Function Temperatura
+
+msg.payload = msg.payload.main.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Nodo Function Humedad
+
+msg.payload = msg.payload.main.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+
+Para informacion general
+codigoIoT/g7/mosquitto/flow5
+
+Temperatura
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;
+
+Humedad
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.hum;
+return msg;
+
+Enviador
+
+msg.payload = '{"id":"Hugo","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+'}';
+return msg;
+
+
