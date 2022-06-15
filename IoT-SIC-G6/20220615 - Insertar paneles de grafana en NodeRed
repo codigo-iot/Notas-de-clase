@@ -22,3 +22,10 @@ Como incrustar un panel de Grafana en NodeRed
 	org_name = Main Org.
 	org_role = Viewer
 	hide_version = true
+	
+	- Guardar cambios Ctrl + O
+	- Salir Ctrl + X
+4. Reiniciar Grafana
+	- sudo /bin/systemctl stop grafana-server
+	- sudo /bin/systemctl staus grafana-server
+	- sudo /bin/systemctl start grafana-server
