@@ -82,4 +82,9 @@ return msg;
 
 https://github.com/hugoescalpelo/flow5-openweather-g7
 
+Para visualizaar en otro dispositivo que forme parte de la misma red local
+
+	ifconfig
+	
+	192.168.15.27:1880/ui
 
