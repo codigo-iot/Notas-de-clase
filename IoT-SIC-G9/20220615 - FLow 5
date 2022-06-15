@@ -1,0 +1,91 @@
+Actualizacion del flow4
+	- nslookup broker.hivemq.com
+	- 3.123.49.252
+	
+Agregar automatizador
+1. Agregar Nodo Inject
+	- msg.payload {"id":"Hugo V","temp":23.6}
+	- Interval: 15 segundos
+2. Agregar nodo MQTT out
+	- Seleccionar el mismo broker
+	- codigoIoT/g9/mosquitto/msg
+	
+Flow5 - Obtener Datos del clima por API
+
+https://openweathermap.org/
+
+1. Obtener una cuenta gratuita en Open Weather Map
+2. Dirigirse a la sección de API Keys y obtener una nueva API Key
+
+Api Key
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+Forma general de llamada API
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric
+
+Coordenadas
+19.432491, -99.133468
+
+Forma personal de llamada API
+
+https://api.openweathermap.org/data/2.5/weather?lat=19.432491&lon=-99.133468&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric
+
+Datos de flow 5
+
+Nodo inject
+	Interval: 2min
+Nodo HTT Request
+	Method: GET	
+	URL: Fomra personal de llama API
+	Payload: Ignore
+Nodo JSON
+	Action: Always convert to JSON
+
+Funcion Temperatura
+msg.payload = msg.payload.main.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Funcion Humedad
+msg.payload = msg.payload.main.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+Nodos Gauge
+	Seleccionar el grupo correcto
+	Actualizar la etiqueta
+	
+Informacion general
+
+Nodo MQTT
+	Broker: 3.123.49.252
+	Topic: codigoIoT/g9/mosquitto/flow5	
+Nodo JSON
+	Action: Always convert to JSON
+	
+Funcion Temperatura
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;
+
+Funcion Humedad
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.hum;
+return msg;
+
+Nodos Chart
+	Seleccionar el grupo correcto
+	Actualizar la etiqueta
+	
+Enviador
+Nodo Inject
+	Interval: 15 seg
+	
+Funcion
+msg.payload = '{"id":"Hugo","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+'}';
+return msg;
+
+{"id":"Hugo","temp":22.24,"hum":51}
+
+	
