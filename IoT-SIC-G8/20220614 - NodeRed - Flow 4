@@ -42,3 +42,42 @@ Forma especifica de llamada API
 
 https://api.openweathermap.org/data/2.5/weather?lat=19.432512&lon=-99.133543&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric 
 
+Solicitud API
+
+Temperatura
+
+msg.payload = msg.payload.main.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Humedad
+
+msg.payload = msg.payload.main.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+Infrormacion General
+
+Tema MQTT
+codigoIoT/G8/mosquitto/flow5
+
+Temperatura
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;
+
+Humedad
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.hum;
+return msg;
+
+
+Enviador
+
+msg.payload = '{"id":"Distraido","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+'}';
+return msg;
+
+
+
