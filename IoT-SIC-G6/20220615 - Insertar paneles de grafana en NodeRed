@@ -1,0 +1,24 @@
+Detector de sintomas covid
+
+1. Cargar el programa al ESP32CAM
+2. Cargar el flow
+3. Crear la base de datos
+
+Como incrustar un panel de Grafana en NodeRed
+
+1. Arracar grafana
+	- sudo /bin/systemctl start grafana-server
+	
+2. Crear un panel para ser insertado
+3. Editar el archivo de configuraciones de Grafana
+	- cd /etc/grafana
+	- sudo nano grafana.ini
+	
+	[security]
+	allow_embedding = true
+	
+	[auth.anonymous]
+	enabled = true
+	org_name = Main Org.
+	org_role = Viewer
+	hide_version = true
