@@ -1,0 +1,90 @@
+Flow 4
+
+Compartir informacion entre todos
+
+Poner la reaccion de paloma verde quiene hayan logrado reportar al broker publico y realizar el flow 4
+
+Consultar cada vez la ip del broker publico
+	-nslookup broker.hivemq.com
+	-18.156.8.172
+	
+Tema MQTT acordado
+	-codigoIoT/G8/mosquitto/msg
+	
+'{"id":"Sofia","temp":22}'
+'{id:Sofia,temp:22}'
+
+"{\"id\":\"Sofia\",\"temp\":22}"
+
+Repositorio de flow 4
+https://github.com/hugoescalpelo/flow4-G8
+
+Flow 5
+
+Obtener datos del clima de internet, mostrar en indicadores los datos locales y graficar la infrormacion del grupo
+
+1. Entrar a https://openweathermap.org/
+2. Entrar a la seccion de API keys
+3. Crear una API Key
+
+Forma general de llamada de API
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric 
+
+API Key: 5d3a190f4b08b81f686e0ccfd14e10bd
+
+Coordenadas:
+19.432512, -99.133543
+
+19.432512, -99.133543
+
+Forma especifica de llamada API
+
+https://api.openweathermap.org/data/2.5/weather?lat=19.432512&lon=-99.133543&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric 
+
+Solicitud API
+
+Temperatura
+
+msg.payload = msg.payload.main.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Humedad
+
+msg.payload = msg.payload.main.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+Infrormacion General
+
+Tema MQTT
+codigoIoT/G8/mosquitto/flow5
+
+Temperatura
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.temp;
+return msg;
+
+Humedad
+
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.hum;
+return msg;
+
+
+Enviador
+
+msg.payload = '{"id":"Distraido","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+'}';
+return msg;
+
+
+https://github.com/hugoescalpelo/flow5-openweather-g7
+
+Para visualizaar en otro dispositivo que forme parte de la misma red local
+
+	ifconfig
+	
+	192.168.15.27:1880/ui
+
