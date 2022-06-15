@@ -80,4 +80,6 @@ msg.payload = '{"id":"Distraido","temp":'+global.get ("tempFlow5")+',"hum":'+glo
 return msg;
 
 
+https://github.com/hugoescalpelo/flow5-openweather-g7
+
 
