@@ -18,3 +18,27 @@ Tema MQTT acordado
 
 Repositorio de flow 4
 https://github.com/hugoescalpelo/flow4-G8
+
+Flow 5
+
+Obtener datos del clima de internet, mostrar en indicadores los datos locales y graficar la infrormacion del grupo
+
+1. Entrar a https://openweathermap.org/
+2. Entrar a la seccion de API keys
+3. Crear una API Key
+
+Forma general de llamada de API
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric 
+
+API Key: 5d3a190f4b08b81f686e0ccfd14e10bd
+
+Coordenadas:
+19.432512, -99.133543
+
+19.432512, -99.133543
+
+Forma especifica de llamada API
+
+https://api.openweathermap.org/data/2.5/weather?lat=19.432512&lon=-99.133543&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric 
+
