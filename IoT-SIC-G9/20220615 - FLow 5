@@ -40,7 +40,7 @@ Nodo HTT Request
 	URL: Fomra personal de llama API
 	Payload: Ignore
 Nodo JSON
-	Action: Always convert to JSON
+	Action: Always convert to JavaScript Object
 
 Funcion Temperatura
 msg.payload = msg.payload.main.temp;
@@ -62,7 +62,7 @@ Nodo MQTT
 	Broker: 3.123.49.252
 	Topic: codigoIoT/g9/mosquitto/flow5	
 Nodo JSON
-	Action: Always convert to JSON
+	Action: Always convert to JavaScript Object
 	
 Funcion Temperatura
 msg.topic = msg.payload.id;
