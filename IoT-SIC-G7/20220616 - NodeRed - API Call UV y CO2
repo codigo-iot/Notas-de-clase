@@ -76,6 +76,11 @@ msg.payload = msg.payload.list[0].main.aqi;
 global.set ("aqi", msg.payload);
 return msg;
 
+Funcion UV
+msg.payload = msg.payload.current.uvi;
+global.set ("uvFlow5",msg.payload);
+return msg;
+
 Variables de grafica conjunta
 temp, hum, uv, aqi
 
