@@ -72,7 +72,9 @@ https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-
 http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0122-53831997000100009
 
 Funcion Calidad del aire
-msg.payload = msg.payload.list[0].components.co;
-global.set ("co", msg.payload);
+msg.payload = msg.payload.list[0].main.aqi;
+global.set ("aqi", msg.payload);
 return msg;
 
+Variables de grafica conjunta
+temp, hum, uv, aqi
