@@ -39,3 +39,9 @@ msg.payload = msg.payload.current.temp;
 global.set ("tempFlow5",msg.payload);
 return msg;
 
+Funcion UV
+
+msg.payload = msg.payload.current.uvi;
+global.set ("uvFlow5",msg.payload);
+return msg;
+
