@@ -78,3 +78,21 @@ return msg;
 
 Variables de grafica conjunta
 temp, hum, uv, aqi
+
+Seccion Enviador
+
+Nodo funcion
+msg.payload = '{"id":"Hugo, Col Doctores, CDMX","temp":' + global.get ("tempFlow5") + ',"hum":' + global.get ("humFlow5") + ',"uv":' + global.get ("uvFlow5") + ',"aqi":' + global.get ("aqi") + '}';
+return msg;
+
+Seccion Información general
+
+Funcion UV
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.uv;
+return msg;
+
+Funcion AQI
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.aqi;
+return msg;
