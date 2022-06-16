@@ -1,0 +1,41 @@
+Flow5
+
+Actualizar la IP de Broker
+	- nslookup broker.hivemq.com
+	- 18.157.172.72
+
+Para informacion general
+codigoIoT/g7/mosquitto/flow5
+
+Obtener valores de UV y CO2
+
+Para obtener el indice UV
+
+Forma general
+https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}&units=metric 
+
+lat & lon
+19.432723, -99.133653
+
+Exclude: current, minutely, hourly, daily
+
+API Key
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+Valores metricos
+&units=metric 
+
+https://api.openweathermap.org/data/2.5/onecall?lat=19.432723&lon=-99.133653&exclude=hourly,daily&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric
+
+Actualizar nodos funcition de la seccion Solicitud API
+
+Funcion Humedad
+msg.payload = msg.payload.current.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+Funcion Temperatura 
+msg.payload = msg.payload.current.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
