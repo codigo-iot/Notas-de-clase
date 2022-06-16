@@ -45,3 +45,34 @@ msg.payload = msg.payload.current.uvi;
 global.set ("uvFlow5",msg.payload);
 return msg;
 
+Obtener el Indice de contaminación
+https://openweathermap.org/api/air-pollution
+
+
+Llamada general
+http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}
+
+lat & lon
+19.432723, -99.133653
+
+API Key
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+Valores metricos
+&units=metric 
+
+Llamada personal
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432723&lon=-99.133653&appid=5d3a190f4b08b81f686e0ccfd14e10bd
+
+
+Material de referencia
+
+https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/ultraviolet-index
+
+http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0122-53831997000100009
+
+Funcion Calidad del aire
+msg.payload = msg.payload.list[0].components.co;
+global.set ("co", msg.payload);
+return msg;
+
