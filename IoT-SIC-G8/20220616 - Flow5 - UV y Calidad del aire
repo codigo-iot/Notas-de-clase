@@ -45,3 +45,18 @@ Funcion UV
 msg.payload = msg.payload.current.uvi;
 global.set ("uvFlow5",msg.payload);
 return msg;
+
+Agrgar Calidad del Aire Personal
+
+https://openweathermap.org/api/air-pollution
+
+Llamada general
+http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}
+
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+19.432512, -99.133543
+
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432512&lon=-99.133543&appid=5d3a190f4b08b81f686e0ccfd14e10bd
+
+
