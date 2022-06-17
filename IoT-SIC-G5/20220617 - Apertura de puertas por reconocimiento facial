@@ -33,4 +33,27 @@ https://github.com/serengil/deepface
 	- No es necesario clonar el repositorio de DeepFace
 	- Nota: Deepface requiere una conexion a internet para ejecutarse la primera vez
 	- Contar con al menos 2GB de espacio disponible en disco
+	- En caso de ver multiples warnings
+		-Actualizar sistema
+		 sudo apt update
+		 sudo apt upgrade
+		-Actualizar PIP	
+5. Abrir la IP del ESP32CAM y tomar una fotografia (selfie) de 320x240px y gardarla en el directorio de imagenes 
+	/home/usuario/Pictures
+	/home/hugoe/Pictures
+
+6. Abrir Visual Studio Code
+	- Instalar la extension de python
+	- Abrir un nuevo directorio para hacer el ejemplo
+	- Crear un archivo que se llame facialr.py
+
+7. Crear programa
+##################	
+from deepface import DeepFace
+
+result = DeepFace.verify (img1_path = "/home/hugo/Pictures/hugo1.jpg")
+
+print (result)
+###################
+	- La primera vez, se pone a descargar el modelo, es necesario contar con una conexion a internet
 	
