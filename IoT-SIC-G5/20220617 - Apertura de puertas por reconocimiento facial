@@ -2,6 +2,8 @@ Poner reaccion de palomita verde quienes hayan concluido el ejercicio de Dector 
 
 Clase de hoy: Apertura de puertas por reconocimiento facial
 
+https://github.com/codigo-iot/reconocimiento-facial
+
 1. Cargar el ejemplo de Camera WebServer en el MicroControlador
 	Cambiar SSID y contraseña
 	Seleccionar el modelo CAMERA_MODEL_AI_THINKER
