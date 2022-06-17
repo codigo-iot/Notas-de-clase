@@ -1,0 +1,16 @@
+Apertura de puertas por reconocimiento facial
+
+https://github.com/codigo-iot/reconocimiento-facial
+
+1. Cargar el ejemplo de CameraWebServer al ESP32CAM
+	-Cambiar el SSID y contraseña
+	-Seleccionar cámara modelo
+	 CAMERA_MODEL_AI_THINKER
+	 
+2.Instalar DeepFace. Se requiere Python3
+	- Comprobar instalacion
+		python3 --version
+	- Se requiere versión 3.9 o inferior
+	- Instalar DeepFace
+		pip install deepface
+	- Consejo, contar con al menos 2GB de espacio disponible en disco
