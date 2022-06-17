@@ -1,0 +1,13 @@
+Poner reaccion de palomita verde quienes hayan concluido el ejercicio de Dector de Síntomas COVID
+
+Clase de hoy: Apertura de puertas por reconocimiento facial
+
+1. Cargar el ejemplo de Camera WebServer en el MicroControlador
+	Cambiar SSID y contraseña
+	Seleccionar el modelo CAMERA_MODEL_AI_THINKER
+
+2. Instalar los siguientes nodos en NodeRed
+	node-red-dashboard
+	node-red-contrib-string
+	node-red-contrib-calc
+
