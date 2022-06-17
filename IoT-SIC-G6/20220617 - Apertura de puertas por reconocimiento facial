@@ -14,3 +14,30 @@ https://github.com/codigo-iot/reconocimiento-facial
 	- Instalar DeepFace
 		pip install deepface
 	- Consejo, contar con al menos 2GB de espacio disponible en disco
+	- Hay una parte de la instalacion donde parece que se atora. Es normal.
+	
+3. Instalar el plugin de python para el Visual Studio Code
+
+4. Obtener una imagen de la cámara
+- Ir a la IP de la cámara y tomar una fotografía de 320x240
+
+5. Correr ejemplo de características faciales
+- Crear un directorio para el ejemplo
+- Crear un archivo llamado facialr.py
+
+#####################################
+from deepface import DeepFace
+
+obj = DeepFace.analyze(img_path = "hugo1.jpg", actions = ['age', 'gender', 'race', 'emotion'])
+
+print (obj)
+
+#####################################
+
+Aportaciones
+
+Git
+https://codealo.thinkific.com/courses/empezando-git-y-github
+
+
+
