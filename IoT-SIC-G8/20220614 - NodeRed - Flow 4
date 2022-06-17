@@ -76,6 +76,7 @@ return msg;
 
 Enviador
 
+Nodo funcion
 msg.payload = '{"id":"Distraido","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+'}';
 return msg;
 
