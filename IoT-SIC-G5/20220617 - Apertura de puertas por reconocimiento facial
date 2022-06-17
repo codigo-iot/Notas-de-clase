@@ -1,0 +1,59 @@
+Poner reaccion de palomita verde quienes hayan concluido el ejercicio de Dector de Síntomas COVID
+
+Clase de hoy: Apertura de puertas por reconocimiento facial
+
+1. Cargar el ejemplo de Camera WebServer en el MicroControlador
+	Cambiar SSID y contraseña
+	Seleccionar el modelo CAMERA_MODEL_AI_THINKER
+
+2. Instalar los siguientes nodos en NodeRed
+	node-red-dashboard
+	node-red-contrib-string
+	node-red-contrib-calc
+
+3. Clonar repositorio del ejercicio
+
+https://github.com/codigo-iot/reconocimiento-facial
+
+Instalar Python 3.9
+
+1. Cerar NodeRed
+	Ctrl + C
+2. Comprobar la version de python
+	python3 --version
+	(3.9 o menor)
+3. Solo en caso de no contar con ninguna version de Python instalada: Instalar Python 3.9
+	sudo apt install python3.9
+
+https://github.com/serengil/deepface
+
+4. Instalar deepface
+	- pip install deepface
+	- Hay una parte de la instalacion donde pare que se atora, es normal, puede durar hasta 5 minutos
+	- No es necesario clonar el repositorio de DeepFace
+	- Nota: Deepface requiere una conexion a internet para ejecutarse la primera vez
+	- Contar con al menos 2GB de espacio disponible en disco
+	- En caso de ver multiples warnings
+		-Actualizar sistema
+		 sudo apt update
+		 sudo apt upgrade
+		-Actualizar PIP	
+5. Abrir la IP del ESP32CAM y tomar una fotografia (selfie) de 320x240px y gardarla en el directorio de imagenes 
+	/home/usuario/Pictures
+	/home/hugoe/Pictures
+
+6. Abrir Visual Studio Code
+	- Instalar la extension de python
+	- Abrir un nuevo directorio para hacer el ejemplo
+	- Crear un archivo que se llame facialr.py
+
+7. Crear programa
+##################	
+from deepface import DeepFace
+
+obj = DeepFace.analyze(img_path = "hugo1.jpg", actions = ['age', 'gender', 'race', 'emotion'])
+
+print (obj)
+###################
+	- La primera vez, se pone a descargar el modelo, es necesario contar con una conexion a internet
+	
