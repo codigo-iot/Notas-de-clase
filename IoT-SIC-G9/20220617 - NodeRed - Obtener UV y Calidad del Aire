@@ -45,3 +45,21 @@ Funcion UV
 msg.payload = msg.payload.current.uvi;
 global.set ("uvFlow5",msg.payload);
 return msg;
+
+6. Obtener la calidad del aire
+
+https://openweathermap.org/api/air-pollution
+
+Llamada general
+http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}
+
+Llamada personal
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.434540&lon=-99.141397&appid=5d3a190f4b08b81f686e0ccfd14e10bd
+
+7. Agregar los nodos http request, json, function y gauge
+
+Funcion AQI
+msg.payload = msg.payload.list[0].main.aqi;
+global.set ("aqiFlow5",msg.payload);
+return msg;
+
