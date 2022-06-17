@@ -63,3 +63,26 @@ msg.payload = msg.payload.list[0].main.aqi;
 global.set ("aqiFlow5",msg.payload);
 return msg;
 
+Variables acordadas
+id,temp,hum,uv,aqi
+
+8. Modificar el enviador para que envie los valores de UV y AQI
+
+Funcion enviador
+msg.payload = '{"id":"HugoV Doctores CDMX","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+',"uv":' + global.get ("uvFlow5") + ',"aqi":' + global.get ("aqiFlow5") + '}';
+return msg;
+
+9. Agregar las graficas generales
+
+Seccion general
+
+Funcion UV
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.uv;
+return msg;
+
+Funcion AQI
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.aqi;
+return msg;
+
