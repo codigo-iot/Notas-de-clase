@@ -1,0 +1,103 @@
+Flow5
+
+Actualizar la IP de Broker
+	- nslookup broker.hivemq.com
+	- 18.157.172.72
+
+Para informacion general
+codigoIoT/g7/mosquitto/flow5
+
+Obtener valores de UV y CO2
+
+Para obtener el indice UV
+
+Forma general
+https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}&units=metric 
+
+lat & lon
+19.432723, -99.133653
+
+Exclude: current, minutely, hourly, daily
+
+API Key
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+Valores metricos
+&units=metric 
+
+https://api.openweathermap.org/data/2.5/onecall?lat=19.432723&lon=-99.133653&exclude=hourly,daily&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric
+
+Actualizar nodos funcition de la seccion Solicitud API
+
+Funcion Humedad
+msg.payload = msg.payload.current.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+Funcion Temperatura 
+msg.payload = msg.payload.current.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Funcion UV
+
+msg.payload = msg.payload.current.uvi;
+global.set ("uvFlow5",msg.payload);
+return msg;
+
+Obtener el Indice de contaminación
+https://openweathermap.org/api/air-pollution
+
+
+Llamada general
+http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}
+
+lat & lon
+19.432723, -99.133653
+
+API Key
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+Valores metricos
+&units=metric 
+
+Llamada personal
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432723&lon=-99.133653&appid=5d3a190f4b08b81f686e0ccfd14e10bd
+
+
+Material de referencia
+
+https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/ultraviolet-index
+
+http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0122-53831997000100009
+
+Funcion Calidad del aire
+msg.payload = msg.payload.list[0].main.aqi;
+global.set ("aqi", msg.payload);
+return msg;
+
+Funcion UV
+msg.payload = msg.payload.current.uvi;
+global.set ("uvFlow5",msg.payload);
+return msg;
+
+Variables de grafica conjunta
+temp, hum, uv, aqi
+
+Seccion Enviador
+
+Nodo funcion
+msg.payload = '{"id":"Hugo, Col Doctores, CDMX","temp":' + global.get ("tempFlow5") + ',"hum":' + global.get ("humFlow5") + ',"uv":' + global.get ("uvFlow5") + ',"aqi":' + global.get ("aqi") + '}';
+return msg;
+
+Seccion Información general
+
+Funcion UV
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.uv;
+return msg;
+
+Funcion AQI
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.aqi;
+return msg;

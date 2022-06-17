@@ -1,0 +1,88 @@
+Actualizar la IP en el broker que se encuentra en el nodo MQTT
+	- nslookup broker.hivemq.com
+	- 18.157.172.72
+	
+Tema MQTT acordado
+	- codigoIoT/G8/mosquitto/flow5
+	
+Nueva Solicitud API
+
+https://openweathermap.org/api/one-call-3
+
+Llamada General
+https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+
+&units=metric
+
+1. Agregar API Key: 5d3a190f4b08b81f686e0ccfd14e10bd
+
+2. Modificar Coordenadas:
+19.432512, -99.133543
+
+3. Cambiar la version 3.0 por la version 2.5
+
+4. Configurar exclude
+exclude=hourly,daily
+
+5. Agregar metricos
+
+Llamada personal
+https://api.openweathermap.org/data/2.5/onecall?lat=19.432512&lon=-99.133543&exclude=hourly,daily&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric 
+
+Actualizar nodos de funcion en Solicitud API
+
+Funcion temperatura
+msg.payload = msg.payload.current.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Funcion Humedad
+msg.payload = msg.payload.current.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
+
+Funcion UV
+msg.payload = msg.payload.current.uvi;
+global.set ("uvFlow5",msg.payload);
+return msg;
+
+Agrgar Calidad del Aire Personal
+
+https://openweathermap.org/api/air-pollution
+
+Llamada general
+http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}
+
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+19.432512, -99.133543
+
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432512&lon=-99.133543&appid=5d3a190f4b08b81f686e0ccfd14e10bd
+
+Funcion AQI
+msg.payload = msg.payload.list[0].main.aqi;
+global.set ("aqiFlow5", msg.payload);
+return msg;
+
+Variables acordadas
+id,temp,hum,uv,aqi
+
+localhost:1880/ui
+
+Informacion general
+
+Funcion UV
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.uv;
+return msg;
+
+Funcion AQI
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.aqi;
+return msg;
+
+Enviador
+
+Nodo funcion
+msg.payload = '{"id":"Hugo V. Col Doctores, CDMX","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+',"uv":' + global.get ("uvFlow5") + ',"aqi":' + global.get ("aqiFlow5") + '}';
+return msg;
