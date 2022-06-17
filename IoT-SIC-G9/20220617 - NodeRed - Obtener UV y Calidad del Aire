@@ -1,0 +1,40 @@
+1. Arrancar flow 5
+	node-red
+2. Actualizar la ip del broker
+	nslookup broker.hivemq.com
+	35.157.99.2
+	
+	Se actualiza en nodo MQTT
+	
+19.434540, -99.141397
+5d3a190f4b08b81f686e0ccfd14e10bd
+
+https://api.openweathermap.org/data/2.5/weather?lat=19.434540&lon=-99.141397&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric
+
+Se selecciona una API diferente para obtener el Indice de Radiación Ultravioleta
+
+https://openweathermap.org/api/one-call-3
+
+Llamada general
+https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}&units=metric
+
+exclude=hourly,daily
+19.434540, -99.141397
+5d3a190f4b08b81f686e0ccfd14e10bd
+&units=metric
+
+https://api.openweathermap.org/data/2.5/onecall?lat=19.434540&lon=-99.141397&exclude=hourly,daily&appid=5d3a190f4b08b81f686e0ccfd14e10bd&units=metric
+
+3. Actualizar a API Call en la seccion URL del nodo HTTP Request de la seccion de solicitud
+
+4. Actualizar el codigo de los nodos de funcion de la sección de solicitud
+
+Funcion temperatura
+msg.payload = msg.payload.current.temp;
+global.set ("tempFlow5",msg.payload);
+return msg;
+
+Función Humedad
+msg.payload = msg.payload.current.humidity;
+global.set ("humFlow5",msg.payload);
+return msg;
