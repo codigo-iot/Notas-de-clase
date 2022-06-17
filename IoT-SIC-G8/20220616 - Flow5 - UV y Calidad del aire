@@ -63,3 +63,26 @@ Funcion AQI
 msg.payload = msg.payload.list[0].main.aqi;
 global.set ("aqiFlow5", msg.payload);
 return msg;
+
+Variables acordadas
+id,temp,hum,uv,aqi
+
+localhost:1880/ui
+
+Informacion general
+
+Funcion UV
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.uv;
+return msg;
+
+Funcion AQI
+msg.topic = msg.payload.id;
+msg.payload = msg.payload.aqi;
+return msg;
+
+Enviador
+
+Nodo funcion
+msg.payload = '{"id":"Hugo V. Col Doctores, CDMX","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+',"uv":' + global.get ("uvFlow5") + ',"aqi":' + global.get ("aqiFlow5") + '}';
+return msg;
