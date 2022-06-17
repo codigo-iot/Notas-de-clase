@@ -38,3 +38,10 @@ Función Humedad
 msg.payload = msg.payload.current.humidity;
 global.set ("humFlow5",msg.payload);
 return msg;
+
+5. Agregar nodos Function y Gauge para representar el UVI
+
+Funcion UV
+msg.payload = msg.payload.current.uvi;
+global.set ("uvFlow5",msg.payload);
+return msg;
