@@ -51,9 +51,9 @@ https://github.com/serengil/deepface
 ##################	
 from deepface import DeepFace
 
-result = DeepFace.verify (img1_path = "/home/hugo/Pictures/hugo1.jpg")
+obj = DeepFace.analyze(img_path = "hugo1.jpg", actions = ['age', 'gender', 'race', 'emotion'])
 
-print (result)
+print (obj)
 ###################
 	- La primera vez, se pone a descargar el modelo, es necesario contar con una conexion a internet
 	
