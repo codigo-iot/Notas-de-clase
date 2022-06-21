@@ -1,0 +1,53 @@
+Actualizar IP del flow 5
+	nslookup broker.hivemq.com
+	35.157.252.226
+	
+Apertura de puertos (opcional)
+
+1. Encontrar la IP de configuracion local del modem
+192.168.0.1
+192.168.0.254
+192.168.1.1
+
+192.168.15.1
+
+2. Introducir nombre de usuario y contraseña
+
+3. Encontrar el redireccionamiento de puertos
+	-Advanced
+	-Settings
+	-Others
+	-Wireless
+	-Securty
+	-Firewall
+	-Remote Access
+	
+Palabras clave
+	-Range
+	-Remap
+	-IP
+	-DMZ
+	-Port
+	-Forwarding
+	-Application
+	
+4. Configuraciones
+	Rango de puertos 1880-1880
+	Protocolo TCP-UDP / TCP
+	IP de la maquina virtual
+	
+5. Abrir firewall en la maquina virtual
+	sudo ufw enable
+	sudo ufw allow 1880
+	
+	-Opcional
+	Agregar excpcion al firewall de windows
+	
+Obligatorio: En caso de usar antivirus, agregar excepcion al firwall
+
+6. Obtener la IP pública
+	187.177.79.182
+	
+7. Construir la IP de acceso
+
+http://187.177.79.182:1880/ui/#!/2?socketid=EJlE7Gj1ucVNcfNJAAAF
