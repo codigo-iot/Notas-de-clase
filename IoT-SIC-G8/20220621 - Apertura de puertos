@@ -1,0 +1,52 @@
+Actualizar la IP del Flow 5
+	nslookup broker.hivemq.com
+	35.157.252.226
+	
+Apertura de puertos
+
+1. Encontrar IP de configuración de modem
+	-Buscar el modelo en internet
+	
+	-192.168.0.1
+	-192.168.0.254
+	-192.168.0.255
+	-192.168.1.1
+	-192.168.1.254
+	-192.168.1.255
+
+2. Proporcionar nombre de usuario y contraseña
+	
+3. Port Forwarding
+	Lugares frecuentes donde encontrar port forwarding
+	-Seguridad
+	-Firewall
+	-Adavanced
+	-Remote Access
+	-Others
+	
+	-DMZ, Remap, Range
+	-Application, ethX, tcp, udp
+	-Private IP
+	-Port
+	
+	No poner nada en
+	Remote IP, Remote Port
+	
+4. Agregar una excepcion al Firewall
+	-sudo ufw enable
+	-sudo ufw allow 1880
+	
+	-En caso de usar un Antivirus, agregar excepcíon
+	
+5. Crear la IP de Acceso
+
+http://187.177.79.182:1880/ui/#!/3?socketid=leg_m_qReUGzIDreAADT
+
+	
+Notas:
+	-Izzi axtel - Ancho de banda
+	-Privacidad
+	-Palabras clave
+	-Social Engineering
+	
+
