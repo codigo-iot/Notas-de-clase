@@ -1,0 +1,61 @@
+Actualizar el servidor MQTT del flow 5
+	nslookup broker.hivemq.com
+	18.157.172.72
+	
+	Colocar la nueva IP en el nodo MQTT
+	Solocitud API cada 2min
+	Enviador cada 1min
+	
+Notas
+- Proveedores de servicio y Puertos
+
+
+Apertura de puertos
+
+1. Obtener IP de configuracion del modem
+- Se encuentra en una calcomania del modem
+- Se busca en internet
+- IP comunes
+	192.168.0.1
+	192.168.0.254
+	192.168.0.255
+	192.168.1.1
+	192.168.1.254
+	192.168.1.255
+- Con Windows ipconfig: Puerta de enlace predeterminada
+
+2. Obtener nombre de usuario y contraseña del modem
+
+3. Redireccionamiento de puertos
+	- Port Forwarding
+	- Redireccionamiento de puertos
+	- Seguriddad
+	- Firewall
+	- Wireless
+	- WLAN
+	- Advanced
+	- Other
+	- Applications
+	
+Indicadores
+	-DMZ, Range, Remap
+	-IP Address, TCP UDP
+	-Port
+4. Obtener IP Pública
+https://whatismyipaddress.com/es/mi-ip
+	
+	187.177.79.182
+
+5. Construir la ruta de acceso
+
+http://187.177.79.182:1880/ui/#!/3?socketid=MYZ3dCc-4m784EzIAAAB
+	
+Consideraciones
+- Hacer una exepcion en el firewall de linux
+	sudo ufw enable
+	sudo ufw allow 1880
+- Hacer una excepcion en el firewall de windows
+- Hacer unexepcion en el Antivirus
+
+	
+	
