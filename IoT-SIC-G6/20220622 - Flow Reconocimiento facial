@@ -1,0 +1,36 @@
+Ejecución del Flow para apertura de puertas por reconocimiento facial
+
+1. Arrancar node-red
+2. Importar el flow
+2.5 Agregar las bibliotecas faltantes
+- node-red-dashboard
+- node-red-contrib-string
+- node-red-contrib-calc
+3. Modificar el nodo template
+- Actualizar la IP del ESP32CAM
+4. Modificar el nodo HTTP Request
+- Actualizar IP del ESP32CAM
+5. Nodo Function (msg.filename)
+- Actualizar la ruta donde se guardará la foto
+6. Nodo Funciton (msg.command)
+- Actualizar la ruta donde se encuentra la base de datos de rostros
+7. Nodo Exec
+- Actualizar instruccion principal
+- Actualizar la ruta hasta el programa
+8. Instalar dependencias del facecheckMQTT.py
+- pip install paho-mqtt
+9. Debemos tener funcionando Mosquitto MQTT
+10. Construir la instruccion de ejecución y correrlo
+- python3 /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/facecheckMQTT.py -i /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/cam_photos/20220622.jpg -j /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/my_db/
+
+Nota
+
+Como funciona la llamada del programa en Python
+
+python3 [ruta del programa] -i [ruta de la foto a comprarar] -j [ruta de la base de datos]
+
+python3 /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/facecheckMQTT.py -i /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/cam_photos/20220622rd.jpg -j /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/my_db/
+
+python3 /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/facecheckMQTT.py -i /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/cam_photos/1641583220774.jpg -j /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/my_db/
+
+python3 facecheck.py

@@ -1,0 +1,25 @@
+Conclusión del ejercicio de apertura de puertas por reconocimiento facial
+
+1. Instalar los nodos faltantes
+	
+    node-red-dashboard
+    node-red-contrib-string
+    node-red-contrib-calc
+    
+
+2.Importar el flow
+
+3. Ajustar los nodos
+- Nodo Template: Actualizar la IP del ESP32CAM. 192.168.15.19
+- Nodo HTTP Request: Actualziar IP del ESP32CAM
+- Nodo Function: Actualizar la ruta en la que almacenará la foto del ESP32CAM, debe guardarse en el interior del repositorio
+- Nodo Funcition: Actualizar la ruta de fotografía guardada para enviarla como parámetro al programa de python
+- Nodo Ejecutar: Actualizar la ruta del archivo facecheckMQTT.py y el comando para funcionar con python3
+
+4. Instalar la biblioteca paho-mqtt
+	pip install paho-mqtt
+	
+5. Comprobar el funcionamiento del programa en python
+- Guardar foto en el repositorio
+- Ejecutar el programa en Python con terminal
+	python3 /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/facecheckMQTT.py -i 20220622.jpg -j /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/cam_photos/
