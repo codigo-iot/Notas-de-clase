@@ -12,3 +12,33 @@ Modificar el nodo Funciton
 
 msg.max = 100 - (msg.max * 100);
 return msg;
+
+Tema de suscripción a mosquitto
+codigoIoT/py
+
+codigoIoT/py/puerta
+
+https://docs.arduino.cc/learn/electronics/servo-motors
+
+Funcion Separador
+msg.max = 100 - (msg.max * 100);
+if (msg.max > 60) {
+    global.set ("accion", msg.max)    
+} else {
+    global.set ("accion", 0);
+}
+return msg;
+
+Funcion No encontrado
+if (msg.max == 0) {
+    msg.max == "no encontrado";
+    return msg;
+}
+
+Funcion Encontrado
+
+if (msg.max != 0) {
+    return msg;
+}
+
+
