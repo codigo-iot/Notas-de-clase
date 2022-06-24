@@ -1,0 +1,14 @@
+Ejecucion del programa en python
+
+python3 /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/facecheckMQTT.py -i /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/cam_photos/20220622.jpg -j /home/hugo/Documents/GitHub/reconocimiento-facial/python/facedetection/my_db/
+
+Modificar el nodo calculadora
+- Operacion Minimo
+
+Modificar el nodo String
+- Dejar en blanco la ruta en la seccion From
+
+Modificar el nodo Funciton
+
+msg.max = 100 - (msg.max * 100);
+return msg;
