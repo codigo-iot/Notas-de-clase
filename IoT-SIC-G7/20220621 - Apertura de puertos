@@ -32,9 +32,10 @@ Palabras clave
 	-Application
 	
 4. Configuraciones
-	Rango de puertos 1880-1880
+	Rango de puertos publicos/privados 1880-1880
 	Protocolo TCP-UDP / TCP
 	IP de la maquina virtual
+	(Puertos remotos no)
 	
 5. Abrir firewall en la maquina virtual
 	sudo ufw enable

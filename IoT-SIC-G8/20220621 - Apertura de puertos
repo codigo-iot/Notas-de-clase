@@ -23,11 +23,17 @@ Apertura de puertos
 	-Adavanced
 	-Remote Access
 	-Others
+	-Virtual Server
 	
 	-DMZ, Remap, Range
 	-Application, ethX, tcp, udp
 	-Private IP
 	-Port
+	
+	-Nombre
+	-IP Local
+	-Protocol (tcp,udp,both)
+	-port, portlocal, remote port, range port
 	
 	No poner nada en
 	Remote IP, Remote Port
