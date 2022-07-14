@@ -1,0 +1,84 @@
+Actuadores
+
+-Convierten energía en movimiento
+-Tienen grados de libertad
+-Existen distintos tipos de actuadores
+-Componentes que hacen cosas
+
+-Servomotor
+-Motor de DC
+-Automoviles
+-Máquinas eléctricas
+-Relevador
+
+Circuitos de potencia
+
+-Multiples potencias electronicas
+-Etapas de electronica
+-Controlar diferentes tipos de voltaje
+-Amplificacion de señales lógicas
+-Voltaje y corriente
+-Potencia necesaria
+-Corriente alterna
+
+Potencia
+
+Necesecitan hacerse consideraciones al momento de programar y trabajar con actuadores.
+
+-Tomar en cuenta el tiempo
+-Poner switches
+-Límites de las señales
+-Sensores
+-Realimentación
+-Posiciónes
+-Frecuencia de conmutacion (relevador)
+-Tiempo de respuesta
+-
+
+Contenido Extra
+
+https://www.youtube.com/c/simonegiertz
+
+Sistemas embebidos
+
+Ejemplos
+-Aplicaciones especificas
+-Capacidad de procesamiento
+-Bajo costo
+-No interfaz gráfica
+-Conexiones inalambricas
+-Machine learning
+-Coleccion de sistemas
+
+-Dispositivos para domótica
+-Alexa
+-Medidor eléctrico
+
+Sistemas embebidos
+
+Embebido - Incrustada
+
+Son los sistemas digitales que tienen incrustado todo lo que necesitan parar realizar una una tarea especializada
+
+	-Single Board Computer (SBC)
+	-System on a Chip (SoC)
+	-Smart things
+
+Son los sitemas que se pueden incrustar
+
+	-Wearables
+
+https://www.pine64.org/pinephone/
+
+
+http://3.bp.blogspot.com/-AzgpQ1H_-GE/URflZTQg4BI/AAAAAAAAGaY/aGM1HmhFC1E/s1600/the_fixers_manifesto_grey.gif
+
+http://3.bp.blogspot.com/-AzgpQ1H_-GE/URflZTQg4BI/AAAAAAAAGaY/aGM1HmhFC1E/s1600/the_fixers_manifesto_grey.gif
+
+
+
+
+
+
+
+
