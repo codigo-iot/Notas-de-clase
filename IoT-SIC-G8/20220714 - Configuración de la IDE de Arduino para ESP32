@@ -34,8 +34,33 @@ python3 get.py
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
+Para comprobar que la instalación se realizo correctamente:
+
+5. Seleccionar la tarjeta AI Thinker
+Tools>Board>ESP32 Arduino> AI Thinker
+
+6. Abrir el ejemplo Camera Web Server
+File>Examples>ESP32>Camera>Camera Web Server
+
+7. Compilar el ejemplo
+
 Tema siguiente
 -CAPSTONE proyect
 -Fechas de equipos
 -Fechas de propuesta de proyectos
 -Explicacion de materiales extra
+
+
+
+C:/Users/[YOUR_USER_NAME]/Documents/Arduino
+
+[ARDUINO_SKETCHBOOK_DIR]/hardware/espressif/esp32
+
+
+
+C:/Users/hugoe/Documents/Arduino/hardware/espressif/esp32
+
+
+
+
+
