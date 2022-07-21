@@ -1,0 +1,64 @@
+
+Capstone
+
+-Monitoreo de cultivo invernadero
+	¿Qué se monitorea?
+	-Temperatura
+	-humedad
+	-Crecimiento
+	
+	¿Que se va a hacer?
+	-Controlar la temperatura
+	-Riego
+	-Plaga
+	
+	Saber sin cámaras que ya se puede cosechar
+	Permacultura
+	
+-Monitoreo de temperatura de bebes en hospitales
+-Monitoreo de fallas y tiempo de llegada de transporte público
+
+Herramientas para desarrollar Ideas
+
+-Si califica o no califica
+-Criterios de complejidad
+	-Que incluya por lo menos 3 sensores/actuadores
+	-Que haga uso de los conocimientos mostrados en el diplomado
+		-Obtener información (sensores)
+		-Transmitirla por internet
+		-Hacer un servidor
+		-Procesar la información
+		-Visualizar la información
+		-Enviar una señal de regreso
+		-Realizar acciones (actuadores)	
+-Revisar el proyecto con respecto a la sección Proyectos de Comunidad
+-Considerar el concepto de escala
+-Darle un lugar estelar a la información
+-¿Puedo hacerlo sin internet? Si la respuesta es Si, posiblemente no sea un proyecto del Internet de las Cosas
+-No solamente desarrollar la idea, sino tambien desarrollar el escenario en el que se da esa idea (ficcionar)
+-Plantear el proyecto por etapas
+-Pasar de Obtener información a hacer algo con información
+-El 80% del esfuerzo debera ser dirigido a trabajar con la información, se recomienda que sólo el 20% del esfuerzo, se dedique a la mecánica para obtener información
+-Tipos de información
+	-Primaria: La que nos dan los sensores
+	-Secundaria: La que surge a partir de obsrevar/procesar la primara
+	-Terciaria: Correlacionar otras fuentes de información
+-Debe tener un propósito claro, orientado a resolver un problema
+-Investigar si idea ha sido desarrollada anteriormente
+-No dejarse llevar por lo que el profe Hugo dice
+
+Mecánicas para expresar ideas
+
+-Nombre del proyecto, describir el problema a resolver, describir su que ver con el internet de las cosas
+
+Opinion
+
+-An object oriented defense of poetry - Thimoty Morthon
+
+cottage core
+
+
+
+
+
+
