@@ -1,0 +1,32 @@
+Instalación de Raspberry Pi OS
+
+1. Descargar el RPi Imager. Descargar archivo .deb
+https://www.raspberrypi.com/software/
+
+2. Instalar RPi Imager. Haciendo doble clic en el archivo .deb y seleccionando la opción instalar
+
+3. Ejecutar RPi Imager. De cajón de aplicaciones
+
+4. Seleccionar RaspberryPi OS 32bits
+
+5. Seleccionar tarjeta MicroSD
+	-Insertar la tarjeta en el adaptador
+	-Insertar el adaptador firmemente
+	-Seleccionar unidad
+	
+6. Configuraciones
+	-Enable SSH
+	-Username pi
+	-Password: ****
+	-Configure Wireless LAN
+	
+	Default Password: raspberry
+	Defalut User: pi
+	
+7. Hacer clic en Write
+	
+8. Energizar
+9. Obtener la IP de la Raspberry Pi
+10. Conectarse por SSH
+
+ssh pi@192.168.x.x

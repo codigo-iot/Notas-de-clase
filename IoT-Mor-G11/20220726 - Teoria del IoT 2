@@ -1,0 +1,38 @@
+
+Obtención de Información
+
+Primaria: La que se obtiene de forma directa. Ejemplo: Sensores
+
+Secundaria: Aquella que se obtiene o deduce de observer la información primaria. Interpretación de una gráfica
+
+Terciaria: Aquella que se obtiene correlacionando la información primaria y secundaria con otros sets de datos
+
+Ejemplo de sensor de oxigenación
+
+SpO2 = 92 %
+BPM = 96 BPM
+
+75 BPM => 86 %
+Dirigete a un Médico
+
+Ejemplo de cafetera inteligente
+
+1a: Se prepara un café todos los días a las 9am
+
+2a: El usuario tiene un habito de consumir café a esa misma hora
+
+3a: El usuario trabaja en casa y necesita un café todos los días a las 9, con el uso de los sensores se estima que termina de trabajar a las 8pm, por lo tanto, se le ofrecerá un café a las 8pm
+
+Realizar una acción a partir de una información terciaria
+
+La tecnología no siempre esta en funcion de los intereses del usuario
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1632&pageid=2262
+
+El autor como productor - Walter Benjamin
+
+https://iohanna.com/Objects-of-Research
+
+10 paradoxes of techology - Andrew Feenberg
+
+

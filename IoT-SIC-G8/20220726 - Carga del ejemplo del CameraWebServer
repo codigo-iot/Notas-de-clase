@@ -1,0 +1,28 @@
+Carga del programa de ejemplo al ESP32CAM
+
+1. Realizar el circuito de conexión con el FTDI
+
+https://edu.codigoiot.com/mod/page/view.php?id=1757
+
+2. Insertar el cable en un puerto de la computadora. Es importante asegurarse de que Windows detecta el FTDI
+
+3. Hacer el tunelado USB
+	-En la Máquina Virtual, hacer clic en dispositivos, en USB y el FTDI
+	-Comprobar que el FTDI este palomeado desde el mismo menú
+	
+4. Abrir el ejemplo Camera Web Server
+
+5. Seleccionar el puerto del micro controlador desde Arduino IDE. Hacer clic en Tools>Port>/dev/ttyUSB0
+
+6. Abrir el monitor serial (a 115200) y presionar el boton Reset en el ESP32. Se espera ver un mensaje en el que se indica que el micro controlador esta listo para recibir un mensaje.
+
+7. Modificar el programa y cargarlo
+	-Seleccionar el modelo de cámara
+	-Colocar nombre de red y contraseña
+	-Hacer clic en el boton de palomita verde
+	
+8. Quitar el cable programador
+
+9. Presionar el boton reset. Se observará en el monitor serial la IP a la que se conecta la cámara
+
+10. Visitar la IP asignada a la cámara
