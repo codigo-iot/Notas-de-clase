@@ -1,0 +1,23 @@
+Carga del ejemplo Camera Web Server
+
+1. Hacer el circuito
+https://edu.codigoiot.com/mod/page/view.php?id=1757
+
+2. Conectar el puerto USB
+
+3. Modificar el programa
+	Modificar modelo de cámara
+	CAMERA_MODEL_AI_THINKER
+	
+	Modificar SSID y contraseña
+	
+4. Abrir el monitor serial y presionar el boton reset. Se debe ver el siguiente mensaje
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+
+5. Cargar el programa
+
+6. Quitar el cable programador y presionar el boton reset
+
+7. Visitar la IP del Camera Web Server

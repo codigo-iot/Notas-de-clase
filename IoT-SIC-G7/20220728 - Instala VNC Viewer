@@ -1,0 +1,21 @@
+1. Acceder por SSH a la raspberry Pi
+
+2. Activar el protocolo VNC
+	-sudo raspi-config
+	-Interface Options
+	-VNC
+
+3. Configurar la resolución de la Raspberry Pi
+	-Display Options
+	-VNC Resolution
+	-1280x720
+	
+4. Reiniciar Raspberry
+
+5. Instalar VNC Viewer
+
+https://www.realvnc.com/es/connect/download/viewer/
+
+6. Abrir una sesion en la IP de la Raspberry Pi
+
+

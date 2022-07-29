@@ -1,0 +1,14 @@
+Ejemplo Camera Webserver
+
+1. Hacer el circuito
+2. Conectar el micro controlador a la maquina virtual
+3. Cargar el programa de ejemplo del Camera Web Server
+4. Consultar en el monitor serial la IP del micro controlador
+5. Iniciar el streaming
+
+Programa Básico
+
+1. Clonar el repositorio
+https://github.com/codigo-iot/ESP32CAM-WiFi-Basic.git
+
+2.
