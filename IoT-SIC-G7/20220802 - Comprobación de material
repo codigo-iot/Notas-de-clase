@@ -23,7 +23,8 @@ https://github.com/hugoescalpelo/esp32cam-max30100/blob/main/esp32cam-max30100-b
 
 3. Descargar la biblioteca SparkFun MAX3010x. Hacer clic en Sketch>Libraries>Manage Libraraies de Sparkfun Electronics
 
-4. Realizar el circuito. No desconectar el FTDI. Agregar resistencias de pull-up entre SDA y +5v, y SCL y +5V
+4. Realizar el circuito. No desconectar el FTDI. Agregar resistencias de pull-up entre SDA y +5v, y SCL y +5V de valores de 4.7K Ohms
+
 
 
 

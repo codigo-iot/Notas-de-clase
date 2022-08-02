@@ -1,0 +1,34 @@
+Cargar el sistema operativo a la Raspberry Pi OS
+
+1. Descargar Raspberry Pi Imager
+
+https://www.raspberrypi.com/software/
+
+2. Seleccionar Raspberry Pi OS (32Bit)
+
+3. Tunelar tarjeta de memoria a Ubuntu 20.04LTS (Dispositivos> USB>Generic Mass Storage)
+
+4. Configurar acceso SSH y WiFi
+	-Activar casilla SSH
+	-Usuario: pi
+	-Pass: ****
+	
+	-Activar Configura Wireless LAN
+	-Configurar SSID
+	-Configurar contraseña
+	-Seleccionar país MX
+	
+https://edu.codigoiot.com/course/view.php?id=815
+
+Concectarse por SSH a la Raspberry Pi
+
+1. Encontrar la IP de la Raspberry Pi
+
+2. Ejecutar el comando
+	ssh pi@192.168.x.x
+	
+	Predeterminados
+	pi
+	raspberry
+	
+	
