@@ -8,15 +8,25 @@ https://github.com/codigo-iot/MLX-90614-TallerIoT/blob/main/ESP32CAM/MLX90614-ES
 
 3. Descargar la biblioteca Adafruit_MLX90614. Hacer clic en Sketch>Libraries>Manage Libraraies
 
-4. Descargar la biblioteca PubSubClient de Nick O'Leary
+4. Realizar el circuito. No desconectar el FTDI
 
-5. Realizar el circuito. No desconectar el FTDI
+5. Actualizar SSID y Contraseña
 
-6. Actualizar SSID y Contraseña
+	
+Comprobar el funcionamiento del MAX30102 (Sensor de oxigenación y ritmo cardiaco)
 
-7. Actualizar IP del servidor mqtt
-	- ifconfig
-	- netstat -an
+1. Clonar el repositorio
+
+https://github.com/hugoescalpelo/esp32cam-max30100/blob/main/esp32cam-max30100-basic_reading/esp32cam-max30100-basic_reading.ino
+
+2. Abrir el programa con extensión .ino
+
+3. Descargar la biblioteca SparkFun MAX3010x. Hacer clic en Sketch>Libraries>Manage Libraraies de Sparkfun Electronics
+
+4. Realizar el circuito. No desconectar el FTDI
+
+
+
 
 
 
@@ -33,4 +43,6 @@ https://github.com/hugoescalpelo/esp32cam-max30100/blob/main/esp32cam-max30100-b
 https://github.com/codigo-iot/Max30100-MQTT-ESP32CAM
 
 https://github.com/codigo-iot/MLX-90614-TallerIoT/blob/main/ESP32CAM/MLX90614-ESP32CAM-MQTT-I2C/MLX90614-ESP32CAM-MQTT-I2C.ino
+
+https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf
 
