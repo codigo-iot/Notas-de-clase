@@ -30,5 +30,26 @@ Concectarse por SSH a la Raspberry Pi
 	Predeterminados
 	pi
 	raspberry
+
+Configurar VNC
+
+Habiendose conectado por SSH a la raspberry Pi
+
+	-sudo raspi-config
+	-3 interface options
+	-I3 VNC
+	-Si
+	-2 Display options
+	-D5 VNC Resolution
+	-1280x720
+	-Finish
+	-Reboot
 	
+Abrir escritorio VNC
+
+1. Descargar VNC Viewer
+
+https://www.realvnc.com/es/connect/download/viewer/
+
+
 	
