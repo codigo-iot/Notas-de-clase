@@ -22,8 +22,31 @@ https://www.raspberrypi.com/software/
 	-Seleccionar nombre de usuario y contraseña
 		-pi
 		-****
+		-Predeterminada:
+		 raspberry
 	-Seleccionar casilla de Configurar Wireless LAN
 	-Escribir nombre de red y su contraseña
 	-Seleccionar País: MX
 
-6. Escribir memoriaa
+6. Escribir memoria
+
+Entrar a la RPI por SSH
+
+ssh pi@192.168.15.22
+
+Activar el protocolo VNC
+
+-sudo raspi-config
+-3 Interfaces
+-Activar VNC
+-2 Display Options
+-Resolucion VNC
+-1280x720
+-Finalizar
+-Reiniciar
+
+Descargar VNC Viewer
+
+https://www.realvnc.com/es/connect/download/viewer/
+
+
