@@ -1,0 +1,29 @@
+Instalar Raspberry Pi OS
+
+1. Dirigirse a la pagina de Raspberry Pi y descargar Pi Imager
+
+https://www.raspberrypi.com/software/
+
+2. Instalar Pi Imager.
+	-Hacer doble clic en el archivo descargado
+	-Abrir
+	
+3.Seleccionar Sistema Operativo
+	-Raspberry Pi OS (32-bit)
+	
+4. Seleccionar tarjeta de memora
+	-Opcional. Formatear memoria como FAT32 en caso de ser necesario
+	-Tunelar la tarjeta SD. Dispositivos>USB>Generic Mass Storag
+	-Seleccionar tarjeta en Pi Imager
+	
+5. Configurar acceso
+	-Hacer clic en el boton engrane
+	-Seleccionar casilla de SSH
+	-Seleccionar nombre de usuario y contraseña
+		-pi
+		-****
+	-Seleccionar casilla de Configurar Wireless LAN
+	-Escribir nombre de red y su contraseña
+	-Seleccionar País: MX
+
+6. Escribir memoriaa
