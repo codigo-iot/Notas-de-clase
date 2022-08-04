@@ -1,0 +1,34 @@
+Tutorial de soldadura
+NOTA: No es obligatorio, la recomendación es que lleven sus componentes a alun taller de reparacion de electronicos a que los solden por ustedes
+
+Material necesario
+
+-Cautin
+-Base para cautín
+-Esponja humeda
+-Pasta para soldar
+-Soldadura sin plomo
+-Componente
+-Header
+
+Comprobar el funcionamiento del MLX90614 (sensor de temperatura Infrarrojo)
+
+1. Clonar el repositorio
+
+https://github.com/codigo-iot/MLX-90614-TallerIoT/blob/main/ESP32CAM/MLX90614-ESP32CAM-MQTT-I2C/MLX90614-ESP32CAM-MQTT-I2C.ino
+
+2. Abrir el código de ejemplo
+
+3. Leer la documentación del programa para saber como conectar el sensor
+
+4. Instalar la biblioteca Adafruit MLX90614. Sketch>Bibliotecas>Gestor de bibliotecas>Adafruit MLX90614
+
+5. Conectar el cable programador en circuito
+
+6. Conectar el cable del FTDI a la computadora y tunelar el FTDI a la máquina virtual
+
+7. Cargar el programa
+
+8. Desconectar el cable programador
+
+9. Observar en el monitor serial el resultado del sensor de temperatura
