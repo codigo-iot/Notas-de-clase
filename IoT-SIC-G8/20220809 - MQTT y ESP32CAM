@@ -1,0 +1,42 @@
+Tema siguiente: ESP32CAM
+
+-Ejemplo de MQTT con ESP32CAM
+-Ejemplo de JSON y MQTT con ESP32CAM
+-Concluir el ejercicio de la estación climática
+
+-Programación para microcontroladores basados en Arduino
+
+Evaluación continua
+
+-Todos los ejercicios, tareas y ejemplos deberán estar en su repositorio
+-Archivos de programas
+-Documentación en Readme.md
+	-Nombre
+	-Descripción
+	-Requisitos
+	-Enlaces de documentación
+	-Instrucciones
+	-Evidencias
+		-Fotos
+		-Videos
+	-Creditos
+
+
+Ejercicio: MQTT y ESP32CAM
+
+1. Clonar el repositorio
+https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
+
+2. Modificar el archivo Readme.md 
+
+[Actualizado el 9-ago-2022 por [Hugo Escalpelo](https://github.com/hugoescalpelo)]
+
+codigoIoT/ejemplo/mqtt
+codigoIoT/ejemplo/mqttin
+
+
+
+Notas
+
+Editor de texto MarkDown en linea
+https://stackedit.io/app#
