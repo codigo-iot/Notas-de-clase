@@ -41,7 +41,7 @@ https://github.com/hugoescalpelo/esp32cam-max30100
 
 2. Abrir el código de ejemplo
 
-3. Leer la documentación del programa para conocer la conexión. Agregar resistencias de Pull-Up de SDA a 5v y de SCL a 5v
+3. Leer la documentación del programa para conocer la conexión. Agregar resistencias de Pull-Up de SDA a 5v y de SCL a 5v (4.7K ohms)
 
 4. Agregar la biblioteca Sparkfun MAX3010x
 
