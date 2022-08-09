@@ -1,0 +1,26 @@
+Evaluacion continua
+
+Se requiere que todos los ejercicios en clase estén respaldados en repositorio
+
+Requisitos
+-Codigo correctamente documentado
+-Archivo Readme.md correctamente documentado y desarrollado
+	-Descripción
+	-Autor
+	-Enlaces de autor
+	-Documentación
+	-Evidencias
+
+Siguientes clases
+
+Micro controlador
+Programa de ejemplo
+	MQTT
+	JSON
+	Estacion climatica
+	
+Ejercicio
+
+Clonar repositorio ESP32CAM_MQTT-Basic
+
+https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
