@@ -8,7 +8,9 @@ Requisitos
 	-Descripción
 	-Autor
 	-Enlaces de autor
-	-Documentación
+	-Requisitos
+	-Enlaces a plataforma
+	-Descripción de funcionamiento
 	-Evidencias
 
 Siguientes clases
@@ -21,6 +23,33 @@ Programa de ejemplo
 	
 Ejercicio
 
-Clonar repositorio ESP32CAM_MQTT-Basic
+1. Clonar repositorio ESP32CAM_MQTT-Basic
 
 https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
+
+2. Modificar Readme.md
+-Abrir VSCode
+-Abrir el directorio del repositorio
+-Modificar el archivo
+
+3. Crear Fork del proyecto
+	Desde GitHub Desktop Seleccionar la opcion "For my own purposes"
+
+4. Modificar código en la IDE de Arduino
+	-SSID y contraseña de red
+	-IP del broker local
+	-Tema donde se publica
+		-Al final de void loop ()
+	-Tema donde se suscribe
+		-En la funcion callback
+		-En la función reconnect
+
+
+
+Notas:
+
+Editores Online de Markdow
+https://stackedit.io/app#
+https://dillinger.io/
+https://pandao.github.io/editor.md/en.html
+
