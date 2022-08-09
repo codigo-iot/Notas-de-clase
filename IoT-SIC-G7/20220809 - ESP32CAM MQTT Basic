@@ -38,11 +38,29 @@ https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
 4. Modificar código en la IDE de Arduino
 	-SSID y contraseña de red
 	-IP del broker local
+		ifconfig
 	-Tema donde se publica
 		-Al final de void loop ()
 	-Tema donde se suscribe
 		-En la funcion callback
 		-En la función reconnect
+	
+5. Descargar biblioteca PubSubClient de Nick O'Leary
+
+6. Configurar mosquitto
+
+-Dirigirse a /usr/share/doc/mosquitto/examples/mosquitto.conf.exampl y obtener el archivo de configuración de ejemplo
+-Colocar el archivo mosquitto.conf en el directorio /etc/mosquitto/conf.d/
+-Descomentar las siguientes lineas
+	25	allow_anonymous
+	235	listener 1883 0.0.0.0
+-Reiniciar el servicio
+	-Consultar el servicio
+	systemctl status mosquitto
+	-Detener servicio
+	systemctl stop mosquitto
+	-Arrancar servicio
+	systemctl start mosquitto
 
 
 
