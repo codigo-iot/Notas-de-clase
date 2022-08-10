@@ -84,6 +84,13 @@ Mover el archivo mosquitto.conf del escritorio a /etc/mosquitto/conf.d/
 -Guardar con Ctrl + o
 -Salir con Ctrl + x
 -Reiniciar servicio de mosquitto
+
+9. Abrir el firewall de Ubuntu
+	sudo ufw enable
+	sudo ufw allow 1883
+	
+-Opcional:
+	- Crear regla de entrada y salida en el sistema operativo anfitrion
 	
 	
 
