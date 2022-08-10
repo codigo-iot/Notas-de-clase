@@ -34,6 +34,60 @@ https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
 codigoIoT/ejemplo/mqtt
 codigoIoT/ejemplo/mqttin
 
+3. Crear commit
+-Crear un fork
+-Seleccionar "For my own purposes"
+
+4. Modificar código
+-Agregar nombre de Red (SSID)
+-Agregar contraseña
+-Agregar la IP del broker local
+	ifconfig
+	inet 192.168.15.27
+	Deber ser conexion puente
+	(empieza con 192.168)
+-Modificar el tema a publicar
+	-Al final del void loop
+-Modificar el tema a suscribir
+	-En el if de la funcion Callback
+	-En la funcion reconnect
+
+5. Asegurarse del que el broker funciona
+systemctl status mosquitto
+-Buscar que se encuentre activo
+-Ctrl + c para salir
+
+6. Agregar la biblioteca PubSubClient de Nick O'Leary
+
+7. Cargar el código
+	-Se vera el error rc= -2
+
+8. Configurar mosquitto para recibir conexiones externas
+
+https://mosquitto.org/man/mosquitto-conf-5.html
+
+- Obtener muestra del archivo de configuración en la ruta /usr/share/doc/mosquitto/examples/mosquitto.conf.example
+- Hacer doble clic en el archivo mosquitto.conf.gz
+- Extraer en el escritorio
+
+Mover el archivo mosquitto.conf del escritorio a /etc/mosquitto/conf.d/
+
+-Abrir una terminal para copiar el archivo desde el escritorio
+	sudo cp ~/Desktop/mosquitto.conf /etc/mosquitto/conf.d/mosquitto.conf
+-Abrir el archivo para editarlo en termina con permisos de administrador
+	sudo nano /etc/mosquitto/conf.d/mosquitto.conf
+	
+-Descomentar las siguientes lineas
+	allow_anonymous true
+	listener 1883 0.0.0.0
+
+-Guardar con Ctrl + o
+-Salir con Ctrl + x
+-Reiniciar servicio de mosquitto
+	
+	
+
+
 
 
 Notas
