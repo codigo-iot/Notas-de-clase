@@ -22,4 +22,32 @@ https://github.com/hugoescalpelo/esp32cam-max30100
 
 4. Conectar las resistestencias de PullUp de 4.7K ohms de SDA a 5v y de SCL a 5v
 
-Cargar el código
+5. Cargar el código
+
+Todos los ejercicios y ejemplos deberán estar correctamente documentados en el repositorio
+
+-Codigo
+-Documentación en el Readme.md siempre en MarkDown
+	-Titulo
+	-Creditos de actualización
+	-Descripción
+	-Lista de materiales
+	-Enlaces de apoyo
+	-Instrucciones
+		-Armado
+		-Operación
+	-Evidencias
+		-Imagen (640x480)
+		-Video enlazado a youtube
+	-Creditos
+
+
+
+Ejercicio MQTT con ESP32CAM
+
+1. Clonar el repositoro
+2. Modificar el archivo Readme.md
+	https://stackedit.io/app#
+3. Cambiar temas
+	codigoIoT/ejemplo/mqtt
+	codigoIoT/ejemplo/mqttin
