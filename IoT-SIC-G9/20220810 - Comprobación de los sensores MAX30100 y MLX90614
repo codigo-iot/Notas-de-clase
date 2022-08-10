@@ -1,0 +1,25 @@
+Comprobar el funcionamiento del MLX90615 (Sensor de temperatura infrarrojo)
+
+1. Clonar el repositorio
+
+https://github.com/codigo-iot/MLX-90614-TallerIoT
+
+2. Leer la documentación del programa para realizar el circuito
+
+3. Instalar la biblioteca  Adafruit MLX90614
+
+4. Cargar el código
+
+Comprobar el funcionamiento del MAX30102
+
+ 1. Clonar el repositorio
+
+https://github.com/hugoescalpelo/esp32cam-max30100
+
+2. Leer la documentación del programa para realizar el circuito
+
+3. Instalar la biblioteca  Sparkfun MAX3010x
+
+4. Conectar las resistestencias de PullUp de 4.7K ohms de SDA a 5v y de SCL a 5v
+
+Cargar el código
