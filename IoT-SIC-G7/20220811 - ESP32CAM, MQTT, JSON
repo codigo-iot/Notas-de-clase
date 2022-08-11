@@ -1,0 +1,47 @@
+Configurar mosquitto para recibir conexiones externas
+
+https://mosquitto.org/man/mosquitto-conf-5.html
+
+- Obtener muestra del archivo de configuración en la ruta /usr/share/doc/mosquitto/examples/mosquitto.conf.example
+- Hacer doble clic en el archivo mosquitto.conf.gz
+- Extraer en el escritorio
+
+Mover el archivo mosquitto.conf del escritorio a /etc/mosquitto/conf.d/
+
+-Abrir una terminal para copiar el archivo desde el escritorio
+	sudo cp ~/Desktop/mosquitto.conf /etc/mosquitto/conf.d/mosquitto.conf
+-Abrir el archivo para editarlo en termina con permisos de administrador
+	sudo nano /etc/mosquitto/conf.d/mosquitto.conf
+	
+-Descomentar las siguientes lineas
+	allow_anonymous true
+	listener 1883 0.0.0.0
+
+-Guardar con Ctrl + o
+-Salir con Ctrl + x
+-Reiniciar servicio de mosquitto
+
+1. Asegurarse de que la modificación al archivo mosquitto.cong incluya las siguientes lineas
+
+allow_anonymous true
+listener 1883 0.0.0.0
+
+2. Comprobar que mosquitto esté funcionando
+
+systemctl status mosquitto
+Systemctl start mosquitto
+
+3. Comprobar que la información llega al broker local
+- ESP32CAM MQTT Basic
+- Terminal
+
+codigoIoT/ejemplo/mqtt
+codigoIoT/ejemplo/mqttin
+
+Nota: Activar la excepción en el Firewall de Ubuntu
+
+sudo ufw 1883 allow
+sudo ufw enable
+
+
+
