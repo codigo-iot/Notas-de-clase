@@ -40,7 +40,7 @@ codigoIoT/ejemplo/mqttin
 
 Nota: Activar la excepción en el Firewall de Ubuntu
 
-sudo ufw 1883 allow
+sudo ufw allow 1883
 sudo ufw enable
 
 
