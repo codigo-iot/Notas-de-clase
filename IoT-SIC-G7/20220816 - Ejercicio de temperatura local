@@ -1,0 +1,34 @@
+Ejercicios
+
+1. Dashboard de MQTT Basic
+- Importar el flow del repositorio MQTT basic
+- Confiugrar los temas mqtt
+- Ir al Dashboard
+
+2. Hacer el ejercicio del MQTT JSON
+
+https://github.com/codigo-iot/publicar-strings-json-mqtt-nodemcu-wifi/blob/main/nodemcu-mqtt-json/nodemcu-mqtt-json.ino
+
+3. Reportar de forma local los valores de temperatura y humedad relativa del sensor DHT11 con el ESP32CAM para graficarlos en un dashboard
+- Crear un programa en arduino para el ESP32CAM que haga lo siguiente
+	- Leer el sensor DHT11
+	- Conexion a WiFi
+	- Conexxion al broker
+	- Envio de dos variables en un JSON
+- Tener funcionando el Broker
+- Hacer un dashboard que haga lo siguiente
+	- Que se suscriba al tema donde el ESP32CAM publica
+	- Que separe las variables
+	- Que se muestre en dashboard el valor actual de temperatura
+	- Que se muestre en dashboard el valor actual de humedad relativa
+	- Grafica en el tiempo de temperatura y humedad 
+	- Que se prenda el led para señalar temperatura alta prendiendo el led flash
+
+
+
+Materi complementario
+https://www.arduino.cc/pro/hardware/product/portenta-machine-control
+
+https://youtu.be/2wrBy8qNT60
+
+https://www.programmingelectronics.com/dtostrf/

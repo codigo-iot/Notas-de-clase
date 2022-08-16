@@ -35,8 +35,8 @@ Systemctl start mosquitto
 - ESP32CAM MQTT Basic
 - Terminal
 
-codigoIoT/ejemplo/mqtt
-codigoIoT/ejemplo/mqttin
+publish codigoIoT/ejemplo/mqtt
+suscribe codigoIoT/ejemplo/mqttin
 
 Nota: Activar la excepción en el Firewall de Ubuntu
 
