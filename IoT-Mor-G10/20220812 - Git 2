@@ -1,0 +1,40 @@
+Funcionamieneto de Git
+
+1. Supervisar un directorio
+- Opcion A: iniciar desde dentro del directorio git init
+- Opcion B: crear directorio e inicializarlo git inint [nombre]
+
+2. Consultar el estado del repositorio
+- git status
+
+3. Crear archivos a seguir
+
+4. Agregar todos los archivos para supervisarlos
+- git add .
+
+5. Hacer el primer commit
+- git commit -m "commit message"
+
+6. Autentificarse
+- git config --global user.email "you@example.com"
+- git config --global user.name "Your Name"
+
+6. Hacer el primer commit
+- git commit -m "commit message"
+
+7. Consultar el estado del repositorio
+- git status
+
+8. Hacer un nuevo cambio al documento al que ya se le hizo commit
+
+9. Consultar el estado del repositorio
+- git status
+
+10. Agregar todos los archivos para supervisarlos
+- git add .
+
+11. Hacer el primer commit
+- git commit -m "commit message"
+
+12. Consultar el estado del repositorio
+- git status

@@ -1,0 +1,26 @@
+Comandos del sistema
+
+Al empezar una nueva instalación de Linux se recomienda actualizar el sistema
+
+sudo apt update
+sudo apt upgrade
+
+Usuarios
+
+root - administrador
+hugo - usuario
+
+Ayuda contextual
+
+[comando] --help
+[comando] -h
+
+Limpiar pantalla
+
+Clear
+
+Nota
+
+Formato de comandos
+
+[permisos][comando/programa][opciones/banderas][parámetros]
