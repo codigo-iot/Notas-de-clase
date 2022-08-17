@@ -1,0 +1,33 @@
+1. Modificar el archivo README.md
+
+2. Crear un nuevo archivo llamado texto.txt y ponerle contenido
+
+3. Consultar los cambios
+
+4. Agregar al commit únicamente el archivo README.md
+
+5. Hacer commit
+
+6. Comparar los cambios
+
+7. Sincronizar con repositorio remoto
+
+8. Agregar todos los archivos a un nuevo commit
+
+9. Sincronizar con repositorio remoto
+
+Instalación de GitHub Desktop en Ubuntu 20.04
+
+https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
+
+1. Descargar el recurso
+2. Instalarlo
+3. Abrir GitHub Desktop
+4. Iniciar sesion
+5. Clonar el repositorio de ejemplo
+6. Modificar el archivo Readme.md en la carpeta Git
+7. Comprobar cambios en web
+8. Obtener cambios en github desktop
+9. Modificar el archivo en la carptea de GitHub
+10. Hacer commit y push por intefaz gráfica
+11. Hacer git pull por terminal
