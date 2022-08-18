@@ -30,3 +30,20 @@ Ejercitar git pull
 
 Clonar las notas de clase
 https://github.com/hugoescalpelo/Notas-de-clase.git
+
+Material de referencia
+
+Curso de Git
+https://edu.codigoiot.com/course/view.php?id=813
+
+Curso de GitHub Desktop
+https://edu.codigoiot.com/course/view.php?id=814
+
+Instalacion de Visual Studo Code
+https://edu.codigoiot.com/course/view.php?id=822
+
+1. Abrir el repositorio git-tutorial-basic-g1 en la carpeta GitHub
+2. Agregar un cambio
+3. Hacer primer commit con Source Control en VSC
+4. Hacer Push
+5. Iniciar sesion en GitHub.com (si a todo)
