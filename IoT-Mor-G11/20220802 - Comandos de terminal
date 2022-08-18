@@ -1,0 +1,73 @@
+Introducción a linux
+
+Directorios
+
+Directorio Raíz
+/
+
+Directorio del usuario
+
+Forma absoluta
+/home/hugo
+
+Forma relativa
+~
+
+Atajo de la terminal
+
+Ctrl + Alt + T
+
+Formato general de un comando
+
+[Permisos][programa/comando][opciones][párametros]
+
+Ejercicio 1
+
+ls
+ls -a
+ls -l
+ls -a -l
+
+Descargar una imagen y consultar el directorio con rutas relativas y absolutas
+
+ls -a -l /home/hugo/Downloads/Logos
+
+Comandos de actualización
+
+sudo apt update
+sudo apt upgrade
+
+Permisos de usuario
+
+root
+hugo
+
+sudo
+
+Material extra
+
+https://creativecommons.org/licenses/?lang=es
+
+https://elementary.io/es/
+https://www.bunsenlabs.org/
+https://crunchbangplusplus.org/
+https://linuxmint.com/
+https://www.centos.org/
+https://archlinux.org/
+https://www.kali.org/
+https://guitarix.org/
+https://ubuntustudio.org/
+https://puredyne.org/
+
+https://geekland.eu/apt-y-apt-get-similitudes-y-diferencias/
+
+Material
+
+Mareitral
+
+
+
+
+
+
+
