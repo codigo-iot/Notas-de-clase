@@ -24,6 +24,7 @@ https://github.com/codigo-iot/publicar-strings-json-mqtt-nodemcu-wifi/blob/main/
 	- Grafica en el tiempo de temperatura y humedad 
 	- Que se prenda el led para señalar temperatura alta prendiendo el led flash
 
+Se sugiere la biblioteca DHT de Adafruit
 
 
 Materi complementario
