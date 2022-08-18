@@ -1,0 +1,43 @@
+Comandos del sistema
+
+Lista del procesos
+
+ps
+ps -e | more Muestra todos los procesos
+ps -ef muestra detalles de todos los procesos
+ps aux
+
+Comando de busqueda
+
+grep [bandera] [nombre de aquello que se busca]
+
+ps -f | grep [nombre del proceso]
+
+
+Comando de cierre de programa
+
+kill [Señal] [PID]
+
+-2 Envia una señal de interupción
+-9 Forzar la terminación de un programa
+
+Ayuda de comando
+
+--help
+-l
+
+Control de versiones con git
+
+Git
+https://git-scm.com/
+
+Cheat sheet
+http://gregorgonzalez.com.ve/blog/wp-content/uploads/git-cheat-sheet-Rebellabs-1536x1086.png
+
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+Instalación de git 
+
+1. Instalar git
+apt-get install git
+

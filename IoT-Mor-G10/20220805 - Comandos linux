@@ -1,0 +1,89 @@
+Formato general de comando
+
+[Permisos][programa/comando][opcion/bandera][parámetros]
+
+ls -a -l /usr/bin
+
+history - Muestra el historial
+clear - limpiar pantalla
+date - Obtener la fecha
+
+Tipos de archivos
+
+-Archivos regulares
+-Directorios
+-Enlaces simbólicos
+
+d r w x r - x r - x
+- r w - r - - r - -
+1 2 3 4 5 6 7 8 9 A
+
+1 - tipo de archivo
+	- archivo regular
+	d directorio
+	l enlace simbólico
+	b achivos bloqueados
+	c archivos de dispositivo
+	p Archivos Pipe
+	s Archivo Socket
+	
+2,3,4 Permiso Permisos del Dueño
+5,6,7 Permiso Permisos del Grupo
+8,9,A Permiso Otros
+
+[r]w x  Lectura
+ r[-]x  Escritura
+ r -[x] Ejecución
+ 
+-rw-r--r--  1 hugo hugo 3771 jul 29 10:10 .bashrc
+01          2 3    4    5    6            7
+
+0 tipo de archvo
+1 Permisos de lectura, escritura, ejecución
+2 Enlaces duros
+3 Propietario
+4 Grupo al que pertenece
+5 Tamaño de archivo en bits
+6 Fecha de creación
+7 nombre
+
+Tipo de enlace
+
+-Enlace duro
+	Es el mismo archivo pero enlazado
+	Va a tener los mismos permisos
+	Va a tener el mismo contenido
+
+-Enlace simbólico
+	Se parecen a accesos directos en windows
+	Son archivos que representan a otros archivos
+	Apunta a la ruta real del archivo
+	
+Usuarios y grupos
+
+root	usuario administrador
+user	[hugo] Usuario sin permisos de adminsitrador
+
+Grupos
+	Los grupos conjuntos de usuarios y permisos
+	Cuando un usuario crea un archivo, de forma predeterminada, el archivo se asigna al grupo del usuario
+	usuario
+	root
+
+Nombres de archivo
+
+-Si el archivo empieza con punto (.) es un archivo oculto al usuario
+
+
+Path - Rutas de comandos y programas en Linux
+ 
+ 
+Para obtener permisos de administrador
+ 	sudo
+ 
+nano .bashrc
+^ - Representa la combinacion de teclas con Ctrl
+
+Nota:
+
+Usar solo una terminal

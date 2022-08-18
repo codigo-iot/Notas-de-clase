@@ -1,0 +1,73 @@
+Comandos de linux
+
+Directorio de trabajo (.)
+Directorio superior (..)
+
+Moverse a través de carpetas
+
+cd
+cd [nombre del directorio]
+cd ..
+cd [ruta absoluta]
+
+pwd - Mostrarnos la ruta absoltua del directorio actual
+
+Crear directorios
+
+mkdir [nombre de carpeta]
+mkdir [ruta absoluta hasta la carpeta a crear]
+
+Borar directorio
+
+rmdir [nombre de carpeta]
+rmdir [ruta absoluta hasta la carpeta a eliminar]
+
+Ejercicio1
+
+	Crear la ruta
+	~/Ejercicios/Ejercicio1/ej1-1/ej1-1-1
+
+Creación de multiples directorios
+
+mkdir [dir2] [dir2] [dir3]...
+
+Ejercicio2
+
+	Crear los directorios
+	home/hugo/Ejercicios/Ejercicio1/ej1-2
+	home/hugo/Ejercicios/Ejercicio1/ej1-3
+	home/hugo/Ejercicios/Ejercicio1/ej1-4
+	home/hugo/Ejercicios/Ejercicio1/ej1-5
+	home/hugo/Ejercicios/Ejercicio1/ej1-1/ej1-1-2
+	home/hugo/Ejercicios/Ejercicio1/ej1-1/ej1-1-3
+	
+Crear Directorios Intermedios
+
+mkdir -p [directorio]
+
+Ejercicio 3
+
+Crear el directorio ~/Ejercicios/Ejercicio1/ej1-2/ej1-2-1/ej1-2-1-1
+
+Consultar el contenido de un archivo
+
+cat [nombre del archivo]
+cat [ruta hasta el archivo]
+
+Eliminar directorios
+
+rmdir [nombre del directorio]
+rmdir [ruta hasta el directorio]
+
+Crearcion de archivos vacios
+
+touch [nombre del archivo]
+touch [ruta hasta el archivo]
+
+Ejercicio 4
+
+Crear la carpeta Ejercicio2 en la carpeta de ejercicios
+
+Crear tres archivos con el comando Touch
+
+

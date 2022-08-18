@@ -1,0 +1,113 @@
+Comandos del sistema
+
+-rw-r--r--  1 hugo hugo 3771 ago  4 09:22 .bashrc
+1 2         3 4    5    6    7            8
+
+1. Tipos de archivo
+
+- Archivo regular
+d Directorio
+l Enlace duro
+
+2. Permisos
+
+rw-r--r--
+
+rw- Permisos del propietario
+r-- Permisos del grupo
+r-- Permisos de otros grupos
+
+rwx
+
+3. Enlaces duros
+	- Enlaces duros: Copias sincronizadas del archivo
+	- Enlaces simples: Archivos que apuntan a una ubicación
+
+4. Propietario del archivo
+5. Grupo al que pertenece dicho usuario
+6. Tamaño del archivo en bits
+7. Fecha de modificación
+8. Nombre del archivo
+
+	
+
+
+Usuarios
+	-root	Usuario administrador
+	-hugo	Usuario usario
+	
+	sudo
+
+Grupos de usuarios
+
+PATH Es una variable del sistema que tienen como proposito almacenar las rutas de ejecutables
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+
+Directorios
+
+pwd Nos devuelve la ruta absoluta hasta el directorio en el que nos encontramos
+
+. Representa el directorio actual
+.. Representa el directorio superior
+
+~ Representa el directorio home
+	/home/hugo
+
+/ Directorio Raiz
+
+Directorio relativo
+	~/Desktop
+
+Directorio absoluto
+	/home/hugo/Desktop
+
+Convenciones para nombrar archivos en Linux
+
+No se pueden incluir los siguientes caracteres
+| ! " @ # $ % & / \ '
+
+Se pueden utilizar
+Caracteres alfanuméricos, -, _ y espacios
+
+Se diferencía entre mayusculas y minusculas
+
+Comando cambiar directorio
+
+cd [nombre de directorio]
+cd [ruta absoluta/relativa al directorio]
+
+Ejercicio 1
+
+Saltar entre multiples directorios
+
+mkdir 	crear un directorio
+rmdir	eliminar un directorio
+
+Ejercico 2
+
+Crear el siguiete arbo de directorios
+
+~/Ejercicios
+~/Ejercicios/Ejercicio1
+~/Ejercicios/Ejercicio1/ej1-1
+~/Ejercicios/Ejercicio1/ej1-2
+~/Ejercicios/Ejercicio1/ej1-3
+
+touch	Crea un archivo vacio
+
+
+
+
+
+

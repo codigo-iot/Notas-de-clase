@@ -1,0 +1,64 @@
+Git con terminal
+
+1. Consultar Commits realizados
+- git show
+
+2. Hacer modificaciones al archivo de texto del repositorio creado la clase pasada
+
+3. Consultar el estado del repositorio
+- git show
+- git status
+
+4. Realizar el segundo commit por terminal
+- git add .
+- git commit -m "comentario"
+- git status
+- git show
+
+Crear un nuevo repositorio desde GitHub
+
+1. Crear una cuenta en GitHub.com
+
+2. Crear un nuevo repositorio
+- Hacer clic en el boton Agregar repositorio
+- Seleccionar Nuevo repositorio
+Material adicional
+
+3. Configurar repositorio
+- Nombre único en su repositorio personal, sólo caracteres alfa numericos, - y _
+- Colocar descripción
+- Configurar el repositorio como publico
+- Activar la casilla de selección de Agregar un archivo Readme.md
+- Crear repositorio
+
+4. Modificar el archivo README.md via web
+- Hacer dos commits
+
+5. Clonar el repositorio en linea en nuestra computadora
+- git clone [https]
+
+6. Hacer primer commit a repositorio remoto
+- Hacer un cambio en el archivo Readme.md
+- git add .
+- git commit -m "mensaje"
+
+7. Sincronizar cambios con repositorio remoto
+- git push
+
+8. Crear un token de autentificación
+- Settings
+- Developer Settings
+- Personal Access Tokens
+- Generate new token
+- Nombrar token
+- Configurar expiración
+- Seleccionar repo, workflow, admin
+- Generate token
+
+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
+
+
+
+Repositorios explicados con gatitos
+https://teloexplicocongatitos.com/poster/tlecg04
+

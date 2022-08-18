@@ -1,0 +1,69 @@
+Comandos del sistema
+
+find -name [nombre del archivo]
+find -name
+
+grep busca patrones
+
+grep [opcion/bandera] [patron] [archivo]
+
+ps Enlista procesos
+ps -e Muestra todos los procesos
+ps -f -e Muestra el detalle de todos los procesos
+
+Mezclar comandos
+
+| Símbolo de barra
+
+ps -e | grep firefox
+
+kill terminar procesos
+
+kill [señal] PID
+
+Señales
+
+-2 Envia la señal de interrupción
+-9 Forzar el cierre de un proceso
+-15 Intenta cerrar lo involucrado
+
+kill -9 [PID]
+
+Control de versiones con GIT
+
+Curso https://edu.codigoiot.com/course/view.php?id=813
+
+Sitio oficial de Git
+https://git-scm.com/
+
+Git Cheat Sheet
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+Instalar Git
+apt-get install git
+
+1. Supervisar un directorio
+- Crear directorio
+- Abrir terminal en directorio
+- git init
+
+2. Crear un archivo y agregar contenido
+
+3. Comprobar estatus del repositorio
+- git status
+
+4. Agregar archivos a seguir
+- git add .
+
+5. Comprobar el status del repositorio
+
+6. Hacer commit
+- git commit -m "Primer Commit"
+
+7. Agregar identidad
+- git config --global user.email "you@example.com"
+- git config --global user.name "Your Name"
+- git status
+
+8|. Hacer commit
+- git commit -m "Primer Commit"

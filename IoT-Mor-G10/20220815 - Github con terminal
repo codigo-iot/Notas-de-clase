@@ -1,0 +1,49 @@
+Control de versiones con GitHub
+
+1. Crear una cuenta de github.com
+Consejo:
+- No usar una cuenta institucional o de trabajo
+- Confirmar la creación de la cuenta
+- Completar la información de perfil
+
+2. Crear un repositorio
+- Hacer clic en el boton de Agregar repositorio
+- Seleccionar la opción de nuevo repositorio
+
+3. Configurar el nuevo repositorio
+- Poner nombre del repositorio (este nombre distingue entre mayúsculas y minúsculas, debe ser único en su perfil y no admite espacios y caracteres especiales)
+- Poner una descripción adecuada
+- Configurar el repositorio como público
+- Activar la casilla de selección de Agregar un archivo README
+
+4. Editar el archivo README.md en la web de github.com
+- Agregar una linea que describa el proceso de edicion en web
+- Agregar una linea que haga uso de un enlace MarkDown
+- Agregar un segundo comit que incluya el enlace al perfil personal de GitHub.com
+
+5. Clonar repositorio por terminal
+- Obtener enlace https
+- Dirigirse al directorio de Git
+- git clone [enlace https]
+
+6. Hacer primer commit por terminal
+- Agregar una nueva linea que describa el primer commit por teminal
+- git status
+- git add .
+- git commit -m "mensaje"
+
+7. Sincronizaar repositorio local con repositorio remoto
+- git push
+- Generar token
+	- Settings
+	- Developer Settings
+	- Pesonal Access Tokens
+	- Configurar expiración
+	- Seleccionar las casillas repo, workflow, admin
+	
+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
+- Consultar cambios en github.com	
+
+Material complementario:
+Editor de Markdown en linea
+https://stackedit.io/app#

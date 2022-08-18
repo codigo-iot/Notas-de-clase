@@ -1,0 +1,49 @@
+Hacer segundo commit por terminal a GitHub.com
+
+1. Realizar cambios al archivo README.md
+2. Agregar los archivos al stage
+3. Hacer el commit
+4. Hacer el Push
+5. Comprobar cambios
+
+Instalar GitHub Desktop en Ubuntu
+
+https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
+
+1. Descargar el recurso
+2. Instalar el recurso
+- Instalar GDEBI en caso de no contar con el
+3. Iniciar sesion
+4. Clonar el repositorio git-tutorial-basic-g11
+5. Hacer un cambio en el repositorio de GitHub
+6. Hacer primer commit
+7. Hacer push
+
+Ejercitar git pull
+1. Abrir el repositorio git-tutorial-basic con terminal en la carpeta Git
+2. Consultar el estado del repositorio
+3. Obtener los cambios del repositorio remoto
+4. Hacer cambios en README.md en la carpeta Git
+5. Hacer stage, commit y push en terminal en la carpeta Git
+6. Consultar los cambios en web
+7. Hacer Pull en GitHub Desktop
+
+Clonar las notas de clase
+https://github.com/hugoescalpelo/Notas-de-clase.git
+
+Material de referencia
+
+Curso de Git
+https://edu.codigoiot.com/course/view.php?id=813
+
+Curso de GitHub Desktop
+https://edu.codigoiot.com/course/view.php?id=814
+
+Instalacion de Visual Studo Code
+https://edu.codigoiot.com/course/view.php?id=822
+
+1. Abrir el repositorio git-tutorial-basic-g1 en la carpeta GitHub
+2. Agregar un cambio
+3. Hacer primer commit con Source Control en VSC
+4. Hacer Push
+5. Iniciar sesion en GitHub.com (si a todo)
