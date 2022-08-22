@@ -1,0 +1,55 @@
+Hacer commits con la extensión de GitHub para Visual Studio Code
+
+1. Dirigirse a la sección de extensiones
+2. Buscar la extensión de GitHub llamada "GitHub Pull Requests an Issues"
+3. Instalar la extensión haciendo clic en el boton instalar (Si aparece el boton des instalar, es porque ya se ha instalado la extensión correctamente, no hace falta hacer nada)
+4. Realizar un cambio a README.md
+5. Hacer clic en el boton de la extension de GitHub
+6. Iniciar sesion (solamente la primera vez)
+7. Hacer clic en el boton "Create Pull Request"
+8. Crear commit con la herramienta source control
+9. Crear un pull request en la extensión Pull Request (Aceptar el push)
+
+Introducción a MQTT
+https://edu.codigoiot.com/course/view.php?id=851
+
+Temas
+
+miCasa
+miCasa/interfon
+miCasa/plantaBaja
+miCasa/plantaBaja/Sala/temp
+miCasa/plantaBaja/Sala/hum
+miCasa/plantaBaja/Sala/uv
+miCasa/plantaBaja/Sala/riudo
+miCasa/plantaBaja/Sala/foco1
+miCasa/plantaBaja/Sala/foco2
+miCasa/plantaBaja/Sala/foco3
+miCasa/plantaBaja/Comedor/temp
+miCasa/plantaBaja/Comedor/hum
+miCasa/plantaBaja/Comedor/ruido
+miCasa/plantaBaja/Cocina/temp
+miCasa/plantaBaja/Cocina/ruido
+miCasa/plantaBaja/Cocina/hum
+miCasa/plantaBaja/Cocina/co2
+miCasa/plantaAlta/hab1
+miCasa/plantaAlta/hab2
+miCasa/plantaAlta/hab3
+miCasa/plantaAlta/baño2
+
+miCasa/pBsalatemp
+
+Temas comodin un solo nivel
+miCasa/plantaBaja/+/temp
+
+Comodín multinivel
+miCasa/plantaBaja/Cocina/#
+
+Instacion de mosquitto
+sudo apt-get install mosquitto
+
+Comprobar el funcionamiento de mosquitto
+netstat -an
+systemctl status mosquitto
+
+#
