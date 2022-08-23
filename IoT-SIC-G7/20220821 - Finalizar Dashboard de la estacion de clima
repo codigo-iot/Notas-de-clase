@@ -1,0 +1,37 @@
+Dashboard final
+- Informacion de sensores instanea
+- Informacion de sensores historica
+- Informacion de API instanea
+- Informacion de API historica
+- Información de API grupal historica
+- Información de sensores grupal historica
+
+IP del broker publico
+3.121.170.193
+Tema publico API
+codigoIoT/g7/mosquitto/API
+Tema público sensores
+codigoIoT/g7/mosquitto/sensores
+
+#codigoiot
+#internetdelascosas
+#iot
+#samsunginnovationcampus
+
+#esp32
+#esp32cam
+#nodered
+#mqtt
+#mosquitto
+#dht11
+
+Cómo actualizar a Node-Red 3
+
+https://nodered.org/docs/getting-started/local
+
+
+sudo npm install -g --unsafe-perm node-red
+
+sudo ufw alloq 1883
+sudo ufw enable
+
