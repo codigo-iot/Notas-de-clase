@@ -1,0 +1,9 @@
+Instalar Visual Studio Code desde Ubuntu Software
+
+https://code.visualstudio.com/
+https://vscode.dev/
+
+Source control
+1. Abrir el directorio del repositorio git-tutorial-basic-g10
+2. Modificar el archivo README.md
+3. Hacer commit y push con el pluigin source control
