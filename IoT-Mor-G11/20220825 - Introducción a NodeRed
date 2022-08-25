@@ -56,6 +56,8 @@ Antes de ir al Flow 2, practicaremos la documentación. Pondré en pantalla un e
 
 https://github.com/hugoescalpelo/flow1-NodeRed
 
+
+Documentar
 Por favor noten todas las secciones:
 
 - Titulo
@@ -78,9 +80,40 @@ Reportar el enlace de su repositorio completo en la hoja de registro: https://do
 
 Ejemplo: https://github.com/hugoescalpelo/flow1-NodeRed
 
+La documentación debe escribirse en el archivo README.md
+
+Debe subirse el json correspondiente al flow, para ello, hay que hacer clic en el menu de nodeRed y luego en exportar
+
+Por favor, pongan en el chat en que parte van, para ver si extenemos el tiempo asignado a este ejercicio
+
+Vamos a dar 5 minutos mas, tomamos la captura de pantalla, explico los siguientes flows juntos y dedicamos una media hora mas a completar la documentación.
+
+Tip, pueden copiar la mia :D
+
+Voy a mostrar los siguientes ejercicios. Deberan realizar la documentación completa por cada uno, pueden reciclar la que ya tienen del flow 1
+
+Flow2 Generar TimeStamp legible
+- Clonar el flow
+- Configurar el nodo Inject para mandar timestamp cada 1 segundo
+- Agregar un nodo funcion que convierta el timestamp en fecha legible
+
+// Lo que está después de “//” son comentarios
+// Crea un objeto Date a partir del payload enviado por timestamp
+var date = new Date(msg.payload);
+// Cambia el payload para que sea una fecha con formato
+msg.payload = date.toString();
+// Regresa el mensaje para que se envíe al sigueinte nodo
+return msg;
 
 
 
+Flow 3 Generar un dasboard para ver la fecha
+- Clonar el flow 2
+- Agregar los nodos node-red-dasbhoard
+- Mandar el resultado del nodo funcition al dashboard
+- Dirigirse al dashboard en http://localhost:1880/ui
+
+Favor de poner atencion a pantalla
 
 
 
