@@ -1,0 +1,72 @@
+Envio de mensajes con Mosquitto
+
+Suscriptor
+mosquitto_sub -h localhost -q 2 -p 1883 -i hugo_sub -t codigoIoT/Mor/mqtt
+
+Publicador
+mosquitto_pub -h localhost -q 2 -p 1883 -i hugo_pub -t codigoIoT/Mor/mqtt -m "Hola Mosquitto"
+
+Broker publico
+broker.hivemq.com
+
+Obetener la IP del broker
+nslookup broker.hivemq.com
+
+IP: 3.121.170.193
+Tema: codigoIoT/Mor/ejemplo/mqtt
+
+JSON
+Java Script Object Notation
+
+{
+	"ID":"Hugo Vargas",
+	"temp":16,
+	"hum":82
+}
+
+'{"ID":"Hugo Vargas","temp":16,"hum":82}'
+{\"ID\":\"Hugo Vargas\",\"temp\":16,\"hum\":82}
+
+Instalación de Node Red
+https://edu.codigoiot.com/course/view.php?id=817
+
+Instalar NodeJS 16.17.0 LTS
+https://github.com/nodesource/distributions/blob/master/README.md
+
+curl -fsSL https://deb.nodesource.com/setup_lts.x |sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+Instalar NodeRed
+
+sudo npm install -g --unsafe-perm node-red
+
+Flow1
+apt-get install -y build-essential
+
+Comprobar la instalación de Node con el siguiente comando
+node --version
+
+Hacer el Flow1
+- Conectar un nodo timestamp con un nodo debug y automatizarlo para que envie la fecha cada 1 segundo
+
+- Crear el repositorio
+- Hacer la documentación
+
+- Introduccion
+- Material necesario
+	- Software
+	- Hardware
+- Material de referencia
+- Instrucciones
+- Resultados
+- Evidencias
+	- Repositorio
+	- Video en youtube
+	- Opcionales
+		- Redes sociales
+		- Blogs
+		- Foros
+- Créditos
+
+
