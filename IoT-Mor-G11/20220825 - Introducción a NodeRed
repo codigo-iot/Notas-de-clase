@@ -1,0 +1,128 @@
+Buenos días querido grupo.
+
+Hoy no podre abrir mi cámara y microfono. Les daré las instrucciones por texto. Gracias por su comprensión
+
+
+Hay algun voluntario que guste ayudarme a leer los mensajes que escribo por aqui para dar las instrucciones?
+
+La clase pasada hicimos un ejercicio de Mosquitto para intercambiar mensajes de MQTT
+
+En esta clase instalaremos Node Red, escribire las instrucciones en estas notas de clase.
+
+Instalar NodeRed
+
+1. Abrir una terminal
+2. Instalar NodeJS con el siguiente comando
+	- https://nodejs.org/es/
+	- Por favor, observen como llego al instalador por paquetes
+	- https://github.com/nodesource/distributions/blob/master/README.md
+	- curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+	- Aun no instalamos curl
+3. Instalar Build Additions
+	- sudo apt-get install -y build-essential
+4. Comprobar con:
+	- node --version
+	
+Ahora instalaremos NodeRed. Mostraré la ruta hasta la documentación donde se detalla como hacerlo
+
+Instalar NodeRed
+
+sudo npm install -g --unsafe-perm node-red
+	
+Arrancar NodeRed con el siguiente comando
+	node-red
+	
+Este programa es tipo daemon, lo que significa que debe quedarse abierta esa terminal para que nodeRed pueda funcionar
+
+Para ver el entorno de desarrollo de NodeRed, es necesario entrar a cualquier navegador en la maquina donde corre nodeRed y dirigirse a la siguiente direccion
+	localhost:1880
+	
+NodeRed es un servidor y los programas se llaman Flows y están funcionando todo el tiempo desde que se arranca NodeRed, para cargarlos al servidor de NodeRed, es necesario hacer clic en el boton deploy.
+
+Haremos el primer ejercio
+
+Recuerden que todo ejercicio debera ser correctamente documentado
+
+Mostraré en pantalla todo lo que tienen que agregar a su repositorio y archivo README.md
+
+Por favor, observen los nodos que voy agregando y como cambian sus nombres
+
+Haremos un programa que reporte el timestamp, es decir, la hora actual
+
+Para este ejercicio tienen 5 minutos
+
+Antes de ir al Flow 2, practicaremos la documentación. Pondré en pantalla un ejemplo de cómo debe quedar el repositorio correspondiente a este ejercicio y todos los posteriores
+
+https://github.com/hugoescalpelo/flow1-NodeRed
+
+
+Documentar
+Por favor noten todas las secciones:
+
+- Titulo
+- Introducción
+- Material
+	- Software
+	- Hardware
+	- Referencias (cursos que pueden ayudar a otras personas a configurar el entorno para ejecutar este ejercicio)
+- Instrucciones
+	- Requisitos previos
+	- Preparación del entorno
+	-Operación
+- Resultados
+- Evidencias
+- Creditos
+
+Para completar esta parte tienen 30 minutos.
+
+Reportar el enlace de su repositorio completo en la hoja de registro: https://docs.google.com/spreadsheets/d/1qpnJkisDdaFwnOcwFVLdCKCUZIwH_PbRs6BS_ryhQEU/edit?usp=sharing
+
+Ejemplo: https://github.com/hugoescalpelo/flow1-NodeRed
+
+La documentación debe escribirse en el archivo README.md
+
+Debe subirse el json correspondiente al flow, para ello, hay que hacer clic en el menu de nodeRed y luego en exportar
+
+Por favor, pongan en el chat en que parte van, para ver si extenemos el tiempo asignado a este ejercicio
+
+Vamos a dar 5 minutos mas, tomamos la captura de pantalla, explico los siguientes flows juntos y dedicamos una media hora mas a completar la documentación.
+
+Tip, pueden copiar la mia :D
+
+Voy a mostrar los siguientes ejercicios. Deberan realizar la documentación completa por cada uno, pueden reciclar la que ya tienen del flow 1
+
+Flow2 Generar TimeStamp legible
+- Clonar el flow
+- Configurar el nodo Inject para mandar timestamp cada 1 segundo
+- Agregar un nodo funcion que convierta el timestamp en fecha legible
+
+// Lo que está después de “//” son comentarios
+// Crea un objeto Date a partir del payload enviado por timestamp
+var date = new Date(msg.payload);
+// Cambia el payload para que sea una fecha con formato
+msg.payload = date.toString();
+// Regresa el mensaje para que se envíe al sigueinte nodo
+return msg;
+
+
+
+Flow 3 Generar un dasboard para ver la fecha
+- Clonar el flow 2
+- Agregar los nodos node-red-dasbhoard
+- Mandar el resultado del nodo funcition al dashboard
+- Dirigirse al dashboard en http://localhost:1880/ui
+
+Favor de poner atencion a pantalla
+
+
+
+
+
+
+
+
+
+	
+	
+	
