@@ -1,0 +1,103 @@
+Hacer commit y Push con VSC
+1. Abrir el repositorio git-tutorial-basic-g1 en la carpeta GitHub
+2. Agregar un cambio
+3. Hacer primer commit con Source Control en VSC
+4. Hacer Push
+5. Iniciar sesion en GitHub.com (si a todo)
+
+MQTT Mosquitto
+
+https://edu.codigoiot.com/course/view.php?id=851
+
+Temas MQTT
+
+miCasa
+miCasa/plantaBaja/sala
+miCasa/plantaBaja/sala/temp
+miCasa/plantaBaja/sala/hum
+miCasa/plantaBaja/sala/co2
+miCasa/plantaBaja/cocina
+miCasa/plantaBaja/cocina/temp
+miCasa/plantaBaja/cocina/hum
+miCasa/plantaBaja/cocina/co2
+miCasa/plantaBaja/comedor
+miCasa/plantaBaja/comedor/temp
+miCasa/plantaBaja/comedor/hum
+miCasa/plantaBaja/comedor/co2
+miCasa/plantaBaja/comedor/uv
+miCasa/plantaBaja/baño1
+miCasa/plantaAlta
+miDepa
+
+Comodin de un solo nivel
+miCasa/plantaBaja/+/temp
+
+Comodín multinivel
+miCasa/plantaBaja/#
+
+Nunca suscribirse al comodin multi nivel
+#
+
+Instalación de mosquitto
+sudo apt update
+sudo apt-get install mosquitto
+
+Comprobar el funcionamiento de mosquitto
+netstat -an
+systemctl status mosquitto
+
+Para transmitir un mensaje por MQTT necesitas:
+- Suscriptor
+- Publicador
+- Broker
+
+
+Suscripción
+
+mosquitto_sub -h localhost -q 2 -i hugo -p 1883 -t codigoIoT/mqtt
+
+
+Publicador
+
+mosquitto_pub -h localhost -q 2
+-i hugo_pub -p 1883 -t codigoIoT/mqtt -m "Hola mosquitto"
+
+Publicar mensajes en el broker publico
+
+Host: broker.hivemq.com
+
+Consultar IP del broker publico
+
+nslookup broker.hivemq.com
+
+IP: 3.121.170.193
+Tema: codigoIoT/Mor/ejemplo/mqtt
+ID: hugo-5481
+
+Transmitir mulples varialbes en un solo mensaje
+
+JSON formateado
+{
+	"ID":"Hugo Vargas",
+	"temp":21,
+	"hum":53
+}
+
+JSON sin formato
+{"ID":"Hugo Vargas","temp":21,"hum":53}
+
+JSON formato C
+{\"ID\":\"Hugo Vargas\",\"temp\":21,\"hum\":53}
+
+
+
+Documento de registro
+https://docs.google.com/spreadsheets/d/1qpnJkisDdaFwnOcwFVLdCKCUZIwH_PbRs6BS_ryhQEU/edit?usp=sharing
+
+Enlace de la videollamada
+https://us02web.zoom.us/j/83073357884?pwd=NmRYWlBNaDJWYjdGc3RmclZaS2JCUT09
+
+Otro Broker MQTT
+https://www.emqx.io/
+
+https://ioticos.org/
