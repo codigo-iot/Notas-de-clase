@@ -48,3 +48,21 @@ Pongan la reacción de palomita verde cuando lo hayan subido a su repositorio
 
 Este es el documento que nos pide Samsung para el registro de proyectos
 
+Roles:
+Si se realizara una división de roles, se puede expresar de la siguiente forma
+
+-Miembro1: Servidor
+-Miembro2: Desarrollo de circuitos
+-Miembro3: Bases de datos
+
+Si puedes aplicar ponerle sensores al dron, si califica, pero recuerda que les aconsejé tratar de asignarle el 20% del esfuerzo a obtener el dato. Si tienes el dron, muy bien, no hay problema
+
+Si, solo genera un plan de contingencia por si el dron no funciona
+
+Depende, si son I2C puedes conectar hasta 127
+Pero pines disponibles tiene 6
+Requieres al menos 3 sensores o actuadores
+Puedes ocupar otro micro controlador si necesitas mas puertos :)
+
+No me queda claro como usas el IoT, por lo que entendí es solo de automatización y monitoreo pero no haces nada con la info, aunque el proyecto si es viable
+
