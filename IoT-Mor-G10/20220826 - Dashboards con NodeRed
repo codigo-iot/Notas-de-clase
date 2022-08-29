@@ -13,3 +13,13 @@ var date = new Date(msg.payload);
 msg.payload = date.toString();
 // Regresa el mensaje para que se envíe al sigueinte nodo
 return msg;
+
+#codigoiot 
+#nodeRed
+
+Flow 2 - Mostrar la fecha en un tablero
+
+1. Agregar los nodos node-red-dashboard
+2. Agregar un nodo texto a la salida del nodo function
+3. Crear una nueva pestaña y grupo para colocar ahí la información del nodo texto
+4. Hacer clic en Deploy y abrir el Dashboard en localhost:1880/ui

@@ -1,0 +1,30 @@
+# Obtener mensajes MQTT desde NodeRed
+
+1. Arrancar NodeRed y entrar a localhost:1880
+- node-red
+
+2. Crear un flow que muestre en pantalla los mensajes del suscriptor MQTT. El flow deberá graficar información de un JSON
+- Nodos MQTT
+- Broker público
+- ID, temp, hum
+- codigoIoT/Mor/mqtt/flow4
+- 18.158.239.107
+
+Como se mueve la informacion en NodeRed
+- Cada nodo genera un JSON
+	msg
+	msg.id
+	msg.payload
+	
+	msg.topic
+	msg.label
+	
+Nodo function Temperatura
+msg.payloasd = msg.payload.temp;
+return msg;
+
+Nodo function Humedad
+msg.payload = msg.payload.hum;
+return msg;
+
+'{"ID":"Hugo Vargas","temp":17,"hum":77}'
