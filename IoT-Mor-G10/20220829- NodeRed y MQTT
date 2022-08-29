@@ -13,7 +13,7 @@
 Como se mueve la informacion en NodeRed
 - Cada nodo genera un JSON
 	msg
-	msg.id
+	msg._msgid
 	msg.payload
 	
 	msg.topic
@@ -28,3 +28,5 @@ msg.payload = msg.payload.hum;
 return msg;
 
 '{"ID":"Hugo Vargas","temp":17,"hum":77}'
+
+mosquitto_pub -h localhost -t codigoIoT/Mor/mqtt/flow4 -m '{"ID":"Hugo Vargas","temp":18,"hum":78}'
