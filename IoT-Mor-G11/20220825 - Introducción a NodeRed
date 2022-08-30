@@ -115,7 +115,16 @@ Flow 3 Generar un dasboard para ver la fecha
 
 Favor de poner atencion a pantalla
 
+Dedicaremos el resto de la case a documentar estos dos flows.
 
+Les invito a revisar la sección de manage palett, pueden agregar nodos para mapas, alexa, telegra, instagram, parsing, arduino, raspberry pi y casi cualquier cosa, la comunidad es muy grande :D
+
+Vamos a cerrar aqui la clase.
+Hoy aprendimos a hacer un flow basico en NodeRed, la proxima clase aprenderemos a recibir mensajes por QMTT y hacer interfaces gráficas sencillas con los nodos dashboard
+
+Muchas gracias por su atencion, espero que esta clase haya sido de su agrado.
+
+Una disculpa por no poder hablar hoy, gracias a Rodrigo
 
 
 
