@@ -27,3 +27,25 @@ Nodo function Humedad
 msg.payload = msg.payload.hum;
 msg.topic = "Humedad";
 return msg;
+
+Flow5 - Estacion climatica por API
+
+1. Obtener una cuenta de OpenWeatherMap.org
+2. Clonar el Flow4 para realizar el flow5
+3. Crear una nueva pestaña para el nuevo flow y reorganizar los elementos gráficos
+
+https://openweathermap.org/api/one-call-3
+
+Ejemplo de como hacer una llamada a la API
+
+Llamada general
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric 
+
+https://home.openweathermap.org/api_keys
+
+Lat:19.432188
+Lon:-99.133382
+API Key:fe401d1af6d12fa5ab2b9977c7c85776
+
+Nueva Llamada
+https://api.openweathermap.org/data/2.5/weather?lat=19.432188&lon=-99.133382&appid=fe401d1af6d12fa5ab2b9977c7c85776&units=metric 
