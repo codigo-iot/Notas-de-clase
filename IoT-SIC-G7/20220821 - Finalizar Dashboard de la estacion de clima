@@ -35,3 +35,24 @@ sudo npm install -g --unsafe-perm node-red
 sudo ufw alloq 1883
 sudo ufw enable
 
+
+Completar informarcion del Archivo README.md
+
+- Introduccion
+- Material necesario
+	- Sensores
+	- Software
+- Material de referencia
+	- Todos los encales utiles/necesarios para realizar este ejercicio
+- Instrucciones
+	- De inicio
+	- De operación
+- Resultado
+- Evidencia
+	- Video
+	- Capturas
+	- Opcional
+		- Twitter
+		- Facebook
+		- Tiktok
+- Creditos

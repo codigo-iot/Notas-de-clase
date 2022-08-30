@@ -1,0 +1,25 @@
+Dashboards (tableros) en NodeRed
+
+Flow2 - TimeStamp en formato legible
+1. Arrancar NodeRed y abri en un navegador localhost:1880
+2. Exportar el flow 1
+3. Importar el flow 1
+4. Agregar un nodo de funcion a la salida del nodo timestamp
+
+// Lo que está después de “//” son comentarios
+// Crea un objeto Date a partir del payload enviado por timestamp
+var date = new Date(msg.payload);
+// Cambia el payload para que sea una fecha con formato
+msg.payload = date.toString();
+// Regresa el mensaje para que se envíe al sigueinte nodo
+return msg;
+
+#codigoiot 
+#nodeRed
+
+Flow 2 - Mostrar la fecha en un tablero
+
+1. Agregar los nodos node-red-dashboard
+2. Agregar un nodo texto a la salida del nodo function
+3. Crear una nueva pestaña y grupo para colocar ahí la información del nodo texto
+4. Hacer clic en Deploy y abrir el Dashboard en localhost:1880/ui
