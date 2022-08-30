@@ -1,0 +1,28 @@
+# Bases de datos - Detector de sintomas COVID}
+
+1. Instalar MySQL server en Ubuntu
+- sudo apt update
+- sudo apt install mysql-server
+
+
+
+Para este ejercicio necesesitamos lo siguiente
+- Base de datos
+	- ID
+	- Fecha
+	- Nombre
+	- Correo
+	- Temperatura
+	- BPM
+	- SPO2
+	- Protodiagnostico
+- Un programa para leer el sensor max30100
+- Un flow
+
+Notas
+
+show databases; // Muestra la lista de bases de datos
+
+show tables; // Muestra la lista de las tablas en la base de datos seleccionada
+
+describe [nombre de tabla]; // Muestra los detalles de una tabla de la base de datos seleccionada
