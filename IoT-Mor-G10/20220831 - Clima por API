@@ -19,3 +19,16 @@ Lon: -99.133415
 
 Llamada personal
 https://api.openweathermap.org/data/2.5/weather?lat=19.432117&lon=-99.133415&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75&units=metric 
+
+payload.main.temp
+
+Nodo function Temperatura
+msg.payload = msg.payload.main.temp;
+msg.topic = "Temperatura";
+return msg;
+
+Nodo function Humedad
+msg.payload = msg.payload.main.humidity;
+msg.topic = "Humedad";
+return msg;
+
