@@ -1,0 +1,41 @@
+# Flow 6 - Interconexión de ESP32CAM y NodeRed con MQTT
+
+1. Abrir NodeRed y entrar a localhost:1880
+- node-red
+2. Realizar un Flow que envíe y reaciba información por MQTT
+- El flow se suscribe y el ESP32CAM publica en el siguiente tema codigoIoT/flow6/mqtt
+- El flow publica y el ESP32CAM se suscribe al tema codigoIoT/flow6/mqttin
+
+## Este ejercicio requie lo siguiente:
+- Requiere un flow en NodeRed que intercambie informacion por MQTT
+- Requiere un programa para el ESP32CAM que intercambie información por MQTT
+
+## Practicar la documentación
+
+### Documentación
+
+Su documentación deberá tener al menos las siguientes secciones
+
+- Introducción
+- Material Necesario
+	- Software
+	- Hardware
+	- Material de referencia
+- Instrucciones
+	- Requisitos previos
+	- Instrucciones de preparación del entorno
+	- Instrucciones de operación
+- Notas
+- Resultados
+	- Captura de pantalla de los nodos
+	- Captura de pantalla del dashboard
+- Evidencias
+	- Youtube
+	- Opcional
+		- facebook
+		- Twitter
+		- Instagram
+		- Tiktok
+		- Articulo
+- Creditos
+
