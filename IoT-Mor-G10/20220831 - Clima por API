@@ -1,0 +1,21 @@
+# Flow5 - Clima por API
+
+1. Crear un nevo flow que contenga todos los nodos del flow 4
+2. Organizar los nuevos nodos en una pestaña y grupo para el flow 5
+3. Crear un nodo inject para mandar el timestamp cada 1 minuto
+4. Crear un nodo HTTP Request
+5. Obtener la URL de la petición a la API
+- Hacer una cuenta en https://openweathermap.org/
+- https://openweathermap.org/current
+- Generar una nueva API Key
+
+API Key: a0f4e98d1a27e3c4b7b53aab05fa9d75
+
+Llamada general
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric 
+
+Lat: 19.432117
+Lon: -99.133415
+
+Llamada personal
+https://api.openweathermap.org/data/2.5/weather?lat=19.432117&lon=-99.133415&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75&units=metric 
