@@ -10,5 +10,27 @@
 	
 http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432512&lon=-99.133543&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75
 
+Nodo function del enviador
 msg.payload = '{"id":"Hugo V. Col Doctores, CDMX","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+',"uv":' + global.get ("uvFlow5") /*+ ',"aqi":' + global.get ("aqiFlow5") */ + '}';
 return msg; 
+
+2. Copiar los nodos del flow 5 en el flow 7
+- Copiar Flows
+- Crear una pestaña para el flow7 con sus grupos
+3. Cambiar el tema mqtt para que haga referencia al flow7
+- codigoIoT/flow7/mqtt
+4. Desactivar el flow 5 o cambiar las peticiones para suceder cada 2 minutos en flow5 y flow7
+5. Agregar un escuchador por MQTT
+- Escuchar en el tema codigoIoT/flow7/mqttin
+- ID, temp, hum
+
+Nodo function Temperatura sensor
+msg.payload = msg.payload.temp;
+return msg;
+
+Nodo function Humedad sensor
+msg.payload = msg.payload.hum;
+return msg;
+
+Comando para probar
+mosquitto_pub -h localhost -t codigoIoT/flow7/mqttin -m '{"ID":"Hugo Vargas, colDoctores, CDMX","temp":24,"hum":43}'
