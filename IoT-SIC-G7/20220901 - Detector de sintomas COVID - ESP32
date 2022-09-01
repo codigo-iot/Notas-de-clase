@@ -1,0 +1,12 @@
+# Crear flow para mostrar información de los sensores del detector covid
+
+1. Comprobar el funcionamiento del ejercicio anterior
+- Asegurarse de que la base de datos esté creada correctamente
+- Asegurarse de que el micro controlador envía información por serial y por MQTT
+2. Agregar el código del sensor MLX90614 al programa del micro controlador
+- Agregar biblioteca
+- Agregar objeto
+- Iniciar el sensor en void setup
+- Modificar el inicio del sensor para que tome los pines indicados manualmente
+- Agregar una nueva secuencia de tiempo no bloqueante
+- Modificar el envío por JSON
