@@ -1,0 +1,44 @@
+Instalación de NodeRed
+
+https://edu.codigoiot.com/course/view.php?id=817
+
+https://edu.codigoiot.com/course/view.php?id=278
+
+1. Instalar NodeJS 16.17.0 LTS
+- curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+- sudo apt-get install -y nodejs
+
+2. Instalar NPM
+- apt-get install -y build-essential
+
+3. Instalar NodeRed
+- sudo npm install -g --unsafe-perm node-red
+
+4. Actualiza NodeRed
+- sudo npm install -g --unsafe-perm node-red
+
+5. Abrir NodeRed
+- node-red
+- localhost:1880
+
+Ejercicio - Enviar y recibir información entre el ESP32CAM y NodeRed por MQTT
+
+Requisitos
+
+- Hacer un programa que envie información desde el micro controlador a MQTT
+- Este programa deberá poder recibir información a través de MQTT
+- Hacer un Flow que permita intercambiar información con el ESP32CAM via MQTT
+
+Tema donde el micro controlador publica el flow se suscribe
+codigoIoT/flow6/mqtt
+
+Tema donde el micro controlador se suscribe y el flow publica
+codigoIoT/flow6/mqttin
+
+
+
+
+
+
+
+
