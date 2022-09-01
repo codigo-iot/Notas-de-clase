@@ -8,4 +8,7 @@
 	- codigoIoT/flow5/mqtt
 - Desactivar las partes no funcionales (Todo lo relacionado con calidad del aire)
 	
-http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432512&lon=-99.133543&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75 
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432512&lon=-99.133543&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75
+
+msg.payload = '{"id":"Hugo V. Col Doctores, CDMX","temp":'+global.get ("tempFlow5")+',"hum":'+global.get ("humFlow5")+',"uv":' + global.get ("uvFlow5") /*+ ',"aqi":' + global.get ("aqiFlow5") */ + '}';
+return msg; 
