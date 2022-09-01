@@ -22,7 +22,7 @@ msg.topic = "Humedad";
 return msg;
 
 ### Variables para el Broker Publico
-- ID
+- id
 - temp
 - hum
 
