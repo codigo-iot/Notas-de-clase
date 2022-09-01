@@ -1,0 +1,11 @@
+# Flow7 - Estacion de clima API + Sensores
+
+1. Echar a andar el flow 5
+- Comprobar mi API Key
+- Comprobar el broker con el comando `nslookup broker.hivemq.com`
+	- 35.156.177.225
+- Comprobar el tema mqtt
+	- codigoIoT/flow5/mqtt
+- Desactivar las partes no funcionales (Todo lo relacionado con calidad del aire)
+	
+http://api.openweathermap.org/data/2.5/air_pollution?lat=19.432512&lon=-99.133543&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75 
