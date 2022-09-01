@@ -10,3 +10,24 @@
 - Modificar el inicio del sensor para que tome los pines indicados manualmente
 - Agregar una nueva secuencia de tiempo no bloqueante
 - Modificar el envío por JSON
+
+Notas
+
+Abrir el firwall de Ubuntu para Mosquitto
+- sudo ufw allow 1883
+- sudo ufw enable
+
+Nodo Function Detector HR
+if (msg.payload.hrv == 1) {
+    msg.payload = msg.payload.hr;
+    return msg;
+}
+
+Nodo Funcition Detector SPO2
+if (msg.payload.spo2v == 1) {
+    msg.payload = msg.payload.spo2;
+    return msg;
+}
+
+Nodo Funcition msg.payload = msg.payload.tir;
+return msg;
