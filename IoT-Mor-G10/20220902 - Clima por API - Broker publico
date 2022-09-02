@@ -39,3 +39,7 @@ msg.topic = msg.payload.id;
 msg.payload = msg.payload.hum;
 return msg;
 
+Para actualizar el repositorio por linea de comandos
+- Entrar al directorio
+- Abrir una terminal
+- git pull
