@@ -1,0 +1,13 @@
+Detector de sintomas COVID
+
+1. Comprobar el funcionamiento del flow
+2. Realizar un boton de diagnostico
+
+Nodo function Protodiagnostico
+if ((global.get ("temp") > 35.5 && global.get ("temp") < 36.5) && (global.get ("hr") > 60 && global.get ("hr") <90 ) && (global.get ("spo2") > 90))
+{
+    msg.payload = "Signos vitales normales";
+    return msg;
+} else {
+    msg.payload = "Signos vitales alterados, se recomienda ir con un médico";
+    return msg;
