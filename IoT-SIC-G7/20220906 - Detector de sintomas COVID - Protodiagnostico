@@ -20,5 +20,10 @@ if ((global.get ("temp") > 35.5 && global.get ("temp") < 36.5) && (global.get ("
 - GRANT ALL PRIVILEGES ON *.* TO 'hugohugo'@'localhost';
 5. Agregar nodos MySQL
 
-msg.topic = "INSERT INTO registro (`nombre`,`correo`,`temp`,`bpm`,`sp0
+msg.topic = "INSERT INTO registro (`nombre`,`correo`,`temp`,`bpm`,`sp02`,`protodiagnostico`) VALUES ('" + global.get ("paciente") + "','" + global.get ("correo") + "'," + global.get ("temp") + "," + global.get ("hr") + "," + global.get ("spo2") + ",'" + global.get("protodiagnostico") + "');";
+return msg;
 
+Ejemplo de como quedaria si fuera una instrucción estática
+
+msg.topic = "INSERT INTO registro (`nombre`,`correo`,`temp`,`bpm`,`sp02`,`protodiagnostico`) VALUES ('Hugo Vargas','hvargas@factor.mx', 37.2,102,95,'Protodiagnostico');";
+return msg;
