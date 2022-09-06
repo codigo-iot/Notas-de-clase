@@ -1,4 +1,4 @@
-Detector de sintomas COVID
+# Detector de sintomas COVID
 
 1. Comprobar el funcionamiento del flow
 2. Realizar un boton de diagnostico
@@ -11,3 +11,14 @@ if ((global.get ("temp") > 35.5 && global.get ("temp") < 36.5) && (global.get ("
 } else {
     msg.payload = "Signos vitales alterados, se recomienda ir con un médico";
     return msg;
+    
+3. Agregar nodos mysql
+- Entrar a la pestaña install del menú Manage Palette
+- node-red-node-mysql
+4. Crear un nuevo usuario de MySQL
+- CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+- GRANT ALL PRIVILEGES ON *.* TO 'hugohugo'@'localhost';
+5. Agregar nodos MySQL
+
+msg.topic = "INSERT INTO registro (`nombre`,`correo`,`temp`,`bpm`,`sp0
+
