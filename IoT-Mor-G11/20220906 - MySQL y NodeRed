@@ -41,3 +41,6 @@ return msg;
 - Puedes consultar todas las bases de datos con el comando `show databases;`
 - Puedes consultar las tablas en el interior de una base de datos selecccionada con el comando `show tables;`
 - Puedes consultar la forma de la tabla con el comando `describe clima;`
+
+Instalacion de grafana
+https://grafana.com/grafana/download
