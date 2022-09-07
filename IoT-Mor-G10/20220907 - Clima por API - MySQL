@@ -10,7 +10,11 @@
 - create user 'hugohugo'@'localhost' identified by '1234';
 - grant all privileges on *.* to 'hugohugo'@'localhost';
 - create table clima (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre VARCHAR (248) NOT NULL, temperatura FLOAT (4,2) NOT NULL, humedad INT (3) NOT NULL);
+4. Instalar nodos MySQL
+- Dirigirse a la pestaña Install del menú Manage Palett
+- node-red-node-mysql
 
+https://flows.nodered.org/node/node-red-node-mysql
 
 ## Notas
 
