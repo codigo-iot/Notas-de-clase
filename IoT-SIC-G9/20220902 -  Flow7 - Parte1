@@ -1,0 +1,41 @@
+# Flow7 - Estacion de clima API + Sensores
+
+1. Echar a andar el flow 5
+- Comprobar mi API Key
+- Comprobar el broker con el comando `nslookup broker.hivemq.com`
+	- 35.156.177.225
+- Comprobar el tema mqtt
+	- codigoIoT/flow5/mqtt
+- Desactivar las partes no funcionales (Todo lo relacionado con calidad del aire)
+	
+2. Copiar los nodos del flow 5 en el flow 7
+- Copiar Flows
+- Crear una pestaña para el flow7 con sus grupos
+3. Cambiar el tema mqtt para que haga referencia al flow7
+- codigoIoT/flow7/mqtt
+4. Desactivar el flow 5 o cambiar las peticiones para suceder cada 2 minutos en flow5 y flow7
+
+5. Agregar un escuchador por MQTT
+- Escuchar en el tema codigoIoT/flow7/mqttin
+- ID, temp, hum
+
+Nodo function Temperatura sensor
+msg.payload = msg.payload.temp;
+return msg;
+
+Nodo function Humedad sensor
+msg.payload = msg.payload.hum;
+return msg;
+
+Comando para probar
+mosquitto_pub -h localhost -t codigoIoT/flow7/mqttin -m '{"ID":"Hugo Vargas, colDoctores, CDMX","temp":24,"hum":43}'
+
+6. Crear un programa para el ESP32CAM que envíe la información del sensor DHT11 en un solo mensaje JSON por MQTT. 
+- Tomar como referencia el programa para el ESP8266 https://github.com/codigo-iot/publicar-strings-json-mqtt-nodemcu-wifi/blob/main/nodemcu-mqtt-json/nodemcu-mqtt-json.ino
+- Cambiar la biblioteca
+- Cambiar nombre de red y contraseña de red
+- Cambiar la IP del broker local
+- Cambiar la nomenclatura de los pines
+	-4, 33
+- Cambiar el tema en el que publica el ESP32
+- Agregar el codigo para leer el sensor dht11

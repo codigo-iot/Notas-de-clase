@@ -1,0 +1,42 @@
+# Detector de sintomas COVID
+
+1. Comprobar el funcionamiento del flow
+2. Realizar un boton de diagnostico
+
+Nodo function Protodiagnostico
+if ((global.get ("temp") > 35.5 && global.get ("temp") < 36.5) && (global.get ("hr") > 60 && global.get ("hr") <90 ) && (global.get ("spo2") > 90))
+{
+    msg.payload = "Signos vitales normales";
+    global.set ("protodiagnostico", msg.payload);
+    msg.to = global.get ("correo");
+    msg.topic = "Proto diagnostico de covid - Ejercicio de CódigoIoT";
+    return msg;
+} else {
+    msg.payload = "Signos vitales alterados, se recomienda ir con un médico";
+    global.set ("protodiagnostico", msg.payload);
+    msg.to = global.get ("correo");
+    msg.topic = "Proto diagnostico de covid - Ejercicio de CódigoIoT";
+    return msg;
+}
+    
+3. Agregar nodos mysql
+- Entrar a la pestaña install del menú Manage Palette
+- node-red-node-mysql
+4. Crear un nuevo usuario de MySQL
+- CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+- GRANT ALL PRIVILEGES ON *.* TO 'hugohugo'@'localhost';
+5. Agregar nodos MySQL
+
+msg.topic = "INSERT INTO registro (`nombre`,`correo`,`temp`,`bpm`,`sp02`,`protodiagnostico`) VALUES ('" + global.get ("paciente") + "','" + global.get ("correo") + "'," + global.get ("temp") + "," + global.get ("hr") + "," + global.get ("spo2") + ",'" + global.get("protodiagnostico") + "');";
+return msg;
+
+Ejemplo de como quedaria si fuera una instrucción estática
+
+Nodo Function Query
+msg.topic = "INSERT INTO registro (`nombre`,`correo`,`temp`,`bpm`,`sp02`,`protodiagnostico`) VALUES ('Hugo Vargas','hvargas@factor.mx', 37.2,102,95,'Protodiagnostico');";
+return msg;
+
+6. Agregar un enviador de correo
+- Instalar los nodos node-red-node-email
+
+
