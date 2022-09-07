@@ -1,0 +1,23 @@
+# Configuración de mySQL-Server
+
+1. Crear un nuevo repositorio llamado Clima por API - MySQL
+2. Instalar MySQL Server
+- sudo apt update
+- sudo apt install mysql-server
+3. Configurar base de datos
+- create database codigoIoT;
+- use codigoIoT;
+- create user 'hugohugo'@'localhost' identified by '1234';
+- grant all privileges on *.* to 'hugohugo'@'localhost';
+- create table clima (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre VARCHAR (248) NOT NULL, temperatura FLOAT (4,2) NOT NULL, humedad INT (3) NOT NULL);
+
+
+## Notas
+
+- Para arrancar MySQL Server se usa el siguiente comando sudo mysql
+
+- Para mostrar las bases de datos creadas se usa el comandos show databases;
+
+- Para ver las tablas de la base de datos seleccionada show tables;
+
+- Para conocer los detalles de una tabla describe clima;
