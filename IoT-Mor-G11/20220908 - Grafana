@@ -1,0 +1,14 @@
+# Grafana
+
+1. Instalar grafana
+- sudo apt-get install -y adduser libfontconfig1
+- wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.1.3_amd64.deb
+- sudo dpkg -i grafana-enterprise_9.1.3_amd64.deb
+
+
+
+## Notas
+- Control de peticiones por API
+	- Tene solo un flow que haga las peticiones por API
+	- Cambiar la frecuencia con la que se hacien las peticiones en todo NodeRed para distribuir la cantidad de peticiones por hora
+	- Desactivar las peticiones por API del flow que no se ocupa en ese momento
