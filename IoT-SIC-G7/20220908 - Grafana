@@ -73,3 +73,5 @@ https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configu
 - Cambiar lo siguiente
 	- En la sección security
 	- allow_embedding = true
+	
+
