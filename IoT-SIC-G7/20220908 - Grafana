@@ -48,3 +48,17 @@ Ejecución manual de Grafana
 
 5. Agregar un nuevo panel
 - Configurar el panel
+- Usar el siguiente query
+
+SELECT
+  id as "id",
+  fecha AS "Fecha",
+  temp AS "Temperatura",
+  sp02 AS "Oxigenación",
+  bpm AS "Ritmo Cardiaco",
+  nombre AS "Nombre",
+  protodiagnostico AS "Protodiagnostico"
+FROM registro
+ORDER BY fecha
+
+
