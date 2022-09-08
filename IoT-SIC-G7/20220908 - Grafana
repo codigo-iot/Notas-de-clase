@@ -36,4 +36,15 @@ Ejecución manual de Grafana
 - Password: admin
 - Actualizar la contraseña
 
+3. Agregar fuente de información
+- Configuracón > Data Sources
+- Hacer clic en el boton Add data Source
 
+4. Crear un data source de MySQL
+- Host: localhost:3306
+- Database: Nobre de la base de datos creada para el flow Detector de Síntomas COVID
+- User & Password: Nombre de usuario y contraseña creados para esa base de datos
+- Hacer clic en Test & Save
+
+5. Agregar un nuevo panel
+- Configurar el panel
