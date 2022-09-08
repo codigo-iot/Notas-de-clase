@@ -59,6 +59,17 @@ SELECT
   nombre AS "Nombre",
   protodiagnostico AS "Protodiagnostico"
 FROM registro
+
+6. Inser el panel "Tabla de registros" en el dashboard "Detector de Sintomas COVID" en NodeRed
+- Obtener el codigo embedded
+- Agregar un nodo template
 ORDER BY fecha
 
+- Configurar privacidad de grafana
 
+https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/grafana/
+
+- Dirigirse a /etc/grafana y editar el archivo grafana.ini
+- Cambiar lo siguiente
+	- En la sección security
+	- allow_embedding = true
