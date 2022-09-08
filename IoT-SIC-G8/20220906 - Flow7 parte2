@@ -1,0 +1,12 @@
+# Flow7 - Estacion de clima API + Sensores
+
+1. Comprobar el funcionamiento del flow 7
+2. Cargar el programa que lee el sensor DHT11 y envia por mqtt un mensaje JSON
+- Cambiar el tema en el que se publica por codigoIoT/flow7/mqttin
+https://github.com/hugoescalpelo/esp32cam-dht11-g7/blob/main/ESP32CAM-MQTT-JSON-DHT11/ESP32CAM-MQTT-JSON-DHT11.ino
+
+3. Agregar un escuchador y un enviador de los valores de los sensores
+- codigoIoT/flow7/mqttSensor
+- Grafica historico publico de temperatura
+- Grafica historico publico de humed
+
