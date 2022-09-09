@@ -7,7 +7,7 @@ Flow 7 Parte 2
 - sudo mysql
 
 3. Crear una nueva base de datos
-- create databases codigoIoT;
+- create database codigoIoT;
 
 4. Seleccionar la base de datos creada
 - use codigoIoT;
