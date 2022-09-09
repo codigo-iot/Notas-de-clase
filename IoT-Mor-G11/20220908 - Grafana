@@ -1,0 +1,43 @@
+# Grafana
+
+1. Instalar grafana
+- sudo apt-get install -y adduser libfontconfig1
+- wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.1.3_amd64.deb
+- sudo dpkg -i grafana-enterprise_9.1.3_amd64.deb
+
+## Opciones para arrancar Grafana
+
+Ejecución automática al iniciar el sistema. Estos comandos sólo tienen que ejecutarse una vez
+
+- sudo /bin/systemctl daemon-reload
+- sudo /bin/systemctl enable grafana-server
+
+Ejecución manual de Grafana
+
+- sudo /bin/systemctl start grafana-server
+
+2. Dirigirse a grafana
+- localhost:3000
+- Iniciar sesion por primera vez
+	- User: admin
+	- Password: admin
+- Cambiar la contraseña predeterminada
+	- hugohugo
+
+3. Agregar una fuente de información haciendo clic en el boton Configuraciones y en la opción Data Source
+- Seleccionar la opcion MySQL
+- Host: localhost:3306
+- Database: Nombre de tu base de datos
+- User & Password: Nombre de usuario y contraseña para acceder a la base de datos. Fue creado la clase anterior
+- Session TimeZone: Para la ciudad de México -05:00
+- Desplazarse al fondo de la ventana y hacer clic en el boton Save&Test
+
+
+
+## Notas
+- Control de peticiones por API
+	- Tene solo un flow que haga las peticiones por API
+	- Cambiar la frecuencia con la que se hacien las peticiones en todo NodeRed para distribuir la cantidad de peticiones por hora
+	- Desactivar las peticiones por API del flow que no se ocupa en ese momento
+	
+Herramienta para conocer la zona horaria

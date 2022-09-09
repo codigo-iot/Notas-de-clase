@@ -1,0 +1,77 @@
+# Grafana
+
+1. Instalar grafana
+
+https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+
+Opcion 1
+
+- sudo apt-get install -y apt-transport-https
+- sudo apt-get install -y software-properties-common wget
+- sudo wget -q -O /usr/share/keyrings/grafana.key https://packages.grafana.com/gpg.key
+- echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+- sudo apt-get update
+- sudo apt-get install grafana-enterprise
+
+Opcion 2
+
+- sudo apt-get install -y adduser libfontconfig1
+- wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.1.3_amd64.deb
+- sudo dpkg -i grafana-enterprise_9.1.3_amd64.deb
+
+## Opciones para arrancar Grafana
+
+Ejecución automática al iniciar el sistema. Estos comandos sólo tienen que ejecutarse una vez
+
+- sudo /bin/systemctl daemon-reload
+- sudo /bin/systemctl enable grafana-server
+
+Ejecución manual de Grafana
+
+- sudo /bin/systemctl start grafana-server
+
+2. Abrir grafana
+- localhost:3000
+- User: admin
+- Password: admin
+- Actualizar la contraseña
+
+3. Agregar fuente de información
+- Configuracón > Data Sources
+- Hacer clic en el boton Add data Source
+
+4. Crear un data source de MySQL
+- Host: localhost:3306
+- Database: Nobre de la base de datos creada para el flow Detector de Síntomas COVID
+- User & Password: Nombre de usuario y contraseña creados para esa base de datos
+- Hacer clic en Test & Save
+
+5. Agregar un nuevo panel
+- Configurar el panel
+- Usar el siguiente query
+
+SELECT
+  id as "id",
+  fecha AS "Fecha",
+  temp AS "Temperatura",
+  sp02 AS "Oxigenación",
+  bpm AS "Ritmo Cardiaco",
+  nombre AS "Nombre",
+  protodiagnostico AS "Protodiagnostico"
+FROM registro
+
+6. Inser el panel "Tabla de registros" en el dashboard "Detector de Sintomas COVID" en NodeRed
+- Obtener el codigo embedded
+- Agregar un nodo template
+ORDER BY fecha
+
+- Configurar privacidad de grafana
+
+https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/grafana/
+
+- Dirigirse a /etc/grafana y editar el archivo grafana.ini
+- Cambiar lo siguiente
+	- En la sección security
+	- allow_embedding = true
+	
+
