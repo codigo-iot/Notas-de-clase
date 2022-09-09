@@ -1,0 +1,49 @@
+Cliuma API - MySQL
+
+1. Agregar query para enviar información al nodo MySQL
+
+Nodo Function Query
+
+msg.topic = "INSERT INTO clima (nombre,temperatura,humedad) VALUES ('" + msg.payload.id +"'," + msg.payload.temp + "," + msg.payload.hum + ");";
+return msg;
+
+INSERT INTO clima (nombre,temperatura,humedad) VALUES ('Hugo',23,53);
+
+# Instalar Grafana
+
+1. Instalar grafana
+
+- sudo apt-get install -y adduser libfontconfig1
+- wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.1.4_amd64.deb
+- sudo dpkg -i grafana-enterprise_9.1.4_amd64.deb
+
+2. Arrancar Grafana
+
+Para que configurarlo al inicio del sistema
+
+- sudo /bin/systemctl daemon-reload
+- sudo /bin/systemctl enable grafana-server
+
+Para arrancarlo manualmente
+
+- sudo /bin/systemctl start grafana-server
+
+3. Abrir Grafana
+- localhost:3000
+
+4. Iniciar sesion
+- User: admin
+- Password: admin
+- Nueva contraseña: hugohugo
+
+5. Agregar una fuente de información
+- Configuraciones > Data Source
+- Hacer clic en el boton Add Data Source
+- Seleccionar la opción MySQL
+
+6. Configurar el DataSource de MySQL
+- Host: localhost:3306
+- Database: codigoIoT
+- User & Password: Nombre de usuario y contraseña generados para MySQL
+
+7. Crear un tablero
