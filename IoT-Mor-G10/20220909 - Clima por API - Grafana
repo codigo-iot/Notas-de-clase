@@ -1,0 +1,8 @@
+Cliuma API - MySQL
+
+1. Agregar query para enviar información al nodo MySQL
+
+Nodo Function Query
+
+msg.topic = "INSERT INTO clima (nombre,temperatura,humedad) VALUES ('" + msg.payload.id +"'," + msg.payload.temp + "," + msg.payload.hum + ");";
+return msg;
