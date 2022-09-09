@@ -21,6 +21,18 @@ Flow 7 Parte 2
 - CREATE USER 'hugohugo'@'localhost' IDENTIFIED BY '1234';
 - GRANT ALL PRIVILEGES ON *.* TO 'hugohugo'@'localhost';
 
+7. Crear enviador a Base de Datos
+- Agregar un nodo funcion a la salida del nodo JSON del escuchador
+
+Nodo function Query
+
+msg.topic = "INSERT INTO clima (nombre,temperatura,humedad) VALUES ('" + msg.payload.id + "'," + msg.payload.temp + "," + msg.payload.hum + ");";
+return msg;
+
+8. Instalar los nodos mysql
+- node-red-node-mysql
+- Agregar un nodo MySQL a la salida del nodo function Query
+
 
 ## Notas
 - Puedes consultar todas las bases de datos con el comando show databases;
