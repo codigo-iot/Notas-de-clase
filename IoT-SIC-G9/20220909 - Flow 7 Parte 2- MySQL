@@ -1,0 +1,77 @@
+Flow 7 Parte 2
+
+1. Instalar MySQL Server
+- sudo apt install mysql-server
+
+2. Entrar a MySQL
+- sudo mysql
+
+3. Crear una nueva base de datos
+- create database codigoIoT;
+
+4. Seleccionar la base de datos creada
+- use codigoIoT;
+
+5. Crear una nueva tabla que contenga los campos deseados
+- id, fecha, nombre, temperatura, humedad
+- create table clima (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, temperatura FLOAT (4,2) NOT NULL, humedad INT (3) NOT NULL);
+
+6. Crear un nuevo usuario para ser usado con NodeRed
+-CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+- CREATE USER 'hugohugo'@'localhost' IDENTIFIED BY '1234';
+- GRANT ALL PRIVILEGES ON *.* TO 'hugohugo'@'localhost';
+
+7. Crear enviador a Base de Datos
+- Agregar un nodo funcion a la salida del nodo JSON del escuchador
+
+Nodo function Query
+
+msg.topic = "INSERT INTO clima (nombre,temperatura,humedad) VALUES ('" + msg.payload.id + "'," + msg.payload.temp + "," + msg.payload.hum + ");";
+return msg;
+
+8. Instalar los nodos mysql
+- node-red-node-mysql
+- Agregar un nodo MySQL a la salida del nodo function Query
+
+9. Instalar grafana
+
+- sudo apt-get install -y adduser libfontconfig1
+- wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.1.4_amd64.deb
+- sudo dpkg -i grafana-enterprise_9.1.4_amd64.deb
+
+## Opciones para arrancar Grafana
+
+Ejecución automática al iniciar el sistema. Estos comandos sólo tienen que ejecutarse una vez
+
+- sudo /bin/systemctl daemon-reload
+- sudo /bin/systemctl enable grafana-server
+
+Ejecución manual de Grafana
+
+- sudo /bin/systemctl start grafana-server
+
+10. Abrir grafana
+- localhost:3000
+- User: admin
+- Password: admin
+- Actualizar la contraseña
+
+3. Agregar fuente de información
+- Configuracón > Data Sources
+- Hacer clic en el boton Add data Source
+
+4. Crear un data source de MySQL
+- Host: localhost:3306
+- Database: Nobre de la base de datos creada para el flow Detector de Síntomas COVID
+- User & Password: Nombre de usuario y contraseña creados para esa base de datos
+- Hacer clic en Test & Save
+
+5. Agregar un nuevo panel
+- Configurar el panel
+- Usar el siguiente query
+
+## Notas
+- Puedes consultar todas las bases de datos con el comando show databases;
+- Puedes consultar las tablas en el interior de una base de datos selecccionada con el comando show tables;
+- Puedes consultar la forma de la tabla con el comando describe clima;
+- Para agregar información a la base de datos con NodeRed se requiere poner en un nodo Function la siguiente información
