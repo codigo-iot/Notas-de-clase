@@ -23,3 +23,12 @@ Nodo Function Query
 
 msg.topic = "INSERT INTO clima (`nombre`,`temperatura`,`humedad`) VALUES ('" + msg.payload.id + "'," + msg.payload.temp + "," + msg.payload.hum + ");";
 return msg;
+
+5. Insertar un panel de grafana en NodeRed
+
+https://grafana.com/docs/grafana/v9.0/sharing/share-panel/
+
+- Modificar el archivo gragana.ini el cual se encuentra en /etc/grafana
+- allow_embedding = true
+- sudo /bin/systemctl restart grafana-server
+
