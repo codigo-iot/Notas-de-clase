@@ -1,0 +1,18 @@
+# Incrustar grafana
+
+1. Arrancar NodeRed y Arrancar Grafana
+- node-red
+- sudo /bin/systemctl start grafana-server
+
+2. Comprobar el funcionamiento del flow
+- Desactivar el flow5
+- Verificar el dashboard del flow "Clima por API"
+
+3. Generar gráficas
+- Comprobar que la base de datos contenga información
+	- sudo mysql
+	- use codigoIoT;
+	- SELECT * FROM clima;
+- Agregar nuevo tablero
+- Agregar nuevo panel
+- Configurar el Panel
