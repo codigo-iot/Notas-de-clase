@@ -16,3 +16,10 @@
 - Agregar nuevo tablero
 - Agregar nuevo panel
 - Configurar el Panel
+
+4. Configurar el flow para guardar la información de todos los que publican en el tema MQTT
+
+Nodo Function Query
+
+msg.topic = "INSERT INTO clima (`nombre`,`temperatura`,`humedad`) VALUES ('" + msg.payload.id + "'," + msg.payload.temp + "," + msg.payload.hum + ");";
+return msg;
