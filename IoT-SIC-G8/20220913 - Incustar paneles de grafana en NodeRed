@@ -11,3 +11,7 @@
 4. Agregegar un nodo Template al flow
 5. Pegar el codigo Embedd
 6. Hacer el ajuste en el Layout
+
+7. Sustituir la grafica de temperatura y humedad del Dashboard de NodeRed por las de grafana
+8. Sustituir los indicadores de aguja de temperatura y humedad
+
