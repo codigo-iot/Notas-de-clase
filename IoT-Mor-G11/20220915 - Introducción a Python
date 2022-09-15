@@ -1,0 +1,16 @@
+# Indicadores Gauge de Grafana
+
+1. Comprobar el funcionamiento del flow Clima Por API
+2. Comprobar el funcionamiento de grafana
+
+3. Insertar un nuevo panel
+- Obtener los datos de temperatura y humedad propios
+- Filtrar por persona
+- Cambiar el tipo de grafica a gaute
+- Insertar los indicadores en el Dashboard de NodeRed
+
+# Introducción a Python
+
+https://edu.codigoiot.com/course/view.php?id=838
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1952&pageid=2483
