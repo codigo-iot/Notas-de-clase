@@ -1,0 +1,13 @@
+# Introducción a Python
+
+Objetivos de Clase
+- Incrustar graficas de Grafana en el Flow7 
+- Configurar el entorno de Python
+- Definir el proyecto Capstone
+
+## Incrustar gráficas de grafana en NodeRed
+1. Comprobar el funcionamiento del flow 7
+- Actualizar la IP del broker publico
+- 35.157.153.222
+- Comprobar el funcionamiento de la API Call
+- Comprobar el funcionamiento del circuito
