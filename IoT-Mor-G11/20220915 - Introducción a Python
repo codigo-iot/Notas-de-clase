@@ -14,3 +14,7 @@
 https://edu.codigoiot.com/course/view.php?id=838
 
 https://edu.codigoiot.com/mod/lesson/view.php?id=1952&pageid=2483
+
+## Instalar Python
+
+sudo apt-get install python3
