@@ -1,0 +1,29 @@
+# Introducción a Python
+
+Objetivos de Clase
+- Incrustar graficas de Grafana en el Flow7 
+- Configurar el entorno de Python
+- Definir el proyecto Capstone
+
+## Incrustar gráficas de grafana en NodeRed
+1. Comprobar el funcionamiento del flow 7
+- Actualizar la IP del broker publico
+- 35.157.153.222
+- Comprobar el funcionamiento de la API Call
+- Comprobar el funcionamiento del circuito
+- Comprobar los temas mqtt en los que publica el prototipo
+- Tema historico grupal sensores codigoIoT/g7/mosquitto/sensores
+- Tema historico grupal API codigoIoT/g7/mosquitto/API
+
+2. Agregar una sección MySQL
+- Crear una nueva base de datos llamada codigoIoT
+- Crear una nueva tabla llamda clima
+- id, fecha, nombre, temperatura
+humedad
+
+Nodo function Query
+msg.topic = "INSERT INTO clima (nombre,temperatura,humedad) VALUES ('" + msg.payload.id + "'," + msg.payload.temp+ "," + msg.payload.hum + ");";
+return msg;
+
+
+
