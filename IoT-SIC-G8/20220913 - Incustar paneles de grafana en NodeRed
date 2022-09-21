@@ -1,0 +1,17 @@
+
+1. Comprobar el funcionamiento del Flow
+2. Comprobar el funcionamiento de grafana
+
+3. Modificar el archivo de configuración de grafana
+- /etc/grafana/grafana.ini
+- ;allow_embedding = false
+- allow_embedding = true
+- sudo /bin/systemctl restart grafana-server
+
+4. Agregegar un nodo Template al flow
+5. Pegar el codigo Embedd
+6. Hacer el ajuste en el Layout
+
+7. Sustituir la grafica de temperatura y humedad del Dashboard de NodeRed por las de grafana
+8. Sustituir los indicadores de aguja de temperatura y humedad
+

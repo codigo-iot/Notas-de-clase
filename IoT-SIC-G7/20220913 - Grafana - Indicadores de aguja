@@ -1,0 +1,39 @@
+# Generar reportes de sintomas sospechosos
+
+1. Comprobar el funcionamiento del flow
+
+2. Comprobar el funcionamiento de grafana
+
+3. Agregar los paneles de reporte
+
+Query SpO2 Bajo
+
+SELECT
+  $__timeGroupAlias(temp,$__interval),
+  count(sp02) AS "bpm"
+FROM registro
+WHERE
+  sp02 < 90
+GROUP BY 1
+
+Query Temperatura alta
+
+SELECT
+  $__timeGroupAlias(temp,$__interval),
+  count(temp) AS "Temperatura"
+FROM registro
+WHERE
+  temp > 36.5
+GROUP BY 1
+
+Query BPM alto
+
+SELECT
+  $__timeGroupAlias(temp,$__interval),
+  count(bpm) AS "bpm"
+FROM registro
+WHERE
+  bpm > 136
+GROUP BY 1
+
+

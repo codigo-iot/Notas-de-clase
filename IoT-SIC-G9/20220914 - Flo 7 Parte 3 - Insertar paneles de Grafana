@@ -1,0 +1,20 @@
+# Insertar paneles de Grafana en NodeRed
+
+1. Comprobar el funcionamiento del flow 7
+
+2. Agregar a grafana los paneles siguientes
+- Historico temperatura por API
+- Historico humedad por API
+- Gauge temperatura personal
+- Gauge humedad personal
+
+3. Editar el archivo grafana.ini
+- /etc/grafana
+- sudo nano grafana.ini
+- En la seccion Security 
+- ;allow_embedding = false
+- allow_embedding = true
+- sudo /bin/systemctl restart grafana-server
+
+4. Crear un nodo template y colocar el codigo embedding
+- Ajustar el Layout
