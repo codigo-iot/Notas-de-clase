@@ -1,0 +1,18 @@
+# Introducción a Python
+
+1. Comprobar la configuración del entorno
+- Comprobar Python 3
+	- python3 --version
+- Crear un repositorio llamado introduccion-python donde se colocará el ejemplo Hola Mundo
+- Comprobar la instalacion de anaconda
+- Comprobar la instalación de Jupyter
+	- jupyter --version
+- Comprobar la instalación de los plugins de visual studio code
+
+2. Configurar el ambiente de VSC para Python
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1954&pageid=2489
+
+3. Realizar los ejercicios de la seccion 2.1 y 2.2
+
+- Crear un nuevo repositorio llamado basicos-python

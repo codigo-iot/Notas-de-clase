@@ -1,0 +1,24 @@
+# Introducción a Python
+
+1. Instalar Python3 en caso de con contar con el
+https://edu.codigoiot.com/mod/lesson/view.php?id=1954&pageid=2489
+- Para comprobarlo usa el siguiente comando python3 --version
+- Para instalarlo en caso de ser necesario: sudo apt-get install python3 
+
+Ejercicio
+
+Crear el programa Hola Mundo de Python
+
+2. Instalar anaconda
+
+https://www.anaconda.com/products/distribution
+
+- Ejecutar el siguiente comando cambiando la ruta para que coincida con la version descargada y la carpeta de descargas
+
+- bash ~/Descargas/Anaconda3-2021.05-Linux-x86_64.sh 
+
+-Seguir el cuadro de dialogo y aceptar todas las configuraciones predeterminadas
+
+
+Nota: Esperar a que termine cada paso para iniciar el siguiente
+
