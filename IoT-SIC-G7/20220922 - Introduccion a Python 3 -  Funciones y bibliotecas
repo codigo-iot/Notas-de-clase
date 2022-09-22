@@ -13,3 +13,8 @@ https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2566
 - Consejo, correr con terminal desde la RPi
 
 https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2559
+
+sudo apt update
+sudo apt upgrade
+
+https://github.com/hugoescalpelo/basicos-python

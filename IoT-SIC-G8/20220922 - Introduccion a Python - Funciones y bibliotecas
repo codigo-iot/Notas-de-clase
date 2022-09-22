@@ -1,0 +1,50 @@
+# Introduccion a Python
+
+1. Realizar los ejercicios de la seccion 2.3
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2566
+
+2. Realizar el ejercicio de bibliotecas para manejo de sensores
+
+- Activar el I2C
+	- raspi-config
+	- Interface Options
+	- P5 I2C
+	- Yes
+	- Finish
+	- sudo reboot
+
+- Instalar la biblioteca PyMLX90614. Hay 2 opciones, usar solamente una de las dos opciones
+	1. pip3 install PyMLX90614
+	2. Instalacion manual
+	- Dirigirse a https://pypi.org/project/PyMLX90614/#files
+	- Descargar el archivo llamado PyMLX90614-0.0.4.tar.gz
+	- Abrir una terminal en la carpeta donde se descargo ese archivo y ejecutar los siguientes comandos
+	- d PyMLX90614-0.0.3 
+	- sudo apt-get install python-setuptools 
+	- sudo apt-get install -y i2c-tools 
+	- sudo python setup.py install 
+	
+- Comprobar el funcionamiento del sensor
+	- Armar el circuito
+		- ls /dev/*i2c* 
+		- i2cdetect -y 1
+		
+- Correr el programa. Multiples opciones
+	1. Geany
+	2. Idle3
+	3. Thony Python
+	4. Terminal
+
+- Para hacerlo con terminal
+- Crear la carpeta GitHub en Documentos
+- Clonar el repositorio
+	git clone [url]
+- Crear directorio y archivo donde se encontrara el programa GitHub/basicos-python/bibliotecas/mlx.py
+- Pegar el codigo
+- Arreglar el codigo
+	https://github.com/sightsdev/PyMLX90614
+- Correr codigo python3 mlx.py
+
+
+	
