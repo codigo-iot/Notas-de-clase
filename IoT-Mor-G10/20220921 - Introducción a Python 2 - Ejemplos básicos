@@ -1,0 +1,21 @@
+# Introducción a Python
+
+1. Comprobar lo siguiente
+- Tener instalado Python 3
+	- python3 --version
+- Crear el programa de ejemplo y colocarlo en repositorio introduccion-python
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1954&pageid=2489
+
+- Comprobar la instalación de anaconda
+- Comprobar la instalación de Jupyter
+- Comprobar la instalación de la extensión de Python para VSC
+- Seleccionar Anaconda como el interpretador de Python
+- Crear un Notebook de Jupyter
+- Ejecutar el ejemplo de codigo y guardarlo en el repositorio introduccion-python
+
+2. Realizar los ejercicios de la seccion 2.1 y 2.2
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2565
+
+- Crear un nuevo repositorio llamado basicos Python
