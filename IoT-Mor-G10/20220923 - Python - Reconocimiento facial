@@ -3,3 +3,20 @@
 1. Crear un repositorio
 2. Instalar la biblioteca pahoMQTT https://pypi.org/project/paho-mqtt/
 3. Instalar DeepFace https://github.com/serengil/deepface
+4. Realizar ejercicio de Facial Attribute Analysis
+- Guardar una fotografía de un rostro
+- crear un archivo para el programa con extensión .py
+- Importar la biblioteca
+
+from deepface import DeepFace
+
+- Hacer la petición
+
+obj = DeepFace.analyze(img_path = "img4.jpg", 
+        actions = ['age', 'gender', 'race', 'emotion']
+)
+
+- Opcional, agregar la ruta de instalación de deep face al path
+
+PATH=/home/hugo/.local/bin:$PATH
+
