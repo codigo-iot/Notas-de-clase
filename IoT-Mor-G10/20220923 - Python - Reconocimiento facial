@@ -1,0 +1,5 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Crear un repositorio
+2. Instalar la biblioteca pahoMQTT https://pypi.org/project/paho-mqtt/
+3. Instalar DeepFace https://github.com/serengil/deepface
