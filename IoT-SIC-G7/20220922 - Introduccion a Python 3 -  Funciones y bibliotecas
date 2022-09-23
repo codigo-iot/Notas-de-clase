@@ -1,0 +1,20 @@
+# Introducción a Python
+
+1. Realizar la seccion 2.3
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2566
+
+2. Realizar el ejercicio 2.4 de Introducción a Python
+- Habilitar la comunicación I2C
+- Instalar las bibliotecas faltantes
+- Realizar el circuito
+- Cargar el programa
+
+- Consejo, correr con terminal desde la RPi
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2559
+
+sudo apt update
+sudo apt upgrade
+
+https://github.com/hugoescalpelo/basicos-python
