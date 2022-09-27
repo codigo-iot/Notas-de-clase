@@ -1,0 +1,16 @@
+# Apertura de puertas por reconocimiento facial 2
+
+1. Descargar un par de imagenes donde se aprecien rostros de la misma persona a diferentes edades para comparar que sean la misma persona
+2. Crear un archivo llamado face-check.py con el siguiente programa
+
+from deepface import DeepFace
+print ("Se han comparado 2 imagenes. Se verificara que la persona sea la misma")
+print ("Cargando...")
+
+# result = DeepFace.verify(img1_path = "img1.jpg", img2_path = "img2.jpg")
+
+print ("Resultados")
+print (result)
+
+https://github.com/serengil/deepface
+

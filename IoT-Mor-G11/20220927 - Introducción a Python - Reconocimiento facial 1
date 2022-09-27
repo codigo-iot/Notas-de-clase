@@ -1,0 +1,32 @@
+# Introducción a Python - Reconocimiento Facial 1
+
+https://github.com/serengil/deepface
+
+1. Instalar DeepFace
+	- sudo apt install python3-pip
+	- pip install deepface
+	
+2. Crear un repositorio llamado apertura-puertas-reconocimiento-facial
+- Crear en el interior de este repositorio una carpeta llamada Deep Face y en su interior la carpeta Ejemplos para poner los codigos de ejemplom y Faces para poner las imagenes de rostros que se ocuparan para los ejemplos
+
+3. Colocar una imagen con un rostro en la carpeta faces
+- Se recomienda que tenga la cara descubierta 
+- Se recomienda que no use lentes
+- Resolución máxima de 800x800 y mínima de 120x10 pixeles
+4. Realizar un programa llamado facial-attribute-analysis.py
+	- Importar la biblioteac
+	- Agregar la instruccion de ejemplo
+	- Imprimir los resultados
+- Para ejecutar el programa se puede hacer lo siguiente
+	- Desde visual studio Code presionar F5
+	- Desde visual studio code hacer clic en el boton Run
+	- Desde terminal python3 [nombre-programa]
+	
+5. Realizar el ejemplo de face verification.
+- Agregar 2 rostros similares a la carpeta Faces
+- Crear el programa
+
+Notas:
+Warnig: La ruta no forma parte de Path
+
+/home/hugo/.local/bin
