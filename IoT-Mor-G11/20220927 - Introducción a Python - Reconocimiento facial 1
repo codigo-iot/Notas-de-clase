@@ -4,4 +4,4 @@ https://github.com/serengil/deepface
 
 1. Instalar DeepFace
 	- sudo apt install python3-pip
-	- pip install python
+	- pip install deepface
