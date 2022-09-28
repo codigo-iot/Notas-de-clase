@@ -1,0 +1,14 @@
+# Reconocimiento facial
+
+1. Generar una base de datos de rostros
+- Generar una carpeta llamada my_db
+- Generar una carpeta por persona dentro de my_db. Al menos 3 personas
+- Colocar 3 fotografias diferentes de cada persona
+- No usar espacios en los nombres de las carpetas
+- Imagenes de maximo 800x800 pixeles y minimo 120x120pixeles
+- Generar caras a comparar
+
+2. Escribir el programa de busqueda de rostros
+- Importar biblioteca DeepFace
+
+PATH=/home/hugo/.local/bin:$PATH
