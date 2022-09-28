@@ -1,0 +1,20 @@
+# Introducción a Python - Manejo de archivos y sensor de distancia ultrasónico
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=2024&pageid=2569&startlastseen=no
+
+1. Realizar el circuito para conectar el sensor ultrasónico a la Raspberry Pi
+- Realizar las conexiones antes de energizar la Raspberry Pi
+- En caso de contar con las resistencias indicadas por el circuito, pueden omitirse
+- 1k y 3.3K ohm
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=2024&pageid=2570
+
+2. Crear un repositoro para este proyecto
+
+3. Crear un programa que contenga el codigo necesario y ejecutar en la Raspberry Pi
+- Ejercicio, agregar los parentesis necesarios a los Print
+- Ajustar la identación en caso de ser necesario
+
+https://github.com/codigo-iot/Manejo-de-archivos/blob/main/distancia.py
+
+Se explicará el codigo hacia el final de la clase. Poner reaccion de paloma verde al terminar

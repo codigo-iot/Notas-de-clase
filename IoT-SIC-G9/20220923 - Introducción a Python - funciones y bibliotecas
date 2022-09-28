@@ -1,0 +1,47 @@
+# Introducción a Python
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1964&pageid=2568
+
+1. Hacer los ejercicios de 2.2
+2. Hacer los ejercicios de 2.3
+3. Hacer los ejercicios de 2.4
+
+- Activar la comunicación I2C en Raspberry Pi
+	- Concertar la RPi a Internet
+	- Activar la conexión I2C
+		VNC
+		SSH
+	- sudo raspi-config
+		Interface Options
+		I2C
+		Yes
+	- sudo reboot
+- Instalar la biblioteca PyMLX90614 (solo realizar una de las dos)
+	1. pip3 install PyMLX90614
+	2. Instalacion manual
+	- Entrar a https://pypi.org/project/PyMLX90614/#files 
+	- Descargar el archivo PyMLX90614-0.0.4.tar.gz
+	- Dirigirse a la ruta donde se descargo la biblioteca
+	- Descomprimir el archivo
+	tar -xf PyMLX90614-0.0.3.tar.gz
+	- Instalacion Manual
+	cd PyMLX90614-0.0.3 
+	sudo apt-get install python-setuptools 
+	sudo apt-get install -y i2c-tools 
+	sudo python setup.py install
+	
+- Comprobar que esté funcionando la comunicación I2C
+	ls /dev/*i2c* 
+	i2cdetect -y 1
+	
+- Realizar el circuito
+- Ejecutar el programa
+	- Opcional: Correrlo con una IDE
+		- Thony Python
+		- Geany
+		- Idle3
+		- Terminal
+		
+	- Crear el programa en el repositorio
+		- git clone [url]
+
