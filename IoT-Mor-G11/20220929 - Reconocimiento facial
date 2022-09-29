@@ -1,0 +1,29 @@
+# Introducción a Python - Reconocimiento facial
+
+1. Generar una base de datos de rostros
+- Crear una carpeta llamada my_db
+- Crear una carpeta por persona
+- Agregar al menos 5 imagenes que describan dicho rostro
+- Hacerlo para al menos 3 personas
+- JPG, PNG
+- Maximo de 800x800 pixeles
+- Minimo de 120x120 pixeles
+- Fondo diferenciable
+- Imagen de comparacion deberá ser diferente a las de la base de datos
+
+2. Realizar el programa
+
+# Importar Bilbioteca
+from deepface import DeepFace
+import pandas as pd
+
+# Buscar Rostro
+print ("Buscando rostro")
+
+# df = DeepFace.find(img_path = "img1.jpg", db_path = "C:/workspace/my_db")
+df = DeepFace.find (img_path = "/home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/Rami.png", db_path = "/home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db", enforce_detection = "false")
+print ("Resultado ")
+print (df)
+print ("Seleccion")
+print (df.identity[0])
+
