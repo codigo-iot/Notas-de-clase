@@ -1,0 +1,16 @@
+# Introducción a Python - RFID
+
+Este ejercicio parte del supuesto de que estamos desarrollando el ejemplo
+1. Investigar el ciruito
+- Buscar datasheets
+- Investigar el estandar RFID
+- Investigar el estandar SPI
+- Armar el circuito
+
+2. Buscar una biblioteca para manejar el sensor MFRC522
+- pip install mfrc522
+- Satisfacer dependencias: RPi.GPIO y spidev
+
+3. Crear un repositorio para el ejemplo de lectura de un tag
+- https://pypi.org/project/mfrc522/
+
