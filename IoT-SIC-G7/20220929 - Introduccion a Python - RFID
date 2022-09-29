@@ -13,4 +13,8 @@ Este ejercicio parte del supuesto de que estamos desarrollando el ejemplo
 
 3. Crear un repositorio para el ejemplo de lectura de un tag
 - https://pypi.org/project/mfrc522/
+- Activar la comunicacion SPI en Raspberry Pi. Menu>Preferencias>Raspberry Pi Configuration>Interfaces>SPI
+-Reiniciar Raspberry Pi
 
+4. Ejecutar ejemplo de lectura
+5. Ejecutar ejemplo de escritura
