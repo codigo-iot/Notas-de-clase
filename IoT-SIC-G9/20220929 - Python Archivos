@@ -1,0 +1,11 @@
+# Introducción a Python - Achivos y Sensor Ultrasonico
+
+1. Armar el circuito
+- Debe realizarse con la Raspberry Pi desenergizada
+
+2. Crear un repositorio para el ejercicio
+
+3. Cargar el programa
+- Ajustar los parentesis de los print
+- Verificar la identacion de programa con thony python
+- Actualizar la condicional del if de <> por !=
