@@ -1,0 +1,18 @@
+# Introducción a Python - Lector de tarjetas RFID
+
+1. Realizar el circuito
+https://edu.codigoiot.com/mod/lesson/view.php?id=2022&pageid=2563
+
+2. Instalar la biblioteca MFRC522 en la Raspberry Pi
+https://pypi.org/project/mfrc522/
+- pip3 install mfrc522
+
+3. Crear un repositorio para este ejercicio
+
+4. Activar la comunicación SPI
+- Menu>Preferencias>Raspberry Pi Configuration>Interfaces> Activar SPI
+- Reiniciar
+
+5. Programa de lectura de los tags
+
+6. Programa de escritura de los Tags
