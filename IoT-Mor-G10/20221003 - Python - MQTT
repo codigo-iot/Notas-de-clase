@@ -2,3 +2,15 @@
 
 1. Instalar la bibloteca Paho MQTT
 https://pypi.org/project/paho-mqtt/
+
+2. Crear en el repositoro la carpeta mqtt
+3. Crear programa suscriptor en Python
+- Broker: 3.122.69.139
+- Puerto: 1883
+- Topic: codigoIoT/mqtt/python
+
+4. Correr prorgama suscriptor en Python
+
+5. Publicar mensajes con Mosquitto
+- mosquitto_pub -h 3.122.69.139 -t codigoIoT/mqtt/python -m "Hola PythonMQTT - Hugo Vargas"
+
