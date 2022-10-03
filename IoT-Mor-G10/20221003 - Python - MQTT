@@ -16,3 +16,4 @@ https://www.emqx.com/en/blog/how-to-use-mqtt-in-python
 5. Publicar mensajes con Mosquitto
 - mosquitto_pub -h 3.122.69.139 -t codigoIoT/mqtt/python -m "Hola PythonMQTT - Hugo Vargas"
 
+6. Crear programa publicador en Python
