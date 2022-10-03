@@ -9,6 +9,8 @@ https://pypi.org/project/paho-mqtt/
 - Puerto: 1883
 - Topic: codigoIoT/mqtt/python
 
+https://www.emqx.com/en/blog/how-to-use-mqtt-in-python
+
 4. Correr prorgama suscriptor en Python
 
 5. Publicar mensajes con Mosquitto
