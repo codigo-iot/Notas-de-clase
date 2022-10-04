@@ -1,0 +1,19 @@
+# Introducción a Python - MQTT
+
+1. Instalar la biblioteca Paho-MQTT
+
+https://pypi.org/project/paho-mqtt/
+
+2. Crear una carpeta llamada MQTT en el repositorio de Apertura de puertas por reconocimiento facial
+3. Crear un programa en python que publique en MQTT
+
+https://www.emqx.com/en/blog/how-to-use-mqtt-in-python
+
+- Broker: 3.120.0.43
+- Tema: codigoIoT/mqtt/python
+- Mensaje1: "Hugo Vargas: n"
+- Mensaje2: "Hola MQTT Python - Hugo Vargas 7"
+
+4. Crear un programa en python que envie por mqtt el resultado del analisis facial
+- Crear una carpeta llamada python-apertura donde se guardará el programa para enviar esta información
+- Enviar a local
