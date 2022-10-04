@@ -1,0 +1,12 @@
+# Introducción a Python - MySQL
+
+1. Comprobar la conexión a MySQL
+- Tener instalado MySQL Server
+- Tener instalado el MySQL Connector para Python
+- Correr el programa del repositorio
+https://github.com/hugoescalpelo/clima-mysql
+
+
+
+Notas 
+IP: 192.168.15.85
