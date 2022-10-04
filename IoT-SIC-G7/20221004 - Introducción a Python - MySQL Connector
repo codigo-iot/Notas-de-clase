@@ -1,6 +1,17 @@
 # Introducción a Python - MySQL
 
-1. Comprobar la conexión a MySQL
+1. Instalar el conector de MySQL
+- Requisito previo: Tener instalado MySQL
+- pip install mysql-connector
+
+2. Crear un programa para probar la conexion a la base de datos
+- IP: 192.168.1.85
+https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
+- Colocar el el repositorio ptyhon-rfid-mysql
+
+
+
+n. Comprobar la conexión a MySQL
 - Tener instalado MySQL Server
 - Tener instalado el MySQL Connector para Python
 - Correr el programa del repositorio
@@ -9,4 +20,4 @@ https://github.com/hugoescalpelo/clima-mysql
 
 
 Notas 
-IP: 192.168.15.85
+
