@@ -2,10 +2,10 @@
 
 1. Instalar el conector de MySQL
 - Requisito previo: Tener instalado MySQL
-- pip install mysql-connector
+- https://pypi.org/project/mysql-connector-python/
 
 2. Crear un programa para probar la conexion a la base de datos
-- IP: 192.168.1.85
+- IP: 127.0.01
 https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
 - Colocar el el repositorio ptyhon-rfid-mysql
 
