@@ -1,0 +1,29 @@
+# Introducción a Python - RFID
+
+1. Armar el circuito de conexión al sensor RFID
+https://edu.codigoiot.com/mod/lesson/view.php?id=2022&pageid=2563
+
+2. Activar la interfaz SPI en la Raspberry Pi
+- Menu>Preferencias>Configuración de Rasperry Pi>Interfaces>SPI
+- Reiniciar
+
+3. Instlar la bilbioteca para el lector de tarjetas MFRC522 en la Raspberry Pi
+-  pip install mfrc522
+
+4. Realizar un repositorio para este proyecto
+
+5. Crear el programa de lectura de tags
+https://pypi.org/project/mfrc522/
+
+6. Pasar el programa a la Raspberry Pi
+- Respaldando en repositorio desde la maquina virtual
+- Clonar en Raspberry Pi
+
+7. Crear un programa para la escritura de tags
+https://pimylifeup.com/raspberry-pi-rfid-rc522/
+
+8. Crear una base de datos
+- ID, Fecha, Nombre, Texto, TagID
+- create table rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha
+TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, rfid INT (12) NOT NULL);
+
