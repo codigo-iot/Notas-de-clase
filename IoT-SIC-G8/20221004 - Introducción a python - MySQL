@@ -1,0 +1,16 @@
+# Introduccion a Python - MySQL
+
+1. Instalar la bilbioteca de MySQL para Python
+- https://pypi.org/project/mysql-connector-python/
+- pip install mysql-connector-python
+
+2. Hacer una conexión simple con la base de datos
+- Crear un programa en el repositorio del proyecto de apertura de puertas por reconocimiento facial
+
+3. Realizar un programa en python que lea la base de datos
+- Query: SELECT id,fecha,nombre,temperatura FROM clima WHERE id=9979;
+
+4. Insertar datos en base de datos
+- Query
+
+INSERT INTO rfid (nombre,texto,rfid) VALUES ('Hugo Vargas','Prueba',88843565);
