@@ -27,3 +27,9 @@ https://pimylifeup.com/raspberry-pi-rfid-rc522/
 - create table rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha
 TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, rfid INT (12) NOT NULL);
 
+9. Instalar el connector de python a MySQL
+- pip install mysql-connector-python
+
+10 . Crear un programa que compruebe la conexion a una base de datos
+
+https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
