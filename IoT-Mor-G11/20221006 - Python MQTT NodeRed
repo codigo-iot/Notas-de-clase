@@ -1,0 +1,12 @@
+# Apertura de puertas por reconocimiento facial
+
+- Reconocimiento facial
+- Envio del resultado a Python
+- Flow que presente los resultados
+
+1. Crear el flow apertura de puertas por reconocimiento facial
+
+2. Agregar los nodos para ejecutar el programa en python y escuchar la respuesta por mqtt
+- Agregar el nodo exec
+- Ejecutar el comando python3 /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/apertura-python/face-check-mqtt.py
+- Agregar un suscriptor al tema mqtt donde publica el programa en python
