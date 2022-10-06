@@ -4,7 +4,8 @@
 https://edu.codigoiot.com/mod/lesson/view.php?id=2022&pageid=2563
 
 2. Instalar la biblioteca MFRC522 en la Raspberry Pi
-https://pypi.org/project/mfrc522/
+https://pypi.org/project/mfrc522
+/
 - pip3 install mfrc522
 
 3. Crear un repositorio para este ejercicio
@@ -16,3 +17,15 @@ https://pypi.org/project/mfrc522/
 5. Programa de lectura de los tags
 
 6. Programa de escritura de los Tags
+https://pimylifeup.com/raspberry-pi-rfid-rc522/
+
+7. Crear una base de datos
+- ID, Fecha, Nombre, Texto, RFID
+- Crear en maquina virtual
+- Abrir el puerto 3306 de la maquina virtual
+	- sudo ufw allow 3306
+
+create table rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, rfid INT (12) NOT NULL);
+
+8. Instalar la bilbioteca mysql connector en Raspberry Pi
+- pip install mysql-connector-python
