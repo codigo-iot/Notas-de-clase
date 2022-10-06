@@ -1,0 +1,14 @@
+# Introduccion a Python
+
+1. Realizar una peticion de informacion a la base de datos de Detector de Síntomas COVID con la funcion cursor
+
+https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-cursor.html
+
+2. Crear base de datos para el ejercicio RFID
+- id, fecha, nombre, texto, rfid
+- create table rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha
+TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, rfid INT (12) NOT NULL);
+
+3. Realizar un programa en Python que inserte un dato en la base de datos RFID
+
+- INSERT INTO rfid (nombre,texto,rfid) VALUES ('Hugo Vargas','Test Python 1',88843565);
