@@ -10,3 +10,24 @@
 - Agregar el nodo exec
 - Ejecutar el comando python3 /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/apertura-python/face-check-mqtt.py
 - Agregar un suscriptor al tema mqtt donde publica el programa en python
+
+3. Instalar los nodos webcam
+- node-red-node-ui-webcam
+
+4. Crear un grupo y pestaña para el flow
+
+5. Generar capturador en el flow
+
+Nodo Function filename
+
+msg.filename = "/home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/photos/" + global.get ("timeNow") + ".jpg";
+return msg;
+
+Nodo Function timeNow
+
+global.set ("timeNow", msg.payload);
+return msg;
+
+Nodo Write File
+Filename: msg.filename
+Action: overwite file
