@@ -4,7 +4,7 @@
 
 https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-cursor.html
 
-2. Crear base de datos para el ejercicio RFID
+2. Crear una nueva tabla en la base de datos codigoIoT para el ejercicio RFID
 - id, fecha, nombre, texto, rfid
 - create table rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha
 TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, rfid INT (12) NOT NULL);
