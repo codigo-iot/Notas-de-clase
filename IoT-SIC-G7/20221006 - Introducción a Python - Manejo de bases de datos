@@ -1,0 +1,35 @@
+# Introduccion a Python
+
+1. Realizar una peticion de informacion a la base de datos de Detector de Síntomas COVID con la funcion cursor
+
+https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-cursor.html
+
+2. Crear una nueva tabla en la base de datos codigoIoT para el ejercicio RFID
+- id, fecha, nombre, texto, rfid
+- create table rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha
+TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, rfid INT (12) NOT NULL);
+
+3. Realizar un programa en Python que inserte un dato en la base de datos RFID
+
+- INSERT INTO rfid (nombre,texto,rfid) VALUES ('Hugo Vargas','Test Python 1',88843565);
+
+- INSERT INTO rfid (nombre,texto,rfid) VALUES ('Hugo Vargas','Texto del RFID',8462519551)
+
+4. Crear un programa en Python que lea el tag rfid en la raspberry Pi y guarde la información en la maquina virtual
+- Instalar el mysql-connector-python en Raspberry Pi
+- Establecer conexión desde la raspberry Pi hasta la base de datos en la maquina virtual
+- Abrir el puerto 3306 en la maquina virtual
+- Configurar MySQL para que reciba conexiones externas
+- Consejo: Correr los ejemplos de MySQL y Python desde la Raspberr Pi
+- Crear el programa
+
+5. Confingurar MySQL para que reciba conexiones del exterior
+- Modificar el archivo /etc/myslq/mysql.conf.d/msqld.conf
+- bind-address            = 0.0.0.0
+- Reiniciar servicio sudo systemctl restart mysql
+
+
+Notas de clase
+
+Enlace del registro de proyectos
+https://docs.google.com/spreadsheets/d/1LS-CouIDSXYSaU1eVvT-YO9kp0yRiRgfToYx7IiM3OY/edit?usp=sharing
