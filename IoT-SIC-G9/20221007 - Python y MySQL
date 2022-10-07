@@ -1,0 +1,37 @@
+# Introducción a Python - MySQL Connector
+
+1. Crear un programa en python que haga una consulta de una base de datos
+- Tener creada una base de datos
+- Usar el mysql-python-connector
+- Ejemplo de Query SELECT id,nombre,temperatura,fecha FROM clima WHERE id=555;
+
+2. Crear un programa en Python que guarde un valor en la base de datos de MySQL en la tabla llamada rfid
+
+- INSERT INTO rfid (nombre,texto,rfid) VALUES ('Hugo Vargas','Test Python 9',865485648652);
+
+# Escribir en la base de datos desde la Raspberry Pi
+
+1. Instalar en Raspberry el conector de MySQL
+2. Crear en la maquina virtual un usuario con acceso LAN
+- Crear el usuario
+- CREATE USER 'hugolan'@'%' IDENTIFIED BY '1234';
+- Proporcionar acceso a ese usuario
+- GRANT ALL ON *.* TO 'hugolan'@'%';
+- FLUSH PRIVILEGES;
+3. Configurar MySQL en la maquina virtual para que acepte conexiones externas
+- Editar el archivo mysqld.cnf
+- /etc/mysql/msyql.conf.d/myslqd.cnf
+- bind-address = 0.0.0.0
+- Reiniciar MySQL Server
+- sudo systemctl restart mysql
+4. Abrir el puerto 3306 en la maquina vitual
+- sudo ufw allo 3306
+
+5. Correr los codigos de prueba de mysql desde la raspberry Pi
+- Pasar los programas con repositorio
+- Cambiar la ip de acceso por la ip de la maquina virtual en la red local
+- ifconfig
+- La maquina virtual debe estar configurada en modo puente
+- Cambiar el usuario por el que tiene acceso lan
+
+6. Crear un programa en Python que lea el RFID en la Raspberry Pi y escriba en la base de datos de la máquina virtual
