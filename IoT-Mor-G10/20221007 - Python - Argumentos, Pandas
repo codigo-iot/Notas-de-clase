@@ -1,0 +1,25 @@
+# Apertura de puertas por reconocimiento facial - Envio de informacion
+
+1. Enviar la infomración resultante del analisis facial por MQTT
+- Instalar la biblioteca pandas https://pandas.pydata.org/ pip install pandas
+- Convertir el resultado almacenado en el data frame (df) a json (java script object notation)
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
+
+# Recibir agumentos del command line desde python
+
+Exiten 3 metodos
+- sys.argv
+- getopt
+- argparse
+
+https://docs.python.org/3/library/argparse.html
+
+https://docs.python.org/3/howto/argparse.html
+
+1. Correr el programa de ejemplo de argumentos
+
+2. Crear un programa en python que reciba 2 argumentos. La ruta de la imagen a comparar y la base de datos de rostros. Este programa deberá hacer el reconocimiento facial con estos argumentos
+
+
+
