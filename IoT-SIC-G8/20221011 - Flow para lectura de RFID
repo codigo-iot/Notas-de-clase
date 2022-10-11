@@ -1,0 +1,12 @@
+# Lectura de RFID y registro en base de datos
+
+## Realizar un flow que asigne nombre a los tags leidos
+
+1. Instalar Node Red en Raspberry Pi
+- Instalar NodeJS
+- Instalar NodeRed
+- Instalar Nodos Dashboard
+
+2. Crear un flow para detonar el registro de tags RFID
+- Que permita a usuario ingresar nombre del tag
+- Que permita detonar la lectura con un boton
