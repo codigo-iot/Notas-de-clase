@@ -5,6 +5,7 @@
 - Instalar el conector de MySQL en Raspberry Pi
 	- Ya instalado
 - Abrir el puerto en la maquina virtual para recibir la conexion de la Raspberry Pi
+	- sudo ufw enable
 	- sudo ufw allow 3306
 - Modificar el archivo de configuración de MySQL en la maquina virtual para aceptar conexiones externas
 	- /etc/mysql/msyql.conf.d/myslqd.cnf
