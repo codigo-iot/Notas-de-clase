@@ -1,0 +1,26 @@
+# Introduccion a Python - Reconocimiento facial con Python, recepcion de argumentos
+
+1. Crear un programa que reciba argumentos al ejecutarse por terminal y que realice reconocimiento facial
+- Los argumentos seran la ruta de a imagen a comparar y la ruta de la base de datos de rostros
+- El comando para correr este programa sera el siguiente
+- python3 face-check-args.py [img_path] [my_db_path]
+
+python3 face-check-args.py ~/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/aigeneratedface2.jpg ~/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db
+
+python3 face-check-args.py ~/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/deniro.png ~/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db
+
+2. Crear un nuevo flow que ejecute un programa en Python
+- Nodo exec
+- Enviar parámetros con el nodo inject
+
+
+
+Notas
+
+- Python 3.9
+- Python este agregado al path
+- Instalaciones de PIP esten en el PATH
+
+/home/hugo/.local/bin
+
+PATH=/home/hugo/.local/bin:$PATH
