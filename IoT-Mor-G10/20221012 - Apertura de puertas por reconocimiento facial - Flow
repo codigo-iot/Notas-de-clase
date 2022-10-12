@@ -1,0 +1,36 @@
+# Flow para apertura de puertas con reconocimiento facial
+
+1. Ejecutar el programa en Python desde NodeRed
+- Nodo Exec
+
+2. Escuchador MQTT. Para recibir el resultado
+- Nodo MQTT
+
+3. Dashboard para seleccion de imagen y detonado de funcionamiento
+- Boton para detonar el funcionamiento
+- Cuadros de texto para ingresar las rutas de las imagenes
+
+Nodo function Img Src
+
+global.set ("img_src", msg.payload);
+return msg;
+
+Nodo function DB faces
+
+global.set ("my_db", msg.payload);
+return msg;
+
+Nodo function Append
+
+msg.payload = " " + global.get("img_src") + " " + global.get ("my_db");
+return msg;
+
+Nodo function Ruta mas relevante
+
+msg.payload = msg.payload["0"].identity;
+return msg;
+
+Nodo function % de similitud
+
+msg.payload=(1 - msg.payload) * 100;
+return msg;
