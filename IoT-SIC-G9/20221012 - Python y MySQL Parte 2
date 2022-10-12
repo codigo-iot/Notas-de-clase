@@ -3,8 +3,35 @@
 1. rear un programa en Python que lea el RFID en la Raspberry Pi y escriba en la base de datos de la máquina virtual
 - Realizar el programa en la maquina virtual
 - Pasar el programa a la Raspberry Pi con ayuda de Git
+- Probar programa
 
+2. Crear un flow para ejecutar el programa de lectura del tag RFID
+- Nodo exec
+- Probar en la maquina virtual
+- Correr en la Raspberry Pi
+
+3. Instar NodeRed en la Raspberry Pi
+- NodeJS LTS
+- NodeRed
+- Nodos Dashboard
+- Nodos MySQL
+
+4. Para acceder al NodeRed de la Raspberry Pi desde cualquier navegador en la red local
+- Instalar y configurar el Firewall
+	- sudo apt install ufw
+	- sudo ufw allow ssh
+	- sudo ufw allow vnc
+	- sudo ufw allow 1880
+	- sudo ufw enable
+
+5. Probar el ejemplo el flow Nodo Exec en la raspberry Pi
+- A traves de la funcion exportar
+- Actualizar la ruta de programa
 
 
 Notas:
 https://docs.python.org/3/library/stdtypes.html#str
+
+Para cambiar el tipo de dato de una columna 
+
+ALTER TABLE rfid MODIFY COLUMN rfid double;
