@@ -1,0 +1,10 @@
+# Crear un flow para la ejecucion de programa de reconocmiento facial
+
+1. rear un programa en Python que lea el RFID en la Raspberry Pi y escriba en la base de datos de la máquina virtual
+- Realizar el programa en la maquina virtual
+- Pasar el programa a la Raspberry Pi con ayuda de Git
+
+
+
+Notas:
+https://docs.python.org/3/library/stdtypes.html#str
