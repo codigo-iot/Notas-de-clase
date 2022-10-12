@@ -12,6 +12,7 @@
 # Escribir en la base de datos desde la Raspberry Pi
 
 1. Instalar en Raspberry el conector de MySQL
+- pip install mysql-connector-python
 2. Crear en la maquina virtual un usuario con acceso LAN
 - Crear el usuario
 - CREATE USER 'hugolan'@'%' IDENTIFIED BY '1234';

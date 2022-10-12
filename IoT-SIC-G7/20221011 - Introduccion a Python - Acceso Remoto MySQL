@@ -1,0 +1,32 @@
+# Introduccion a Python - Guardar infomracion del RFID en base de datos remota
+
+1. Probar los programas de MySQL en la Raspberry Pi
+- Pasar el programa a la Raspberry Pi
+- Instalar el conector de MySQL en Raspberry Pi
+	- Ya instalado
+- Abrir el puerto en la maquina virtual para recibir la conexion de la Raspberry Pi
+	- sudo ufw enable
+	- sudo ufw allow 3306
+- Modificar el archivo de configuración de MySQL en la maquina virtual para aceptar conexiones externas
+	- /etc/mysql/msyql.conf.d/myslqd.cnf
+	- bind-address = 0.0.0.0
+	- Reiniciar MySQL Server
+	- sudo systemctl restart mysql	
+- Crear un usuario con acceso LAN en la maquina virtual
+	- CREATE USER 'usuario'@'%' IDENTIFIED BY 'password';
+- Proporcionar acceso a ese usuario
+	- GRANT ALL ON *.* TO 'hugolan'@'%';
+	- FLUSH PRIVILEGES;
+
+- Ejecutar ejemplos desde Thony Python
+
+2. Escribir un programa en Python que envíe a una base de datos remota los datos de un tag RFID
+
+ghp_RWjra3iqLkVuoopBba2huvEdYceKuA1ad5j w
+
+Para cambiar el tipo de dato de una columna 
+
+ALTER TABLE rfid MODIFY COLUMN rfid double;
+
+
+
