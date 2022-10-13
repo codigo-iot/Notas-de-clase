@@ -5,7 +5,7 @@
 	- python3 query-mysql-cursor.py
 	
 2. Correr desde la Raspberry Pi
-- NodeJS 16.12LTS
+- NodeJS 16.x LTS
 	https://github.com/nodesource/distributions/blob/master/README.md
 - NodeRed
 	https://nodered.org/docs/getting-started/local
