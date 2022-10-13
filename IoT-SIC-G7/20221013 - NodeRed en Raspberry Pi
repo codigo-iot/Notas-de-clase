@@ -18,7 +18,7 @@
 - sudo ufw allow vnc
 - sudo ufw allow 1880
 - sudo ufw enable
-- sudo roboot
+- sudo reboot
 
 4. Correr el ejemplo del paso 1 en la Raspberry Pi
 - Actualizar IP del codigo Python
@@ -29,4 +29,6 @@ Notas
 
 Para hacer una conexion de una computadaora a si misma, por ejemplo, de la maquina virtual a la maquina virtual ó desde RPi a RPi siempre se ocupa la IP de localhost: 127.0.0.1
 
+
+/home/hugo/Documents/GitHub/python-rfid-myslq/query-mysql-cursor.py
 
