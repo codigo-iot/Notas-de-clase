@@ -1,0 +1,56 @@
+# Flow de apertura de puertas por reconocimiento facial
+
+1. Nombrar el grupo donde se encuentra el boton como reconocimiento facial
+
+2. Agregar nodos de funcion para generar variables globales que contengan las rutas
+
+Nodo Function Img_Src
+
+global.set ("img_src", msg.payload);
+return msg;
+
+Nodo Function my_db
+
+global.set ("my_db", msg.payload);
+return msg;
+
+Nodo Function Append
+
+msg.payload = " " + global.get ("img_src") + " " + global.get ("my_db");
+return msg;
+
+3. Agregar un mostrador de resultados conectado a MQTT
+
+4. Agregar mostradores de texto que indiquen la mayor similitud
+
+Nodo Function Path de mayor similitud
+
+msg.payload = msg.payload["0"].identity;
+return msg;
+
+Nodo Function Porcentaje de similitud
+
+msg.payload = (1 - msg.payload["0"]["VGG-Face_cosine"]) * 100;
+return msg;
+
+5. Crear archivos info.json en cada uno de los directorios de rostros en my_db
+
+{
+    "nombre": "Rami Malek",
+    "cumpleaños": "12 de mayo de 1981",
+    "edad": 41,
+    "acceso": 3
+}
+
+6. Instalar los nodos String para obtener la ruta de info.json relativo a cada rostro detectado
+- node-red-contrib-string
+- Nodo String: ChopRight, find: /
+- Nodo String: Append, /info.json
+- Convertir a JSON
+
+7. Agregar nodos texto para mostrar la información leida
+
+Notas
+
+http://www.objgen.com/json
+
