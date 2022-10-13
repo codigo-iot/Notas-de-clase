@@ -32,3 +32,8 @@ Para hacer una conexion de una computadaora a si misma, por ejemplo, de la maqui
 
 /home/hugo/Documents/GitHub/python-rfid-myslq/query-mysql-cursor.py
 
+Para detener servicios snap
+
+sudo snap restart node-red
+
+https://forum.snapcraft.io/t/how-to-remove-a-node-module-from-node-red-in-snappy-ubuntu/13689/4
