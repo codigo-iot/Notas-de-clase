@@ -33,4 +33,24 @@ Nodo Function Porcentaje de similitud
 msg.payload = (1 - msg.payload["0"]["VGG-Face_cosine"]) * 100;
 return msg;
 
+5. Crear archivos info.json en cada uno de los directorios de rostros en my_db
+
+{
+    "nombre": "Rami Malek",
+    "cumpleaños": "12 de mayo de 1981",
+    "edad": 41,
+    "acceso": 3
+}
+
+6. Instalar los nodos String para obtener la ruta de info.json relativo a cada rostro detectado
+- node-red-contrib-string
+- Nodo String: ChopRight, find: /
+- Nodo String: Append, /info.json
+- Convertir a JSON
+
+7. Agregar nodos texto para mostrar la información leida
+
+Notas
+
+http://www.objgen.com/json
 
