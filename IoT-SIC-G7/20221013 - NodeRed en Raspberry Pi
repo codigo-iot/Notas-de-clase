@@ -1,0 +1,12 @@
+# Flow para el control de acceso con RFID
+
+1. Ejecutar un programa de Python en NodeRed - Maquina virtual
+- Nodo Exec
+	- python3 query-mysql-cursor.py
+	
+2. Correr desde la Raspberry Pi
+- NodeJS 16.12LTS
+	https://github.com/nodesource/distributions/blob/master/README.md
+- NodeRed
+	https://nodered.org/docs/getting-started/local
+- Nodos Dashboard
