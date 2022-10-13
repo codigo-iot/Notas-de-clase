@@ -10,3 +10,23 @@
 - NodeRed
 	https://nodered.org/docs/getting-started/local
 - Nodos Dashboard
+
+3. Opcional. Acceder a Node Red de la Raspberry Pi via navegador web desde la maquina virtual
+- Abrir el puerto 1880 en la Raspberry Pi
+- sudo apt install ufw
+- sudo ufw allow ssh
+- sudo ufw allow vnc
+- sudo ufw allow 1880
+- sudo ufw enable
+- sudo roboot
+
+4. Correr el ejemplo del paso 1 en la Raspberry Pi
+- Actualizar IP del codigo Python
+- Actualizar nombre de usuario del codigo Python
+- Actualizaar en el flow la ruta donde se encuentra el programa a ejecutar
+
+Notas
+
+Para hacer una conexion de una computadaora a si misma, por ejemplo, de la maquina virtual a la maquina virtual ó desde RPi a RPi siempre se ocupa la IP de localhost: 127.0.0.1
+
+
