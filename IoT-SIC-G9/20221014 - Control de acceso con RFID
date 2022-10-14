@@ -9,3 +9,16 @@
 - Debe escribir en la base de datos
 - Tomar unicamente el nombre del tag
 - Sacar el programa del while
+
+3. Crear un flow que permita detonar la lectura del RFID con un boton y que tenga un cuadro de texto para ingresar un estatus a la base de datos
+
+Nodo Function Argumento
+
+msg.payload = ' "' + global.get ("text") + '"';
+return msg;
+
+
+Nodo Function Esatus
+
+global.set ("text", msg.payload);
+return msg;
