@@ -1,0 +1,11 @@
+# Control de acceso con RFID
+
+1. Cambiar la informacion del tag para que muestre la informacion personal de su dueño
+- nombre,edad,telefono,fecha de nacimiento,matricula
+
+2. Hacer un programa para raspberry pi que realice una sola lectura del tag y reciba un parametro para colocarlo en la columna texto en la base de datos de la maquina virtual
+- Debe incluir lectura de 1 argumento posicional
+- Debe leer el tag RFID
+- Debe escribir en la base de datos
+- Tomar unicamente el nombre del tag
+- Sacar el programa del while
