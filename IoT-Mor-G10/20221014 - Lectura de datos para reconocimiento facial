@@ -1,0 +1,21 @@
+# Flow para apertura de pueras por reconocimiento facial
+
+1. Agregar una serie de archivos info.json que contengan
+- nombre, edad, fecha de nacimiento,acceso
+
+{
+    "nombre": "Carrie Anne Moss",
+    "cumpleaños": "21 de agosto de 1967",
+    "edad": 55,
+    "acceso": 2
+}
+
+2. Instalar nodos string
+- node-red-contrib-string
+
+3. Mostrar la infomracion de info.json con nodos texto, seleccionar cada valor con su nombre de variable
+- Value forma: {{msg.payload.nombre}}
+- Value forma: {{msg.payload["cumpleaños"]}}
+- Value forma: {{msg.payload.edad}}
+- Value forma: {{msg.payload.acceso}}
+- Crear nuevo grupo
