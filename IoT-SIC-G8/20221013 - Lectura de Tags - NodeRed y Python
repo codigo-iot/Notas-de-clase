@@ -1,0 +1,8 @@
+# Lectura de RFID y registro en base de datos - Segunda Parte
+
+1. Asignar información al tag
+- nombre,edad,telefono,fecha de nacimiento,matricula
+- string,int,string,int,double
+- Hugo Vargas,33,+525514250483,19890123,2007301356
+
+2. Crear un programa en Python que reciba un parámetro, que asigne el parámetro al query para enviarlo como campo de textos a la base de datos rfid, que haga la lectura del tag al arrancarse sin bucle y que envíe la información a la base de datos en la maquina virtual
