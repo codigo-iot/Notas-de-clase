@@ -24,3 +24,17 @@ if (lon >= 3) {
 }
 msg.payload = lon;
 return msg;
+
+2. Agregar una sección que evalue la información recibida para determinar si las puertas deberán abrirse
+
+Nodo Function Condición
+
+if ((global.get ("indice_d") == 1) && (global.get ("indice_l") == 1))
+{
+    msg.payload = true;
+} else {
+    msg.payload = false;
+}
+return msg;
+
+
