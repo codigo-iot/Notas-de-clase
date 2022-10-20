@@ -1,0 +1,40 @@
+# Apertura de puertas por reconocimieno facial
+
+1. Agregar una seccion que compare el indice de similitud
+
+Node function Indice detección
+
+var indice = (1 - msg.payload["0"]["VGG-Face_cosine"]) * 100;
+if (indice > 75) {
+    msg.payload = "Indice de coincidencia mínimo alcanzado";
+    global.set ("indice_d", 1);
+} else {
+    msg.payload = "Indice de coincidencia mínima no alcanzado";
+    global.set("indice_d", 0);
+}
+return msg;
+
+Nodo Function Longitud de resultados
+
+var lon = Object.keys(msg.payload).length;
+if (lon >= 3) {
+    global.set("indice_l", 1);
+} else {
+    global.set("indice_l", 0);
+}
+msg.payload = lon;
+return msg;
+
+2. Agregar una sección que evalue la información recibida para determinar si las puertas deberán abrirse
+
+Nodo Function Condición
+
+if ((global.get ("indice_d") == 1) && (global.get ("indice_l") == 1))
+{
+    msg.payload = true;
+} else {
+    msg.payload = false;
+}
+return msg;
+
+
