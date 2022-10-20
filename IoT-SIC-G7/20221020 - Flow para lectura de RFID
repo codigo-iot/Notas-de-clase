@@ -8,7 +8,7 @@
 - Matricula
 
 
-2. Realizar un programa en python que haga lo siguiente
+2. Realizar un programa en python para la raspberry Pi que haga lo siguiente
 - Leer el RFID en la Raspberry Pi
 - Recibir un argumento
 - Escribir en la base de datos de la maquina virtual
