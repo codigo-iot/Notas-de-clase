@@ -1,0 +1,27 @@
+# Introduccion a NodeJS
+
+# Ejercicio de Imprimir en cosola
+1. Entrar al Command Line de NodeJS
+- node
+2. Obtener respuesta de consola
+- console.log('El resultado es %d',10);
+
+- El objeto Console se encarga de mandar mensajes de respuesta
+
+https://nodejs.org/api/console.html
+
+# Ejercicio contador de tiempo
+
+https://nodejs.org/api/console.html#consoletimelabel
+
+# Variables globales
+
+https://nodejs.org/api/modules.html#__filename
+
+# Uso de Argumentos
+
+https://nodejs.org/docs/latest/api/process.html#processargv
+
+# forEach
+
+https://www.geeksforgeeks.org/node-js-foreach-function/
