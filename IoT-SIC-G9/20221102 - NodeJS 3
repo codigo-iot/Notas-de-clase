@@ -1,0 +1,17 @@
+# Introducción a NodeJS
+
+## Realizar los ejercicios de la sección 1.5
+
+1. Crear un repositorio nuevo llamado modulos-nodejs
+
+2. Hacer la suma en el programa suma.js, pagina 38
+3. Crear Modulo 1 modulo1.js, pagina 39
+4. Crear programa que haga uso de ambos modulos: modulo_test.js, Pagina 40.
+	- Probar con ./modulo1.js
+5. Crear Modulo 1 modulo2.js, pagina 41
+6. Modificar programa modulo_test.js, Pagina 42.
+	- Probar con ./modulo2.js
+
+
+
+

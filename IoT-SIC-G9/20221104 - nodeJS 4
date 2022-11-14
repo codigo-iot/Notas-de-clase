@@ -1,0 +1,16 @@
+# Introduccion a NodeJS
+
+1. Realizar el ejemplo de uso de modulos externos. Pagina 43 - Modulos NodeJS
+
+2. Crear una carpeta llamada Proyecto en el repositorio modulos NodeJS
+
+3. Iniciar un proyecto npm 
+- npm init
+
+4. Instalar nconf
+- npm install nconf
+
+
+Notas
+
+https://www.youtube.com/watch?v=A9avVhZrMOc
