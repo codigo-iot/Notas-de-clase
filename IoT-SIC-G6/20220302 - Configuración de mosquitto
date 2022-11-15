@@ -76,3 +76,9 @@ aqui esta el archivo, solo que no esta en el orden que muestras, es decir hay qu
 /usr/share/doc/mosquitto/examples/mosquitto.conf
 lineas 40 215 y 512
 
+Para detener servicios snap
+sudo snap restart node-red
+
+https://forum.snapcraft.io/t/how-to-remove-a-node-module-from-node-red-in-snappy-ubuntu/13689/4
+
+
