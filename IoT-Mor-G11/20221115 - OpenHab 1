@@ -23,7 +23,28 @@ https://edu.codigoiot.com/course/view.php?id=840
 - sudo apt-get update
 - sudo apt-get install openhab
 
+3. Configurar el Modo de Arranque de OpenHab
+- Al inicio del sistema
+	sudo /bin/systemctl daemon-reload
+        sudo /bin/systemctl enable openhab.service
+        
+- Modo Manual
+	sudo /bin/systemctl daemon-reload
+            sudo /bin/systemctl enable openhab.service
+
+user: hugo
+pass: hugo
+
+
+
+
 Notas:
+
+Para ver el log de OpenHab, activar el verbose
+
+https://www.openhab.org/addons/bindings/logreader/
+
+
 
 Navegadores
 
@@ -52,3 +73,5 @@ NordVPN
 
 
 an object oriented defense of poetry - timothy morton
+
+
