@@ -1,0 +1,208 @@
+# Proyecto Capstone
+
+### Fecha de inicio de curso
+3 de mayo del 2022
+
+### Fecha de fin de curso
+22 de diciembre de 2022
+
+## Fecha de evaluación de proyecto Capstone
+Idealmente la evaluación se realiza la semana siguiente al fin de curso.
+Se su pone que el proyecto debería estar terminado el día de fin de curso
+
+Fecha de evaluacion del grupo 8 y grupo 9
+16 al 20 de enero de 2023
+
+Fecha de evaluacion del grupo 7
+19 al 23 de diciembre de 2022
+
+Evaluación en linea
+Streaming
+Presentación de medios
+Concentrarse en la solución del problema
+Dudas solo hasta la fecha de fin de curso
+
+### Requisitos de evaluación
+- Prototipo funcionando al 100%
+	- Plan de acción
+	- Repositorio de Capstone Project
+	- Debe realizar lo acordado
+	- Debe de ser funcional
+- Repositorio actualizado
+	- Deben estar todos los códigos
+	- Códigos comentados
+	- Documentado
+- Curso en plataforma
+	- Objetivo: Hacer disponible el conocimiento generado
+	- Hacer el curso que a uds les hubiera gustado encontrar
+	- edu.codigoiot.com
+	- Secciones
+		- Video corto. 3 a 5 minutos
+		- Video largo
+		- Enlace a Repositorio
+		- Contenidos
+		
+### Estructura sugerida
+- Introducción
+	- Temática del proyecto
+	- Planteamiento del problema
+	- Justificación
+	- Planteamiento de la solución
+		- Características de la solución
+		- Obstaculos a superar
+			- Sociales
+			- Políticos
+			- Culturales
+			- Técnicos
+			- Tecnológicos
+		- Implementación
+	- Objetivos
+		- Generales
+		- Particulares
+	- Grupo de enfoque
+		- A quién va dirigido
+		- Beneficiarios
+			- Directos
+			- Indirectos
+	- Etapas de desarrollo
+		- Etapa 1
+		- Etapa 2
+		- Etapa 3
+	- Alcance del proyecto
+		- Características funcionales
+		- Características no funcionales
+		- Entregables
+			- Prototipo
+			- Servidores
+			- Panel de control
+		- Qué etapa se desarrolla
+- Material a utilizar
+	- Hardware
+		- Lista de componentes
+			- Componentes electrónicos
+			- Micro contorladores
+			- Micro computadoras
+		- Equipo de computo
+			- Hosting
+			- Servidor dedicado
+			- Servicio AWS, Azure, G-Cloud
+			- PC/MAC
+			- Máquina virtual
+	- Software
+		- Framework
+		- Servidores
+		- Middleware
+		- Broker
+		- Protocolos de comunicación
+		- Biblioteca
+		- API's
+-Desarrollo. En esta sección se muestran los ejemplos básicos de las herramientas a utilizar en la solución
+	- Ejemplo sensor 1
+		- Circuito
+		- Código de ejemplo
+		- Ejemplo de lectura simple
+		- Ejemplo de envío de información
+			- Local
+			- Internet
+	- Ejemplo sensor 2
+	- Ejemplo sensor 3
+	- Ejemplo actuador 1
+	- Ejemplo actuador 2
+	- Flow 1
+		- Nodos externos
+		- Configuraciones de nodos
+	- Flow 2
+	- Programa en Python 1
+		- Bibliotecas
+	- Programa en Python 2
+	- Programa en NodeJS
+	- Querys de Bases de Datos
+- Circuito final
+- Levantamiento de entorno
+	- Arrancar servidores
+	- Realizar conexiones
+	- Crear directorios
+	- Scripts
+	- Servicios
+	- Conexiones de circuitos
+- Implementación
+	- Instrucciones de uso
+	- Ejemplo final
+	- Ejemplo de aplición
+	- Visualizaciones
+	- Casos de uso
+		- Como saber cuando esta funcionando bien
+		- Problemas frecuentes
+		- Solución de problemas
+- Conclusión
+	- Beneficios obtenidos
+	- Población beneficiada
+	- Resultados obtenidos
+	- Comparativa historia
+	- Comentarios finales
+	
+Convenciones
+
+- Segunda persona del singular
+- Presente perfecto
+- El código no va en el curso
+- El código se explica en documentación y comentarios
+- Ilustraciones
+	- Usar la herramienta subir imagen
+	- No pegar imagenes
+- Formatos de texto
+	- Los enlaces deberán usar hipervinculos
+- Imagenes sólo en .jpg
+- Mínima de 500x500
+- Máxima 1920x1920
+- Mac máximo de 2560x2560
+- 2Mb max
+- No subir video en plataforma
+
+Recomendaciones
+- Escribir el curso en un documento
+- Dejar el formato para el final
+- Crear una carpeta de imagenes
+- Pegar el texto a la plataforma, no escribir en plataforma
+- Utilizar lecciones y páginas
+- Contenido con imágenes es mas interesante
+- Una imagen al principio del resultado final ayuda
+- Un mensaje de conclusión ayuda a dar la sensación de cierre
+- Opcional. Maqueta - Modelo
+- Ensayar la presentación
+
+### Criterios de complejidad
+- Prototipo
+- Servidores
+- Intercambio de información
+- Panel de control**
+- Debe articular al menos 3 sensores y actuadores
+- Dee hacer uso de tecnologías del Internet de las Cosas
+- Debe darle un papel importante a la información.
+
+### Estructura de evaluación
+- Bienvenida y presentación
+- Introducción.  5 min
+- Presentación. 15 min
+	- Mostrar el funcionamiento del prototipo
+-Preguntas. 10 min
+	- Evaluador
+	- Público
+
+### Criterios de ecaluación
+- Proyecto orientado a solución
+- Proyecto funcional
+- Debe cumplir con los requisitos de evaluación
+
+
+Simulacro de evaluación G8 y G9: 7 de enero de 2023
+Simulacro de evaluación G7: 10 y 11 de diciembre de 2022
+
+Notas:
+
+Enlace del documento de proyecto capsonte
+https://docs.google.com/spreadsheets/d/1LS-CouIDSXYSaU1eVvT-YO9kp0yRiRgfToYx7IiM3OY/edit?usp=share_link
+
+Herramientas:
+Fritzing
+123circuits
