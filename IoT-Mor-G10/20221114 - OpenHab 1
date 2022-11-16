@@ -28,6 +28,14 @@ Instrucciones
 - sudo apt-get update
 - sudo apt-get install openhab
 
+[openHAB] Please use the following commands to launch openHAB on a system restart.
+            sudo /bin/systemctl daemon-reload
+            sudo /bin/systemctl enable openhab.service
+
+[openHAB] You can start openHAB manually by executing the command:
+            sudo /bin/systemctl start openhab.service
+
+
 ## Notas
 
 https://medium.com/javarevisited/know-the-difference-between-jdk-jre-and-jvm-9f35837992d7
