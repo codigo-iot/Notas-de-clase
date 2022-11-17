@@ -1,0 +1,194 @@
+# Caspstone Project
+
+### Fecha de inicio de curso
+3 de mayo del 2022
+
+### Fecha de fin de curso
+29 de noviembre de 2022
+
+## Fecha de evaluación de proyecto Capstone G7
+19 al 23 de diciembre de 2022
+
+## Fecha de evaluacion del proyecto Capstone G8, G9
+16 al 20 de enero de 2022
+
+- El proposito es terminar el proyecto para el fin del curso
+
+### Requisitos de evaluación
+- Prototipo funcionando al 100%
+	- Debe realizar lo acordado
+	- Debe ser funcional
+- Repositorio actualizado
+	- Codigo comentado
+	- Documentación
+- Curso en plataforma
+	Objetivo: Hacer disponible el conocimiento generado para sus compañeros de grupo
+	- edu.codigoiot.com
+	- Secciones
+		- Video corto. 3 a 5 minutos.
+		- Video Largo. 
+		- Repositorio
+		- Contenidos
+	
+### Estructura de curso sugerida	
+- Introducción
+	- Planteamiento del problema
+	- Justificación
+	- Planteamiento de solucion
+		- Caracteristicas 
+		- Obstaculos a superar
+			- Sociales
+			- Politicos
+			- Culturales
+			- Tecnicos
+			- Tecnologicos
+		- Implementación
+	- Objetivos
+		- Generales
+		- Particulares
+	- Grupo de enfoque
+		- A quien va dirigido
+		- Beneficiaros
+			- Directos
+			- Indirectos
+	- Etapas de desarrollo
+		- Etapa 1
+		- Etapa 2
+		- Etapa 3
+	- Alcance del proyecto
+		- Características funcionales
+		- Características no funcionales
+		- Cuales son los entregables
+			- Prototipo
+			- Servidor
+			- Panel de control
+		- Que etapa se desarrolla	
+- Material a utilizar
+	- Hardware
+		- Lista de componentes
+			- Componentes electronicos
+			- Micro controladores
+			- Micro computadoras
+		- Equipo de computo
+			- Hosting
+			- Servidor dedicado
+			- Servicio AWS, Azure, G-Cloud
+			- PC/MAC
+			- Maquina virtual
+	- Software
+		- Frameworks
+		- Servidores
+		- Middleware
+		- Broker
+		- Protocolos de comunicación
+		- IDE
+		- Bibliotecas
+		- API
+		
+- Desarrollo. En esta sección se muestran los ejemplos básicos de cada una de las herramientas a utilizar en la solución		- Ejemplo sensor 1
+		- Circuito de prueba
+		- Codigo
+		- Ejemplo de lectura
+		- Ejemplo con envio de infomración
+			- Local
+			- Internet
+		- Flow
+	- Ejemplo sensor 2
+	- Ejemplo sensor 3
+	- Ejemplo actuador 1
+	- Ejemplo actuador 2
+	- Flow 1
+		- Nodos externos
+		- Configuraciones
+	- Flow 2
+	- Programa en Python 1
+		- Biblioteca
+	- Programa en Python 2
+	- Programa en NodeJS
+	- Querys para Base de datos
+- Circuito final
+- Levantamiento de entorno
+	- Arrancar servidores
+	- Realizar conexiones
+	- Crear directorios
+	- Arrancar Scripts
+	- Servicios
+- Implementación
+	- Instrucciones de uso
+	- Ejemplo final
+	- Ejemplo de aplicación
+	- Visualizaciones
+	- Casos de uso
+		- Como saber cuando funciona
+		- Problemas frecuentes
+		- Solucion de problemas
+- Conclusión
+	- Beneficios obtenidos
+	- Poblaciones benficiadas
+	- Resultados obtenidos
+	- Comparativas Historicas
+	- Comentarios finales
+	
+Convenciones
+- El codigo no va en el curso
+- El codigo se explica en documentacion y comentarios
+- Ilustraciones
+	- Usar la herramienta subir imagen
+	- No pegar imagenes
+- Formatos de texto
+	- Enlaces deben usar hipervinculos
+	- Bloques de codigo <code> instruccion </code>
+- Imagenes solo en .jpg
+- Minimo de 500x500
+- Maximo 1920x1920
+- MAC maximo 2560x2560
+- No subir video a la plataforma
+
+Recomendaciones
+- Escribir en un documento de texto
+- Dejar el formato para el final
+- Pegar a la plataforma
+- Crear carpetas de imagen
+- Utilizar Lecciones y Páginas
+- Un contenido con imagenes es más interesante
+- Una imagen de resultado final al principio ayuda
+- Un mensaje de conclusión ayuda
+- Opcional. Maqueta - Modelo
+- Ensayar la presentación		
+		
+### Criterios de complejidad
+- Debe articular al menos 3 sensores y actuadores
+- Debe hacerse uso de tecnologías del Internet de las Cosas
+- Deberá darle un papel importante a la información. Lo que va mas allá del monitoreo y la automatización
+
+
+### Crierios de evaluacion
+- Proyectos orientados a soluciones
+- Proyecto funcional
+- Cumplir con requisitos de evaluación
+
+
+### Estructura de evaluacion. 30 min total
+- Bienvenida y presentación
+- Introducción. 5 min
+- Presentación. 15 min
+	- Mostrar el funcionamiento del prototipo
+- Preguntas. Últimos 10 minutos
+	- Evaluador
+	- Publico
+Opcional:
+	-Llenar un Kardex https://edu.codigoiot.com/mod/page/view.php?id=1492
+	- Formato de kardex https://edu.codigoiot.com/mod/resource/view.php?id=1815&redirect=1
+	
+Simulacro de evaluación grupo G7: 10 u 11 de diciembre de 2022
+Simulacro de evaluación grupo G7: 7 u 8 de enero de 2023
+
+
+
+Herramientas recomendadas:
+
+Fritzing
+123circuits
+
+Notas:
+- Resolver dudas

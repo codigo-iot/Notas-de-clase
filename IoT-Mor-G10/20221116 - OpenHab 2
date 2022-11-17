@@ -1,0 +1,82 @@
+# OpenHab
+
+### Iniciar OpenHab
+
+Al arranque del sistema
+[openHAB] Please use the following commands to launch openHAB on a system restart.
+            sudo /bin/systemctl daemon-reload
+            sudo /bin/systemctl enable openhab.service
+
+Manual
+[openHAB] You can start openHAB manually by executing the command:
+            sudo /bin/systemctl start openhab.service
+
+Entrar a OpenHab
+localhost:8080
+
+Crear usuario
+user: hugo
+pass: hugo
+
+## Configuración
+1. Agregar un binding, haciendo clic en settings, things y +
+2. Instalar el binding MQTT
+3. Crear un broker MQTT, haciendo clic en settings, things y +
+
+Broker MQTT
+Unique ID: brokermqtt
+Label: MQTT Broker
+Location: Departamento
+IP localhost
+port: 1883
+Borrar user y pass
+
+4. Crear un Thing de tipo mqtt, seleccionar generic mqtt thing
+
+Unique ID: TempSensor
+Label: Sensor de temperatura
+Locations: Sala
+Bridge: MQTT Broker
+
+5. Crear canal de informacion para el sensor de temperatura. Hacer clic en el thing de Sensor de Temperatura, luego en la pestaña Channels y Add Channel
+
+Channel Identifier: tempSensorChannel
+Label: Canal del sensor de temperatura
+CHannel Type: Number
+MQTT State: codigoIoT/openHab/departamento/temp
+Min: 0
+Max: 50
+
+6. Crear locaciones haciendo clic en Model y en el boon Add Location
+
+Name: Departamento
+Label: Departamento Location
+Type: Group
+Category: House
+Semantic Class: Location
+
+7. Crear una sub locación
+Name: Sala
+Label: Sala Departamento Location
+Type: Group
+Category: House
+Semantic Class: Location
+
+8. Crear un equipamiento desde un thing en la sublocación
+
+Thing: Sensor de temperatira
+name: Sensordetemperatura
+Label: Sensor de temperatura
+Category: Temperature
+Channel: Canal del sensor de temperatura
+Name: Sensordetemperatura_Canaldelsensordetemperatura
+Label: Canal del sensor de temperatura
+Type: number
+Category: Temperature
+
+Semantic Class: Measurement
+Semantic Property: Temperature
+
+
+
+
