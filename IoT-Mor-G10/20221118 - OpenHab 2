@@ -46,7 +46,7 @@ Category: Switch
 Semantic Class: Switch
 Semantic Property: None
 
-### Ejercicio
+### Ejercicio 1
 
 - Duplicar esta configuración en OpenHab
 - Crear un thing y equipamiento para un led
@@ -56,7 +56,9 @@ Semantic Property: None
 	codigoIoT/openHab/departamento/sala/led1
 - Agregar al modelo arquitectnonico el LED
 
+# Ejercicio 2
 
+- Crear un modelo de casa o habitación
 
 
 
