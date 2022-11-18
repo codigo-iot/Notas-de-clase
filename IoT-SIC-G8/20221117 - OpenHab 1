@@ -1,0 +1,24 @@
+# OpenHab
+
+https://www.openhab.org/
+
+## Instalación de OpenHab
+
+https://edu.codigoiot.com/mod/lesson/view.php?id=1942&pageid=2456
+
+https://www.openhab.org/docs/installation/linux.html
+
+1. Comprobar la instalación de Java
+- java --version
+- sudo apt install default-jre
+
+2. Instalar OpenHab
+- curl -fsSL "https://openhab.jfrog.io/artifactory/api/gpg/key/public" | gpg --dearmor > openhab.gpg
+- sudo mkdir /usr/share/keyrings
+- sudo mv openhab.gpg /usr/share/keyrings
+- sudo chmod u=rw,g=r,o=r /usr/share/keyrings/openhab.gpg
+
+- echo 'deb [signed-by=/usr/share/keyrings/openhab.gpg] https://openhab.jfrog.io/artifactory/openhab-linuxpkg stable main' | sudo tee /etc/apt/sources.list.d/openhab.list
+
+- sudo apt-get update
+- sudo apt-get install openhab
