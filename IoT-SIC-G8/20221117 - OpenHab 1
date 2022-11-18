@@ -22,3 +22,14 @@ https://www.openhab.org/docs/installation/linux.html
 
 - sudo apt-get update
 - sudo apt-get install openhab
+
+3. Arrancar OpenHab
+- sudo systemctl start openhab.service
+
+4. Entrar a OpenHab
+- localhost:8080
+
+user: hugo
+pass: hugo
+
+
