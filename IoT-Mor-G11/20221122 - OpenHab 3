@@ -1,0 +1,18 @@
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+
+2. Agregar un led a la sala
+
+Unique ID: LEDSala
+Identifier: mqtt:topic:LEDSala
+Label: LED Sala
+Location: Sala Location
+Bridge: MQTT Broker
+
+Channel Identifier: LEDSalaChannelIdentifier
+Label: LED Sala Channel Identifier
+Channel Type: On/Off Switch
+
+
