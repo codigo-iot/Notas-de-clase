@@ -1,0 +1,64 @@
+# Encuencuesta de Código IoT
+
+Si eres profesor. Da clic aquí: 
+https://bit.ly/3fyH64d 
+
+Si eres alumno. Da clic aquí: 
+https://bit.ly/3Uohe9Z
+
+En caso de que ya la hayas realizado, no es necesario volver a hacerla
+
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+- Entrar a localhost:8080
+
+## Crear un equipamiento tipo switch
+
+2. Crear Thing de Switch con un generic mqtt thing
+
+Unique ID: switchSala1
+Identifier: mqtt:topics:switchSala1
+Label: Switch Sala 1
+Location: Sala
+Bridge: MQTT Broker
+
+3. Crear el canal de información para el switch
+
+Channel Identifier: switchSala1Channel
+Label: Switch Sala 1 Channel
+Channel Type: On/Off/switch
+MQTT State Topic: codigoIoT/openHab/departamento/sala/switch1
+
+4. Hacer clic en la sublocacion y después en el boton add equipment from thing
+
+Thing: Switch Sala 1
+Name: SwitchSala1Equipment
+Label: Switch Sala 1 Equipment
+Category: Switch
+Semantic Class: Equipment
+Channel: Switch Sala 1 Channel
+Name: SwitchSala1Equipment_SwitchSala1Channel
+Label: Switch Sala 1 Channel Equipment
+Type: Switch
+Category: Switch
+Semantic Class: Switch
+Semantic Property: None
+
+### Ejercicio 1
+
+- Duplicar esta configuración en OpenHab
+- Crear un thing y equipamiento para un led
+	- Ajustar la Categoria y la Semantic Class
+	- Configurar Is Command
+	- El tema sera de control
+	codigoIoT/openHab/departamento/sala/led1
+- Agregar al modelo arquitectnonico el LED
+
+# Ejercicio 2
+
+- Crear un modelo de casa o habitación
+
+
+

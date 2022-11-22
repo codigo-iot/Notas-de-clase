@@ -1,0 +1,36 @@
+# Encuencuesta de Código IoT
+
+Si eres profesor. Da clic aquí: 
+https://bit.ly/3fyH64d 
+
+Si eres alumno. Da clic aquí: 
+https://bit.ly/3Uohe9Z
+
+En caso de que ya la hayas realizado, no es necesario volver a hacerla
+
+# OpenHab
+
+1. Instalar default-jre
+2. Instalar OpenHab
+
+https://www.openhab.org/docs/installation/linux.html
+
+
+- curl -fsSL "https://openhab.jfrog.io/artifactory/api/gpg/key/public" | gpg --dearmor > openhab.gpg
+- sudo mkdir /usr/share/keyrings
+- sudo mv openhab.gpg /usr/share/keyrings
+- sudo chmod u=rw,g=r,o=r /usr/share/keyrings/openhab.gpg
+
+- sudo apt-get update
+- sudo apt-get install openhab
+
+https://www.openhab.org/
+
+https://www.openhab.org/docs/
+
+
+Notas
+
+https://www.youtube.com/watch?v=keoRX-Lni5s
+
+https://www.youtube.com/watch?v=vhq6MsYxbkU
