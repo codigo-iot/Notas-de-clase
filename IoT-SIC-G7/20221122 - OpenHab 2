@@ -44,14 +44,73 @@ Username & Password: Desactivar
 Certificate Pinning: Off
 Public Key Pinning: Off
 
+6. Crear un sensor haciendo clic en Settings, Things , +, MQTT Binding, 
+Notas, Generic MQTT Thing.
 
-Notas
+Sensor de temperatura
+Unique ID: SensorTemperatura
+Identifier: mqtt:topic:SensorTemperatura
+Label: Sensor de temperatura DHT11
+Location: Escritorio
+Bridge: MQTT Broker
+
+7. Crear Canal de información haciendo clic en Setting, Things, Sensor de temperatura DHT11, Channels, Add Channel
+
+Channel
+
+Channel Identifier: SensorTemperaturaChannelIdentifier
+Label: Sensor Temperatura Channel Identifier
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp
+Absolute Minimum: 0
+Absolute Maximum: 50
+Delta Value: 0.1
+Unit of Measuerement: °C
+
+8. Crear el modelo haciendo clic en Settings, Model, Add Location
+
+Location
+Name: Departamento
+Label: Departamento
+Type: Group
+Category: Departamento
+Semantic Class: Apartment
+
+9. Crear una sub ubicación haciendo clic en la ubicación raíz y después en el boton Add Location
+ 
+Sub Location
+Name: sala
+Label: Sala
+Type: Group
+Category: Habitación
+Semantic Class: LivingRoom
+
+10. Agregar equipamiento haciendo clic en la locación donde se desea poner el equipamiento, Create equipment from Thing
+
+Equipment Sensor
+Thing: Sensor de temperatura DHT11
+Name: SensordetemperaturaDHT11Equipment
+Label: Sensor de temperatura DHT11 Equipment
+Category: temperature
+Semantic Class: Sensor
+Channel: Sensor Temperatura Channel Identifier
+Name: SensordetemperaturaDHT11Equipment_SensorTemperaturaChannelIdentifier
+Label: Sensor Temperatura Channel Identifier Channel Equipment
+Type: Number
+Category: Temperaeture
+Semantic Class: Measurement
+Semantic Property: Temperature
+
+11. Probar el sensor
+- mosquitto_pub -h localhost -t codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp -m 23
 
 Para desactivar un servicio de System Control al Inicio del sistema
 
 sudo systemctl disable application.service
 
 https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+
+
 
 Things - Cosos
 Canales
@@ -70,3 +129,6 @@ Bloques
 
 @nochaveznada
 
+https://app.diagrams.net
+
+https://www.openhab.org/docs/configuration/transformations.html
