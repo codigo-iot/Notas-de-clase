@@ -5,14 +5,38 @@
 
 2. Agregar un led a la sala
 
+Thing
 Unique ID: LEDSala
 Identifier: mqtt:topic:LEDSala
 Label: LED Sala
 Location: Sala Location
 Bridge: MQTT Broker
 
+Channel
 Channel Identifier: LEDSalaChannelIdentifier
 Label: LED Sala Channel Identifier
 Channel Type: On/Off Switch
 
+MQTT StateTopic: codigoIoT/openHab/Departamento/Sala/Escritorio/LED01
 
+Equipment
+Thing: LED Sala
+Name: LEDSalaEquipment
+Label: LED Sala Equipment
+Category: Light
+Semantic Class: Lightbulb
+Channel: LED Sala Channel Identifier
+Name: LEDSalaEquipment_LEDSalaChannelIdentifier
+Label: LED Sala Channel Identifier
+Type: Switch
+Category: Light
+Semantic Class: Switch
+Semantic Property: Light
+
+3. Enviar el estatus del LED
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/LED01 -m "ON"
+
+4. Agregar un Switch a la sala
+- Configurar correctamente el Type a Switch
+- Configurar correctamente el tema a Command
+- Activar la casilla Is Command
