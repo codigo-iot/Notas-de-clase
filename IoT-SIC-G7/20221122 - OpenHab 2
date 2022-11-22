@@ -1,0 +1,72 @@
+# OpenHab
+
+## Opciones para arrancar
+
+[openHAB] Please use the following commands to launch openHAB on a system restart.
+            sudo /bin/systemctl daemon-reload
+            sudo /bin/systemctl enable openhab.service
+
+[openHAB] You can start openHAB manually by executing the command:
+            sudo /bin/systemctl start openhab.service
+
+## Arrancar openhab
+
+sudo systemctl start openhab.service
+
+## Entrar a la interfaz grafica de OpenHab
+
+localhost:8080
+
+1. Arrancar OpenHab
+2. Crear un nombre de administrador
+
+user: hugo
+pass: hugo
+
+3. Realizar la configuración inicial
+
+4. Crear un binding haciendo clic en Settings, Things, +, Install bindings, Search. Buscar MQTT
+- Agregar MQTT Binding
+
+5. Crear un Broker MQTT de tipo Bridge MQTT Binding haciendo clic en Settings, Things, +, MQTT Binding, MQTT Broker
+
+Broker
+Unique ID: MQTTBroker
+Identifier: mqtt:broker:MQTTBroker
+Label: MQTT Broker
+Location: Departamento
+
+Host/IP: 127.0.0.1
+Last Will Retain: Off
+Birth Message Retain: Off
+Shutdown Message Retain: Off
+Username & Password: Desactivar
+Certificate Pinning: Off
+Public Key Pinning: Off
+
+
+Notas
+
+Para desactivar un servicio de System Control al Inicio del sistema
+
+sudo systemctl disable application.service
+
+https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
+
+Things - Cosos
+Canales
+Items
+Bindings
+Bridge
+Modelo
+Locacion
+Sublocacion
+Equipamiento
+Links
+Paginas
+Reglas
+Scripts
+Bloques
+
+@nochaveznada
+
