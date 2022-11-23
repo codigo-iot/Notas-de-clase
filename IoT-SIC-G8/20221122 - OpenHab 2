@@ -1,0 +1,93 @@
+# Open Hab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+
+2. Abrir localhost:8080 en cualquier navegador
+
+user: hugo
+pass: hugo
+
+3. Agregar un MQTT Binding haciendo clic en Settings, Things, +, Install, Search. Buscar MQTT y seleccionar MQTT Binding
+
+4. Crear un Broker MQTT haciendo clic en Settings, Things, +, MQTT Binding, MQTT Broker,
+
+Broker
+Unique ID: MQTTBroker
+Identifier: mqtt:broker:MQTTBroker
+Label: MQTT Broker
+Location: Departamento
+
+Broker Hostname/ IP: 127.0.0.1
+Last Will Retain: Off
+Birth Message Retain: Off
+User & Pass: Borrar
+Certificate Pinning: Off
+Public Key Pinning: Off
+Enable Discovery: Off
+
+5. Crear un Thing para el sensor de humedad haciendo clic en Settings, Things +, MQTT Binding, Generic MQTT Thing
+
+Sensor de Humedad
+Unique ID: SensorHumedadDHT11
+Identifier: mqtt:topic:SensorHumedadDHT11
+Label: Sensor Humedad DHT11
+Location: Escritorio
+Bridge: MQTT Broker
+
+6. Crear un Canal de información para el sensor de humedad haciendo clic en Settings, Things, Sensor Humedad DHT11, Channels, Add Channel
+
+Channel Identifier: SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel Identifier
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum
+Absolute minimum: 0
+Absolute Maximum: 100
+
+7. Crear Ubicación y sub ubicación de Departamento y sala haciendo clic en Settings, Model, Add Location
+
+Cocina
+Name: Cocina
+Label: Cocina
+Type: Group
+Category: Kitchen
+Semantic Class: Kitchen
+
+8. Crear un equipamiento que represente el sensor de humedad haciendo clic en Settings, Model, Departamento, Sala, Create Equipment from Thing
+
+Thing: Sensor Humedad DHT11
+Name: SensorHumedadDHT11Equipment
+Label: Sensor Humedad DHT11 Equipment
+Category: humidity
+Semantic Class: Sensor
+Channel: Sensor Humedad Channel Identifier
+Name: SensorHumedadDHT11Equipment_SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel Identifier
+Type: Number
+Category: humidity
+Semantic class: Measurement
+Semantic Property: Humidity
+
+9. Probar la conexion del equipamiento
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum -m 35
+
+
+
+
+
+Notas
+
+Bindings
+Bridges
+Things - Cosos
+Channel
+Item
+Model
+Locations
+Sub Locations
+Equipments
+Links
+Pages
+Rules
+Scripts
+Bloques
