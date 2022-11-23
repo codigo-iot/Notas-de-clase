@@ -15,6 +15,77 @@
 - sudo apt-get update
 - sudo apt-get install openhab
 	
+## Opciones para arrancar
+
+[openHAB] Please use the following commands to launch openHAB on a system restart.
+            sudo /bin/systemctl daemon-reload
+            sudo /bin/systemctl enable openhab.service
+
+[openHAB] You can start openHAB manually by executing the command:
+            clea
+
+## Arrancar openhab
+
+sudo systemctl start openhab.service
+	
+## Abrir OpenHab
+
+localhost:8080
+
+2. Iniciar la configuración básica
+
+user: hugo
+pass: hugo
+	
+3. Crear un binding haciendo clic en settings, things, +, Install, Search. Buscar MQTT e instalar MQTT Binding
+
+4. Crear un Broker MQTT haciendo clic Settings, Things, +, MQTT Binding, MQTT Broker
+
+Broker
+Unique ID: MQTTBroker
+Identifier: mqtt:broker:MQTTBroker
+Label: MQTT Broker
+Location: Departamento
+
+Host/IP: 127.0.0.1
+Last Will Retain: Off
+Birth Message Retain: Off
+Shutdown Message Retain: Off
+Username & Password: Desactivar
+Certificate Pinning: Off
+Public Key Pinning: Off
+
+5. Crear un sensor haciendo clic en Settings, Things , +, MQTT Binding, Generic MQTT Thing.
+
+Sensor de temperatura
+Unique ID: SensorTemperatura
+Identifier: mqtt:topic:SensorTemperatura
+Label: Sensor de temperatura DHT11
+Location: Escritorio
+Bridge: MQTT Broker
+
+6. Crear Canal de información haciendo clic en Setting, Things, Sensor de temperatura DHT11, Channels, Add Channel
+
+Channel
+
+Channel Identifier: SensorTemperaturaChannelIdentifier
+Label: Sensor Temperatura Channel Identifier
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp
+Absolute Minimum: 0
+Absolute Maximum: 50
+Delta Value: 0.1
+Unit of Measuerement: °C
+
+7. Probar el canal de información
+mosquitto_pub -h localhost -t codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp -m 22.5
+
+
+
+
+
+
+
 Notas
 https://www.openhab.org/docs/installation/linux.html
 
