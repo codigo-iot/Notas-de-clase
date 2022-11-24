@@ -111,3 +111,20 @@ Semantic Property: Light
 
 - mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
 
+4. Hacer una regla haciendo clic en Settings, Rules, +
+
+Unique ID: Sobretemperatura
+Name: Sobretemperatura
+
+- Add trigger, Item Event, Seleccionar el canal del sensor de temperatura, was updated, to state: Any
+
+- Add Action, Run Script, Design with Blocky
+
+
+
+
+
+Notas:
+
+Scratch
+App Invetor
