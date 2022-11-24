@@ -35,7 +35,7 @@ Bridge: MQTT Broker
 
 Channel Identifier: sensorTempChannel
 Channel Type: Number Value
-MQTT State Topic: codigoIoT/openHab/departamento/sala/escritorio/sensorTemp
+MQTT State Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/temp
 Absolute Minimum: 0
 Absolute Maximum: 50
 Delta Value: 0.1

@@ -69,9 +69,14 @@ Category: switch
 Semantic Class: Switch
 Semantic Property: None
 
+3. Comprobar el funcionamiento de los equipamientos registrados
 
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/temp -m 22.5
 
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/humedad -m 51
 
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/LED01 -m "ON"
 
+- mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
 
 
