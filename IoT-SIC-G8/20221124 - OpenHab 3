@@ -1,0 +1,139 @@
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+- localhost:8080
+
+2. Agregar los siguientes elementos a OpenHab
+- Sensor de temperatura
+- Sensor de humedad
+- Switch
+- Led
+
+- Crear el Thing, Canal de Información, Ubicaciónes y sub ubicaciones y equipamientos
+
+- Al configurar el switch y el led el Type deberá ser On/Off Switch
+- Configurar las categorías y campos semanticos de los dispositivos de acuerdo a su tipo
+- El tema del switch es comando en el canal de información
+- El Switch deberá tener activada la función Is Command
+
+Sensor de temperatura
+Unique ID: SensorTemperatura
+Identifier: mqtt:topic:SensorTemperatura
+Label: Sensor de temperatura DHT11
+Location: Escritorio
+Bridge: MQTT Broker
+
+7. Crear Canal de información haciendo clic en Setting, Things, Sensor de temperatura DHT11, Channels, Add Channel
+
+Channel Sensor de temperatura
+
+Channel Identifier: SensorTemperaturaChannelIdentifier
+Label: Sensor Temperatura Channel Identifier
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp
+Absolute Minimum: 0
+Absolute Maximum: 50
+Delta Value: 0.1
+Unit of Measuerement: °C
+
+Equipment Sensor
+Thing: Sensor de temperatura DHT11
+Name: SensordetemperaturaDHT11Equipment
+Label: Sensor de temperatura DHT11 Equipment
+Category: temperature
+Semantic Class: Sensor
+Channel: Sensor Temperatura Channel Identifier
+Name: SensordetemperaturaDHT11Equipment_SensorTemperaturaChannelIdentifier
+Label: Sensor Temperatura Channel Identifier Channel Equipment
+Type: Number
+Category: Temperaeture
+Semantic Class: Measurement
+Semantic Property: Temperature
+
+
+
+Sensor de Humedad Thing
+Unique ID: SensorHumedadDHT11
+Identifier: mqtt:topic:SensorHumedadDHT11
+Label: Sensor Humedad DHT11
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel Identifier: SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel Identifier
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum
+Absolute minimum: 0
+Absolute Maximum: 100
+Unit of Measurement: %
+
+Sensor de Humedad Equipamiento
+Thing: Sensor Humedad DHT11
+Name: SensorHumedadDHT11Equipment
+Label: Sensor Humedad DHT11 Equipment
+Category: humidity
+Semantic Class: Sensor
+Channel: Sensor Humedad Channel Identifier
+Name: SensorHumedadDHT11Equipment_SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel Identifier
+Type: Number
+Category: humidity
+Semantic class: Measurement
+Semantic Property: Humidity
+
+Switch Thing
+Unique ID: Switch1
+Identifier: mqtt:topic:Switch1
+Label: Switch 1
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel Switch 1
+Channel Identifier: Switch1ChannelIdentifier
+Label: Switch 1 Channel
+Channel Type: On/Off Switch
+MQTT Command Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
+Is Command: On
+
+Switch Equipamiento
+Thing: Switch 1
+Name: Switch1Equipment
+Label: Switch 1 Equipment
+Category: Switch
+Semantic Class: Equipment
+Channel: Switch 1 Channel
+Name: Switch1Equipment_Switch1ChannelEquipment
+Label: Switch 1 Channel Equipment
+Type: Switch
+Category: switch
+Semantic Class: Switch
+Semantic Property: None
+
+Thing LED
+Unique ID: LEDSala
+Identifier: mqtt:topic:LEDSala
+Label: LED Sala
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel LED
+Channel Identifier: LEDSalaChannelIdentifier
+Label: LED Sala Channel Identifier
+Channel Type: On/Off Switch
+
+MQTT StateTopic: codigoIoT/openHab/Departamento/Sala/Escritorio/LED01
+
+Equipment
+Thing: LED Sala
+Name: LEDSalaEquipment
+Label: LED Sala Equipment
+Category: Light
+Semantic Class: Lightbulb
+Channel: LED Sala Channel Identifier
+Name: LEDSalaEquipment_LEDSalaChannelIdentifier
+Label: LED Sala Channel Identifier
+Type: Switch
+Category: Light
+Semantic Class: Switch
+Semantic Property: Light
