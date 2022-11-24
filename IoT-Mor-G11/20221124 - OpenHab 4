@@ -79,4 +79,15 @@ Semantic Property: None
 
 - mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
 
+4. Crear una regla para controlar el led de acuerdo a la temperatura
+- Settings, Rules, +
 
+UniqueID: Sobretemperatura
+Name: Sobretemperatura
+Description: Esta regla enciende un led cuando se detecta sobre temperatura
+
+- Add Trigger, Item Event, Seleccionar Channel
+- Was Updated
+- To state: vacío
+
+- Add Action, Run Script, Diseñar programa en bloques
