@@ -80,7 +80,7 @@ Label: LED Sala
 Location: Escritorio
 Bridge: MQTT Broker
 
-Channel
+Channel LED
 Channel Identifier: LEDSalaChannelIdentifier
 Label: LED Sala Channel Identifier
 Channel Type: On/Off Switch
