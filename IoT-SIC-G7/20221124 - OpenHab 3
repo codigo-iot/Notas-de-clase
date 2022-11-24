@@ -1,0 +1,101 @@
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+- localhost:8080
+
+2. Realizar los siguientes dispositivos en OpenHab
+- Sensor de temperatura
+- Sensor de humedad
+- LED
+- Switch
+- Cada uno con su canal de información
+- Agregar un equipamiento con su canal para cada dispositivo
+- Recordar configurar el type del switch y del led con On/Off Switch
+- El switch no lleva state topic, lleva command topic
+- El switch lleva activada la función Is Command
+- Configurar las categorías y propiedades semánticas de acuerdo a cada dispositivo
+
+Sensor de Humedad Thing
+Unique ID: SensorHumedadDHT11
+Identifier: mqtt:topic:SensorHumedadDHT11
+Label: Sensor Humedad DHT11
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel Identifier: SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel Identifier
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum
+Absolute minimum: 0
+Absolute Maximum: 100
+
+Sensor de Humedad Equipamiento
+Thing: Sensor Humedad DHT11
+Name: SensorHumedadDHT11Equipment
+Label: Sensor Humedad DHT11 Equipment
+Category: humidity
+Semantic Class: Sensor
+Channel: Sensor Humedad Channel Identifier
+Name: SensorHumedadDHT11Equipment_SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel Identifier
+Type: Number
+Category: humidity
+Semantic class: Measurement
+Semantic Property: Humidity
+
+Switch Thing
+Unique ID: Switch1
+Identifier: mqtt:topic:Switch1
+Label: Switch 1
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel Switch 1
+Channel Identifier: Switch1ChannelIdentifier
+Label: Switch 1 Channel
+Channel Type: On/Off Switch
+MQTT Command Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
+Is Command: On
+
+Switch Equipamiento
+Thing: Switch 1
+Name: Switch1Equipment
+Label: Switch 1 Equipment
+Category: Switch
+Semantic Class: Equipment
+Channel: Switch 1 Channel
+Name: Switch1Equipment_Switch1ChannelEquipment
+Label: Switch 1 Channel Equipment
+Type: Switch
+Category: switch
+Semantic Class: Switch
+Semantic Property: None
+
+Thing
+Unique ID: LEDSala
+Identifier: mqtt:topic:LEDSala
+Label: LED Sala
+Location: Sala Location
+Bridge: MQTT Broker
+
+Channel
+Channel Identifier: LEDSalaChannelIdentifier
+Label: LED Sala Channel Identifier
+Channel Type: On/Off Switch
+
+MQTT StateTopic: codigoIoT/openHab/Departamento/Sala/Escritorio/LED01
+
+Equipment
+Thing: LED Sala
+Name: LEDSalaEquipment
+Label: LED Sala Equipment
+Category: Light
+Semantic Class: Lightbulb
+Channel: LED Sala Channel Identifier
+Name: LEDSalaEquipment_LEDSalaChannelIdentifier
+Label: LED Sala Channel Identifier
+Type: Switch
+Category: Light
+Semantic Class: Switch
+Semantic Property: Light
