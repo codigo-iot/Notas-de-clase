@@ -1,0 +1,25 @@
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+
+2. Crear una regla de automatización
+- Hacer clic en Rules, +
+
+Regla
+Unique ID: aireAcondicionado
+Name: Aire Acondicionado
+Description: Esta regla activa el switch cuando se detecta una sobre temperatura
+
+- Hacer clic en Add Trigger
+- Seleccionar Item Event
+- Seleccionar el Canal del sesnor de temperatura
+- Seleccionar Was Updated
+- No hacer clic en To State y dejar sin valor
+- Hacer clic en Don
+
+- Hacer clic en Add Action
+- Hacer clic en Run Script
+- Design with Blockly
+
+- Crear condición con bloques
