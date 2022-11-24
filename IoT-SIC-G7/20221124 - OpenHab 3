@@ -29,6 +29,7 @@ Channel Type: Number Value
 MQTT State Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum
 Absolute minimum: 0
 Absolute Maximum: 100
+Unit of Measurement: %
 
 Sensor de Humedad Equipamiento
 Thing: Sensor Humedad DHT11
