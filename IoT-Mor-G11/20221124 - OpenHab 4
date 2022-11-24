@@ -1,0 +1,77 @@
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl startar openhab.service
+- http://localhost:8080/
+
+2. Crear los Things, canales y equipamientos necesarios para contar con:
+- Sensor de temperatura
+- Sensor de Humedad
+- LED
+- Switch
+
+Sensor de humedad
+Unique ID: SensorHumedad
+Identifier: mqtt:topic:SensorHumedad
+Label: Sensor Humedad
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel Sensor de Humedad
+Channel Identifier: SensorHumedadChannelIdentifier
+Label: Sensor Humedad Channel
+Channel Type: Number Value
+MQTT State Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/humedad
+Absolute Minimum: 0
+Absolute Maximum: 100
+Delta value: 1
+Unit of measurement: %
+
+Switch
+Unique ID: Switch1
+Identifier: mqtt:topic:Switch1
+Label: Switch 1
+Location: Escritorio
+Bridge: MQTT Broker
+
+Channel Switch 1
+Channel Identifier: Switch1ChannelIdentifier
+Label: Switch 1 Channel
+Channel Type: On/Off Switch
+MQTT Command Topic: codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
+Is Command: On
+
+Sensor de Humedad Equipamiento
+Thing: Sensor de Humedad
+Name: SensorHumedadEquipment
+Label: Sensor Humedad Equipamiento
+Category: humidity
+Semantic Class: Sensor
+Channel: Sensor Humedad Channel
+Name: SensorHumedadEquipment_SensorHumedadChannel
+Label: Sensor Humedad Channel Equipment
+Type: Numbar
+Category: Humidity
+Semantic Class: Measurement
+Semantic Property: Humidity
+
+Switch
+Thing: Switch 1
+Name: Switch1Equipment
+Label: Switch 1 Equipment
+Category: Switch
+Semantic Class: Equipment
+Channel: Switch 1 Channel
+Name: Switch1Equipment_Switch1ChannelEquipment
+Label: Switch 1 Channel Equipment
+Type: Switch
+Category: switch
+Semantic Class: Switch
+Semantic Property: None
+
+
+
+
+
+
+
