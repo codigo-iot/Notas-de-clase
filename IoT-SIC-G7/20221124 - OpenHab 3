@@ -100,3 +100,14 @@ Type: Switch
 Category: Light
 Semantic Class: Switch
 Semantic Property: Light
+
+3. Comprobar el funcionamiento de los dispositivos agregados
+
+- mosquitto_pub -h localhost -t codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp -m 24
+
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum -m 33
+
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/LED01 -m "ON"
+
+- mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
+
