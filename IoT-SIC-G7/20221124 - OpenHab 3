@@ -73,11 +73,11 @@ Category: switch
 Semantic Class: Switch
 Semantic Property: None
 
-Thing
+Thing LED
 Unique ID: LEDSala
 Identifier: mqtt:topic:LEDSala
 Label: LED Sala
-Location: Sala Location
+Location: Escritorio
 Bridge: MQTT Broker
 
 Channel
