@@ -137,3 +137,25 @@ Type: Switch
 Category: Light
 Semantic Class: Switch
 Semantic Property: Light
+
+- mosquitto_pub -h localhost -t codigoIoT/openhab/Departamento/Sala/Escritorio/DHT11/temp -m 24.5
+
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/DHT11/hum -m 40
+
+- mosquitto_pub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/LED01 -m "ON"
+
+- mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
+
+Notas:
+
+Reiniciar contraseña de usuarios
+https://www.openhab.org/docs/administration/runtime.html#users
+
+Try if this works: ssh into OH3 host login to karaf console: openhab-cli console ( user is openhab; password is habopen ) use the users command ( just enter users to get the usage of the command ) use: users list to see which users with related roles are in use with users changePassword you should be able to change the users password 
+
+Para cambio de contraseña en Consola Karaf  openhab> users list
+"usuario" (administrator)
+openhab> users changePassword
+Usage: openhab:users changePassword <userId> <newPassword> - changes the password of a user
+openhab>
+
