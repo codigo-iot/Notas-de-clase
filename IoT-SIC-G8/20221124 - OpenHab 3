@@ -24,8 +24,6 @@ Label: Sensor de temperatura DHT11
 Location: Escritorio
 Bridge: MQTT Broker
 
-7. Crear Canal de información haciendo clic en Setting, Things, Sensor de temperatura DHT11, Channels, Add Channel
-
 Channel Sensor de temperatura
 
 Channel Identifier: SensorTemperaturaChannelIdentifier
@@ -146,6 +144,18 @@ Semantic Property: Light
 
 - mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
 
+3. Crear una regla para activar un led cada que se detecta una sobre temperatura
+
+- Settings, Rules, +
+
+Unique ID: Sobretemperatura
+Name: Sobretemperatura
+Description: Activa un led cuando se detecta una sobretemperatura
+
+- Add Trigger, Item Event, Seleccionar canal de temperatura, Was Updated, To State vacío
+
+- Add Action, Run Script, Design with Blockly
+
 Notas:
 
 Reiniciar contraseña de usuarios
@@ -158,4 +168,7 @@ Para cambio de contraseña en Consola Karaf  openhab> users list
 openhab> users changePassword
 Usage: openhab:users changePassword <userId> <newPassword> - changes the password of a user
 openhab>
+
+Skratch
+App Inventor
 
