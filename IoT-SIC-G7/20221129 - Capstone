@@ -1,0 +1,22 @@
+# Capstone Project
+
+## Carga de contenido
+
+Recomendaciones
+Utilizar un navegador basado en Chromium
+
+1. Encontrar su curso en la sección Talleres de la Comunidad
+2. Modificar las características del taller
+	- Cambiar el nombre del taller
+	- Agregar una descripcion
+	- Agregar una imagen de portada del curso
+3. Los cursos deberán tener 2 secciones
+	- General
+		- URL Al repositorio del proyecto Capstone - Abrir en ventana emergente
+		- URL al video corto - Abrir en ventana emergente
+		- URL al video largo
+		- Foro
+		
+	- Contenidos
+		- Lección
+		- Pagina
