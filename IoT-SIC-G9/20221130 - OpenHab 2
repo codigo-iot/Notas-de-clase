@@ -147,3 +147,22 @@ Semantic Property: Light
 
 - mosquitto_sub -h localhost -t codigoIoT/openHab/Departamento/Sala/Escritorio/Switch1
 
+4. Crear modelo haciendo clic en Settings, Model, Add Location
+
+Departamento
+Name: Departamento
+Label: Departamento
+Type: Group
+Category: Departamento
+Semantic Class: Apartment
+
+5. Agregar una sub ubicación para cada sala a crear
+
+Sala
+Name: Sala
+Label: Sala
+Type: Group
+Category: LivingRoom
+Semantic Class: LivingRoom
+
+6. Crear un equipamiento por cada Thing haciendo clic en Settings, Model, Locacion, Sub locación, Create Equipment from Thing
