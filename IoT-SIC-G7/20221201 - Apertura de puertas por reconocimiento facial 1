@@ -1,0 +1,13 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Cargar el ejemplo de Cámera web server al micro controlador ESP32CAM
+
+2. Instalar deepface
+- pip install deepface
+https://pypi.org/project/deepface/
+Debes tener python 3.8 o 3.9
+
+3. Clonar el repositorio de apertura de puertas por reconocimiento facial
+https://github.com/hugoescalpelo/apertura-puertas-reconocimiento-facial
+
+
