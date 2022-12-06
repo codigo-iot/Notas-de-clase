@@ -1,0 +1,32 @@
+# Programación de micro controladores
+
+Aplicación del Internet de las cosas
+
+- Conexión a internet
+- Conexión a un broker
+- Lectura de sensores
+- Escritura en actuadores
+- Acondicionamiento de señal
+- Manejo de variables
+
+Se pasa de un estilo de programación secuencial a un estilo de programación iterativo
+
+Notas
+
+https://www.arduino.cc/reference/en/
+
+
+#incluide <stdio.h>
+#include <math.h>
+#include <gapht>
+
+void main () {
+
+	while (1) {
+		
+		enciendeLed ();
+		espera ();
+		apagaLed ();
+		espera();
+	}
+}

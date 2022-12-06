@@ -1,0 +1,14 @@
+# OpenHab
+
+1. Agregar lo siguiente a OpenHab
+- Sensor de temperatura
+- Sensor de humedad
+- LED1 (aire acondicionado)
+- LED2 (luces)
+- Switch
+- Humidificador
+
+2. Realizar la siguientes reglas
+- Encender el LED 2 con el Switch 1
+- Encender aire acondicionado cuando la temperatura sobrepase 26°C y apagarlo cuando esté debajo de 22°C
+- Activar el humidificador cuando la humedad este debajo del 30% y apagarlo cuando este sobre el 50%

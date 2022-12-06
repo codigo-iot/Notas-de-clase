@@ -1,0 +1,33 @@
+# OpenHab
+
+1. Arrancar OpenHab
+- sudo systemctl start openhab.service
+
+2. Crear una página de gráfica
+	- Pages, + , Create Chart
+
+Página Temperatura
+ID: ComportamientoTemperatura
+Label: Comportamiento Temperatura
+Visible only to: Administrators, Users
+Show on SideBar: On
+Chart Type: Dynamic Period
+Initial Period: h
+- Add Grid
+- Add Time Series, Configure Series
+	- Name: Temperatura
+	- Item: Canal Sensor temperatura
+	
+Notas
+
+Flexbox para diseño de sitios
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+Material Design - Diseño responsivo aplicado
+https://m3.material.io/foundations/adaptive-design/large-screens/overview
+
+Openhab - Dpcumentación sobre diseño de interefases
+https://www.openhab.org/docs/ui/
+
+Google - Motorola
+https://www.youtube.com/watch?v=49PTj9D_NpM

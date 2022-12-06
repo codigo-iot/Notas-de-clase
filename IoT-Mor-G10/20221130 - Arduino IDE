@@ -1,0 +1,16 @@
+# Instalación y configuracion de IDE de Arduino para trabajar con el ESP32CAM
+
+https://edu.codigoiot.com/course/view.php?id=850
+
+1. Instalar Arduino IDE
+
+https://www.arduino.cc/en/software
+- Se recomienda usar Ubuntu software
+
+2. Agregar el gestor de tarjetas
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
+
+3. Agregar las tarjetas ESP32 desde el gestor de tarjetas
+
+4. Permitir usar USB
+- sudo usermod -a -G dialout hugo
