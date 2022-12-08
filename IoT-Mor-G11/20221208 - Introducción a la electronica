@@ -1,0 +1,52 @@
+# IDE de Arduino
+
+- Mantener una conexión WiFi
+- Mantener conexión MQTT
+- Callback
+- Leer señales
+- Envio de señales
+- Calculos
+- Parseo
+
+# Introducción a la electronica
+
+
+- Dispositivos electrónicos
+- Alto voltaje - Bajo Voltaje
+
+
+- Circuitos electronicos
+
+- Fuente eléctrica
+	- Baterias, fuentes de corriente, fuentes de voltaje, adaptadores de corriente
+	- BMS Battery Management System
+	- CD-CA
+	- CA-CD
+	- CD-CD
+
+- Tipo de corriente
+	- Corriente Alterna
+	- Corriente directa
+
+- Voltaje
+- Corriente
+- Resistencia
+
+- Ley de ohm
+
+- Potencia
+
+
+
+- Circuito Serie
+- Circuito paralelo
+
+- Datasheet
+
+Notas
+
+
+https://edu.codigoiot.com/course/view.php?id=828
+
+
+
