@@ -1,0 +1,16 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Ejecutar los ejercicios de la carpeta MQTT
+- python3 mqtt-pub.py
+- python3 mqtt-sub.py
+- Modificar el tema, el mensaje, la IP
+
+2. Ejecutar los ejercicios de la carpeta apertura-puertas-reconocimiento-facial
+- Instalar paho-mqtt
+	pip install paho-mqtt
+- argumentos.py
+	python3 argurmentos.py /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/deniro.png /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db
+- face-check-args.py
+
+3. Importar el flow e instalar los nodos node-red-contrib-string
+- Actualizar la ruta del nodo exec

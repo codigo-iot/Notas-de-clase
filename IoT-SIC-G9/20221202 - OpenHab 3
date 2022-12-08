@@ -1,0 +1,43 @@
+# OpenHab
+
+1. iniciar Openhab
+- sudo systemctl start openhab.service
+
+2. Crear una regla que haga que se encienda el led cuando la temperatura supera 26°C
+- Hacer clic en settings, rules, +
+
+Unique ID: Sobretemperatura
+Nombre: Sobretemperatura
+Description: Esta regla activa un led cuando la temperatura supera 26°C
+
+- Hacer clic en Add Trigger
+- Seleccionar un evento de Item
+- Seleccionar Was Updated
+
+- Hacer clic en Add Action
+- Run Script
+- Design with blockly
+
+3. Agregar lo siguiente a OpenHab
+- Sensor de temperatura
+- Sensor de humedad
+- LED1 (aire acondicionado)
+- LED2 (luces)
+- Switch
+- Humidificador
+
+4. Realizar la siguientes reglas
+- Encender el LED 2 con el Switch 1
+- Encender aire acondicionado cuando la temperatura sobrepase 26°C y apagarlo cuando esté debajo de 22°C
+- Activar el humidificador cuando la humedad este debajo del 30% y apagarlo cuando este sobre el 50%
+
+
+Notas
+
+Skratch
+https://scratch.mit.edu/
+
+App Inventor
+https://appinventor.mit.edu/
+
+
