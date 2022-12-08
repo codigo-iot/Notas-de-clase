@@ -1,0 +1,11 @@
+
+#
+
+1. Nodo HTTP Request
+- Method GET
+- URL 192.168.15.14/capture
+- Return: A binary buffer
+
+2.  Write File
+- Configurar ruta
+- Action: Overwrite
