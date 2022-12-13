@@ -1,0 +1,15 @@
+# Apertura de puertas por reconocimiento facial
+
+## Servomotores
+
+1. Modificar el programa camera webserver para que se conecte a MQTT y pueda controlar el servomotor
+
+- Se debe usar la funcion Capture
+- No es compatible con la función streaming
+
+2. Usar un conjunto de microcontroladores ESP32
+
+- ESP32CAM: Funciones de streaming y captura de foto
+- ESP32: Funciones de acceso
+
+3. Manejo del motor
