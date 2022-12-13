@@ -1,1 +1,23 @@
 # Introducción a la electronica
+
+1. Características eléctricas
+
+- Foco
+
+- Voltaje: Tension eléctrica. La fuerza con la que la electricidad pasa por un circuito. Volts
+- Corriente: La cantidad de electricidad que pasa por un circuito en unidad de tiempo. Ampere
+- Resistencia: La propiedad natural de la materia de oponerse al paso de la corriente. Ohms
+- Potencia: Relación de trabajo. Watts
+
+- Relación entre la potencia y la forma
+
+- Corriente continua: Voltaje constante de amplitud constante
+- Corriente alterna: Voltaje de amplitud variante con forma de señal senoidal y magnitud de 120v a 60Hz
+
+
+Notas
+
+- Hoja de datos, hoja del fabricante, datasheet
+
+- Circuito serie
+- Circuito paralelo
