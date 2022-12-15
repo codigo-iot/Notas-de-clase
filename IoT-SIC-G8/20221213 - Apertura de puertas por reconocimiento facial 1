@@ -1,0 +1,27 @@
+# Apertura de puertas por reconocimiento facial
+
+https://github.com/hugoescalpelo/apertura-puertas-reconocimiento-facial
+
+# Deep Face
+
+1. Instalar Deep Face
+- pip install deepface
+
+2. Ejecutar el archivo facial-attribute-analysis.py
+
+- Requiere de una imagen
+- Proporciona información sobre un rostro
+- python3 facial-attribute-analysis.py
+
+3. Ejecutar el ejercicio de face-check.py
+
+- Requiere de dos imagenes
+- Comprueba la presencia de una persona en ambas imagenes
+- python3 face-check.py
+
+4. Ejecutar el programa face-recognition.py
+
+- https://pandas.pydata.org/
+- pip install pandas
+- Proporcionar una imagen y una base de datos de rostros
+- 

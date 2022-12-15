@@ -1,0 +1,54 @@
+# Fundamentos de electrónica
+
+1. Características eléctricas
+
+- Voltaje
+- Corriente
+- Resistencia
+- Potencia
+
+2. Hoja de datos, hoja del fabricante, datasheet, application Note
+
+- ESP32
+
+3. Elementos importantes a considerar
+
+- Voltaje de operación
+- Corriente de consumo
+- Impedancia
+- Potencia
+
+## Transisor
+
+- Corriente de colector
+- Corriente de emisor
+- Corriente debase
+
+## Motor de corriente continua
+
+- Velocidad nominal
+- Torque
+- Corriente pico
+- Corriente nominal
+
+4. Consultar las hojas de datos de los siguientes dispositivos
+
+- Max30100
+- MQ-135
+- MLX90614
+- Servomotor SG-90
+
+5. Tipos de señal
+- Analógica
+- Digital
+	- I2C
+	- Serial
+	- SPI
+
+
+
+
+
+
+
+

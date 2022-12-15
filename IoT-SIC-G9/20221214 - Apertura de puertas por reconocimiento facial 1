@@ -1,0 +1,30 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Instalar deepface
+- pip install deepface
+- pip install pandas
+
+2. Clonar el repositorio Apertura de Puertas por Reconocimiento Facial
+
+https://github.com/hugoescalpelo/apertura-puertas-reconocimiento-facial
+
+3. Ejecutar el ejercicio llamado facial-attribute-analysis.py
+- python3 facial-attribute-analysis.py
+
+4. Ejecutar el ejercicio llamado face-check
+
+5. Ejecutar el ejercicio llamado face-recognition
+
+6. Correr los ejemplos de MQTT con Python
+- pip install paho
+- Actualizar la IP
+- Actualizar el tema
+
+7. Ejecutar face-check-args.py Este programa hace lo mismo que face-recognition.py
+- python3 face-check-args.py [ruta_de_imagen] [my_db]
+
+Notas
+
+DeepFace (no es necesario clonar)
+
+https://github.com/serengil/deepface
