@@ -1,0 +1,23 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Correr el programa llamado argumentos.py
+
+- python3 argumentos.py palabra1 palabra2
+- python3 argumentos.py /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/carrie1.png /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db
+
+2. Correr el programa face-check-mqtt.py
+
+- pip install pandas
+- pip install paho-mqtt
+- codigoIoT/mqtt/python
+- python3 face-check-mqtt.py
+
+3. Correr el ejemplo face-check-args.py
+- python3 face-check-args.py /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/carrie1.png /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db
+
+4. Importar y ejecutar el flow
+- node-red-contrib-string
+- Cambiar la ruta del nodo exec
+
+
+Comando para actualizar NodeRed

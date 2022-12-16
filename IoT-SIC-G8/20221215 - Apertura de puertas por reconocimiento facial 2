@@ -1,0 +1,22 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Probar el ejemplo de envio de parámetros con Python
+- python3 argumentos.py palabra1 palabra2
+
+2. Probar el ejemplo face-check-mqtt.py
+
+- pip install pandas
+- pip install paho-mqtt
+- Monitorear el resultado en el broker local de mosquitto en el tema codigoIoT/mqtt/python
+- python3 face-check-mqtt.py
+
+3. Correr el programa face-check-args.py
+
+- python3 face-check-args.py /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/faces/carrie2.png /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_dbnode-red-co
+
+4. Importar el flow.json
+- Importar los nodos node-red-contrib-string
+- Modificar la ruta al programa en el nodo exec
+
+5. Cargar al esp32cam el ejemplo camera web server
+- Consultar su IP
