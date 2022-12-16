@@ -1,0 +1,52 @@
+# Introducción a la electronica
+
+1. Hojas de datos
+
+- Caracteristicas eléctricas
+	- Voltajes
+	- Corrientes
+	- Impedancias
+	
+- Características específicas de cada dispositivo
+
+- Diagramas
+	- Pinout
+	- Circuitos de prueba
+	- Arquitectura
+	- Circuit de aplicación
+	(Application Note)
+	
+- Graficas
+- Información mecánica
+- Información termica
+
+2. Buscar, leer, interpretar las hojas de datos de los siguientes componentes
+
+- MQ-135
+- MQ-6
+- MAX30100
+- MLX90614
+- DHT11
+- MFRC522
+- SG90
+
+- Voltaje de funcionamiento
+- Impedancia
+- Corriente de consumo
+- Que hace
+- Cómo funcional
+
+
+Notas: 
+
+https://www.alldatasheet.com/
+http://www.datasheet.es/
+http://www.datasheetcatalog.com/
+
+
+
+
+
+
+
+
