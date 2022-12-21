@@ -11,3 +11,17 @@
 2. Correr el flow de camara
 - ~/Documents/GitHub/apertura-puertas-reconocimiento-facial/NodeRed/guardarfoto.json
 
+3. Modificar el flow de apertura de puertas por reconocimiento facial para que tome la fotografia de la camara
+
+- msg.payload = " ruta/a/la/imagen ruta/a/bd/de/rostros"
+
+4. Monitorear el envio de informacion para apertura de puertas
+- mosquitto_sub -h localhost -t codigoIoT/mqtt/puerta
+
+5. Realizar un programa para controlar el servomotor
+- Agregar la biblioteca ESP32sServo.h
+- Hacer que el programa se suscriba al siguiente tema codigoIoT/mqtt/puerta en la funcion callback y en la funcion reconnect
+- Modificar el flow para que envie un numero que represente la posicion del servomotor
+- Opcional
+	- Usar el ejemplo del control del servo en un micro controlador diferente al que maneja la camara para la deteccion de rostro
+	- Modificar el programa del camera webserver para que se conecte a mqtt y maneje el servomotor
