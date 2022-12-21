@@ -1,0 +1,17 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Hacer un flow que haga uso de la camara del ESP32CAM para el reconocimiento facal
+
+2. Monitorear el tema MQTT de apertura de puertas
+- codigoIoT/mqtt/puerta
+
+3. Recibir el tema desde el micro controlador y modificar la posicion de un servomotor
+
+- Agregar la bilbioteca ESP32Servo.h
+
+-
+
+
+Notas
+Biblioteca Servo ESP32
+https://www.arduino.cc/reference/en/libraries/servo/
