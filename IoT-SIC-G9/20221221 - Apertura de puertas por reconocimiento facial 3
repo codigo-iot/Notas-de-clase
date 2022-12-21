@@ -1,0 +1,13 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Guardar una fotografia del ES32CAM
+- Cargar en el ESP32CAM el ejemplo CameraWebServer
+	- Actualizar Modelo de camara
+	- Actualizar IP contraseña
+- Entrar a la IP de la camara (192.168.1.10)
+	- 192.168.x.x/capture
+	- 192.168.x.x:81/stream
+	
+2. Correr el flow de camara
+- ~/Documents/GitHub/apertura-puertas-reconocimiento-facial/NodeRed/guardarfoto.json
+
