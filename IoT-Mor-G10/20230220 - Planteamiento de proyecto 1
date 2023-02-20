@@ -1,0 +1,154 @@
+# Evaluación
+
+60% Proyecto
+	Derecho a evaluación - Curso en plataforma
+			     - Proyecto funcionando al 100%
+			     - Repositorio del proyecto
+			     	- Código comentado
+			     	- Código Documentado
+
+40% Evaluación continua
+	20% Repositorio personal
+	20% Examenes en plataforma
+	
+## Selección de proyecto
+- Se puede proponer cualquier proyecto
+- Se realiza por equipos de 3 personas
+
+## Proyecto escrito
+
+- Formato curso en plataforma edu.codigoiot.com
+- Poner los objetivos en la descripción
+- Secciones
+	- Video corto de 3 a 5 minutos (enlace a youtube)
+	- Video largo
+	- Enlace a repositorio
+	- Contenidos
+	
+	
+### Sugerencias
+- Video en horizontal, NO en vertical
+- Grabar pantalla con la computadora, no con la cámara (OBS)
+- El codigo no va en el curso, solo en el repositorio
+- Usar la herramienta de subir imagen, no pegar imagenes
+- Enlaces a hipervinculos
+- Bloques de código <code> Instrucción </code>
+- Imagenes sólo en jpg
+- Resolucion minima 500x500
+- Resolucion máxima 2500x2500
+- No subir video a la plataforma, enlaces en youtbe
+- Escribir el texto en word y pegar después a la plataforma
+- Un contenido con imagenes es mas interesante
+- Poner una imagen del resultado al principio de cada leccion/pagina ayuda
+- Un mensaje de conclusión es util
+- Maqueta opcional
+	
+## Secciones sugeridas
+
+- Introducción
+	- Planteamiento del problema
+	- Justificación (Darle un lugar estelar a la información)
+	- Planteamieneto de solución
+		- Características de la soculón
+		- Obstaculos a superar
+			- Sociales
+			- Políticos
+			- Culturales
+			- Técnicos
+			- Tecnológcos
+		- Implementación
+	- Objetivos
+		- Generales
+		- Particulares
+	- Grupo de enfoque
+		- A quien va dirigido
+		- Beneficiarios
+			- Directos
+			- Indirectos
+	- Etapas de desarrollo
+		- Etapa 1
+		- Etapa 2
+		- Etapa 3
+	- Alcance del proyecto
+		- Caracteristicas funciones
+		- Características no funcionales
+		- Entregables
+			- Prototipo
+			- Servidor
+			- Panel de control
+		- Etapa a desarrollar
+- Mataterial a utilziar
+	- Hardware
+		- Lista de componentes
+			- Componentes electronicos
+			- Micro controladores
+			- Micro computadoras
+		- Equipo de computo
+			- Hosting
+			- Servidor dedicado
+			- Servicio AWS, Azur, G-Cloud
+			- PC/Mac
+			- Maquina virtual
+	- Software
+		- Frameworks
+		- Servidores
+		- Middleware
+		- Broker
+		- Protocolos de comunicación
+		- IDE
+		- Bibliotecas
+		- API's
+		- SDK's	
+- Desarrollo
+	- Ejemplo sensor 1
+		- Circuito de prueba
+		- Codigo
+		- Ejemplo de lectura
+		- Ejemplo de envío de información
+			- Local
+			- Internet
+		- Flow
+	- Ejemplo sensor 2
+	- Ejemplo sensor 3
+	- Ejemplo actuador 1
+	- Ejemplo actuador 2
+	- Flow 1	
+		- Nodos externos
+		- Configuraciones
+	- Programa en python 1
+		- Bibliotecas
+		- Repositorio
+	- Programa en python 2
+	- Programa en nodeJS
+	- Querys para Base de Datos
+- Circuito Final
+- Levantamiento de entorno
+	- Arrancar servidores
+	- Realziar conexiones
+	- Crear directorios
+	- Servicios
+- Implementación
+	- Instrucciones de uso
+	- Ejemplo final
+	- Ejemplo de aplicacion
+	- Visualizaciones
+	- Casos de uso
+		- Cómo saber si funciona
+		- Problemas frecuentes
+		- Solución de problemas
+- Conclusiónes
+	- Beneficios obtenidos
+	- Pobalciones beneficiadas
+	- Resultados obtenidos
+	- Comparativas Historias
+	- Comentarios finales
+	
+			
+				
+# Selección de proyecto
+
+
+
+# Notas
+
+- PNUD https://www.undp.org/es/sustainable-development-goals
