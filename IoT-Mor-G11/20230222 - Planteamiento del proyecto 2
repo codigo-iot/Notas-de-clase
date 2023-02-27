@@ -1,0 +1,34 @@
+# Planteamiento de proyectos
+
+## Criterios de complejidad
+- Al menos un sensor
+- Al menos un actuador
+- Es necesario hacer algo con la información
+
+# Guias para plantear proyectos
+- Que utilice una conexión a internet
+- Que haga algo que sólamente sea posible gracias a las tecnologías de la información
+- Entender a que va dirigido
+	- Industria
+	- Consumo
+- Entender como va a funcionar
+	- A donde se envía la información
+	- Para qué sirve esa infomración
+	- Cuál es la acción a tomar
+	- Generalmente el objeto se convierte en un servicio
+	- Suscripción
+- El internet de las Cosas busca obtener la mayor cantidad de infomración para hacer una toma de desiciones contextualizada
+- Escala
+- Pensar en soluciones y no en dispositivos
+
+- Dedicarle solamente el 20% del esfuerzo a obtener el dato
+
+- Escribir en el documento control de proyectos
+	- Nombre de integrantes
+	- Poner en negritas el nombre del representante
+	- Enlace al repositorio personal
+	- Enlace al repositorio del proyecto
+	- Correo
+	- Grupo 
+	
+- Llenar Kardex
