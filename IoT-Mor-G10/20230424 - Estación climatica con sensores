@@ -1,0 +1,48 @@
+# Estacion climatica con ESP32CAM y DHT11
+
+1. Arrancar nodeRed
+	- Abrir una terminal
+	- Ejecutar el comando node-red
+	- Abrir localhost:1880 en cualquier navegador
+
+2. Asegurarse de que la estación climática siga funcionando
+	- Comprobar el broker mqtt
+	- Redirigir todos los nodos mqtt al broker local
+	- Comprobar el funcionamiento de las bases de datos
+	- Comprobar la existencia de la base de datos
+		- sudo mysql
+		- show databases;
+		- use codigoIoT;
+		- show tables;
+		- describe clima;
+		- select * from clima;
+	- Comprobar el funcionamiento de la API ejecutando la peticion http
+	- Comprobar el funcionamiento del dashboard
+	- Comprobar el funcionamiento de grafana
+
+3. Escribir un programa para el ESP32CAM en la IDE de Arduino
+
+- Agregar biblioteca PubSubClient de Nick O'Leary
+- Agregar la biblioteca DHT sensor library de Adafruit
+
+4. Actualizar nombre de red y contraseña
+
+5. Actualizar IP del broker
+
+6. Actualizar tema en el que se publica y tema en el que se suscribe
+
+7 Cargar el código
+
+
+## Referencias
+
+- WiFi Basic
+https://github.com/codigo-iot/ESP32CAM-WiFi-Basic/blob/main/ESP32CAM-WiFi-Basic/ESP32CAM-WiFi-Basic.ino
+
+- MQTT Basic
+https://github.com/codigo-iot/ESP32CAM_MQTT-Basic
+
+- DHT Tester: File > Examples > DHT Sensor library > DHT Tester
+
+- MQTT JSON
+https://github.com/codigo-iot/publicar-strings-json-mqtt-nodemcu-wifi/blob/main/nodemcu-mqtt-json/nodemcu-mqtt-json.ino
