@@ -15,7 +15,8 @@
 
 5. Descargar Ubuntu 22.04LTS
 
-
+6. Instalar Ubuntu 22.04LTS en Virtual Box
+    - Activar Guest Aditions
 
 
 ## Notas
@@ -24,3 +25,4 @@
 - https://www.reddit.com/r/unixporn/top/?t=year
 - https://www.reddit.com/r/cyberDeck/top/?t=year
 - https://vtol.cc/Hot-Ninja
+- Instalación manual de las Guest Additions https://edu.codigoiot.com/course/view.php?id=812
