@@ -4,6 +4,11 @@
 
 1. Entrar al edu.codigoiot.com
 2. Hacer el pase de lista
+3. Entrar al curso Introducción al IoT https://edu.codigoiot.com/course/view.php?id=992
+4. Enviar la chat:
+    - 2 dispositivos del IoT
+    - Que es el IoT
+    - Qué es privacidad
 
 
 
@@ -24,3 +29,12 @@ Cómo hacer un justificante
     - Evidencia
         - Imagen
         - Video en youtue
+
+### Referencias
+
+- Cyberpunk Edgerunners
+- Ghost in the shell
+- "Rebecca My Beloved
+- Blade Runner y Robocop
+- Cyberpunk
+- Persons of interest
