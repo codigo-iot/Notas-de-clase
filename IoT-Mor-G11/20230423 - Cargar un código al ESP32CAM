@@ -1,0 +1,30 @@
+# Estacion climática con sensor
+
+1. Comprobar el fucionamiento de nodered
+	- node-red
+	- localhost:1880
+
+2. Comprobar el funcionamiento de MQTT
+
+3. Comprobar el funcionamiento de MySQL
+
+4. Comprobar el funcionamiento de grafana
+	- sudo /bin/systemctl start grafana-server
+	- localhost:3000
+	
+5. Programa en Arduino
+	- Comprobar las bibliotecas
+	- Configurar nombre de red
+	- Configurar contraseña de red
+	- Configurar IP del broker MQTT
+		- ifconfig
+	
+6. Cargar el código
+	- Tunelar el USB: Hacer clic en el boton dispositivos de la máquina virtual, seleccionar el menu USB y seleccionar el FTDI
+	- Abir el monitor serial a 115200 baud
+	- Presionar el boton reset con el cable programador colocado, deberá verse el mensaje de reset
+	- Hacer clic en el boton cargar de la máquina virtual
+	
+7. Ejecutar el código
+	- Quitar el cable programador
+	- Presionar el boton de reset

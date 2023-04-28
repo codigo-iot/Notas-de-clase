@@ -1,0 +1,56 @@
+# Proyecto final 60%
+
+- Prototipo funcionando al 100%
+	- Darle un papel importante a la información
+	- MQTT
+	- Dashboard
+	- Base de datos
+	
+- Parte escrita
+	- Hacer un curso en plataforma edu.codigoiot.com
+		- Secciones sugeridas en la nota llamada
+		  20230220 - Planteamiento de proyecto 1
+		- No incluye codigo
+			- Comentar el codigo en github
+			- Explicar codigo en plataforma
+	- Enviar un correo a hvargas@factor.mx
+		- Asunto: Proyecto Final - G1X
+		- Mensaje:
+			- Nombre del proyecto
+			- Integrantes del proyecto
+			- Descripción del proyecto
+			- Enlace al repositorio	
+
+- Repositorio
+	- Cardex
+	- Plan de acción
+	- Codigos
+	- Documentacion (Readme.md)
+	
+	
+# Estacion de clima con sensores y permanencia
+
+1. Ajustar los servidores MQTT
+	- La seccion del ESP32CAM debe usar localhost
+	- La sección de API debe usar el broker publico 35.157.253.43
+	
+2. Hacer los ajustes necesarios para que la información llegue a la base de datos. Opciones
+	- Ajustar el programa del ESP32CAM para que envie información al tema del escuchador, el cual guarda en base de datos	
+	- Agregar una sección de base de datos a la sección de broker local
+	- Enviar la información que llega del broker local al broker publico
+	
+
+## Notas
+
+- Para enviar a broker local
+  - Comprobar que el broker local funcione netstat -an
+  - Configurar el firewall de linux
+  	sudo ufw enable
+  	sudo ufw allow 1883
+  - Configurar el firewall de windows
+  - Configurar el broker para que reciba conexiones externas
+  	Modificar el archivo mosquitto.conf
+
+- Hoja de proyecto https://docs.google.com/spreadsheets/d/1aqaRkt5-MLJ0amerYbeqihziLPuOoqG1DyZW98Eog2I/edit?usp=share_link
+
+- 20230220 - Planteamiento de proyecto 1 https://github.com/codigo-iot/Notas-de-clase/blob/main/IoT-Mor-G10/20230220%20-%20Planteamiento%20de%20proyecto%201
