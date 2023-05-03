@@ -1,0 +1,21 @@
+# Lector del tarjetas RFID con Raspberry Pi
+
+https://edu.codigoiot.com/course/view.php?id=857
+
+1. Armar el siguiente circuito
+https://edu.codigoiot.com/mod/lesson/view.php?id=1993&pageid=2553
+
+
+
+## Notas
+
+- Soluciones comunes a problemas de comunicación entre el ESP32 y Mosquitto
+
+	- Comprobar la Io
+	- Configurar la máquina virtual como NAT
+	- Abrir el puerto 1883 en la máquina virtual
+	- Configurar el archivo mosquitto.conf
+	
+- Repositorio Alterno
+
+https://github.com/codigo-iot/python-rfid-myslq
