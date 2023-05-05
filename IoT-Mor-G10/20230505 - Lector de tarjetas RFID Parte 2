@@ -28,6 +28,13 @@ sudo apt-get install -y nodejs
 	- En caso que no se encuentre, instalar con pip install RPi.GPIO
 	- Instalar la biblioteca del lector de tarjetas pip install mfrc522
 
+7. Activar la interfaz SPI
+	- sudo raspi-config
+	- Interface Options > SPI
+	- Activar SPI
+	- Fihish
+	- sudo reboot
+	
 
 n. Correr el servidor web con el archivo node.js que está en el interior del directorio
 
