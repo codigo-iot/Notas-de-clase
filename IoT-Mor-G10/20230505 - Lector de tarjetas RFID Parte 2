@@ -1,0 +1,41 @@
+# RFID con Raspberry Pi Parte 2
+
+1. Energizar la raspberry Pi
+	- Asegurarse de que esté conectado a la red actual
+	
+2. Abrir el escritorio de la RPi por VNC (opcional)
+	- Es posible hacerlo todo por SSH
+	
+3. Clonar el repositorio de clase 
+https://github.com/codigo-iot/Registro-de-alumnos-con-RFID-con-JS-y-Python
+	- Instalar git sudo apt git
+	- Crear el directorio ~/Documents/GitHub
+	- Clonar el repositorio con git clone https://github.com/codigo-iot/Registro-de-alumnos-con-RFID-con-JS-y-Pythong
+
+4. Instalar NodeJS en Raspberry Pi
+	- https://github.com/nodesource/distributions#using-ubuntu-6
+	
+	- curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+	- sudo apt-get install -y build-essential
+
+5. Instalar Express
+	- npm install express --save
+
+6. Comprobar la version de Python
+	- python --version
+	- Comprobar la existencia de la biblioteca RPi.GPIO pip list
+	- En caso que no se encuentre, instalar con pip install RPi.GPIO
+	- Instalar la biblioteca del lector de tarjetas pip install mfrc522
+
+
+n. Correr el servidor web con el archivo node.js que está en el interior del directorio
+
+## Notas
+
+https://cdmx.makerfaire.com/
+https://www.audiomaquinas.com/
+https://expressjs.com/
+https://www.python.org/
+https://pypi.org/project/RPi.GPIO/
+https://pypi.org/project/mfrc522/
