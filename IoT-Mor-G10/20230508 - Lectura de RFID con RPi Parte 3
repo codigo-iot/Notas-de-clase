@@ -1,0 +1,15 @@
+# Lectura de RFID con RPi y Express
+
+1. Entrar al directorio del repostorio y ejecutar el comando
+	- node node.js
+	
+2. Entrar a la siguiente ruta
+	- localhost:8000
+	
+3. Hacer clic en el boton Registrar Alumno
+	- Colocar texto
+	- Colocar tag
+	- Enviar
+	
+4. Consultar el dato
+	- Hacer clic en Consulta mientras se coloca el tag
