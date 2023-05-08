@@ -13,3 +13,27 @@
 	
 4. Consultar el dato
 	- Hacer clic en Consulta mientras se coloca el tag
+	
+# Lectura de RFID con RPi 2
+
+1. Clonar el repositorio 
+	- git clone https://github.com/codigo-iot/python-rfid-myslq
+	
+2. Ejecturar el programa que lee el tag
+	- python read-tag.py
+	- Detener programa con Ctrl+C
+	
+3. Ejecutar el programa de escritura en el tag
+	- python write-tag.py
+	
+## Python y lectura de base de datos
+
+1. Crear una base de datos en la máquina virtual para este ejercicio
+	- sudo mysql
+	- CREATE DATABASE [nombre_db];
+	- USE [nombre_db];
+	- CREATE TABLE rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, ifid_id INT (16) NOT NULL);
+
+
+
+
