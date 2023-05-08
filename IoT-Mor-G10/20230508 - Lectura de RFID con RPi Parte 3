@@ -27,6 +27,8 @@
 	- python write-tag.py
 	
 ## Python y lectura de base de datos
+Para este ejercicio se utilizará la máquina virtual como servidor. Se creará una base de datos en la máquina virtual y la raspberry pi accederpá a ella de forma remota.
+
 
 1. Crear una base de datos en la máquina virtual para este ejercicio
 	- sudo mysql
@@ -34,6 +36,11 @@
 	- USE [nombre_db];
 	- CREATE TABLE rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, ifid_id INT (16) NOT NULL);
 
+2. Probar base de datos
+	- INSERT INTO rfid (nombre,texto,ifid_id) VALUES ('Hugo Vargas','Test 1 Python ',84655184);
 
+3. Comprobar que python pueda generar este query
+	- Dirigirse al directorio del repositorio en la máquina virtual y ejecutar el siguiente comando
+	- python stttring.py
 
 
