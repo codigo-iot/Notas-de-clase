@@ -43,4 +43,24 @@ Para este ejercicio se utilizará la máquina virtual como servidor. Se creará 
 	- Dirigirse al directorio del repositorio en la máquina virtual y ejecutar el siguiente comando
 	- python stttring.py
 
+4. Instalar la biblioteca de mysql con el siguiente comando
+	- pip install mysql-connector-python
+	
+5. Crear un usuario para realizar la conexión
 
+	- CREATE USER 'nombreusuario'@'%' IDENTIFIED BY 'password';
+	- GRANT ALL PRIVILEGES ON *.* TO 'nombreusuario'@'%';
+	
+	- CREATE USER 'hugolan'@'%' IDENTIFIED BY 'hugohugo';
+	-CREATE USER 'hugolan'@'%' IDENTIFIED BY 'hugohugo';
+	
+6. Escribir en la base de datos desde Python
+	- Actualizar el programa query-mysql.py
+
+
+## Siguiente clase
+
+- EJecutar python-connector-test.py
+- Ejecutar python-mysql-insert.py //Agregar un dato
+- Ejecutar query-mysql.py // Seleccionar
+- Ejecutar query-mysql-cursor.py
