@@ -1,0 +1,34 @@
+# Lector de tarjetas RFID 4
+
+## Requisitos
+
+- Tener Instalado Python
+- Tener instalado el conector de python y mysql
+- Tener un usuario de MySQL que tenga acceso remoto
+	- User: hugolan
+	- Pass: hugohugo
+- Abrir el puerto 3306 en la máquina virtual con el comando sudo ufw allow 3306
+- Configurar MySQL para recibir conexiones externas
+	- Modificar el archivo mysqld.conf que se encuentra en el siguiente directorio /etc/mysql/mysql.conf.d/mysqld.cnf
+	- Cambiar el bind address por 0.0.0.0
+	- Reiniciar el servicio con el comando sudo systemctl restart mysql
+- Configurar el usuario con acceso remoto para que tenga una autentificación sin SHA2
+
+ALTER USER 'hugolan'@'%' IDENTIFIED WITH mysql_native_password BY 'hugohugo';
+
+Lo siguiente se ejecuta en la máquina virtual
+	- Reiniciar el servicio
+
+1. Ejecutar el programa python-connector-test.py
+	- Ejecutar una terminal desde el directorio del repositorio donde se encuentra este programa
+	- Actualizar las credenciales de la base de datos local
+	- Correr en la máquina virtual
+	- python python-connector-test.py
+	- Correr en la raspberry pi
+	
+# Notas
+
+Consultar detalles de los usuarios
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+
