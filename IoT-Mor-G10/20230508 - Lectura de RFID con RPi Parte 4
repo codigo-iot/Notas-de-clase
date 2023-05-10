@@ -15,9 +15,11 @@
 - Configurar el usuario con acceso remoto para que tenga una autentificación sin SHA2
 
 ALTER USER 'hugolan'@'%' IDENTIFIED WITH mysql_native_password BY 'hugohugo';
+- FLUSH PRIVILEGES;	
 
-Lo siguiente se ejecuta en la máquina virtual
-	- Reiniciar el servicio
+
+## Lo siguiente se ejecuta en la máquina virtual
+	
 
 1. Ejecutar el programa python-connector-test.py
 	- Ejecutar una terminal desde el directorio del repositorio donde se encuentra este programa
@@ -26,6 +28,17 @@ Lo siguiente se ejecuta en la máquina virtual
 	- python python-connector-test.py
 	- Correr en la raspberry pi
 	
+2. Ejecutar una consulta
+	- Actualizar las credenciales del programa query-mysql-cursor.py
+	- Actualizar el id a solicitar por uno existente
+	- Ejecutar el programa con el comando python ry-mysql-cursor.py
+	
+3. Enviar un dato a la base de datos por python
+	- Actualizar las credenciales
+	- Actualizar las columnas y la información a enviar
+	- Ejecutar el programa
+
+
 # Notas
 
 Consultar detalles de los usuarios
