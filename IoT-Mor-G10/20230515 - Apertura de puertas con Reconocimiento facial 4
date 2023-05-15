@@ -16,7 +16,19 @@ Este ejercicio es continuación del que vimos en la clase de NodeRed
 	- Insertar un iFrame 
 <iframe id="Video" title="Video" width="300" height="200"
     src="http://192.168.15.114:81/stream">
-</iframe>
+	</iframe>
+
+4. Guardar fotografía
+	- Agregar un boton para detonar el evento
+	- Agegar un nodo http request y seleccionar get para la url de captura, seleccionar la codificacion binary buffer
+	- Guardar con un nodo write file, seleccionar sobre escribir archivo, usar una ruta absoluta
+5. Analizar la fotografía
+	- Agregar a la salida un nodo function que genere los arguments para el programa de reconocimiento facial de python
+	
+	msg.payload = " " + msg.filename + " /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db";
+	return msg;
+	
+	- Copiar el nodo exec que corre el programa de python
 	
 ## Notas
 
