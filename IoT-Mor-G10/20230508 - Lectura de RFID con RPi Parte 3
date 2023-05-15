@@ -34,7 +34,7 @@ Para este ejercicio se utilizará la máquina virtual como servidor. Se creará 
 	- sudo mysql
 	- CREATE DATABASE [nombre_db];
 	- USE [nombre_db];
-	- CREATE TABLE rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, ifid_id INT (16) NOT NULL);
+	- CREATE TABLE rfid (id INT (6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre CHAR (248) NOT NULL, texto CHAR (248) NOT NULL, ifid_id INT (32) NOT NULL);
 
 2. Probar base de datos
 	- INSERT INTO rfid (nombre,texto,ifid_id) VALUES ('Hugo Vargas','Test 1 Python ',84655184);

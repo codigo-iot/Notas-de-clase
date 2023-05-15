@@ -1,0 +1,23 @@
+# Apertura de puertas con reconocimiento facial
+
+Este ejercicio es continuación del que vimos en la clase de NodeRed
+
+
+1. Arrancar el entorno
+	- Arrancar node-red
+	- Encontrar la IP del ESP32CAM
+
+2. Agregar una sección para visualizar la cámara en el dashboard
+	- Agregar un nodo template
+	- IP para ver video http://192.168.15.114:81/stream
+	- IP para tomar fotografías http://192.168.15.114/capture
+	
+3. Agregar un nodo template a una nueva sección llamada cámara
+	- Insertar un iFrame 
+<iframe id="Video" title="Video" width="300" height="200"
+    src="http://192.168.15.114:81/stream">
+</iframe>
+	
+## Notas
+
+- iFrame https://developer.mozilla.org/es/docs/Web/HTML/Element/iframe
