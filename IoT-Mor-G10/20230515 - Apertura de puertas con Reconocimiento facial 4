@@ -29,6 +29,10 @@ Este ejercicio es continuación del que vimos en la clase de NodeRed
 	return msg;
 	
 	- Copiar el nodo exec que corre el programa de python
+
+6. Agregar un nuevo rostro a la base de datos
+	- Agregar una carpeta con fotografias del rostro de la persona a registrar, al menos 5, máximo de 640x480px
+	- Borrar el archivo .pkl cada que se agrege un nuevo rostro
 	
 ## Notas
 
