@@ -1,0 +1,39 @@
+# Apertura de puertas con reconocimiento facial
+
+Este ejercicio es continuación del que vimos en la clase de NodeRed
+
+
+1. Arrancar el entorno
+	- Arrancar node-red
+	- Encontrar la IP del ESP32CAM
+
+2. Agregar una sección para visualizar la cámara en el dashboard
+	- Agregar un nodo template
+	- IP para ver video http://192.168.15.114:81/stream
+	- IP para tomar fotografías http://192.168.15.114/capture
+	
+3. Agregar un nodo template a una nueva sección llamada cámara
+	- Insertar un iFrame 
+<iframe id="Video" title="Video" width="300" height="200"
+    src="http://192.168.15.114:81/stream">
+	</iframe>
+
+4. Guardar fotografía
+	- Agregar un boton para detonar el evento
+	- Agegar un nodo http request y seleccionar get para la url de captura, seleccionar la codificacion binary buffer
+	- Guardar con un nodo write file, seleccionar sobre escribir archivo, usar una ruta absoluta
+5. Analizar la fotografía
+	- Agregar a la salida un nodo function que genere los arguments para el programa de reconocimiento facial de python
+	
+	msg.payload = " " + msg.filename + " /home/hugo/Documents/GitHub/apertura-puertas-reconocimiento-facial/deepface/my_db";
+	return msg;
+	
+	- Copiar el nodo exec que corre el programa de python
+
+6. Agregar un nuevo rostro a la base de datos
+	- Agregar una carpeta con fotografias del rostro de la persona a registrar, al menos 5, máximo de 640x480px
+	- Borrar el archivo .pkl cada que se agrege un nuevo rostro
+	
+## Notas
+
+- iFrame https://developer.mozilla.org/es/docs/Web/HTML/Element/iframe
