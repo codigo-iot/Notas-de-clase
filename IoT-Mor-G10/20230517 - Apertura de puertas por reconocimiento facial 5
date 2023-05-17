@@ -1,0 +1,11 @@
+# Apertura de puertas por reconocimiento facial
+
+1. Agregar una nueva persona a la base de datos de rostros
+- 3 fotos del sujeto
+- Agregar el info.json de datos personales
+
+2. Borrar el archivo .pkl para que detecte un nuevo rostro
+
+3. Cargar el programa de prueba
+
+https://randomnerdtutorials.com/esp32-cam-pan-and-tilt-2-axis/
