@@ -1,0 +1,24 @@
+# Servomotores y esp32CAM
+
+1. Agregar la biblioteca ESP32Servo de Keving Harrington desde el administrador de bibliotecas de Arduino
+
+2. Configurar el archivo mosquitto.conf para que reciba conexiones externas
+
+- etc/mosquitto/conf.d
+- sudo mosquitto.conf
+- modificar la linea del bind address en la seccion default listener por
+	bind_address 0.0.0.0
+	
+3. Reniciar el servicio
+- sudo systemctl status mosquitto
+- sudo systemctl restart mosquitto
+
+4. Abrir el puerto 1883
+
+- sudo ufw allow 1883
+- sudo ufw enable
+
+# Detector de sintomas covid
+
+1. Clonar el siguiente repositorio
+https://github.com/codigo-iot/detector-sintomas-covid
