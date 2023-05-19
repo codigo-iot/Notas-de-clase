@@ -50,6 +50,82 @@ https://github.com/codigo-iot/servidor-IoT-basico-docker-compose/tree/main
 5. Ejecutar el archivo compose
 - docker compose up -d
 
+# Introduccion a Mosquitto
+https://edu.codigoiot.com/course/view.php?id=851
+
+## Temas
+
+miCasa
+miCasa/plantaBaja/cocina/temperatura
+miCasa/plantaBaja/cocina/humedad
+miCasa/plantaBaja/sala/temperatura
+miCasa/plantaBaja/sala/humedad
+miCasa/plantaBaja/patio/temperatura
+miCasa/plantaBaja/patio/humedad
+miCasa/plantaAlta/
+
+
+miCasa/plantaBaja/+/temperatura
+
+miCasa/plantaBaja/cocina/temperatura
+miCasa/plantaBaja/sala/temperatura
+miCasa/plantaBaja/patio/temperatura
+
+
+miCasa/plantaBaja/#
+
+miCasa/plantaBaja/cocina/temperatura
+miCasa/plantaBaja/cocina/humedad
+miCasa/plantaBaja/sala/temperatura
+miCasa/plantaBaja/sala/humedad
+miCasa/plantaBaja/patio/temperatura
+miCasa/plantaBaja/patio/humedad
+
+
+miCasa/plantaBaja
+
+
+#
+
+QOS
+
+## Ejemplo de mosquitto
+
+### Realizar suscripcion
+
+mosquitto_sub -h localhost -p 1883 -t codigoIoT/test -q 1 -i hugo_sub
+
+mosquitto_sub -h localhost -t codigoIoT/test
+
+docker exec -it [id_contenedor] mosquitto_sub -h localhost -t codigoIoT/test
+
+### Realizar publicación
+
+mosquitto_pub -h localhost -p 1883 -q 1 -i hubo_pub -t codigoIoT/test -m "Hola mosquitto"
+
+mosquitto_pub -h localhost -t codigoIoT/test -m "Hola mosquitto"
+
+docker exec -it [id_contenedor] mosquitto_pub -h localhost -t codigoIoT/test -m "Hola mosquitto"
+
+# Notas
+
+Consutalr ids de contedor con
+- docker ps
+
+## Chat publico
+IP: 18.194.125.194
+
+1. Suscribirse
+docker exec -it [id_contenedor] mosquitto_sub -h 18.167.125.194 -t codigoIoT/test
+
+
+2. Publicar
+sudo docker exec -it [id_contenedor] mosquitto_pub -h 18.194.125.194 -t codigoIoT/test -m "Este es el mensaje 2"
+
+
+
+
+
 
 
 
