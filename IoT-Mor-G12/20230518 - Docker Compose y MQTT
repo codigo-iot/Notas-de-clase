@@ -24,3 +24,28 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-scr
 ## Probar Docker
 
 1. sudo docker run hello-world
+
+# Creación de una aplicación multi-contenedor con Docker
+
+1. Crear los volumenes
+
+mkdir -p ~/DockerVolumes/Mosquitto/config
+mkdir -p ~/DockerVolumes/MySQL/config
+mkdir -p ~/DockerVolumes/MySQL/data
+mkdir -p ~/DockerVolumes/NodeRED/config
+mkdir -p ~/DockerVolumes/NodeRED/data
+
+2. Crear el archivo YAML
+
+mkdir -p ~/DockerCompose
+touch ~/DockerCompose/compose.yaml
+
+
+
+
+
+
+
+
+
+
