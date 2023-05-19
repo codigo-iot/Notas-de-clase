@@ -8,8 +8,19 @@ https://edu.codigoiot.com/mod/lesson/view.php?id=3888&pageid=3802
 3. Se requieren 4GB de RAM
 
 #Instalación de Docker
-Se instalara con el script fácilito
+
+1. Se instalara con el script fácilito
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
 
 - curl -fsSL https://test.docker.com -o test-docker.sh
 - sudo sh test-docker.sh
+
+2. Comprobar la instalación
+- docker --version
+
+3. Comprobar que Docker funcione
+- sudo systemctl status docker
+
+## Probar Docker
+
+1. sudo docker run hello-world
