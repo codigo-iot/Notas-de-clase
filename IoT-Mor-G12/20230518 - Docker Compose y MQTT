@@ -40,6 +40,15 @@ mkdir -p ~/DockerVolumes/NodeRED/data
 mkdir -p ~/DockerCompose
 touch ~/DockerCompose/compose.yaml
 
+3. Clonar el repositorio de Docker Compose
+https://github.com/codigo-iot/servidor-IoT-basico-docker-compose/tree/main
+
+4. Clonar el contenido del archivo compose.yaml del repositorio al de la carpeta compose ~/Documunets/DockerCompose
+
+5. Cambiar la contraseña de mysql en la linea 19 el archivo yaml
+
+5. Ejecutar el archivo compose
+- docker compose up -d
 
 
 
