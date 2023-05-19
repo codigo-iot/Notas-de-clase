@@ -1,0 +1,59 @@
+# Configuración y uso básico de Visual Studio Code
+https://edu.codigoiot.com/course/view.php?id=822
+
+1. Instalar desde la tienda de aplicaciones
+2. Visual Studio Code es diferente de Visual Studio
+
+3. Se puede abrir la terminal de linux con Ctrl+`
+4. Terminal de comandos Ctrl+R
+5. Terminal de comandos de Visual Studio Code Ctrl+P
+
+# Documentación con MarkDown
+https://edu.codigoiot.com/course/view.php?id=995
+
+## Ejercicio: Control de versiones con Visual Studio Code
+https://edu.codigoiot.com/course/view.php?id=858
+
+1. Abrir directorio de github
+2. Modificar el archivo README.md del repositorio tutorial-github-G12
+3. Guardar
+4. Hacer clic en el boton de control de versiones
+5. Poner mensaje al commit
+6. Hacer el commit
+7. Sincronizar cambios (Push)
+8. Permitir inicio de sesion
+9. Comprobar commit en github.com
+
+# Introducción a Docker
+https://edu.codigoiot.com/course/view.php?id=996
+
+
+# Referencias culturales
+
+- Veritasium
+https://youtu.be/FU_YFpfDqqA
+
+- Notepad ++
+https://notepad-plus-plus.org/
+
+- Sublime Text
+https://www.sublimetext.com/
+
+- Atom
+https://github.blog/2022-06-08-sunsetting-atom/
+
+- Tutorial de MarkDonw
+https://stackedit.io/app#
+https://dillinger.io/
+https://pandao.github.io/editor.md/en.html
+https://onlinemarkdowneditor.dev/
+https://www.markdownguide.org/
+
+- DaFont
+- OpenFonts
+
+- https://www.youtube.com/@CodeAesthetic
+
+- Visual learning https://youtu.be/rhgwIhB58PA
+
+- https://obsproject.com/es
