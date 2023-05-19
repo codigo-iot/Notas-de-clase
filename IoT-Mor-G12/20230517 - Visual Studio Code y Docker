@@ -11,7 +11,21 @@ https://edu.codigoiot.com/course/view.php?id=822
 # Documentación con MarkDown
 https://edu.codigoiot.com/course/view.php?id=995
 
+## Ejercicio: Control de versiones con Visual Studio Code
+https://edu.codigoiot.com/course/view.php?id=858
 
+1. Abrir directorio de github
+2. Modificar el archivo README.md del repositorio tutorial-github-G12
+3. Guardar
+4. Hacer clic en el boton de control de versiones
+5. Poner mensaje al commit
+6. Hacer el commit
+7. Sincronizar cambios (Push)
+8. Permitir inicio de sesion
+9. Comprobar commit en github.com
+
+# Introducción a Docker
+https://edu.codigoiot.com/course/view.php?id=996
 
 
 # Referencias culturales
@@ -37,3 +51,9 @@ https://www.markdownguide.org/
 
 - DaFont
 - OpenFonts
+
+- https://www.youtube.com/@CodeAesthetic
+
+- Visual learning https://youtu.be/rhgwIhB58PA
+
+- https://obsproject.com/es

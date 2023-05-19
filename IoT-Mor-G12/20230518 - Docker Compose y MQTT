@@ -1,0 +1,15 @@
+# Instalación de Docker
+https://edu.codigoiot.com/mod/lesson/view.php?id=3888&pageid=3802
+
+## Requisitos para instalar Docker
+1. Procesador compatible con virtualización
+2. Sistema operativo compatible con KVM
+	- Activar la compatibilidad con KVM en la máquina virtual: Virtuar Box > Configuracion > Sistema > Aceleración > KVM
+3. Se requieren 4GB de RAM
+
+#Instalación de Docker
+Se instalara con el script fácilito
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
+
+- curl -fsSL https://test.docker.com -o test-docker.sh
+- sudo sh test-docker.sh
