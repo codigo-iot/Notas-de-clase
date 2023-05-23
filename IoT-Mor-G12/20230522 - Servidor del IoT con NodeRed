@@ -1,0 +1,32 @@
+# Servidor del Internet de las Cosas con NodeRed
+
+https://edu.codigoiot.com/course/view.php?id=997
+
+## Requisitos
+
+- Tener instalado NodeRed por Docker
+- Comprobar que NodeRed esté funcionando
+	- netstat -an | grep 1880
+- Comprobar que docker esté corriendo
+	- sudo systemctl status docker
+- Comprobar el estado de los contenedores
+	- docker container ls -a
+	Alternativemente:
+	- docker ps -a
+- Arrancar todos los contedores
+	- docker start $(docker ps -a -q)
+- Abrir NodeRed
+	- http://localhost:1880
+
+
+
+
+
+
+
+#Referencias
+- NodeRed 2022 https://edu.codigoiot.com/course/view.php?id=278
+
+- NodeRed https://nodered.org/
+- NodeRed Docker https://nodered.org/docs/getting-started/docker
+
