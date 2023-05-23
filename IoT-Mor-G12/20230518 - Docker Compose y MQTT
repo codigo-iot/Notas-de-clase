@@ -25,7 +25,7 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-scr
 
 1. sudo docker run hello-world
 
-# Creación de una aplicación multi-contenedor con Docker
+### Creación de una aplicación multi-contenedor con Docker
 
 1. Crear los volumenes
 
@@ -50,7 +50,7 @@ https://github.com/codigo-iot/servidor-IoT-basico-docker-compose/tree/main
 5. Ejecutar el archivo compose
 - docker compose up -d
 
-# Introduccion a Mosquitto
+## Introduccion a Mosquitto
 https://edu.codigoiot.com/course/view.php?id=851
 
 ## Temas
