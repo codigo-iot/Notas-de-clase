@@ -36,7 +36,11 @@ https://edu.codigoiot.com/mod/lesson/view.php?id=3895&forceview=1
 - Detener compose con el comando docker compose down
 - Correr el archivo compose con los cambios de volumenes sudo docker compose up -d desde el directorio donde se encuentra el archivo YAML
 
-	
+2. Agregar un nodo inject
+3. Agregar nodo debug
+4. Hacer clic en deploy	
+5. Ir a la pestaña debug
+
 
 
 
