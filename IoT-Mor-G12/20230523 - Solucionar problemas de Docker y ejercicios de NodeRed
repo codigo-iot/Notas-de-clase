@@ -83,7 +83,7 @@ Para corregir el problema es necesario hacer o siguiente
 - Desicripción de repositorio
 - Activar la casilla Add README file
 - Hacer clic en el boton repositorio
-4. Clonar el repositorio a la maquia virtual
+4. Clonar el repositorio a la maquina virtual
 - Abrir el directorio GitHub con terminal
 - cd ~/Documents/GitHub
 - git clone [url https del repo]
