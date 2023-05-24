@@ -68,9 +68,32 @@ Para corregir el problema es necesario hacer o siguiente
 - docker compose up -d
 - Opcional: Si ya has intentado todos los comandos varias veces y no logras arrancar nodeRed en Compose con volumenes, pon aqui el YAML del repositorio, que no usa volumenes y repite
 
+## Exportar un Flow
 
+1. Hacer clic en el boton hamburguesa
+2. Seleccionar la opción export 
+3. Seleccionar lo que se quiere exportar
 
+## Crear un repositorio de este ejercicio
 
+1. Dirigirse a github.com e iniciar sesion
+2. Hacer clic en el boton de crear nuevo repositorio
+3. Configurar el nuevo repositorio
+- Nombre de repositorio
+- Desicripción de repositorio
+- Activar la casilla Add README file
+- Hacer clic en el boton repositorio
+4. Clonar el repositorio a la maquia virtual
+- Abrir el directorio GitHub con terminal
+- cd ~/Documents/GitHub
+- git clone [url https del repo]
+5. Colocar el archivo flows.json recien descargado en el repositorio
+6. Hacer el commit y el push
+7. Hacer documentación del repositorio
 
+## Referencias
 
+- Referencia de documentación del flow1 https://github.com/codigo-iot/flow1-NodeRed
+
+- Ejemplo de repositorio actualizado https://github.com/hugoescalpelo/flow1-g12/tree/main
 
