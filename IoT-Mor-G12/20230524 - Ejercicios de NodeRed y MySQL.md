@@ -27,7 +27,7 @@ Contar con los nodos dashboard
 1. Duplicar el flow 2 con las mecanicas de exportar e importar
 2. Renombrar el flow a Flow 3
 3. Agregar el nodo texto
-4. Crear una pestaña
+4. Crear una pestaña en la sección Dashboard
 5. Crear un grupo
 6. Configurar el nodo texto para que se visualice en el grupo recien creado
 7. Hacer clic en Deploy y consultar el [Dashboard](http://localhost:1880/ui)
@@ -48,5 +48,6 @@ Texto
 ```
 - Para desactivar un flow hacer clic en la pestaña del flow, hacer clic en el boton disable, clic en done y clic en deploy
 - Para cambiar el nombre de un flow hacer doble clic en la pestaña y cambiar el nombre
+- Los nodos con un triangulo anaranjado no están configurados
 
 
