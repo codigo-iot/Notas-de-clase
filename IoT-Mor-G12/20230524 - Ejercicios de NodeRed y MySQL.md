@@ -17,6 +17,20 @@
 6. Activar el nodo Debug y asegurarse de que el nodo inject este lanzando mensajes cada 5 segundos
 7. Hacer clic en Deploy.
 
+## [Flow 3: Panel de control con Nodos Dashboard](https://edu.codigoiot.com/mod/lesson/view.php?id=3897)
+
+### Requisitos
+Contar con los nodos dashboard
+
+### Instrucciones
+
+1. Duplicar el flow 2 con las mecanicas de exportar e importar
+2. Renombrar el flow a Flow 3
+3. Agregar el nodo texto
+4. Crear una pestaña
+5. Crear un grupo
+6. Configurar el nodo texto para que se visualice en el grupo recien creado
+7. Hacer clic en Deploy y consultar el [Dashboard](http://localhost:1880/ui)
 
 ## Notas
 
