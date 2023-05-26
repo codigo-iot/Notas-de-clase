@@ -151,6 +151,39 @@ return msg;
 	CREATE TABLE clima (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nombre VARCHAR(248) NOT NULL, temperatura FLOAT(4,2) NOT NULL, humedad INT (6) NOT NULL);
 	```
 
+- Consultar talba
+
+	```
+	SHOW TABLES;
+	```
+- Describir la tabla
+
+	```
+	DESCRIBE [nombre_tabla];
+	
+- Agregar un dato
+
+	```
+	INSERT INTO [nombre_tabla] (columnas) VALUES (valores);
+	```
+	
+	```
+	INSERT INTO clima (nombre,temperatura,humedad) VALUES ("Hugo Escalpelo",21,50);
+	```
+	
+- Consultar dato
+
+	```
+	SELECT * FROM clima;
+	```
+- Consulta condicional
+
+	```
+	SELECT * FROM clima WHERE id=2;
+	SELECT * FROM clima WHERE temperatura=21.5;
+	SELECT * FROM clima WHERE nombre="Hugo Escalpelo";
+	```
+
 ## Referencias
 
 - 10,000 horas no es fuciciente para ser un experto https://www.youtube.com/watch?v=FVK_i7arszw
