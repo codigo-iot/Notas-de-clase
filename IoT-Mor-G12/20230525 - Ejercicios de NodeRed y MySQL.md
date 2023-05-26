@@ -85,10 +85,11 @@ return msg;
 }
 ```
 
-	Comando de docker
+
+	Comando de docker para mosquitto
 
 	```
-	docker exec -it [id_contenedor] mosquitto_pub -t codigoIoT/mqtt/clima -m '{"temp":18;"hum":51}'
+		docker exec -it [id_contenedor] mosquitto_pub -t codigoIoT/mqtt/clima -m '{"temp":18;"hum":51}'
 	```
 	
 # [Introducción a MySQL](https://edu.codigoiot.com/course/view.php?id=1001)
@@ -123,7 +124,7 @@ return msg;
 
 - Levantar docker compose
 
-	```docker compose up -d``
+	```docker compose up -d```
 
 ## Crear una Base de Datos
 
