@@ -86,11 +86,11 @@ return msg;
 ```
 
 
-	Comando de docker para mosquitto
+Comando de docker para mosquitto
 
-	```
-		docker exec -it [id_contenedor] mosquitto_pub -t codigoIoT/mqtt/clima -m '{"temp":18;"hum":51}'
-	```
+```
+docker exec -it [id_contenedor] mosquitto_pub -t codigoIoT/mqtt/clima -m '{"temp":18;"hum":51}'
+```
 	
 # [Introducción a MySQL](https://edu.codigoiot.com/course/view.php?id=1001)
 
