@@ -51,7 +51,9 @@ Server: 52.57.47.134
 
 6. Configurar el nodo JSON público para que indique usuario y ciudad
 
-7. Configurar el nodo MySQL
+7. Instalar y configurar el nodo MySQL
+
+Nodos: node-red-node-mysql
 
 Host: mysql
 user:  usuario publico
