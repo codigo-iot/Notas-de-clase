@@ -1,0 +1,70 @@
+# Estación climátiica - Historico
+
+1. Clonar el repositorio
+	- Con github desktop hacer clic en el boton repositorios
+	- Clic en add
+	- Clic en clonar repositorio
+	- Seleccionar URL
+	- https://github.com/codigo-iot/flow6-clima-api-docker-compose-mysql.git
+
+2. Importar el flow
+
+Asegurarse de que los contenedores funcionan
+
+	```
+	docker start $(docker ps -a -q)
+	```
+	
+3. Crear en MySQL un usuario con acceso publico
+
+- Entrar a la terminal de MySQL
+
+	```
+	docker exec -it [id_contenedor] mysql -p
+	```
+	
+- Crear el usuario con acceso público
+
+	```
+	CREATE USER 'usuario'@'%' IDENTIFIED BY 'password';
+	GRANT ALL PRIVILEGES ON *.* TO 'usuario'@'%';
+	```
+	
+4. Configurar el flow recien importado
+
+- Nodo MQTT Local debe estar conectado al broker local y que la salida sea string
+
+- Configurar la interfaz de los nodos dashboard
+	
+- El nodo injet de la sección API debe funcionar cada minot
+
+- Cofigurar correctamente la solicitud API del nodo http request
+
+
+
+
+
+
+
+
+
+## Requisitos previos
+
+1. Obtener una cuenta gratuita de OpenWeatherMap.org
+
+2. Obtener una API Key
+
+3. [Construir la solicitud API](https://openweathermap.org/api/one-call-3#data)
+
+https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&units={units}
+
+
+
+lat= 19.432694
+lon= -99.133472
+
+
+
+
+
+	
