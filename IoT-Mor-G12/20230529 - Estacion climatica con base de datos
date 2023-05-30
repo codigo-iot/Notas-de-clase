@@ -40,11 +40,23 @@ Asegurarse de que los contenedores funcionan
 
 - Cofigurar correctamente la solicitud API del nodo http request
 
+https://api.openweathermap.org/data/2.5/weather?lat=19.432380&lon=-99.133329&appid=a0f4e98d1a27e3c4b7b53aab05fa9d75&units=metric
 
+Colocar la solicitud API en el campo URL del nodo httprequest
 
+5. Asegurarse de que los nodos MQTT de la seccion Enviador y Escuchador usan el broker público. 
 
+Tema: codigoIoT/mqtt/climaAPI
+Server: 52.57.47.134
 
+6. Configurar el nodo JSON público para que indique usuario y ciudad
 
+7. Configurar el nodo MySQL
+
+Host: mysql
+user:  usuario publico
+password: contraseña
+database: cursoIoT
 
 
 
