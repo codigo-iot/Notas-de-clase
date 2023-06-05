@@ -1,0 +1,37 @@
+# Características del ESP32CAM
+
+- ¿que es un micro controlador?
+
+- Pines
+https://edu.codigoiot.com/mod/lesson/view.php?id=1704&pageid=2218
+
+
+
+
+
+
+
+
+
+## Notas
+
+### Respecto al Kit
+
+- Comprobar que esén todos los componentes
+
+## Aportaciones
+
+Pregunta: 
+
+¿Cree que después pueda compartirnos un poca más d einfo/videos sobre el cuidado de componentes electrónicos? porfavoooooor
+
+Respuesta:
+lo básico sería:
+- no rebasar los limites de voltaje y corriente indicados por el componente
+- trabajar bajo el umbral de temperaturas que indica el fabricante
+- no doblar demasiado las patitas de los componentes, de lo contrario se rompen
+- en el caso de soldar algún componente, no calentarlo por demasiado tiempo, se va a dañar
+- en el caso de los transistores tipo MOSFET, estos son demasiado delicados con la estática, de modo que no es recomendable manipularlos seguido con las manos.
+- De igual forma con cualquier microcontrolador, tratar de no tocar en la medida de lo posible los pines del mismo.
+y lo más importante: siempre leer la hoja de datos del componente antes de comenzar a usarlo, básicamente da la pauta a todos los parámetros de trabajo del mismo, precauciones, valores absolutos.
+ya no se me ocurre otra cosa, te lo cuento bajo mi experiencia
