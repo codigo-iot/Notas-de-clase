@@ -1,0 +1,38 @@
+# Detector de fugas de gas IoT
+
+Broker Publico
+broker.hivemq.com
+3.75.150.118
+
+Modificar el nombre de usuario en el nodo function 2
+
+# Apertura de puertas por reconocimiento facial
+
+1. Asegurarnos de que tenemos python3 instalado
+
+	- python3 --version
+	
+Se puede instalar con los siguientes comandos
+
+sudo apt update
+sudo apt install python3
+sudo apt install python3-pip
+
+2. Instalar deepface
+
+pip3 install deepface
+
+https://github.com/serengil/deepface
+
+3. Clonar el repositorio del taller
+
+https://github.com/codigo-iot/apertura-puertas-reconocimiento-facial
+
+4. Configurar VSC para trabajar con Python3
+
+- Ir a la seccion de extensiones
+- Buscar la extensión llamada Python (microsoft)
+
+5. Abrir el ejemplo llamado face-check.py de la carpeta deepface>ejemplos del repositorio
+
+6. Abrir elejemplo llamado facial-attribute-analysis.py de la carpeta deepface>ejemplos del repositorio

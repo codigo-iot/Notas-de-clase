@@ -1,0 +1,20 @@
+# Apertura de puertas por reconocimiento facial
+
+Se usa deepface 
+https://github.com/serengil/deepface/tree/master
+
+Repo del taller
+https://github.com/codigo-iot/apertura-puertas-reconocimiento-facial
+
+## Ejercicio: Face Recognition
+
+Encontrar una cara entre otras caras o comprobar que una cara se encuentra o no en una base de datos de rostros
+
+### Resqusitos
+1. Base de datos de rostros
+Se requiere un directorio con los rostros separados por carpetas
+2. Borrar el archivo pkl
+3. Agregar una carpeta a la base de datos de rostros con fotos personales
+4. Abrir el programa llamado face-recognition.py de la carpeta deepface>ejemplos
+5. Actualizar las rutas
+6. Ejecutar
