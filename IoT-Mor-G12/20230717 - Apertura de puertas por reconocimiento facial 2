@@ -18,3 +18,17 @@ Se requiere un directorio con los rostros separados por carpetas
 4. Abrir el programa llamado face-recognition.py de la carpeta deepface>ejemplos
 5. Actualizar las rutas
 6. Ejecutar
+
+## Apertura de puertas
+
+1. Importar el flow llamado completo.json
+Arrancar node-red
+
+node-red
+docker start $(docker ps -a -q)
+
+2. Cargar el ejemplo de Camera Web Server al ESP32CAM
+
+3. Actualizar la IP de ESP32CAM en el nodo template
+
+
