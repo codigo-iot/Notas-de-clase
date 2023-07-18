@@ -31,4 +31,9 @@ docker start $(docker ps -a -q)
 
 3. Actualizar la IP de ESP32CAM en el nodo template
 
+4. Instalar los nodos string
+
+node-red-contrib-string
+
+
 
