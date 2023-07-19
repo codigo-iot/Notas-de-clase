@@ -30,7 +30,7 @@ node-red-contrib-string
 
 sudo pip install deepface
 sudo pip install pandas
-sudo pip install paho
+sudo pip install paho-mqtt
 
 
 # Modificaciones al flow
