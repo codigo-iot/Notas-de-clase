@@ -1,0 +1,40 @@
+# Apertura de puertas por reconocimiento facia
+
+Para este ejercicio, se usará node-red de forma local
+
+1. Arrancar todos los nodos
+docker start $(docker ps -a -q)
+
+2. Detener unicamente node-red
+docker stop id_contenedor
+
+3. Instalar node-red de forma local
+
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+
+sudo apt-get install -y build-essential
+
+sudo npm install -g --unsafe-perm node-red
+
+node-red
+
+4. Agregar los siguientes nodos
+
+node-red-dashboard
+node-red-contrib-string
+
+5. Importar flow apuertura-puertas-reconocimiento-facial>NodeRed>completo.json
+
+# Instalar las bibliotecas de python
+
+sudo pip install deepface
+sudo pip install pandas
+sudo pip install paho
+
+
+# Modificaciones al flow
+
+1. Actualizar la IP de la cámara en el nodo template
+
+2. Actualizar la ruta al programa de python en el nodo exec de la sección "Ejecutar reconocimiento facial"
