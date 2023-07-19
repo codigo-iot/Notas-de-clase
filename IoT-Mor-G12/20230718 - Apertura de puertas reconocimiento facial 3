@@ -38,3 +38,11 @@ sudo pip install paho-mqtt
 1. Actualizar la IP de la cámara en el nodo template
 
 2. Actualizar la ruta al programa de python en el nodo exec de la sección "Ejecutar reconocimiento facial"
+
+3. Actualizar la ip de la foto tomada
+
+4. Actualizar la ruta donde se guarda la foto
+
+5. Actualizar la ruta de la db en el nodo append de la sección de la cámara
+
+6. Actualizar la ruta del programa en el nodo exec de la sección cámara
